@@ -4,5 +4,4 @@
     <active>true</active>
     <errorConditionFormula>AND(ISPICKVAL(Property_Status__c, "Sold"), ISBLANK(Price__c))</errorConditionFormula>
     <errorMessage>A sold property must have a price.</errorMessage>
-    <errorDisplayField>Price__c</errorDisplayField>
 </ValidationRule>
