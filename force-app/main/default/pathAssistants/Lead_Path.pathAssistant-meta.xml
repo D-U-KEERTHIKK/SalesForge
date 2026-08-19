@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <entityName>Lead</entityName>
+    <fieldName>Status</fieldName>
+    <masterLabel>Lead Path</masterLabel>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;A lead is assigned from the &amp;quot;holding area&amp;quot; to sales, but hasn&amp;#39;t been enrolled in engagement cadences yet.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;EXIT CRITERIA:&lt;/strong&gt; When a prospect is added to a sequence they update to &amp;quot;Working&amp;quot; automatically.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;</info>
+        <picklistValueName>Assigned</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;Bad or incorrect information in Outreach; essentially a lead graveyard to hold data to ensure you do not purchase or attempt outreach again.&lt;/p&gt;</info>
+        <picklistValueName>Bounced / Bad Info</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;A lead that is not qualified and will not enter the sales process with us. Reasons for disqualification should be cataloged and tracked at this stage.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Sales may manually update the prospect to Disqualified for any disqualifying reason. But please record the reason in Salesforce.&lt;/p&gt;</info>
+        <picklistValueName>Disqualified</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;A Lead that is responding to engagement/ sales development efforts (ie: replied to an email, answered a phone call, responded to a text message or LinkedIn message).&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;EXIT CRITERIA:&lt;/strong&gt; When a prospect books a qualifying meeting with sales (and that meeting is recorded in Salesforce as an Event with that prospect) they update to &amp;quot;Qualifying&amp;quot; automatically.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;</info>
+        <picklistValueName>Engaging</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;A lead that may be qualified, but does not wish to enter the sales process at this time. It may also mean that multiple attempts have been made to qualify the prospect (completion of an engagement cadence without response), but they haven&amp;#39;t engaged, and Sales wants Marketing to further warm up the lead. Reasons for nurturing should be cataloged and tracked at this stage.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;When a prospect is marked as finished with no reply, or they complete a sequence with no reply, they update to &amp;quot;Nurture&amp;quot;. Also, sales may manually update the prospect to Nurture for any reason. But please record the reason in Salesforce.&lt;/p&gt;</info>
+        <picklistValueName>Nurture</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;A brand new, unassigned, unworked lead. Similar to the Nurture status, the lead is waiting on initial/ further sales engagement; the &amp;quot;holding area&amp;quot;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;</info>
+        <picklistValueName>Open</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;A lead that is qualified and wishes to enter the sales process with us. (The default converted status for Leads. The default status for Contacts in the Opportunity or Customer Lifecycle Stage.)&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;**There is no Lead Status after Qualified. The Prospect has been Sales Qualified and leaves the Lead Process at this point. The Closing Rep (AE) takes over and begins the Deal Process from here.**&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;</info>
+        <picklistValueName>Qualified</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;Someone who explicitly asks not to be contacted; this will indicate no emails or phone calls should be made&lt;/p&gt;</info>
+        <picklistValueName>Unsubscribe / Do Not Email</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;A lead that is enrolled in engagement cadences in Outreach.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;EXIT CRITERIA:&lt;/strong&gt; When a prospect replies to an email, they update to &amp;quot;Engaging&amp;quot; automatically. (Please note, if a prospect answers a phone call or replies to a text or LI message, sales must manually update the prospect to Engaging status.)&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;</info>
+        <picklistValueName>Working</picklistValueName>
+    </pathAssistantSteps>
+    <recordTypeName>__MASTER__</recordTypeName>
+</PathAssistant>
