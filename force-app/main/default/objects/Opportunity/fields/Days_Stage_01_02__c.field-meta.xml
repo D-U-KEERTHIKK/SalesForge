@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Days_Stage_01_02__c</fullName>
+    <externalId>false</externalId>
+    <formula>if(not(isblank(Date_Stage_02__c)),
+if(and(Date_Stage_01__c  &lt;= Date_Stage_02__c, not(isblank(Date_Stage_02__c))), Date_Stage_02__c - Date_Stage_01__c, 0),
+0)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Days Stage 01-02</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

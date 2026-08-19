@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Solution_Identifier__c</fullName>
+    <description>Solution identifier</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Identifier associated with the solution</inlineHelpText>
+    <label>Solution Identifier</label>
+    <length>100</length>
+    <required>true</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Decision_Criteria__c</fullName>
+    <inlineHelpText>The criteria the company uses to make the decision to purchase your solution. What is the criteria used by the company to make the purchasing decision and choose among the various options.</inlineHelpText>
+    <label>Decision Criteria</label>
+    <length>32768</length>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

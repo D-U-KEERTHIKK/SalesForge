@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Channel_Partner__c</fullName>
+    <externalId>false</externalId>
+    <formula>if(ispickval( Primary_Product__c ,&quot;Copilot&quot;),
+        &quot;GitHub&quot;,
+        if(
+                or(
+                        find(&quot;github&quot;, lower(Name))   &gt;0,
+                        find(&quot;git-hub&quot;, lower(Name))  &gt;0,
+                        find(&quot;git hub&quot;, lower(Name))  &gt;0,
+                        find(&quot;copilot&quot;, lower(Name))  &gt;0,
+                        find(&quot;co-pilot&quot;, lower(Name)) &gt;0,
+                        find(&quot;copilot&quot;, lower(Name))  &gt;0 ) ,
+                &quot;GitHub&quot;,
+                &quot;&quot;)
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Channel-Partner</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Solution__c</fullName>
+    <deleteConstraint>Restrict</deleteConstraint>
+    <description>Microsoft solution details</description>
+    <inlineHelpText>Microsoft solution associated with the opportunity</inlineHelpText>
+    <label>Solution</label>
+    <referenceTo>Microsoft_Solution_Detail__c</referenceTo>
+    <relationshipLabel>Microsoft Solutions</relationshipLabel>
+    <relationshipName>Microsoft_Solutions_To_Details</relationshipName>
+    <required>true</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>
