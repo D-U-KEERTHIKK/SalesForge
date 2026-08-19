@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <defaultLandingTab>dupcheck__dcBatch</defaultLandingTab>
+    <description>Find, prevent and merge duplicate records</description>
+    <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
+    <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
+    <isNavTabPersistenceDisabled>false</isNavTabPersistenceDisabled>
+    <isOmniPinnedViewEnabled>false</isOmniPinnedViewEnabled>
+    <label>Duplicate Check</label>
+    <tabs>standard-Account</tabs>
+    <tabs>standard-Contact</tabs>
+    <tabs>standard-Lead</tabs>
+    <tabs>dupcheck__dc3Search</tabs>
+    <tabs>dupcheck__dc3Setup</tabs>
+    <tabs>dupcheck__dcBatch</tabs>
+    <tabs>dupcheck__dc3JobOverallResults</tabs>
+    <tabs>dupcheck__dcDiscard__c</tabs>
+    <tabs>dupcheck__dcEntry</tabs>
+    <tabs>Deal_Snapshot__c</tabs>
+</CustomApplication>
