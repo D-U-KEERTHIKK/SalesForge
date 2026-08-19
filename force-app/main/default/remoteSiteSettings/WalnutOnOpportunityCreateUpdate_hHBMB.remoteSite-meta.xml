@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RemoteSiteSetting xmlns="http://soap.sforce.com/2006/04/metadata">
+    <disableProtocolSecurity>false</disableProtocolSecurity>
+    <isActive>true</isActive>
+    <url>https://f33e7503-e682-4169-a926-cbee4aed4bbd-6400b3929d72bd7.trayapp.io</url>
+</RemoteSiteSetting>
