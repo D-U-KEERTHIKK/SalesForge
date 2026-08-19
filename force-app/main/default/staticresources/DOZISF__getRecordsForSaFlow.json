@@ -1,0 +1,1 @@
+{"recordsToUpsert": [[{"record" :{"ContactId": "contact_Id", "CampaignId": "campaign_Id", "attributes": {"type": "CampaignMember"}}}, {"record": {"LeadId": "lead_Id", "CampaignId": "campaign_Id", "attributes":{"type": "CampaignMember"}}}]]}
