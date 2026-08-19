@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomTab xmlns="http://soap.sforce.com/2006/04/metadata">
+    <frameHeight>600</frameHeight>
+    <hasSidebar>false</hasSidebar>
+    <label>Getting Started</label>
+    <motif>Custom5: Leaf</motif>
+    <url>http://www.salesforce.com/products/30daytrial/welcome.jsp?api={!API.Enterprise_Server_URL_90}&amp;un={!User.Username}&amp;fn={!User.FirstName}&amp;ln={!User.LastName}&amp;e={!User.Email}</url>
+    <urlEncodingKey>UTF-8</urlEncodingKey>
+</CustomTab>
