@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingCriteriaRules>
+        <fullName>HubSpot_Integration</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>enables Leads that meet criteria to sync with HS</description>
+        <label>HubSpot Integration</label>
+        <sharedTo>
+            <role>Integrations</role>
+        </sharedTo>
+        <criteriaItems>
+            <field>Email</field>
+            <operation>contains</operation>
+            <value>@</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Sync_to_HubSpot__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>false</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingOwnerRules>
+        <fullName>Lead_sharing</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Lead sharing</label>
+        <sharedTo>
+            <roleAndSubordinatesInternal>Global</roleAndSubordinatesInternal>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinatesInternal>Global</roleAndSubordinatesInternal>
+        </sharedFrom>
+    </sharingOwnerRules>
+</SharingRules>
