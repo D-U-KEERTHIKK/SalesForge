@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Renewal_Reminder_Sent__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Indicates whether the contract renewal reminder email has been sent. Managed by automation flow — not editable by users.</description>
+    <inlineHelpText>Set automatically when the renewal reminder email is sent 30 days before the contract end date.</inlineHelpText>
+    <label>Renewal Reminder Sent</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

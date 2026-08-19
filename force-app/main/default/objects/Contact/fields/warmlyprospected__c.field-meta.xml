@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>warmlyprospected__c</fullName>
+    <description>Tracks whether Warmly prospected via AI or Manual Prospector</description>
+    <label>Warmly Prospected</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>true</fullName>
+                <default>false</default>
+                <label>True</label>
+            </value>
+            <value>
+                <fullName>false</fullName>
+                <default>false</default>
+                <label>False</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>
