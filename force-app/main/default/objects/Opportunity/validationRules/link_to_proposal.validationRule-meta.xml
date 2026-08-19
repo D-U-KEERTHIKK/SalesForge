@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>link_to_proposal</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND ( TEXT(StageName) = &quot;Proposal&quot;, ISBLANK( Link_to_Proposal__c ))</errorConditionFormula>
+    <errorDisplayField>Link_to_Proposal__c</errorDisplayField>
+    <errorMessage>Please add a link to proposal</errorMessage>
+</ValidationRule>

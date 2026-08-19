@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Macro_Use_Case__c</fullName>
+    <label>Macro Use Case</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>SDLC</fullName>
+                <default>false</default>
+                <label>SDLC</label>
+            </value>
+            <value>
+                <fullName>IaC</fullName>
+                <default>false</default>
+                <label>IaC</label>
+            </value>
+            <value>
+                <fullName>SaaS</fullName>
+                <default>false</default>
+                <label>SaaS</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Closed_Lost_Notes_Required</fullName>
+    <active>false</active>
+    <description>When an Opportunity is Closed Lost, both a Lost Reason and Closed Lost Notes are required (at least a sentence in length)</description>
+    <errorConditionFormula>AND(
+  IsClosed,
+  NOT(IsWon),
+  ISBLANK(Loss_Notes__c),
+  CloseDate &gt;= DATE(2025,8,1)
+)</errorConditionFormula>
+    <errorDisplayField>Loss_Notes__c</errorDisplayField>
+    <errorMessage>When an Opportunity is Closed Lost, both a Lost Reason and Closed Lost Notes are required (at least a sentence in length)</errorMessage>
+</ValidationRule>

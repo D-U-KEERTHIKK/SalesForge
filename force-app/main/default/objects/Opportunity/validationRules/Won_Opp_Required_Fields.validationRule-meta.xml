@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Won_Opp_Required_Fields</fullName>
+    <active>true</active>
+    <description>When opportunities are marked Closed Won, the following fields are required:
+Contract Start Date
+Contract End Date
+PO Number (if PO Needed)</description>
+    <errorConditionFormula>AND(
+ ISPICKVAL( StageName , &quot;Closed Won&quot;),
+ RecordType.Name = &quot;Sales&quot; ,
+ OR( 
+   Contract_Attached__c = FALSE,
+   ISBLANK( Contract_Start_Date__c ),
+   ISBLANK( Contract_End_Date__c )))</errorConditionFormula>
+    <errorMessage>The following fields are required to mark this won:
+Contract Start Date
+Contract End Date
+Also, a Contract must be attached to the opportunity.</errorMessage>
+</ValidationRule>

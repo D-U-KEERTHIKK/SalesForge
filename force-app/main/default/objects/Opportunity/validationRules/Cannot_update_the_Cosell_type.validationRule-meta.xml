@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cannot_update_the_Cosell_type</fullName>
+    <active>false</active>
+    <description>Co-sell type cannot be update after creation.</description>
+    <errorConditionFormula>!ISNEW() &amp;&amp;
+ISCHANGED( Co_sell_Type__c ) &amp;&amp;
+NOT(ISCHANGED( Referral_Link__c )) &amp;&amp;
+NOT(ISCHANGED( Referral_Identifier__c ))</errorConditionFormula>
+    <errorDisplayField>Co_sell_Type__c</errorDisplayField>
+    <errorMessage>Co-sell type cannot be updated after creation.</errorMessage>
+</ValidationRule>

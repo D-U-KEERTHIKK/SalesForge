@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Solution_Play__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>Solution Play for Microsoft Partner Center referral</description>
+    <inlineHelpText>Solution Play for Microsoft Partner Center referral</inlineHelpText>
+    <label>Solution Play</label>
+    <lookupFilter>
+        <active>true</active>
+        <filterItems>
+            <field>Solution_Play__c.Active__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </filterItems>
+        <filterItems>
+            <field>$Source.Solution_Area__c</field>
+            <operation>equals</operation>
+            <valueField>Solution_Play__c.Solution_Area__c</valueField>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>Solution_Play__c</referenceTo>
+    <relationshipLabel>Opportunities</relationshipLabel>
+    <relationshipName>Solution_Play_To_Opportunities</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Lookup</type>
+</CustomField>

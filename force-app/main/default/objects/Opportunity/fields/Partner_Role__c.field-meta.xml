@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Partner_Role__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>Partner Role for Microsoft Partner Center referral.</description>
+    <inlineHelpText>Partner Role for Microsoft Partner Center referral. Values will be available for &apos;Services Co-sell&apos; only.</inlineHelpText>
+    <label>Partner Role</label>
+    <lookupFilter>
+        <active>true</active>
+        <errorMessage>Partner Role can be added for Services Co-sell only.</errorMessage>
+        <filterItems>
+            <field>Partner_Role__c.Active__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </filterItems>
+        <filterItems>
+            <field>$Source.Co_sell_Type__c</field>
+            <operation>equals</operation>
+            <value>Services Co-sell</value>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>Partner_Role__c</referenceTo>
+    <relationshipLabel>Opportunities</relationshipLabel>
+    <relationshipName>Partner_Role_To_Opportunities</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Lookup</type>
+</CustomField>

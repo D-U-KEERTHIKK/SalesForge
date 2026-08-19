@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Outreach_Last_Touch_Sequence__c</fullName>
+    <description>The last active sequence for the first Primary contact in an opportunity when the opportunity was created.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>The last active sequence for the first primary contact in an opportunity when the opportunity was created.</inlineHelpText>
+    <label>Last Touch Sequence</label>
+    <length>255</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

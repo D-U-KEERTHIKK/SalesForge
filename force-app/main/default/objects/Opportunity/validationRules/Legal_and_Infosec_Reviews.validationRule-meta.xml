@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Legal_and_Infosec_Reviews</fullName>
+    <active>true</active>
+    <description>To mark an opportunity won, Infosec and Legal reviews must be completed</description>
+    <errorConditionFormula>AND(
+ ISCHANGED(StageName),
+ IsWon ,
+ RecordType.Name = &quot;Sales&quot; ,
+ NOT(ISPICKVAL( Infosec_Review__c , &quot;Not Required&quot; )),
+ NOT(ISPICKVAL( Infosec_Review__c , &quot;Completed&quot; )),
+ NOT(ISPICKVAL( Legal_Review__c , &quot;Not Required&quot; )),
+ NOT(ISPICKVAL( Infosec_Review__c , &quot;Completed&quot; )))</errorConditionFormula>
+    <errorMessage>To mark this opportunity as won, please update the Legal Review and Infosec Review fields.</errorMessage>
+</ValidationRule>

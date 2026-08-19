@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Primary_Product__c</fullName>
+    <label>Primary Product</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Forge</fullName>
+                <default>false</default>
+                <label>Forge</label>
+            </value>
+            <value>
+                <fullName>Pipelines</fullName>
+                <default>false</default>
+                <label>Pipelines</label>
+            </value>
+            <value>
+                <fullName>Unified Insights</fullName>
+                <default>false</default>
+                <label>Unified Insights</label>
+            </value>
+            <value>
+                <fullName>Copilot</fullName>
+                <default>false</default>
+                <label>Copilot</label>
+            </value>
+            <value>
+                <fullName>Migration</fullName>
+                <default>false</default>
+                <label>Migration</label>
+            </value>
+            <value>
+                <fullName>Salesforce</fullName>
+                <default>false</default>
+                <label>Salesforce</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Agents</fullName>
+                <default>false</default>
+                <label>Agents</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sync_With_Partner_Center__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Whether to sync this opportunity with Microsoft and create a referral</description>
+    <inlineHelpText>Whether to sync this opportunity with Microsoft and create a referral. Cannot sync without solution for &apos;IP Co-sell&apos;.</inlineHelpText>
+    <label>Sync With Partner Center</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>
