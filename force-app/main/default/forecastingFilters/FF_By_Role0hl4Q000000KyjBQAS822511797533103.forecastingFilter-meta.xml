@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ForecastingFilter xmlns="http://soap.sforce.com/2006/04/metadata">
+    <filterLogic>1</filterLogic>
+    <forecastingType>By_Role</forecastingType>
+    <forecastingTypeSource>FTS_By_Role7sy4Q000000KyjBQAS447925418884922</forecastingTypeSource>
+    <isProtected>false</isProtected>
+    <masterLabel>FF_By_Role0hl4Q000000KyjBQAS822511797533103</masterLabel>
+</ForecastingFilter>
