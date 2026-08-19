@@ -1,0 +1,502 @@
+{
+    "items": [
+        {
+            "partner_name": "Sample Partner 1",
+            "populations": [
+                {
+                    "id": 12596,
+                    "name": "Customers"
+                },
+                {
+                    "id": 12597,
+                    "name": "Open Opportunities"
+                },
+                {
+                    "id": 12624,
+                    "name": "Prospects"
+                },
+                {
+                    "id": 12625,
+                    "name": "Test"
+                }
+            ],
+            "partner_source_id": 4065,
+            "crossbeam_uuid": "3fde84a5-b0c1-57bd-a941-337650fcaac0",
+            "partner_populations": [
+                {
+                    "id": 2461,
+                    "name": "Customers"
+                },
+                {
+                    "id": 2462,
+                    "name": "Open Opportunities"
+                }
+            ],
+            "record_name": "Sample Construction Inc.",
+            "crossbeam_id": "a57f774c28723b8b14e788558f959463",
+            "partner_crossbeam_uuid": "311a1e88-884a-5498-9d1a-7580d1f95e7d",
+            "mdm_type": "account",
+            "partner_master": {
+                "top_level": {
+                    "_xb_name": "Sample Construction Inc.",
+                    "_xb_created_at": "2022-07-02T12:18:59.000+00:00",
+                    "_xb_website": "www.Sample.com",
+                    "_xb_uuid": "311a1e88-884a-5498-9d1a-7580d1f95e7d",
+                    "Account Created At": "2022-07-02T12:18:59.000+00:00",
+                    "Account Website": "www.Sample.com",
+                    "Account Type": "Customer - Channel",
+                    "Account Name": "Sample Construction Inc."
+                },
+                "owner": {
+                    "_xb_name": "User User",
+                    "_xb_email": "user1@test.com",
+                    "_xb_uuid": "8614b6de-63b3-5be9-8f06-67520dd71c8e",
+                    "Account Executive Email": "user1@test.com",
+                    "Account Executive Name": "User User"
+                }
+            },
+            "record_id": "001DH00000u5ggMYAQ",
+            "partner_organization_id": 61,
+            "source_id": 18896,
+            "overlap_time": "2023-06-16T20:01:11.000+00:00",
+            "partner_feed_id": 1576,
+            "record_website": "www.Sample.com",
+            "partner_crossbeam_id": "28d5e9e80601c834487f5caa79747fe7"
+        },
+        {
+            "partner_name": "Sample Partner 2",
+            "partner_logo_url": "https://1234.cloudfront.net/styles/logo-thumbnail/s3/082016/untitled-2.png",
+            "populations": [
+                {
+                    "id": 12596,
+                    "name": "Customers"
+                },
+                {
+                    "id": 12597,
+                    "name": "Open Opportunities"
+                },
+                {
+                    "id": 12624,
+                    "name": "Prospects"
+                },
+                {
+                    "id": 12625,
+                    "name": "Test"
+                }
+            ],
+            "partner_source_id": 4136,
+            "crossbeam_uuid": "3fde84a5-b0c1-57bd-a941-337650fcaac0",
+            "partner_populations": [
+                {
+                    "id": 2546,
+                    "name": "EMEA Customers Sample Partner 2"
+                },
+                {
+                    "id": 12567,
+                    "name": "test pop # 2"
+                }
+            ],
+            "record_name": "Sample Construction Inc.",
+            "crossbeam_id": "a57f774c28723b8b14e788558f959463",
+            "partner_crossbeam_uuid": "12c9ea8b-ef46-5b9a-8202-4f7d494fce1e",
+            "mdm_type": "account",
+            "partner_master": {
+                "top_level": {
+                    "_xb_name": "Sample Construction Inc.",
+                    "_xb_website": "http://www.Sample.com",
+                    "account id": "001f200001ZFvyz",
+                    "is customer": "TRUE",
+                    "Company Website": "http://www.Sample.com",
+                    "File Name": "report1617988347521_prepped.csv",
+                    "owner.name": "Johnnyboy22",
+                    "status": "Won",
+                    "Company Name": "Sample Construction Inc.",
+                    "owner2.name": "Johnnyboy2",
+                    "_xb_uuid": "12c9ea8b-ef46-5b9a-8202-4f7d494fce1e",
+                    "Upload Time": "2022-07-21T05:45:48.768+00:00"
+                },
+                "owner": {}
+            },
+            "record_id": "001DH00000u5ggMYAQ",
+            "partner_organization_id": 1395,
+            "source_id": 18896,
+            "partner_feed_id": 1590,
+            "record_website": "www.Sample.com",
+            "partner_crossbeam_id": "424b43c36fe1db91ac3d3c17d7754785"
+        },
+        {
+            "partner_name": "Sample Partner 3",
+            "partner_logo_url": "https://logo.clearbit.com/sample.com",
+            "populations": [
+                {
+                    "id": 12596,
+                    "name": "Customers"
+                },
+                {
+                    "id": 12597,
+                    "name": "Open Opportunities"
+                },
+                {
+                    "id": 12624,
+                    "name": "Prospects"
+                },
+                {
+                    "id": 12625,
+                    "name": "Test"
+                }
+            ],
+            "partner_source_id": 11971,
+            "crossbeam_uuid": "3fde84a5-b0c1-57bd-a941-337650fcaac0",
+            "partner_populations": [
+                {
+                    "id": 6780,
+                    "name": "Customers"
+                },
+                {
+                    "id": 6781,
+                    "name": "Open Opportunities"
+                }
+            ],
+            "record_name": "Sample Construction Inc.",
+            "crossbeam_id": "a57f774c28723b8b14e788558f959463",
+            "partner_crossbeam_uuid": "5e53f051-d90b-5bf3-8922-f70a6cf3df2e",
+            "mdm_type": "account",
+            "partner_master": {
+                "top_level": {
+                    "_xb_name": "Sample Construction Inc.",
+                    "_xb_created_at": "2022-11-21T20:04:18.000+00:00",
+                    "_xb_website": "www.Sample.com",
+                    "_xb_uuid": "5e53f051-d90b-5bf3-8922-f70a6cf3df2e",
+                    "Account Created At": "2022-11-21T20:04:18.000+00:00",
+                    "Account Website": "www.Sample.com",
+                    "Account Type": "Customer - Channel",
+                    "Account Name": "Sample Construction Inc."
+                },
+                "owner": {
+                    "_xb_name": "User User",
+                    "_xb_email": "user1@test.com",
+                    "_xb_uuid": "fdd5cdbd-fc6b-56bf-aa8f-5d63cf6a39ac",
+                    "Account Executive Email": "user1@test.com",
+                    "Account Executive Name": "User User"
+                }
+            },
+            "record_id": "001DH00000u5ggMYAQ",
+            "partner_organization_id": 532,
+            "source_id": 18896,
+            "overlap_time": "2023-06-16T20:01:11.000+00:00",
+            "partner_feed_id": 4030,
+            "record_website": "www.Sample.com",
+            "partner_crossbeam_id": "056ca810707dd550589fc775135f3fdc"
+        },
+        {
+            "partner_name": "Sample Partner 2",
+            "partner_logo_url": "https://d1yjjnpx0p53s8.cloudfront.net/styles/logo-thumbnail/s3/082016/untitled-2.png",
+            "populations": [
+                {
+                    "id": 12596,
+                    "name": "Customers"
+                },
+                {
+                    "id": 12597,
+                    "name": "Open Opportunities"
+                },
+                {
+                    "id": 12624,
+                    "name": "Prospects"
+                },
+                {
+                    "id": 12625,
+                    "name": "Test"
+                }
+            ],
+            "partner_source_id": 18699,
+            "crossbeam_uuid": "3fde84a5-b0c1-57bd-a941-337650fcaac0",
+            "partner_populations": [
+                {
+                    "id": 12522,
+                    "name": "Open Opportunities"
+                },
+                {
+                    "id": 12523,
+                    "name": "Prospects"
+                }
+            ],
+            "record_name": "Sample Construction Inc.",
+            "crossbeam_id": "a57f774c28723b8b14e788558f959463",
+            "partner_crossbeam_uuid": "207a54a4-b8c9-5a47-8069-a6f5c55dc6af",
+            "mdm_type": "account",
+            "partner_master": {
+                "top_level": {
+                    "Billing Country": "France",
+                    "Industry": "Construction",
+                    "Account Type": "Customer - Channel",
+                    "Account Name": "Sample Construction Inc.",
+                    "_xb_name": "Sample Construction Inc.",
+                    "Owner ID": "005Dp000002cMsqIAE",
+                    "_xb_website": "www.Sample.com",
+                    "Account Website": "www.Sample.com",
+                    "Account Created At": "2023-05-11T00:42:39.000+00:00",
+                    "_xb_created_at": "2023-05-11T00:42:39.000+00:00",
+                    "_xb_uuid": "207a54a4-b8c9-5a47-8069-a6f5c55dc6af",
+                    "Employees": 2680
+                },
+                "owner": {
+                    "_xb_name": "User User",
+                    "_xb_email": "user2@test.com",
+                    "_xb_uuid": "630a22cd-5e75-55db-bf31-a27fad3968b6",
+                    "Account Executive Email": "user2@test.com",
+                    "Account Executive Name": "User User"
+                }
+            },
+            "record_id": "001DH00000u5ggMYAQ",
+            "partner_organization_id": 1395,
+            "source_id": 18896,
+            "overlap_time": "2023-06-16T20:01:11.000+00:00",
+            "partner_feed_id": 6780,
+            "record_website": "www.Sample.com",
+            "partner_crossbeam_id": "074ac6b9785de73b746a10e2f550abce"
+        },
+        {
+            "partner_name": "Sample Partner 2",
+            "partner_logo_url": "https://d1yjjnpx0p53s8.cloudfront.net/styles/logo-thumbnail/s3/082016/untitled-2.png",
+            "populations": [
+                {
+                    "id": 12596,
+                    "name": "Customers"
+                },
+                {
+                    "id": 12597,
+                    "name": "Open Opportunities"
+                },
+                {
+                    "id": 12624,
+                    "name": "Prospects"
+                },
+                {
+                    "id": 12625,
+                    "name": "Test"
+                }
+            ],
+            "partner_source_id": 18699,
+            "crossbeam_uuid": "3fde84a5-b0c1-57bd-a941-337650fcaac0",
+            "partner_populations": [
+                {
+                    "id": 12522,
+                    "name": "Open Opportunities"
+                },
+                {
+                    "id": 12523,
+                    "name": "Prospects"
+                }
+            ],
+            "record_name": "Sample Construction Inc.",
+            "crossbeam_id": "a57f774c28723b8b14e788558f959463",
+            "partner_crossbeam_uuid": "c714dd1e-7213-54b3-8ef2-927fcdb33cc3",
+            "mdm_type": "account",
+            "partner_master": {
+                "top_level": {
+                    "Account Type": "Customer - Channel",
+                    "Account Name": "Sample Construction Inc.",
+                    "_xb_name": "Sample Construction Inc.",
+                    "Owner ID": "005Dp000002cMsqIAE",
+                    "_xb_website": "www.Sample.com",
+                    "Account Website": "www.Sample.com",
+                    "Account Created At": "2023-05-26T19:21:05.000+00:00",
+                    "_xb_created_at": "2023-05-26T19:21:05.000+00:00",
+                    "_xb_uuid": "c714dd1e-7213-54b3-8ef2-927fcdb33cc3"
+                },
+                "owner": {
+                    "_xb_name": "User User",
+                    "_xb_email": "user2@test.com",
+                    "_xb_uuid": "630a22cd-5e75-55db-bf31-a27fad3968b6",
+                    "Account Executive Email": "user2@test.com",
+                    "Account Executive Name": "User User"
+                }
+            },
+            "record_id": "001DH00000u5ggMYAQ",
+            "partner_organization_id": 1395,
+            "source_id": 18896,
+            "overlap_time": "2023-06-16T20:01:11.000+00:00",
+            "partner_feed_id": 6780,
+            "record_website": "www.Sample.com",
+            "partner_crossbeam_id": "6862917b7857b5d758250221d492fc62"
+        },
+        {
+            "partner_name": "Sample Partner 2",
+            "partner_logo_url": "https://1234.cloudfront.net/styles/logo-thumbnail/s3/082016/untitled-2.png",
+            "populations": [
+                {
+                    "id": 12596,
+                    "name": "Customers"
+                },
+                {
+                    "id": 12597,
+                    "name": "Open Opportunities"
+                },
+                {
+                    "id": 12624,
+                    "name": "Prospects"
+                },
+                {
+                    "id": 12625,
+                    "name": "Test"
+                }
+            ],
+            "partner_source_id": 18700,
+            "crossbeam_uuid": "3fde84a5-b0c1-57bd-a941-337650fcaac0",
+            "partner_populations": [
+                {
+                    "id": 12566,
+                    "name": "Leads"
+                }
+            ],
+            "record_name": "Sample Construction Inc.",
+            "crossbeam_id": "a57f774c28723b8b14e788558f959463",
+            "partner_crossbeam_uuid": "61bce720-dd0f-5b1a-8db2-e2e4ff8a17a7",
+            "mdm_type": "lead",
+            "partner_master": {
+                "top_level": {
+                    "_xb_email": "pat@Sample.net",
+                    "_xb_uuid": "61bce720-dd0f-5b1a-8db2-e2e4ff8a17a7",
+                    "Lead Name": "Pat Stumuller",
+                    "Converted": false,
+                    "Lead Email": "pat@Sample.net"
+                },
+                "owner": {
+                    "_xb_name": "User User",
+                    "_xb_email": "user2@test.com",
+                    "_xb_uuid": "630a22cd-5e75-55db-bf31-a27fad3968b6",
+                    "Account Executive Email": "user2@test.com",
+                    "Account Executive Name": "User User"
+                }
+            },
+            "record_id": "001DH00000u5ggMYAQ",
+            "partner_organization_id": 1395,
+            "source_id": 18896,
+            "partner_feed_id": 6780,
+            "record_website": "www.Sample.com",
+            "partner_crossbeam_id": "d5035ae2113bd1653354e5bf275631c1"
+        },
+        {
+            "partner_name": "Sample Partner 4",
+            "populations": [
+                {
+                    "id": 12596,
+                    "name": "Customers"
+                },
+                {
+                    "id": 12597,
+                    "name": "Open Opportunities"
+                },
+                {
+                    "id": 12624,
+                    "name": "Prospects"
+                },
+                {
+                    "id": 12625,
+                    "name": "Test"
+                }
+            ],
+            "partner_source_id": 18783,
+            "crossbeam_uuid": "3fde84a5-b0c1-57bd-a941-337650fcaac0",
+            "partner_populations": [
+                {
+                    "id": 12554,
+                    "name": "Customers"
+                },
+                {
+                    "id": 12555,
+                    "name": "Open Opportunities"
+                },
+                {
+                    "id": 12556,
+                    "name": "Prospects"
+                }
+            ],
+            "record_name": "Sample Construction Inc.",
+            "crossbeam_id": "a57f774c28723b8b14e788558f959463",
+            "partner_crossbeam_uuid": "d7c2ef99-d159-5e2f-9a80-4d608dd15fbf",
+            "mdm_type": "account",
+            "partner_master": {
+                "top_level": {
+                    "Industry": "COMPUTER_SOFTWARE",
+                    "_xb_name": "Sample Construction Inc.",
+                    "_xb_website": "Sample.com",
+                    "Company name": "Sample Construction Inc.",
+                    "_xb_created_at": "2023-05-24T12:02:44.956+00:00",
+                    "Country/Region": "United States",
+                    "_xb_uuid": "d7c2ef99-d159-5e2f-9a80-4d608dd15fbf",
+                    "Number of Employees": 10,
+                    "Website URL": "Sample.com",
+                    "Create Date": "2023-05-24T12:02:44.956+00:00"
+                },
+                "owner": {}
+            },
+            "record_id": "001DH00000u5ggMYAQ",
+            "partner_organization_id": 2007,
+            "source_id": 18896,
+            "overlap_time": "2023-06-16T20:01:11.000+00:00",
+            "partner_feed_id": 6793,
+            "record_website": "www.Sample.com",
+            "partner_crossbeam_id": "71a888988175cd722d8e2c195663f21a"
+        },
+        {
+            "partner_name": "Sample Partner 4",
+            "populations": [
+                {
+                    "id": 12596,
+                    "name": "Customers"
+                },
+                {
+                    "id": 12597,
+                    "name": "Open Opportunities"
+                },
+                {
+                    "id": 12624,
+                    "name": "Prospects"
+                },
+                {
+                    "id": 12625,
+                    "name": "Test"
+                }
+            ],
+            "partner_source_id": 18811,
+            "crossbeam_uuid": "3fde84a5-b0c1-57bd-a941-337650fcaac0",
+            "partner_populations": [
+                {
+                    "id": 12573,
+                    "name": "sheeet"
+                }
+            ],
+            "record_name": "Sample Construction Inc.",
+            "crossbeam_id": "a57f774c28723b8b14e788558f959463",
+            "partner_crossbeam_uuid": "15fc0316-0135-5cb0-9d31-88ccefdcdb86",
+            "mdm_type": "account",
+            "partner_master": {
+                "top_level": {
+                    "_xb_name": "Sample Construction Inc. TS",
+                    "_xb_website": "www.Sample.com",
+                    "_xb_uuid": "15fc0316-0135-5cb0-9d31-88ccefdcdb86",
+                    "Account Executive Email": "user2@test.com",
+                    "Account Executive Name": "User User",
+                    "Account Website": "www.Sample.com",
+                    "Account Name": "Sample Construction Inc. TS"
+                },
+                "owner": {
+                    "_xb_name": "User User",
+                    "_xb_email": "user2@test.com",
+                    "_xb_uuid": "23b32cf4-fc85-5cdb-9375-30807e1520b9",
+                    "Account Executive Name": "User User",
+                    "Account Executive Email": "user2@test.com"
+                }
+            },
+            "record_id": "001DH00000u5ggMYAQ",
+            "partner_organization_id": 2007,
+            "source_id": 18896,
+            "overlap_time": "2023-06-16T20:01:11.000+00:00",
+            "partner_feed_id": 4790,
+            "record_website": "www.Sample.com",
+            "partner_crossbeam_id": "547b0164ca5c73d37bae535933692c67"
+        }
+    ]
+}
