@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Account_Journey__c</fullName>
+    <label>Account Journey</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Target</fullName>
+                <default>true</default>
+                <label>Target</label>
+            </value>
+            <value>
+                <fullName>Aware</fullName>
+                <default>false</default>
+                <label>Aware</label>
+            </value>
+            <value>
+                <fullName>Marketing Qualified</fullName>
+                <default>false</default>
+                <label>Marketing Qualified</label>
+            </value>
+            <value>
+                <fullName>Opportunity</fullName>
+                <default>false</default>
+                <label>Opportunity</label>
+            </value>
+            <value>
+                <fullName>Customer</fullName>
+                <default>false</default>
+                <label>Customer</label>
+            </value>
+            <value>
+                <fullName>Former Customer</fullName>
+                <default>false</default>
+                <label>Former Customer</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

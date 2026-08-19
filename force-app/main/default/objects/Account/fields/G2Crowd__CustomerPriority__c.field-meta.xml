@@ -1,28 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
-    <fullName>Property_Status__c</fullName>
-    <label>Property Status</label>
+    <fullName>G2Crowd__CustomerPriority__c</fullName>
+    <deprecated>false</deprecated>
+    <label>Customer Priority</label>
     <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
     <trackHistory>false</trackHistory>
-    <trackTrending>false</trackTrending>
     <type>Picklist</type>
     <valueSet>
         <valueSetDefinition>
             <sorted>false</sorted>
             <value>
-                <fullName>Available</fullName>
-                <default>true</default>
-                <label>Available</label>
+                <fullName>High</fullName>
+                <default>false</default>
+                <label>High</label>
             </value>
             <value>
-                <fullName>Pending</fullName>
+                <fullName>Low</fullName>
                 <default>false</default>
-                <label>Pending</label>
+                <label>Low</label>
             </value>
             <value>
-                <fullName>Sold</fullName>
+                <fullName>Medium</fullName>
                 <default>false</default>
-                <label>Sold</label>
+                <label>Medium</label>
             </value>
         </valueSetDefinition>
     </valueSet>

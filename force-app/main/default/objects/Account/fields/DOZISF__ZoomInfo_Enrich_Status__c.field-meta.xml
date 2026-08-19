@@ -1,28 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
-    <fullName>Property_Status__c</fullName>
-    <label>Property Status</label>
+    <fullName>DOZISF__ZoomInfo_Enrich_Status__c</fullName>
+    <deprecated>false</deprecated>
+    <label>ZoomInfo Enrich Status</label>
     <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
     <trackHistory>false</trackHistory>
-    <trackTrending>false</trackTrending>
     <type>Picklist</type>
     <valueSet>
         <valueSetDefinition>
             <sorted>false</sorted>
             <value>
-                <fullName>Available</fullName>
-                <default>true</default>
-                <label>Available</label>
+                <fullName>Enriched</fullName>
+                <default>false</default>
+                <label>Enriched</label>
             </value>
             <value>
-                <fullName>Pending</fullName>
+                <fullName>Error</fullName>
                 <default>false</default>
-                <label>Pending</label>
+                <label>Error</label>
             </value>
             <value>
-                <fullName>Sold</fullName>
+                <fullName>No-Match</fullName>
                 <default>false</default>
-                <label>Sold</label>
+                <label>No-Match</label>
             </value>
         </valueSetDefinition>
     </valueSet>

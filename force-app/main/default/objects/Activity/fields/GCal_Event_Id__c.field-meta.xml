@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>GCal_Event_Id__c</fullName>
+    <caseSensitive>true</caseSensitive>
+    <description>Google Calendar event ID. Idempotency key for the GCal sync robot. Do not edit.</description>
+    <externalId>true</externalId>
+    <label>GCal_Event_Id</label>
+    <length>255</length>
+    <required>false</required>
+    <type>Text</type>
+    <unique>true</unique>
+</CustomField>

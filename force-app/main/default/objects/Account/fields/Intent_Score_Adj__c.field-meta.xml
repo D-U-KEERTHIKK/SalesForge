@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Intent_Score_Adj__c</fullName>
+    <externalId>false</externalId>
+    <formula>if(or(isblank( Intent_Raw_Score__c ), Intent_Raw_Score__c == 0),
+0,
+max(1,min(10,round((0.5*Intent_Raw_Score__c)+0.1,0)))
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Intent Score Adj</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,28 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
-    <fullName>Property_Status__c</fullName>
-    <label>Property Status</label>
+    <fullName>G2Crowd__UpsellOpportunity__c</fullName>
+    <deprecated>false</deprecated>
+    <label>Upsell Opportunity</label>
     <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
     <trackHistory>false</trackHistory>
-    <trackTrending>false</trackTrending>
     <type>Picklist</type>
     <valueSet>
         <valueSetDefinition>
             <sorted>false</sorted>
             <value>
-                <fullName>Available</fullName>
-                <default>true</default>
-                <label>Available</label>
+                <fullName>Maybe</fullName>
+                <default>false</default>
+                <label>Maybe</label>
             </value>
             <value>
-                <fullName>Pending</fullName>
+                <fullName>No</fullName>
                 <default>false</default>
-                <label>Pending</label>
+                <label>No</label>
             </value>
             <value>
-                <fullName>Sold</fullName>
+                <fullName>Yes</fullName>
                 <default>false</default>
-                <label>Sold</label>
+                <label>Yes</label>
             </value>
         </valueSetDefinition>
     </valueSet>

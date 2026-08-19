@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Match_Method__c</fullName>
+    <inlineHelpText>How the GCal sync robot matched this event to its Account.</inlineHelpText>
+    <label>Match_Method</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Account Website Domain</fullName>
+                <default>false</default>
+                <label>Account Website Domain</label>
+            </value>
+            <value>
+                <fullName>Contact Email Domain</fullName>
+                <default>false</default>
+                <label>Contact Email Domain</label>
+            </value>
+            <value>
+                <fullName>Lead Mapped Account</fullName>
+                <default>false</default>
+                <label>Lead Mapped Account</label>
+            </value>
+            <value>
+                <fullName>Title Regex</fullName>
+                <default>false</default>
+                <label>Title Regex</label>
+            </value>
+            <value>
+                <fullName>Manual</fullName>
+                <default>false</default>
+                <label>Manual</label>
+            </value>
+            <value>
+                <fullName>lead2acct</fullName>
+                <default>false</default>
+                <label>lead2acct</label>
+            </value>
+            <value>
+                <fullName>unmatched</fullName>
+                <default>false</default>
+                <label>unmatched</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

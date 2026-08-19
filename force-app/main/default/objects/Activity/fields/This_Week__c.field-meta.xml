@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>This_Week__c</fullName>
+    <formula>IF(
+
+IF( 
+  CEILING( ( ActivityDate - DATE( YEAR( ActivityDate ), 1, 1) + 1) / 7) &gt; 52,
+  52,
+  CEILING( ( ActivityDate - DATE( YEAR( ActivityDate ), 1, 1) + 1) / 7)
+)
+ 
+=
+
+IF( 
+  CEILING( ( TODAY() - DATE( YEAR( TODAY() ), 1, 1) + 1) / 7) &gt; 52,
+  52,
+  CEILING( ( TODAY() - DATE( YEAR( TODAY() ), 1, 1) + 1) / 7)
+) , TRUE , FALSE)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>This Week</label>
+    <type>Checkbox</type>
+</CustomField>
