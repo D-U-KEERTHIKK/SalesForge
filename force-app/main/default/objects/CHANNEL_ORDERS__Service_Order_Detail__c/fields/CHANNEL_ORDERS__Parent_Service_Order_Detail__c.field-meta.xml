@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CHANNEL_ORDERS__Parent_Service_Order_Detail__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>This field is populated in case of bundle detail record</description>
+    <label>Parent Service Order Detail</label>
+    <referenceTo>CHANNEL_ORDERS__Service_Order_Detail__c</referenceTo>
+    <relationshipLabel>Service Order Detail</relationshipLabel>
+    <relationshipName>Service_Order_Detail</relationshipName>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

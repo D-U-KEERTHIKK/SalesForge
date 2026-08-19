@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Date_Added_to_Sequence__c</fullName>
+    <formula>if( isblank(ContactId),
+ Lead.Outreach_Date_Added_to_Sequence__c ,
+ Contact.Outreach_Date_Added_to_Sequence__c 
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Date Added to Sequence</label>
+    <required>false</required>
+    <type>Date</type>
+</CustomField>
