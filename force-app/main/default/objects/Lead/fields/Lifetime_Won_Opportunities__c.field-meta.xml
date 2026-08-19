@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Lifetime_Won_Opportunities__c</fullName>
+    <description>Check lifetime won opportunities on matched account to see if they are a customer.</description>
+    <externalId>false</externalId>
+    <formula>Znu_Matched_Account__r.Lifetime_Won_Opportunities__c</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Lifetime Won Opportunities</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

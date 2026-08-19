@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MQL__c</fullName>
+    <description>Formula to mark a checkbox - if MQL Date is filled in, lead is marked an MQL</description>
+    <formula>IF(ISBLANK(MQL_Date__c),FALSE,TRUE)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>MQL</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

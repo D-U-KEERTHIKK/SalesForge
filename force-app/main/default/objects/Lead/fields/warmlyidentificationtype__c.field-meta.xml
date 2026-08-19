@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>warmlyidentificationtype__c</fullName>
+    <description>The source for how Warmly identified the contact&apos;s email</description>
+    <label>Warmly: Identification Source</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>w_email</fullName>
+                <default>false</default>
+                <label>w_email</label>
+            </value>
+            <value>
+                <fullName>form_fill</fullName>
+                <default>false</default>
+                <label>Form Fill</label>
+            </value>
+            <value>
+                <fullName>inbound_chat_inquiry</fullName>
+                <default>false</default>
+                <label>Inbound Chat Form</label>
+            </value>
+            <value>
+                <fullName>shared_cookie</fullName>
+                <default>false</default>
+                <label>Shared Warmly Cookie</label>
+            </value>
+            <value>
+                <fullName>hubspotutk</fullName>
+                <default>false</default>
+                <label>HubspotUTK Cookie</label>
+            </value>
+            <value>
+                <fullName>previous_session</fullName>
+                <default>false</default>
+                <label>Previous Session</label>
+            </value>
+            <value>
+                <fullName>warmly_contact</fullName>
+                <default>false</default>
+                <label>IP to Contact Database</label>
+            </value>
+            <value>
+                <fullName>ai_chat_email_followup</fullName>
+                <default>false</default>
+                <label>AI Chat Form</label>
+            </value>
+            <value>
+                <fullName>warmly_login</fullName>
+                <default>false</default>
+                <label>Warmly User</label>
+            </value>
+            <value>
+                <fullName>rb2b</fullName>
+                <default>false</default>
+                <label>RB2B Contact</label>
+            </value>
+            <value>
+                <fullName>vector</fullName>
+                <default>false</default>
+                <label>Vector Contact</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MQL_Date__c</fullName>
+    <description>Timestamp for when the Lead became a Marketing Qualified Lead.</description>
+    <inlineHelpText>The day this Lead became a MQL.</inlineHelpText>
+    <label>MQL Date</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Date</type>
+</CustomField>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Outreach_Finished_Sequences__c</fullName>
+    <description>All sequences that the prospect has completed via Outreach</description>
+    <inlineHelpText>All sequences that the prospect has completed via Outreach</inlineHelpText>
+    <label>Finished Sequences</label>
+    <length>30000</length>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>LongTextArea</type>
+    <visibleLines>2</visibleLines>
+</CustomField>
