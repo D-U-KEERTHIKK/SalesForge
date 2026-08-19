@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Prompt xmlns="http://soap.sforce.com/2006/04/metadata">
+    <masterLabel>Order Target</masterLabel>
+    <promptVersions>
+        <body>&lt;p&gt;* You’ll find the New Service Order button highlighted here at the top.&lt;/p&gt;&lt;p&gt;* Click &apos;Create New Service Order&apos; to get started with creating a new customer order.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Don&apos;t see the &apos;Create New Service Order&apos; button here? You&apos;ll need to update your COA settings.&lt;/p&gt;</body>
+        <customApplication>CHANNEL_ORDERS__Partner_Order</customApplication>
+        <delayDays>1</delayDays>
+        <dismissButtonLabel>Dismiss</dismissButtonLabel>
+        <displayType>Targeted</displayType>
+        <isPublished>true</isPublished>
+        <masterLabel>Order Target Step 1</masterLabel>
+        <publishedDate>2025-03-17</publishedDate>
+        <referenceElementContext>{&quot;scope&quot;:{&quot;attributes&quot;:{&quot;id&quot;:&quot;CHANNEL_ORDERS_partnerHomePage&quot;}},&quot;version&quot;:2}</referenceElementContext>
+        <shouldDisplayActionButton>false</shouldDisplayActionButton>
+        <shouldIgnoreGlobalDelay>true</shouldIgnoreGlobalDelay>
+        <startDate>2023-10-28</startDate>
+        <stepNumber>1</stepNumber>
+        <targetPageKey1>home</targetPageKey1>
+        <targetPageType>standard__namedPage</targetPageType>
+        <themeColor>Theme1</themeColor>
+        <themeSaturation>Dark</themeSaturation>
+        <timesToDisplay>1</timesToDisplay>
+        <title>Create New Service Order</title>
+        <userAccess>Everyone</userAccess>
+        <userProfileAccess>Everyone</userProfileAccess>
+        <versionNumber>1</versionNumber>
+    </promptVersions>
+    <promptVersions>
+        <actionButtonLabel>Update COA Settings</actionButtonLabel>
+        <actionButtonLink>/lightning/n/CHANNEL_ORDERS__In_App_Guidance_Setup</actionButtonLink>
+        <body>&lt;p&gt;* You&apos;ll find new information and resources here about your Channel Order Application.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Don&apos;t see the &apos;Partner Order Resources&apos; here? You&apos;ll need to update your COA settings.&lt;/p&gt;</body>
+        <customApplication>CHANNEL_ORDERS__Partner_Order</customApplication>
+        <dismissButtonLabel>Dismiss</dismissButtonLabel>
+        <displayType>Targeted</displayType>
+        <isPublished>false</isPublished>
+        <masterLabel>Order Target Step 2</masterLabel>
+        <referenceElementContext>{&quot;scope&quot;:{&quot;attributes&quot;:{&quot;id&quot;:&quot;CHANNEL_ORDERS_partnerOrderResources&quot;}},&quot;version&quot;:2}</referenceElementContext>
+        <shouldDisplayActionButton>true</shouldDisplayActionButton>
+        <shouldIgnoreGlobalDelay>false</shouldIgnoreGlobalDelay>
+        <stepNumber>2</stepNumber>
+        <targetPageKey1>home</targetPageKey1>
+        <targetPageType>standard__namedPage</targetPageType>
+        <title>Partner Order Resources</title>
+        <userAccess>Everyone</userAccess>
+        <userProfileAccess>Everyone</userProfileAccess>
+        <versionNumber>1</versionNumber>
+    </promptVersions>
+</Prompt>

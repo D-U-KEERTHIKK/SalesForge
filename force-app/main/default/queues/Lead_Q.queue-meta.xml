@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesIncludeBosses>true</doesIncludeBosses>
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <name>Lead Q</name>
+    <queueMembers>
+        <users>
+            <user>jihan.kim@opsera.io</user>
+            <user>smoca@opsera.io</user>
+        </users>
+    </queueMembers>
+    <queueRoutingConfig>Lead_Routing</queueRoutingConfig>
+    <queueSobject>
+        <sobjectType>Lead</sobjectType>
+    </queueSobject>
+</Queue>

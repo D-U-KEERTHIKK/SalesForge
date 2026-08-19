@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>G2Crowd__Timeframe__c</fullName>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <formula>IF( TEXT(G2Crowd__Period__c) == &apos;1&apos;, &apos;Day&apos;, IF( TEXT(G2Crowd__Period__c) == &apos;7&apos;, &apos;Week&apos;, IF( TEXT(G2Crowd__Period__c) == &apos;30&apos;, &apos;Month&apos;, &apos;Older&apos;) ) )</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Timeframe</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

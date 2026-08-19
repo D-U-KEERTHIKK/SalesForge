@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CHANNEL_ORDERS__VR03_PCCT_RestrictTMOrders</fullName>
+    <active>true</active>
+    <errorConditionFormula>ISPICKVAL(CHANNEL_ORDERS__Partner_Contract_Rules__r.CHANNEL_ORDERS__Type__c ,&apos;ISVForce_TM&apos;)</errorConditionFormula>
+    <errorMessage>Transactable Marketplace orders cannot be submitted from here, please navigate to the Partner Marketplace app to submit Transactable Marketplace orders.</errorMessage>
+</ValidationRule>

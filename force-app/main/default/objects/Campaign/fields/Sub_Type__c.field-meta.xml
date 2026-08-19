@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sub_Type__c</fullName>
+    <label>Sub-Type</label>
+    <required>true</required>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Type</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>Campaign (Email)</fullName>
+                <default>false</default>
+                <label>Campaign (Email)</label>
+            </value>
+            <value>
+                <fullName>Contact Us</fullName>
+                <default>false</default>
+                <label>Contact Us</label>
+            </value>
+            <value>
+                <fullName>Digital (Paid Media)</fullName>
+                <default>false</default>
+                <label>Digital (Paid Media)</label>
+            </value>
+            <value>
+                <fullName>Direct (Email)</fullName>
+                <default>false</default>
+                <label>Direct (Email)</label>
+            </value>
+            <value>
+                <fullName>Free Trial (Product)</fullName>
+                <default>false</default>
+                <label>Free Trial (Product)</label>
+            </value>
+            <value>
+                <fullName>Gate (Content)</fullName>
+                <default>false</default>
+                <label>Gate (Content)</label>
+            </value>
+            <value>
+                <fullName>Hosted (Webinar)</fullName>
+                <default>false</default>
+                <label>Hosted (Webinar)</label>
+            </value>
+            <value>
+                <fullName>Legacy</fullName>
+                <default>false</default>
+                <label>Legacy</label>
+            </value>
+            <value>
+                <fullName>Live (Event)</fullName>
+                <default>false</default>
+                <label>Live (Event)</label>
+            </value>
+            <value>
+                <fullName>Live Chat</fullName>
+                <default>false</default>
+                <label>Live Chat</label>
+            </value>
+            <value>
+                <fullName>Market Research (Other)</fullName>
+                <default>false</default>
+                <label>Market Research (Other)</label>
+            </value>
+            <value>
+                <fullName>Nurture (Email)</fullName>
+                <default>false</default>
+                <label>Nurture (Email)</label>
+            </value>
+            <value>
+                <fullName>Nurture (Operational)</fullName>
+                <default>false</default>
+                <label>Nurture (Operational)</label>
+            </value>
+            <value>
+                <fullName>Online (Event)</fullName>
+                <default>false</default>
+                <label>Online (Event)</label>
+            </value>
+            <value>
+                <fullName>Review Sites (Other)</fullName>
+                <default>false</default>
+                <label>Review Sites (Other)</label>
+            </value>
+            <value>
+                <fullName>Schedule a Demo</fullName>
+                <default>false</default>
+                <label>Schedule a Demo</label>
+            </value>
+            <value>
+                <fullName>Scheduling App (Chili Piper)</fullName>
+                <default>false</default>
+                <label>Scheduling App (Chili Piper)</label>
+            </value>
+            <value>
+                <fullName>Sponsored (Webinar)</fullName>
+                <default>false</default>
+                <label>Sponsored (Webinar)</label>
+            </value>
+            <value>
+                <fullName>Subscription (Content)</fullName>
+                <default>false</default>
+                <label>Subscription (Content)</label>
+            </value>
+            <value>
+                <fullName>Tracking (Operational)</fullName>
+                <default>false</default>
+                <label>Tracking (Operational)</label>
+            </value>
+            <value>
+                <fullName>Tradeshow (Event)</fullName>
+                <default>false</default>
+                <label>Tradeshow (Event)</label>
+            </value>
+            <value>
+                <fullName>Traditional (Paid Media)</fullName>
+                <default>false</default>
+                <label>Traditional (Paid Media)</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Content</controllingFieldValue>
+            <valueName>Gate (Content)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Content</controllingFieldValue>
+            <valueName>Subscription (Content)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Paid Media</controllingFieldValue>
+            <valueName>Digital (Paid Media)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Paid Media</controllingFieldValue>
+            <valueName>Traditional (Paid Media)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Webinar</controllingFieldValue>
+            <valueName>Hosted (Webinar)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Webinar</controllingFieldValue>
+            <valueName>Sponsored (Webinar)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Handraiser</controllingFieldValue>
+            <valueName>Contact Us</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Handraiser</controllingFieldValue>
+            <valueName>Live Chat</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Handraiser</controllingFieldValue>
+            <valueName>Schedule a Demo</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Handraiser</controllingFieldValue>
+            <valueName>Scheduling App (Chili Piper)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Email</controllingFieldValue>
+            <controllingFieldValue>Outbound</controllingFieldValue>
+            <valueName>Campaign (Email)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Email</controllingFieldValue>
+            <controllingFieldValue>Outbound</controllingFieldValue>
+            <valueName>Direct (Email)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Email</controllingFieldValue>
+            <controllingFieldValue>Outbound</controllingFieldValue>
+            <valueName>Nurture (Email)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Product</controllingFieldValue>
+            <valueName>Free Trial (Product)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Event</controllingFieldValue>
+            <valueName>Live (Event)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Event</controllingFieldValue>
+            <valueName>Online (Event)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Event</controllingFieldValue>
+            <valueName>Tradeshow (Event)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Other</controllingFieldValue>
+            <valueName>Market Research (Other)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Other</controllingFieldValue>
+            <valueName>Review Sites (Other)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Operational</controllingFieldValue>
+            <valueName>Nurture (Operational)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Operational</controllingFieldValue>
+            <valueName>Tracking (Operational)</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

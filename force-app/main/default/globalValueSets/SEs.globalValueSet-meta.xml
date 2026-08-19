@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Vince Hinojosa</fullName>
+        <default>false</default>
+        <label>Vince Hinojosa</label>
+    </customValue>
+    <customValue>
+        <fullName>James Mannelly</fullName>
+        <default>false</default>
+        <label>James Mannelly</label>
+    </customValue>
+    <customValue>
+        <fullName>Vince</fullName>
+        <default>false</default>
+        <label>Vince</label>
+    </customValue>
+    <customValue>
+        <fullName>James</fullName>
+        <default>false</default>
+        <label>James</label>
+    </customValue>
+    <customValue>
+        <fullName>Murali</fullName>
+        <default>false</default>
+        <label>Murali</label>
+    </customValue>
+    <customValue>
+        <fullName>Sowmia</fullName>
+        <default>false</default>
+        <label>Sowmia</label>
+    </customValue>
+    <customValue>
+        <fullName>Hema</fullName>
+        <default>false</default>
+        <label>Hema</label>
+    </customValue>
+    <customValue>
+        <fullName>Aruna</fullName>
+        <default>false</default>
+        <label>Aruna</label>
+    </customValue>
+    <customValue>
+        <fullName>Ramya</fullName>
+        <default>false</default>
+        <label>Ramya</label>
+    </customValue>
+    <customValue>
+        <fullName>Nawaz</fullName>
+        <default>false</default>
+        <label>Nawaz</label>
+    </customValue>
+    <masterLabel>SEs</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

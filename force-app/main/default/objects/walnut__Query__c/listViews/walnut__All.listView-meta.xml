@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>walnut__All</fullName>
+    <columns>NAME</columns>
+    <columns>walnut__IsActive__c</columns>
+    <columns>walnut__Action__c</columns>
+    <columns>walnut__DisplayName__c</columns>
+    <columns>walnut__IsSingleRecord__c</columns>
+    <columns>walnut__ObjectName__c</columns>
+    <columns>walnut__Query__c</columns>
+    <filterScope>Mine</filterScope>
+    <label>All</label>
+</ListView>

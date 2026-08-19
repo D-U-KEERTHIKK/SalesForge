@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>demo_reason__c</fullName>
+    <label>What would you like to see in Opsera?</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>End-to-end visibility from ideation to delivery</fullName>
+                <default>false</default>
+                <label>End-to-end visibility from ideation to delivery</label>
+            </value>
+            <value>
+                <fullName>Salesforce DevOps solution</fullName>
+                <default>false</default>
+                <label>Salesforce DevOps solution</label>
+            </value>
+            <value>
+                <fullName>Shift left security</fullName>
+                <default>false</default>
+                <label>Shift left security</label>
+            </value>
+            <value>
+                <fullName>Pipeline automation</fullName>
+                <default>false</default>
+                <label>Pipeline automation</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

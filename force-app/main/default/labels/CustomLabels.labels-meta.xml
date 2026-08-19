@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>AAA_Custom_Field_Test</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AAA Custom Field Tester testing tool</shortDescription>
+        <value>Test the Custom Label</value>
+    </labels>
+    <labels>
+        <fullName>AACustLabel_New</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AACustLabel New</shortDescription>
+        <value>Translation testing</value>
+    </labels>
+    <labels>
+        <fullName>TestQA</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>TestArun10042025</shortDescription>
+        <value>opseradev1</value>
+    </labels>
+</CustomLabels>

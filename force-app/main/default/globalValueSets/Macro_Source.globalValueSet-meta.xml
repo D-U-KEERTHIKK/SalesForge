@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>AEs and SDRs</fullName>
+        <default>false</default>
+        <label>AEs and SDRs</label>
+    </customValue>
+    <customValue>
+        <fullName>Mktg Demand Gen</fullName>
+        <default>false</default>
+        <label>Mktg Demand Gen</label>
+    </customValue>
+    <customValue>
+        <fullName>Partner Programs</fullName>
+        <default>false</default>
+        <label>Partner Programs</label>
+    </customValue>
+    <customValue>
+        <fullName>Expansion &amp; Upsell</fullName>
+        <default>false</default>
+        <label>Expansion &amp; Upsell</label>
+    </customValue>
+    <masterLabel>Macro Source</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

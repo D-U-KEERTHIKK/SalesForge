@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MSA_Signed__c</fullName>
+    <defaultValue>false</defaultValue>
+    <inlineHelpText>Have we signed an MSA with this account?</inlineHelpText>
+    <label>MSA Signed</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

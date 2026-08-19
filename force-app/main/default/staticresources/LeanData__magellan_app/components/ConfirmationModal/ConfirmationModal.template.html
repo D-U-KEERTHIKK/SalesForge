@@ -1,0 +1,32 @@
+<div class="modal fade confirmation-modal <%- largeModal ? 'large-modal' : ''%> <%- innerModal ? 'inner-modal' : ''%>" style="<%- verticallyResizable ? 'padding-bottom: 100px' : ''%>">
+    <div class="modal-dialog" style="width: fit-content;">
+        <div class="modal-content" style="height:initial;">
+            <% if (verticallyResizable) { %>
+                <div style='text-align: center; padding-right: 80px;'>
+                    <div class="bottom-handle vertical-drag-handle-img ui-resizable-s ui-resizable-handle"> </div>
+                </div>
+            <% } %>
+            <div class="dg_inner-wrapper-header" style="display:flex;justify-content:center;align-items:center;padding-top:10px;width: auto; margin-left: auto;">
+                <%=header%>
+            </div>
+            <% if (warningText) { %>
+                <div class="ld-announcement-body modal-warning-message"><%=warningText%></div>
+            <% } %>
+            <div class="modal-content-section" style="height:initial;<%- noContentPadding ? 'padding:0px;' : '' %> <%- showTypeahead ? 'overflow: visible;' : '' %>">
+                <div class="modal-content-text" style="height:initial"><%=message%></div>
+                <% if (hasExtraContent) { %>
+                    <div class="modal-content-extra"><%=footer%></div>
+                <% } %>
+                <% if (showTypeahead) { %>
+                  <div class="modal-nested-typeahead-selector" style="overflow: visible;"></div>
+                <% } %>
+            </div>
+            <div class="modal-button-section" style=" <%- verticallyResizable ?  'padding-bottom:30px !important;' : ''%> height:initial;">
+                <% if(!hideSecondaryButton) { %>
+                    <span class="ld-tertiary-large-button cancel-button"><%=secondaryButtonText%></span>
+                <% } %>
+                <span class="ld-primary-large-button confirm-button" style="margin-left: 5px;"><%=primaryButtonText%></span>
+            </div>
+        </div>
+    </div>
+</div>

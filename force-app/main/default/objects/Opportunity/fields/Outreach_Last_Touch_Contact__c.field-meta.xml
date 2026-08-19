@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Outreach_Last_Touch_Contact__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>The primary contact when this opportunity was first created</description>
+    <inlineHelpText>The primary contact when this opportunity was first created</inlineHelpText>
+    <label>Last Touch Contact</label>
+    <referenceTo>Contact</referenceTo>
+    <relationshipLabel>Opportunities (Last Touch Contact)</relationshipLabel>
+    <relationshipName>Last_Touch_Contact</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Lookup</type>
+</CustomField>

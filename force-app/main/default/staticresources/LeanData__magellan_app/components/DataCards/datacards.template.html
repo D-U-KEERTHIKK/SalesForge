@@ -1,0 +1,19 @@
+<div class="ld-data-card-wrapper ld-line-graph-legend">
+  <% _.each(model.cardInfo, function(card, index) { %>
+  <div class="ld-data-card grey<%- index+1 %> data-card-<%- index+1 %>">
+    <span class="data-title"><%- card.title %></span>
+    <span class="data-value"><%- card.value %></span>
+  </div>
+  <% }) %>
+
+  <div class="line-graph-legend">
+    <svg width="150" height="42">
+      <% model.legendInfo.forEach(function(value, index) { %>
+        <g class="<%-model.lineClasses[index]%>">
+          <text x="118" y="<%- 5 + 16 * index %>"><%- value %></text>
+          <line class="line" x1="130" y1="<%- 5 + 16 * index %>" x2="150" y2="<%- 5 + 16 * index %>" />
+        </g>
+      <% }) %>
+    </svg>
+  </div>
+</div>

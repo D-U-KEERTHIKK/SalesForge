@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Forge</fullName>
+        <default>false</default>
+        <label>Forge</label>
+    </customValue>
+    <customValue>
+        <fullName>Copilot</fullName>
+        <default>false</default>
+        <label>Copilot</label>
+    </customValue>
+    <customValue>
+        <fullName>Migration</fullName>
+        <default>false</default>
+        <label>Migration</label>
+    </customValue>
+    <customValue>
+        <fullName>Pipelines</fullName>
+        <default>false</default>
+        <label>Pipelines</label>
+    </customValue>
+    <customValue>
+        <fullName>Salesforce</fullName>
+        <default>false</default>
+        <label>Salesforce</label>
+    </customValue>
+    <customValue>
+        <fullName>Unified Insights</fullName>
+        <default>false</default>
+        <label>Unified Insights</label>
+    </customValue>
+    <customValue>
+        <fullName>Agents</fullName>
+        <default>false</default>
+        <label>Agents</label>
+    </customValue>
+    <customValue>
+        <fullName>Other</fullName>
+        <default>false</default>
+        <label>Other</label>
+    </customValue>
+    <masterLabel>Primary Use Case</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Date_1_Working__c</fullName>
+    <formula>if(isblank(ContactId),
+ Lead.Date_1_Working__c ,
+ Contact.StatusDate_1_Working__c 
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Date 1 - Working</label>
+    <required>false</required>
+    <type>Date</type>
+</CustomField>

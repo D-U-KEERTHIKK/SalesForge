@@ -1,0 +1,13 @@
+<div class="mnts-selected-list">
+    <% _.each(selection, function(field) { %>
+        <%
+        var lastIndex = selection.length - 1;
+        var punct = type === 'PICKLIST' ? ', ' : '; ';
+        var label = field.label;
+        if (selection[0].label == field.label){ %>
+          <span class="mnts-node"><%-label%></span>
+        <% } else { %>
+        <span class="mnts-node"><%-punct + label%></span>
+        <% } %>
+    <% }); %>
+</div>

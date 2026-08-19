@@ -1,0 +1,6 @@
+<div class="error-banner-text">
+  <% if (actionButtonText) { %><span class="error-banner-action-btn ld-secondary-small-button"><%- actionButtonText %></span> <% } %>
+  <span class="error-banner-primary-text"><%= primaryText %></span>
+  <span class="error-banner-secondary-text"><%= secondaryText %></span>
+</div>
+<% if (!hideCloseButton) { %><div class="error-banner-close-btn"></div><% } %>

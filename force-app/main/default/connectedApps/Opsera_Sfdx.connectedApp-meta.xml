@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ConnectedApp xmlns="http://soap.sforce.com/2006/04/metadata">
+    <contactEmail>sundar@opsera.io</contactEmail>
+    <label>Opsera Sfdx</label>
+    <oauthConfig>
+        <callbackUrl>https://192.168.29.67:3000/sfdc/callback</callbackUrl>
+        <certificate>MIIDNjCCAh4CCQDNp4svWqLD0DANBgkqhkiG9w0BAQsFADBdMQswCQYDVQQGEwJJTjELMAkGA1UECAwCVE4xEDAOBgNVBAcMB0NoZW5uYWkxDzANBgNVBAoMBk9wc2VyYTENMAsGA1UECwwERW5nZzEPMA0GA1UEAwwGT3BzZXJhMB4XDTIxMDMxMDA1NDU1N1oXDTIyMDMxMDA1NDU1N1owXTELMAkGA1UEBhMCSU4xCzAJBgNVBAgMAlROMRAwDgYDVQQHDAdDaGVubmFpMQ8wDQYDVQQKDAZPcHNlcmExDTALBgNVBAsMBEVuZ2cxDzANBgNVBAMMBk9wc2VyYTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAMDGho1VRiybWaxt9/1HZDlpiM75Glt15llPppkzA0SZMK+NPZPh1327tKZEg7FnTNtwchdwknoKt+DvwHc2OnLVSr4P3KXaOmrjypCfqqkzdwEb2dfJ01qKk5kL0BKW9L8lp8OwITR7e9i1Htp8Zu6I2ohE75NtBPvQoNWV5wVEKoOOc/TdZZj1ZetwCfnVOHee2mC5RHvf8QkzvzKur/z0MxACpvhY3SxXtEl3oFs9VPJrJ5oE6AvchuLlsG0PEE33oO2WRQqbdrigNS+SgZbX/xJ+SR9K0GDIhezVM2W6Op9XAIixQt9dYILPDJt4R6BWHSxaeZoWOPKTbM5wcM8CAwEAATANBgkqhkiG9w0BAQsFAAOCAQEAEdHwL6TMBZxhNwOOYgKD7XgMz13yD+iyQkv+CgiLeA2dycEPx5KyYY4t64WJ0GtIEmWjv6FdN+Cok9Er+xdq7sUU+qHqdrVroXcvHWucmVoRWebKVR7ZtN4DhXTpAg8oHMYo19scfA0lVEq6/eRZriXd09YY81aUPzn3uM7bQMJ2/s4Spug+44xL6KafBQ1nmMIQIC1uOUNj1v/HWB+KhBwnj1w1ESp5SGE4L9yR1uPI6qvhnJ17dsuXe2LmXn46DpT9lPkPUyyUFIngtiwj4mlrMR1cg1orkED3F+4AvwQPqNyHmnQgeEUJvd3UcIhGBrDlE7l2g+cMve/FWfpsHQ==</certificate>
+        <consumerKey>3MVG98bly0AKZIIXbXfaAkxa19FgjcEx6oteocLWefb0z_3Uwps9UjzWydBz_SJiQRydJSy2VuHRe7MRUOLO.</consumerKey>
+        <isAdminApproved>true</isAdminApproved>
+        <isClientCredentialEnabled>false</isClientCredentialEnabled>
+        <isCodeCredentialEnabled>false</isCodeCredentialEnabled>
+        <isCodeCredentialPostOnly>false</isCodeCredentialPostOnly>
+        <isConsumerSecretOptional>false</isConsumerSecretOptional>
+        <isIntrospectAllTokens>false</isIntrospectAllTokens>
+        <isNamedUserJwtEnabled>false</isNamedUserJwtEnabled>
+        <isPkceRequired>false</isPkceRequired>
+        <isRefreshTokenRotationEnabled>false</isRefreshTokenRotationEnabled>
+        <isSecretRequiredForRefreshToken>false</isSecretRequiredForRefreshToken>
+        <isSecretRequiredForTokenExchange>false</isSecretRequiredForTokenExchange>
+        <isTokenExchangeEnabled>false</isTokenExchangeEnabled>
+        <scopes>Basic</scopes>
+        <scopes>Api</scopes>
+        <scopes>Web</scopes>
+        <scopes>RefreshToken</scopes>
+        <scopes>Wave</scopes>
+    </oauthConfig>
+    <oauthPolicy>
+        <ipRelaxation>ENFORCE</ipRelaxation>
+        <isTokenExchangeFlowEnabled>false</isTokenExchangeFlowEnabled>
+        <refreshTokenPolicy>infinite</refreshTokenPolicy>
+    </oauthPolicy>
+    <profileName>System Administrator</profileName>
+    <profileName>System Admin - no MFA</profileName>
+</ConnectedApp>

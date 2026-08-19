@@ -1,0 +1,108 @@
+<div class="ld-body-medium">
+  <div class="email-recipients-header-row">
+    <div class="header-font" style="line-height: 12px;">Recipient(s)</div>
+    <div class="ld-secondary-small-button <%- classes['edit-recipients-button'] %>"><%- recipientCards.length > 0 ? 'Edit' : 'Add' %> Recipients</div>
+  </div>
+  <div class="<%- classes['email-recipients-wrapper'] %>">
+    <% _.each(recipientCards, function(recipient) { %>
+      <div class="recipient-card"><%- recipient %></div>
+    <% }) %>
+    <div class="<%- classes['empty-recipients-message'] %>" style="margin-bottom: 10px;">No Recipients</div>
+  </div>
+  <div class="<%- classes['email-recipients-editor'] %>">
+    <div class="recipient-editor-row <%- classes['next-owner-row'] %>">
+      <!-- Next Owner -->
+      <label class="cb-container-small">
+        <div class="owner-label <%- !hasOwnerField ? 'no-owner-field' : '' %>">New Owner</div>
+        <input <%- !hasOwnerField ? 'disabled' : '' %> type="checkbox" 
+          name="next-owner-checkbox" 
+          class="notif-owner-checkbox" 
+          data-owner-type="notifyPostOwner" 
+          <%- recipientData.notifyPostOwner ? 'checked' : '' %> 
+        />
+        <span class="checkmark notif-owner-checkbox"></span>
+      </label>
+    </div>
+    <!-- Previous Owner -->
+    <div class="recipient-editor-row <%- classes['previous-owner-row'] %>">
+      <label class="cb-container-small">
+        <div class="owner-label <%- !hasOwnerField ? 'no-owner-field' : '' %> ">Previous Owner</div>
+        <input <%- !hasOwnerField ? 'disabled' : '' %> type="checkbox" 
+          name="previous-owner-checkbox" 
+          class="notif-owner-checkbox" 
+          data-owner-type="notifyPreOwner" 
+          <%- recipientData.notifyPreOwner ? 'checked' : '' %> 
+         />
+        <span class="checkmark notif-owner-checkbox"></span>
+      </label>
+    </div>
+    <!-- New Object Owner -->
+    <div class="recipient-editor-row new-object-owner-row <%- classes['new-object-owner-row'] %>">
+      <label class="cb-container-small">
+        <div>Created Object Owner</div>
+        <input type="checkbox" 
+          name="new-object-owner-checkbox" 
+          class="notif-owner-checkbox" 
+          data-owner-type="notifyNewObjectOwner" 
+          <%- recipientData.notifyNewObjectOwner ? 'checked' : '' %> />
+        <span class="checkmark"></span>
+      </label>
+    </div>
+    <!-- Additional Recipients -->
+    <div class="recipient-editor-row <%- classes['additional-recipients-row'] %>">
+      <label class="cb-container-small" style="height: fit-content;display:inline-block;">
+        <div style="display: flex;align-items: center;">
+          <%- _LeanData.AppState.PrimarySObjectType === "Meeting" ? "Recipients " : "Additional Recipients" %>
+        </div>
+        <input type="checkbox" 
+          name="additional-recipients-toggle" 
+          class="subcontent-toggle additional-recipients-toggle" 
+          <%- hasAdditionalObjectData ? 'checked' : '' %> 
+        />
+        <span class="checkmark"></span>
+      </label>
+      <span class="ld-tooltip-hint additional-object-recipient-tooltip" style="margin-left:5px;margin-bottom:-5px;"></span>
+      <div class="recipient-editor-subcontent additional-recipients-content <%- hasAdditionalObjectData ? '' : 'hidden' %>" ></div>
+    </div>
+    <!-- Additional Options -->
+    <% _.each(additionalOptions, function(checked, name) {%>
+    <div class="recipient-editor-row <%- classes['additional-recipients-row'] %>">
+      <label class="cb-container-small" style="height: fit-content;display:inline-block;">
+        <div style="display: flex;align-items: center;">
+          <%- name %>
+        </div>
+        <input type="checkbox" 
+          name="<%- name %>" 
+          class="additional-options-checkbox"
+          data-owner-type="<%- name %>"  
+          <%= recipientData.additionalOptions[name] ? 'checked' : '' %>
+        />
+        <span class="checkmark"></span>
+      </label>
+    </div>
+    <% })%>
+    <!-- Email Addresses -->
+    <div class="recipient-editor-row">
+      <label class="cb-container-small">
+        <div>Email Addresses</div>
+        <input type="checkbox" 
+          name="emails-toggle" 
+          class="subcontent-toggle emails-toggle" 
+          <%- !_.isEmpty(recipientData.emails) ? 'checked' : '' %> 
+        />
+        <span class="checkmark"></span>
+      </label>
+        <div class="recipient-editor-subcontent <%- !_.isEmpty(recipientData.emails) ? '' : 'hidden' %> ">
+          <textarea
+              rows="2"
+              class="ld-textarea-large emails-text-area"
+              placeholder="e.g. bob@company.com, tim@company.com"
+          ><%- !_.isEmpty(recipientData.emails) ? recipientData.emails.join(', ') : '' %></textarea>
+        </div>
+    </div>
+
+    <!-- Button -->
+    <div class="ld-secondary-small-button save-receipients-button">Done</div>
+  </div>
+  <div class="error-message email-recipients-error-messages" style="font-size: 10px; font-style: italic;"></div>
+</div>

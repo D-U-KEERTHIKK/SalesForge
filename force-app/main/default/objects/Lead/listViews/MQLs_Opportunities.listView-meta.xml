@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MQLs_Opportunities</fullName>
+    <columns>FULL_NAME</columns>
+    <columns>LEAD.EMAIL</columns>
+    <columns>LEAD.COMPANY</columns>
+    <columns>LEAD.STATE</columns>
+    <columns>LEAD.STATUS</columns>
+    <columns>LEAD.UNREAD</columns>
+    <columns>LEAD.CREATED_DATE</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>LEAD.RECORDTYPE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>LEAD.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Lead.MQL</value>
+    </filters>
+    <filters>
+        <field>LEAD.COMPANY</field>
+        <operation>contains</operation>
+        <value>infoblox,1mg,cerner,amzur,barton,dxc,mindtree,norton,american express,harvard business,starbucks,nutanix,subway,cadence design,united states,zscaler,workday,coupa,planet,quotient,siriusxm,nokia,boomi,mass mutual,forgerock,cepheid</value>
+    </filters>
+    <filters>
+        <field>LEAD.COMPANY</field>
+        <operation>contains</operation>
+        <value>dyson,thermo,allstate,seven,disco,freshworks,fiserv,redis,topcon,policy,coinbase,kaiser,cisco,shopify,collective,satellite</value>
+    </filters>
+    <label>MQLs-Opportunities</label>
+</ListView>

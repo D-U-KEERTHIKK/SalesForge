@@ -1,0 +1,72 @@
+{
+	"items": [
+		{
+			"tags": [
+
+			],
+			"logo_url": null,
+			"name": "Test Partner 1",
+			"partnership_created_at": "2022-11-21T20:31:40.011+00:00",
+			"clearbit_domain": "Test Partner 1.com",
+			"id": 123,
+			"url": "Test Partner 1.com",
+			"domain": "Test Partner 1.com",
+			"uuid": "12345",
+			"partnership_authorizer": {
+				"id": 3301,
+				"first_name": "Test",
+				"last_name": "Test",
+				"gravatar_url": "https://secure.gravatar.com/avatar/test",
+				"email": "test@crossbeam.com",
+				"picture_url": "https://lh3.googleusercontent.com/a/test"
+			},
+			"users": [
+				{
+					"id": 46,
+					"first_name": "Test1",
+					"last_name": "Test1",
+					"gravatar_url": "https://secure.gravatar.com/avatar/test",
+					"email": "test1@crossbeam.com",
+					"picture_url": "https://lh3.googleusercontent.com/a/test"
+				}
+			]
+		},
+		{
+			"tags": [
+				{
+					"id": "03676005-4d8d-41e6-a403-a28727851c76",
+					"label": "TEST 2"
+				},
+				{
+					"id": "03676005-9d5c-40f7-8c60-051f9233a91c",
+					"label": "TEST 1"
+				}
+			],
+			"logo_url": null,
+			"name": "Test Partner 2",
+			"partnership_created_at": "2023-03-21T16:04:16.267+00:00",
+			"clearbit_domain": "test2.com",
+			"id": 456,
+			"url": "test2.com",
+			"domain": "test2.com",
+			"uuid": "12345",
+			"partnership_authorizer": null,
+			"users": [
+				{
+					"id": 1251,
+					"first_name": "Test2",
+					"last_name": "Test2",
+					"gravatar_url": "https://secure.gravatar.com/avatar/test",
+					"email": "test2@crossbeam.com",
+					"picture_url": null
+				}
+			]
+		}
+	],
+	"proposals": [
+
+	],
+	"proposals_received": [
+
+	]
+}

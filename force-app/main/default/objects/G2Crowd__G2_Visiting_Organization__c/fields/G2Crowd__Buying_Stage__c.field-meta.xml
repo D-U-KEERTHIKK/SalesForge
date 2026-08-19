@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>G2Crowd__Buying_Stage__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Buying Stage evaluates your buyer&apos;s journey across G2 using multiple funnel-dependent factors, including page engagement and signal type.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Buying Stage takes into account an organization’s journey on G2, i.e. types of pages visited, and the level of engagement on each page.</inlineHelpText>
+    <label>Buying Stage</label>
+    <length>100</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

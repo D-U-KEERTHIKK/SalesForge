@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Kumar</fullName>
+        <default>false</default>
+        <label>Kumar</label>
+    </customValue>
+    <customValue>
+        <fullName>Patty</fullName>
+        <default>false</default>
+        <label>Patty</label>
+    </customValue>
+    <customValue>
+        <fullName>Vishnu</fullName>
+        <default>false</default>
+        <label>Vishnu</label>
+    </customValue>
+    <customValue>
+        <fullName>Matt</fullName>
+        <default>false</default>
+        <label>Matt</label>
+    </customValue>
+    <masterLabel>Exec Sponsors</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

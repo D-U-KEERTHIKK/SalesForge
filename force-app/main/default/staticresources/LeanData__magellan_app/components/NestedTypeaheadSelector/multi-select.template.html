@@ -1,0 +1,17 @@
+<div class="multiselect-dropdown-option" style="padding: 0;">
+  <label class="cb-container-small" style="height: auto; padding-left: 35px;">
+  <div style="font-size:10px; line-height: 30px;"><%- suggestion.label %></div>
+  <% var check = false;
+    for (var i = 0; i < this.selection.length; i++){
+      if (suggestion.label === this.selection[i].label){
+        check = true; break;
+      }
+    }
+    if (check){ %>
+      <input type="checkbox" checked name="multi-nestedtypeahead-checkbox" class="multi-nestedtypeahead-checkbox" data-label="<%- suggestion.label %>" />
+    <% } else {%>
+      <input type="checkbox" name="multi-nestedtypeahead-checkbox" class="multi-nestedtypeahead-checkbox" data-label="<%- suggestion.label %>" />
+    <% } %>
+    <span class="checkmark" style="margin: 8px 0 0 10px;"></span>
+  </label>
+</div>

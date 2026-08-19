@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <defaultLandingTab>standard-home</defaultLandingTab>
+    <description>AffectLayer CTI and Analytics</description>
+    <formFactors>Large</formFactors>
+    <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
+    <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
+    <isNavTabPersistenceDisabled>false</isNavTabPersistenceDisabled>
+    <isOmniPinnedViewEnabled>false</isOmniPinnedViewEnabled>
+    <label>AffectLayer</label>
+    <tabs>affectlayer__AffectLayer_Reports</tabs>
+    <tabs>affectlayer__AffectLayer_User_Settings</tabs>
+    <tabs>affectlayer__AffectLayer_Admin_Settings</tabs>
+    <tabs>standard-Account</tabs>
+    <tabs>standard-Contact</tabs>
+    <tabs>affectlayer__ChorusEngagementUser__c</tabs>
+    <tabs>affectlayer__ChorusEngagementContact__c</tabs>
+    <tabs>affectlayer__Engagement__c</tabs>
+    <tabs>affectlayer__Moment__c</tabs>
+    <tabs>Deal_Snapshot__c</tabs>
+</CustomApplication>

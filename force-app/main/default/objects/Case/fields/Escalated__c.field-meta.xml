@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Escalated__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Indicates whether this case is currently or was previously escalated. Set automatically by the Case Escalation Notification flow — do not require it on page layouts as a manually-editable field for end users, since automation owns it.</description>
+    <label>Escalated</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

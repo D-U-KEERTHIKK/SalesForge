@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>warmlyutmmediums__c</fullName>
+    <description>List of UTM mediums from sessions for this visitor</description>
+    <label>Warmly: UTM Mediums</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>default</fullName>
+                <default>false</default>
+                <label>default</label>
+            </value>
+            <value>
+                <fullName>cpc</fullName>
+                <default>false</default>
+                <label>cpc</label>
+            </value>
+            <value>
+                <fullName>newsletter</fullName>
+                <default>false</default>
+                <label>newsletter</label>
+            </value>
+            <value>
+                <fullName>email</fullName>
+                <default>false</default>
+                <label>email</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

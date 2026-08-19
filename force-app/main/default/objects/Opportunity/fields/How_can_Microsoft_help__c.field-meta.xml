@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>How_can_Microsoft_help__c</fullName>
+    <description>How can Microsoft help?</description>
+    <inlineHelpText>How can Microsoft help? Select help option to create a co-sell deal otherwise if no help is required from Microsoft do not select any option.</inlineHelpText>
+    <label>How can Microsoft help?</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Workload Specific Value Proposition</fullName>
+                <default>false</default>
+                <label>Workload Specific Value Proposition</label>
+            </value>
+            <value>
+                <fullName>Customer Technical Architecture</fullName>
+                <default>false</default>
+                <label>Customer Technical Architecture</label>
+            </value>
+            <value>
+                <fullName>Proof Of Concept or Demo</fullName>
+                <default>false</default>
+                <label>Proof Of Concept or Demo</label>
+            </value>
+            <value>
+                <fullName>Quotes or Licensing</fullName>
+                <default>false</default>
+                <label>Quotes or Licensing</label>
+            </value>
+            <value>
+                <fullName>Post Sales Customer Success</fullName>
+                <default>false</default>
+                <label>Post Sales Customer Success</label>
+            </value>
+            <value>
+                <fullName>General or Other</fullName>
+                <default>false</default>
+                <label>General or Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

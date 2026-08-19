@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>G2Crowd__Page_Type__c</fullName>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <formula>if (G2Crowd__Tag__c == &apos;ad.category_competitor.product_left_sidebar&apos;, &apos;Sponsored Content&apos;, 
+if (G2Crowd__Tag__c == &apos;ad.self_promotion.product_profile_right_sidebar&apos;, &apos;Sponsored Content&apos;, 
+if (G2Crowd__Tag__c == &apos;ad.self_promotion.product_sidebar_chat&apos;, &apos;Sponsored Content&apos;, 
+if (G2Crowd__Tag__c == &apos;categories.features&apos;, &apos;Category Features Tab&apos;, 
+if (G2Crowd__Tag__c == &apos;categories.research&apos;, &apos;Category Research Tab&apos;, 
+if (G2Crowd__Tag__c == &apos;categories.show&apos;, &apos;Category Page&apos;, 
+if (G2Crowd__Tag__c == &apos;comparisons.show&apos;, &apos;Comparison&apos;, 
+if (G2Crowd__Tag__c == &apos;products.apps&apos;, &apos;Product Apps&apos;, 
+if (G2Crowd__Tag__c == &apos;products.competitors&apos;, &apos;Product Competitors&apos;, 
+if (G2Crowd__Tag__c == &apos;products.details&apos;, &apos;Product Details&apos;, 
+if (	G2Crowd__Tag__c == &apos;products.discuss&apos;, &apos;Product Q&amp;A&apos;, 
+if (G2Crowd__Tag__c == &apos;products.features&apos;, &apos;Product Features&apos;, 
+if (G2Crowd__Tag__c == &apos;products.pricing&apos;, &apos;Product Pricing&apos;, 
+if (G2Crowd__Tag__c == &apos;products.reviews&apos;, &apos;Product Reviews&apos;, G2Crowd__Tag__c) 
+) 
+) 
+) 
+) 
+) 
+) 
+) 
+) 
+) 
+) 
+) 
+) 
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Page Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

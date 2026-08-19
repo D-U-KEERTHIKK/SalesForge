@@ -1,0 +1,19 @@
+<div style="position: relative !important; display: initial">
+  <button class="slds-button slds-button_neutral button-disabled" aria-describedby="help" ng-click="mouseOver($event);">
+    <svg class="slds-button__icon slds-button__icon_left" aria-hidden="true" ng-if="iconName">
+      <use
+        xlink:href="{{ (meta.sldsUrl + '/assets/icons/utility-sprite/svg/symbols.svg#' + iconName) | trustAsResourceUrl}}"
+      ></use>
+    </svg>
+    <span ng-bind-html="buttonText"></span>
+  </button>
+  <div
+    ng-if="show"
+    class="slds-popover slds-popover_tooltip slds-nubbin_bottom-left slds-popover_fixed"
+    role="tooltip"
+    id="buttonTooltip"
+    style="position:absolute;display:inline-table;top: {{top}}; left: {{left}};"
+  >
+    <div class="slds-popover__body" ng-bind-html="tooltipText"></div>
+  </div>
+</div>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Referral_visible_to_Microsoft_sellers__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Select visibility for Microsoft Partner Center Referral. By checking it this referral will be visible to Microsoft sellers and it may get converted to co-sell referral. When Microsoft help is required, referral is visible to Microsoft sellers by default.</description>
+    <inlineHelpText>Select visibility for Microsoft Partner Center Referral. By checking it this referral will be visible to Microsoft sellers and it may get converted to co-sell referral. When Microsoft help is required, referral is visible to Microsoft sellers by default.</inlineHelpText>
+    <label>Referral visible to Microsoft sellers?</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>walnut__Demo_Session_walnut_io_layout</fullName>
+    <fields>Name</fields>
+    <fields>walnut__Demo_Data__c</fields>
+    <label>Demo Session walnut.io layout</label>
+</CompactLayout>

@@ -1,0 +1,7 @@
+January 18, 2017
+Author: George Slater <gslater@salesforce.com>
+
+This is a placeholder so that we can add the empty uilib folder.  If a folder doesn't have any files, p4 deletes the folder - and it is referenced in build.xml.
+We cannot remove uilib.resource as it is a managed static resource, we have to just empty its contents.
+
+Once the contents of uilib.resource have been emptied (when the deploy has been made to the packaging org), the uilib folder (including this file) can be removed from p4 and also from build.xml.

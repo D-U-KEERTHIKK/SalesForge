@@ -1,0 +1,21 @@
+<div class="tuple-conditions-header-row">
+  <div class="condition-num-column"></div>
+  <div class="condition-field-column"><%- fieldObjectType %> Field</div>
+  <div class="condition-operator-column">Operator</div>
+  <div class="condition-operand-column"><%- operandHeader %></div>
+  <div class="condition-radio-column"></div>
+  <div class="condition-delete-column"></div>
+</div>
+<div class="tuple-conditions-body">
+  <div class="tuple-conditions-row"></div>
+  <%= showSeparatorPerRow ? "" : "<hr class=\"tuple-rule-separator\">" %>
+  <div class="add-tuple-condition-btn ld-secondary-small-button">Add Condition</div>
+  <div class="rule-logic-container" style="<%=(showRpnContent ? 'visibility: visible;' : 'visibility: hidden;')%>">
+    <div class="rule-logic-row">
+      <div class="ld-field-label-small" style="white-space: normal;">Rule Logic</div>
+      <input class="tuple-rule-logic-input ld-input-small <%- rpnLogicIsValid ? '' : 'input-invalid' %>" value="<%- logic %>" />
+      <div class="reset-tuple-rule-logic">Reset</div>
+    </div>
+    <div class="rule-logic-error-row"></div>
+  </div>
+</div>

@@ -1,0 +1,1874 @@
+{
+	"mdm_type": "account",
+	"our_population_ids": [
+		12597,
+		12596,
+		12625,
+		12624
+	],
+	"elements": {
+		"account": {
+			"fields": [
+				{
+					"is_ours": true,
+					"name": "Account Name",
+					"column": "Name",
+					"value": "sample Construction Inc.",
+					"data_type": "string",
+					"mdm_property": "company_name",
+					"source_field_id": 341778
+				},
+				{
+					"is_ours": true,
+					"name": "Account Type",
+					"column": "Type",
+					"value": "Customer - Channel",
+					"data_type": "string",
+					"source_field_id": 341779
+				},
+				{
+					"is_ours": true,
+					"name": "Billing Country",
+					"column": "BillingCountry",
+					"value": null,
+					"data_type": "string",
+					"source_field_id": 341785
+				},
+				{
+					"is_ours": true,
+					"name": "Account Website",
+					"column": "Website",
+					"value": "www.sample.com",
+					"data_type": "string",
+					"mdm_property": "company_website",
+					"source_field_id": 341802
+				},
+				{
+					"is_ours": true,
+					"name": "Industry",
+					"column": "Industry",
+					"value": null,
+					"data_type": "string",
+					"source_field_id": 341805
+				},
+				{
+					"is_ours": true,
+					"name": "Employees",
+					"column": "NumberOfEmployees",
+					"value": null,
+					"data_type": "number",
+					"source_field_id": 341807
+				},
+				{
+					"is_ours": true,
+					"name": "Owner ID",
+					"column": "OwnerId",
+					"value": "005DH000007RGIAYA4",
+					"data_type": "string",
+					"source_field_id": 341813
+				},
+				{
+					"is_ours": true,
+					"name": "Account Created At",
+					"column": "CreatedDate",
+					"value": "2023-06-16T20:01:11.000+00:00",
+					"data_type": "datetime",
+					"mdm_property": "company_created_at",
+					"source_field_id": 341814
+				},
+				{
+					"is_ours": false,
+					"data_share_id": 4922,
+					"partner_population_id": 2462,
+					"name": "Account Type",
+					"column": "Type",
+					"value": "Customer - Channel",
+					"data_type": "string",
+					"source_field_id": 175940
+				},
+				{
+					"mdm_property": "company_website",
+					"is_ours": false,
+					"name": "Account Website",
+					"data_share_id": 4922,
+					"value": "www.sample.com",
+					"column": "Website",
+					"partner_population_id": 2462,
+					"data_type": "string",
+					"source_field_id": 175963
+				},
+				{
+					"mdm_property": "company_name",
+					"is_ours": false,
+					"name": "Account Name",
+					"data_share_id": 4922,
+					"value": "sample Construction Inc.",
+					"column": "Name",
+					"partner_population_id": 2462,
+					"data_type": "string",
+					"source_field_id": 175939
+				},
+				{
+					"mdm_property": "company_created_at",
+					"is_ours": false,
+					"name": "Account Created At",
+					"data_share_id": 4922,
+					"value": "2022-07-02T12:18:59.000+00:00",
+					"column": "CreatedDate",
+					"partner_population_id": 2462,
+					"data_type": "datetime",
+					"source_field_id": 175975
+				},
+				{
+					"is_ours": false,
+					"data_share_id": 4922,
+					"partner_population_id": 2462,
+					"name": "Account Type",
+					"column": "Type",
+					"value": "Customer - Channel",
+					"data_type": "string",
+					"source_field_id": 175940
+				},
+				{
+					"mdm_property": "company_website",
+					"is_ours": false,
+					"name": "Account Website",
+					"data_share_id": 4922,
+					"value": "www.sample.com",
+					"column": "Website",
+					"partner_population_id": 2462,
+					"data_type": "string",
+					"source_field_id": 175963
+				},
+				{
+					"mdm_property": "company_name",
+					"is_ours": false,
+					"name": "Account Name",
+					"data_share_id": 4922,
+					"value": "sample Construction Inc.",
+					"column": "Name",
+					"partner_population_id": 2462,
+					"data_type": "string",
+					"source_field_id": 175939
+				},
+				{
+					"mdm_property": "company_created_at",
+					"is_ours": false,
+					"name": "Account Created At",
+					"data_share_id": 4922,
+					"value": "2022-07-02T12:18:59.000+00:00",
+					"column": "CreatedDate",
+					"partner_population_id": 2462,
+					"data_type": "datetime",
+					"source_field_id": 175975
+				},
+				{
+					"is_ours": false,
+					"data_share_id": 4921,
+					"partner_population_id": 2461,
+					"name": "Account Type",
+					"column": "Type",
+					"value": "Customer - Channel",
+					"data_type": "string",
+					"source_field_id": 175940
+				},
+				{
+					"mdm_property": "company_website",
+					"is_ours": false,
+					"name": "Account Website",
+					"data_share_id": 4921,
+					"value": "www.sample.com",
+					"column": "Website",
+					"partner_population_id": 2461,
+					"data_type": "string",
+					"source_field_id": 175963
+				},
+				{
+					"mdm_property": "company_name",
+					"is_ours": false,
+					"name": "Account Name",
+					"data_share_id": 4921,
+					"value": "sample Construction Inc.",
+					"column": "Name",
+					"partner_population_id": 2461,
+					"data_type": "string",
+					"source_field_id": 175939
+				},
+				{
+					"mdm_property": "company_created_at",
+					"is_ours": false,
+					"name": "Account Created At",
+					"data_share_id": 4921,
+					"value": "2022-07-02T12:18:59.000+00:00",
+					"column": "CreatedDate",
+					"partner_population_id": 2461,
+					"data_type": "datetime",
+					"source_field_id": 175975
+				},
+				{
+					"is_ours": false,
+					"data_share_id": 4921,
+					"partner_population_id": 2461,
+					"name": "Account Type",
+					"column": "Type",
+					"value": "Customer - Channel",
+					"data_type": "string",
+					"source_field_id": 175940
+				},
+				{
+					"mdm_property": "company_website",
+					"is_ours": false,
+					"name": "Account Website",
+					"data_share_id": 4921,
+					"value": "www.sample.com",
+					"column": "Website",
+					"partner_population_id": 2461,
+					"data_type": "string",
+					"source_field_id": 175963
+				},
+				{
+					"mdm_property": "company_name",
+					"is_ours": false,
+					"name": "Account Name",
+					"data_share_id": 4921,
+					"value": "sample Construction Inc.",
+					"column": "Name",
+					"partner_population_id": 2461,
+					"data_type": "string",
+					"source_field_id": 175939
+				},
+				{
+					"mdm_property": "company_created_at",
+					"is_ours": false,
+					"name": "Account Created At",
+					"data_share_id": 4921,
+					"value": "2022-07-02T12:18:59.000+00:00",
+					"column": "CreatedDate",
+					"partner_population_id": 2461,
+					"data_type": "datetime",
+					"source_field_id": 175975
+				},
+				{
+					"is_ours": false,
+					"data_share_id": 4922,
+					"partner_population_id": 2462,
+					"name": "Account Type",
+					"column": "Type",
+					"value": "Customer - Channel",
+					"data_type": "string",
+					"source_field_id": 175940
+				},
+				{
+					"mdm_property": "company_website",
+					"is_ours": false,
+					"name": "Account Website",
+					"data_share_id": 4922,
+					"value": "www.sample.com",
+					"column": "Website",
+					"partner_population_id": 2462,
+					"data_type": "string",
+					"source_field_id": 175963
+				},
+				{
+					"mdm_property": "company_name",
+					"is_ours": false,
+					"name": "Account Name",
+					"data_share_id": 4922,
+					"value": "sample Construction Inc.",
+					"column": "Name",
+					"partner_population_id": 2462,
+					"data_type": "string",
+					"source_field_id": 175939
+				},
+				{
+					"mdm_property": "company_created_at",
+					"is_ours": false,
+					"name": "Account Created At",
+					"data_share_id": 4922,
+					"value": "2022-07-02T12:18:59.000+00:00",
+					"column": "CreatedDate",
+					"partner_population_id": 2462,
+					"data_type": "datetime",
+					"source_field_id": 175975
+				},
+				{
+					"is_ours": false,
+					"data_share_id": 4921,
+					"partner_population_id": 2461,
+					"name": "Account Type",
+					"column": "Type",
+					"value": "Customer - Channel",
+					"data_type": "string",
+					"source_field_id": 175940
+				},
+				{
+					"mdm_property": "company_website",
+					"is_ours": false,
+					"name": "Account Website",
+					"data_share_id": 4921,
+					"value": "www.sample.com",
+					"column": "Website",
+					"partner_population_id": 2461,
+					"data_type": "string",
+					"source_field_id": 175963
+				},
+				{
+					"mdm_property": "company_name",
+					"is_ours": false,
+					"name": "Account Name",
+					"data_share_id": 4921,
+					"value": "sample Construction Inc.",
+					"column": "Name",
+					"partner_population_id": 2461,
+					"data_type": "string",
+					"source_field_id": 175939
+				},
+				{
+					"mdm_property": "company_created_at",
+					"is_ours": false,
+					"name": "Account Created At",
+					"data_share_id": 4921,
+					"value": "2022-07-02T12:18:59.000+00:00",
+					"column": "CreatedDate",
+					"partner_population_id": 2461,
+					"data_type": "datetime",
+					"source_field_id": 175975
+				},
+				{
+					"is_ours": false,
+					"data_share_id": 4921,
+					"partner_population_id": 2461,
+					"name": "Account Type",
+					"column": "Type",
+					"value": "Customer - Channel",
+					"data_type": "string",
+					"source_field_id": 175940
+				},
+				{
+					"mdm_property": "company_website",
+					"is_ours": false,
+					"name": "Account Website",
+					"data_share_id": 4921,
+					"value": "www.sample.com",
+					"column": "Website",
+					"partner_population_id": 2461,
+					"data_type": "string",
+					"source_field_id": 175963
+				},
+				{
+					"mdm_property": "company_name",
+					"is_ours": false,
+					"name": "Account Name",
+					"data_share_id": 4921,
+					"value": "sample Construction Inc.",
+					"column": "Name",
+					"partner_population_id": 2461,
+					"data_type": "string",
+					"source_field_id": 175939
+				},
+				{
+					"mdm_property": "company_created_at",
+					"is_ours": false,
+					"name": "Account Created At",
+					"data_share_id": 4921,
+					"value": "2022-07-02T12:18:59.000+00:00",
+					"column": "CreatedDate",
+					"partner_population_id": 2461,
+					"data_type": "datetime",
+					"source_field_id": 175975
+				},
+				{
+					"is_ours": false,
+					"data_share_id": 4922,
+					"partner_population_id": 2462,
+					"name": "Account Type",
+					"column": "Type",
+					"value": "Customer - Channel",
+					"data_type": "string",
+					"source_field_id": 175940
+				},
+				{
+					"mdm_property": "company_website",
+					"is_ours": false,
+					"name": "Account Website",
+					"data_share_id": 4922,
+					"value": "www.sample.com",
+					"column": "Website",
+					"partner_population_id": 2462,
+					"data_type": "string",
+					"source_field_id": 175963
+				},
+				{
+					"mdm_property": "company_name",
+					"is_ours": false,
+					"name": "Account Name",
+					"data_share_id": 4922,
+					"value": "sample Construction Inc.",
+					"column": "Name",
+					"partner_population_id": 2462,
+					"data_type": "string",
+					"source_field_id": 175939
+				},
+				{
+					"mdm_property": "company_created_at",
+					"is_ours": false,
+					"name": "Account Created At",
+					"data_share_id": 4922,
+					"value": "2022-07-02T12:18:59.000+00:00",
+					"column": "CreatedDate",
+					"partner_population_id": 2462,
+					"data_type": "datetime",
+					"source_field_id": 175975
+				}
+			],
+			"sharing": {
+				"incoming": [
+					4921,
+					4922,
+					4921,
+					4922,
+					4922,
+					4921,
+					4921,
+					4922
+				],
+				"outgoing": [
+					11584,
+					11585,
+					11634,
+					11585,
+					11634,
+					11584,
+					11633,
+					11633
+				]
+			},
+			"is_ours": true,
+			"data_share_ids": [
+				4922,
+				4921
+			]
+		},
+		"account_owners": {
+			"items": [
+				{
+					"fields": [
+						{
+							"is_ours": true,
+							"name": "Account Executive Name",
+							"column": "Name",
+							"value": "User User",
+							"data_type": "string",
+							"mdm_property": "person_name",
+							"source_field_id": 341552
+						},
+						{
+							"is_ours": true,
+							"name": "Account Executive Email",
+							"column": "Email",
+							"value": "test@test.com",
+							"data_type": "string",
+							"mdm_property": "person_email",
+							"source_field_id": 341566
+						}
+					],
+					"is_ours": true,
+					"data_share_ids": [
+
+					]
+				},
+				{
+					"fields": [
+						{
+							"mdm_property": "person_phone",
+							"is_ours": false,
+							"name": "Account Executive Phone",
+							"data_share_id": 4922,
+							"value": null,
+							"column": "MobilePhone",
+							"partner_population_id": 2462,
+							"data_type": "string",
+							"source_field_id": 175739
+						},
+						{
+							"mdm_property": "person_email",
+							"is_ours": false,
+							"name": "Account Executive Email",
+							"data_share_id": 4922,
+							"value": "test@test.com",
+							"column": "Email",
+							"partner_population_id": 2462,
+							"data_type": "string",
+							"source_field_id": 175727
+						},
+						{
+							"mdm_property": "person_name",
+							"is_ours": false,
+							"name": "Account Executive Name",
+							"data_share_id": 4922,
+							"value": "User User",
+							"column": "Name",
+							"partner_population_id": 2462,
+							"data_type": "string",
+							"source_field_id": 175713
+						}
+					],
+					"is_ours": false,
+					"data_share_ids": [
+						4922
+					]
+				},
+				{
+					"fields": [
+						{
+							"mdm_property": "person_phone",
+							"is_ours": false,
+							"name": "Account Executive Phone",
+							"data_share_id": 4922,
+							"value": null,
+							"column": "MobilePhone",
+							"partner_population_id": 2462,
+							"data_type": "string",
+							"source_field_id": 175739
+						},
+						{
+							"mdm_property": "person_email",
+							"is_ours": false,
+							"name": "Account Executive Email",
+							"data_share_id": 4922,
+							"value": "test@test.com",
+							"column": "Email",
+							"partner_population_id": 2462,
+							"data_type": "string",
+							"source_field_id": 175727
+						},
+						{
+							"mdm_property": "person_name",
+							"is_ours": false,
+							"name": "Account Executive Name",
+							"data_share_id": 4922,
+							"value": "User User",
+							"column": "Name",
+							"partner_population_id": 2462,
+							"data_type": "string",
+							"source_field_id": 175713
+						}
+					],
+					"is_ours": false,
+					"data_share_ids": [
+						4922
+					]
+				},
+				{
+					"fields": [
+						{
+							"mdm_property": "person_phone",
+							"is_ours": false,
+							"name": "Account Executive Phone",
+							"data_share_id": 4921,
+							"value": null,
+							"column": "MobilePhone",
+							"partner_population_id": 2461,
+							"data_type": "string",
+							"source_field_id": 175739
+						},
+						{
+							"mdm_property": "person_email",
+							"is_ours": false,
+							"name": "Account Executive Email",
+							"data_share_id": 4921,
+							"value": "test@test.com",
+							"column": "Email",
+							"partner_population_id": 2461,
+							"data_type": "string",
+							"source_field_id": 175727
+						},
+						{
+							"mdm_property": "person_name",
+							"is_ours": false,
+							"name": "Account Executive Name",
+							"data_share_id": 4921,
+							"value": "User User",
+							"column": "Name",
+							"partner_population_id": 2461,
+							"data_type": "string",
+							"source_field_id": 175713
+						}
+					],
+					"is_ours": false,
+					"data_share_ids": [
+						4921
+					]
+				},
+				{
+					"fields": [
+						{
+							"mdm_property": "person_phone",
+							"is_ours": false,
+							"name": "Account Executive Phone",
+							"data_share_id": 4921,
+							"value": null,
+							"column": "MobilePhone",
+							"partner_population_id": 2461,
+							"data_type": "string",
+							"source_field_id": 175739
+						},
+						{
+							"mdm_property": "person_email",
+							"is_ours": false,
+							"name": "Account Executive Email",
+							"data_share_id": 4921,
+							"value": "test@test.com",
+							"column": "Email",
+							"partner_population_id": 2461,
+							"data_type": "string",
+							"source_field_id": 175727
+						},
+						{
+							"mdm_property": "person_name",
+							"is_ours": false,
+							"name": "Account Executive Name",
+							"data_share_id": 4921,
+							"value": "User User",
+							"column": "Name",
+							"partner_population_id": 2461,
+							"data_type": "string",
+							"source_field_id": 175713
+						}
+					],
+					"is_ours": false,
+					"data_share_ids": [
+						4921
+					]
+				},
+				{
+					"fields": [
+						{
+							"mdm_property": "person_phone",
+							"is_ours": false,
+							"name": "Account Executive Phone",
+							"data_share_id": 4922,
+							"value": null,
+							"column": "MobilePhone",
+							"partner_population_id": 2462,
+							"data_type": "string",
+							"source_field_id": 175739
+						},
+						{
+							"mdm_property": "person_email",
+							"is_ours": false,
+							"name": "Account Executive Email",
+							"data_share_id": 4922,
+							"value": "test@test.com",
+							"column": "Email",
+							"partner_population_id": 2462,
+							"data_type": "string",
+							"source_field_id": 175727
+						},
+						{
+							"mdm_property": "person_name",
+							"is_ours": false,
+							"name": "Account Executive Name",
+							"data_share_id": 4922,
+							"value": "User User",
+							"column": "Name",
+							"partner_population_id": 2462,
+							"data_type": "string",
+							"source_field_id": 175713
+						}
+					],
+					"is_ours": false,
+					"data_share_ids": [
+						4922
+					]
+				},
+				{
+					"fields": [
+						{
+							"mdm_property": "person_phone",
+							"is_ours": false,
+							"name": "Account Executive Phone",
+							"data_share_id": 4921,
+							"value": null,
+							"column": "MobilePhone",
+							"partner_population_id": 2461,
+							"data_type": "string",
+							"source_field_id": 175739
+						},
+						{
+							"mdm_property": "person_email",
+							"is_ours": false,
+							"name": "Account Executive Email",
+							"data_share_id": 4921,
+							"value": "test@test.com",
+							"column": "Email",
+							"partner_population_id": 2461,
+							"data_type": "string",
+							"source_field_id": 175727
+						},
+						{
+							"mdm_property": "person_name",
+							"is_ours": false,
+							"name": "Account Executive Name",
+							"data_share_id": 4921,
+							"value": "User User",
+							"column": "Name",
+							"partner_population_id": 2461,
+							"data_type": "string",
+							"source_field_id": 175713
+						}
+					],
+					"is_ours": false,
+					"data_share_ids": [
+						4921
+					]
+				},
+				{
+					"fields": [
+						{
+							"mdm_property": "person_phone",
+							"is_ours": false,
+							"name": "Account Executive Phone",
+							"data_share_id": 4921,
+							"value": null,
+							"column": "MobilePhone",
+							"partner_population_id": 2461,
+							"data_type": "string",
+							"source_field_id": 175739
+						},
+						{
+							"mdm_property": "person_email",
+							"is_ours": false,
+							"name": "Account Executive Email",
+							"data_share_id": 4921,
+							"value": "test@test.com",
+							"column": "Email",
+							"partner_population_id": 2461,
+							"data_type": "string",
+							"source_field_id": 175727
+						},
+						{
+							"mdm_property": "person_name",
+							"is_ours": false,
+							"name": "Account Executive Name",
+							"data_share_id": 4921,
+							"value": "User User",
+							"column": "Name",
+							"partner_population_id": 2461,
+							"data_type": "string",
+							"source_field_id": 175713
+						}
+					],
+					"is_ours": false,
+					"data_share_ids": [
+						4921
+					]
+				},
+				{
+					"fields": [
+						{
+							"mdm_property": "person_phone",
+							"is_ours": false,
+							"name": "Account Executive Phone",
+							"data_share_id": 4922,
+							"value": null,
+							"column": "MobilePhone",
+							"partner_population_id": 2462,
+							"data_type": "string",
+							"source_field_id": 175739
+						},
+						{
+							"mdm_property": "person_email",
+							"is_ours": false,
+							"name": "Account Executive Email",
+							"data_share_id": 4922,
+							"value": "test@test.com",
+							"column": "Email",
+							"partner_population_id": 2462,
+							"data_type": "string",
+							"source_field_id": 175727
+						},
+						{
+							"mdm_property": "person_name",
+							"is_ours": false,
+							"name": "Account Executive Name",
+							"data_share_id": 4922,
+							"value": "User User",
+							"column": "Name",
+							"partner_population_id": 2462,
+							"data_type": "string",
+							"source_field_id": 175713
+						}
+					],
+					"is_ours": false,
+					"data_share_ids": [
+						4922
+					]
+				}
+			],
+			"sharing": {
+				"incoming": [
+					4921,
+					4922,
+					4921,
+					4922,
+					4922,
+					4921,
+					4921,
+					4922
+				],
+				"outgoing": [
+					11584,
+					11585,
+					11634,
+					11585,
+					11634,
+					11584,
+					11633,
+					11633
+				]
+			}
+		},
+		"contacts": {
+			"items": [
+				{
+					"fields": [
+						{
+							"is_ours": true,
+							"name": "Contact Name",
+							"column": "Name",
+							"value": "test test",
+							"data_type": "string",
+							"source_field_id": 341723
+						},
+						{
+							"is_ours": true,
+							"name": "Contact Email",
+							"column": "Email",
+							"value": "test@sample.net",
+							"data_type": "string",
+							"mdm_property": "person_email",
+							"source_field_id": 341749
+						}
+					],
+					"is_ours": true,
+					"data_share_ids": [
+
+					]
+				},
+				{
+					"fields": [
+						{
+							"is_ours": false,
+							"data_share_id": 4922,
+							"partner_population_id": 2462,
+							"name": "Contact Title",
+							"column": "Title",
+							"value": null,
+							"data_type": "string",
+							"source_field_id": 175911
+						},
+						{
+							"mdm_property": "person_email",
+							"is_ours": false,
+							"name": "Contact Email",
+							"data_share_id": 4922,
+							"value": "test@sample.net",
+							"column": "Email",
+							"partner_population_id": 2462,
+							"data_type": "string",
+							"source_field_id": 175910
+						},
+						{
+							"mdm_property": "person_created_at",
+							"is_ours": false,
+							"name": "Contact Created At",
+							"data_share_id": 4922,
+							"value": "2022-07-02T12:19:00.000+00:00",
+							"column": "CreatedDate",
+							"partner_population_id": 2462,
+							"data_type": "datetime",
+							"source_field_id": 175918
+						},
+						{
+							"is_ours": false,
+							"data_share_id": 4922,
+							"partner_population_id": 2462,
+							"name": "Contact Phone",
+							"column": "Phone",
+							"value": null,
+							"data_type": "string",
+							"source_field_id": 175903
+						},
+						{
+							"is_ours": false,
+							"data_share_id": 4922,
+							"partner_population_id": 2462,
+							"name": "Contact Name",
+							"column": "Name",
+							"value": "test test",
+							"data_type": "string",
+							"source_field_id": 175884
+						}
+					],
+					"is_ours": false,
+					"data_share_ids": [
+						4922
+					]
+				},
+				{
+					"fields": [
+						{
+							"is_ours": false,
+							"data_share_id": 4922,
+							"partner_population_id": 2462,
+							"name": "Contact Title",
+							"column": "Title",
+							"value": null,
+							"data_type": "string",
+							"source_field_id": 175911
+						},
+						{
+							"mdm_property": "person_email",
+							"is_ours": false,
+							"name": "Contact Email",
+							"data_share_id": 4922,
+							"value": "test@sample.net",
+							"column": "Email",
+							"partner_population_id": 2462,
+							"data_type": "string",
+							"source_field_id": 175910
+						},
+						{
+							"mdm_property": "person_created_at",
+							"is_ours": false,
+							"name": "Contact Created At",
+							"data_share_id": 4922,
+							"value": "2022-07-02T12:19:00.000+00:00",
+							"column": "CreatedDate",
+							"partner_population_id": 2462,
+							"data_type": "datetime",
+							"source_field_id": 175918
+						},
+						{
+							"is_ours": false,
+							"data_share_id": 4922,
+							"partner_population_id": 2462,
+							"name": "Contact Phone",
+							"column": "Phone",
+							"value": null,
+							"data_type": "string",
+							"source_field_id": 175903
+						},
+						{
+							"is_ours": false,
+							"data_share_id": 4922,
+							"partner_population_id": 2462,
+							"name": "Contact Name",
+							"column": "Name",
+							"value": "test test",
+							"data_type": "string",
+							"source_field_id": 175884
+						}
+					],
+					"is_ours": false,
+					"data_share_ids": [
+						4922
+					]
+				},
+				{
+					"fields": [
+						{
+							"is_ours": false,
+							"data_share_id": 4921,
+							"partner_population_id": 2461,
+							"name": "Contact Title",
+							"column": "Title",
+							"value": null,
+							"data_type": "string",
+							"source_field_id": 175911
+						},
+						{
+							"mdm_property": "person_email",
+							"is_ours": false,
+							"name": "Contact Email",
+							"data_share_id": 4921,
+							"value": "test@sample.net",
+							"column": "Email",
+							"partner_population_id": 2461,
+							"data_type": "string",
+							"source_field_id": 175910
+						},
+						{
+							"mdm_property": "person_created_at",
+							"is_ours": false,
+							"name": "Contact Created At",
+							"data_share_id": 4921,
+							"value": "2022-07-02T12:19:00.000+00:00",
+							"column": "CreatedDate",
+							"partner_population_id": 2461,
+							"data_type": "datetime",
+							"source_field_id": 175918
+						},
+						{
+							"is_ours": false,
+							"data_share_id": 4921,
+							"partner_population_id": 2461,
+							"name": "Contact Phone",
+							"column": "Phone",
+							"value": null,
+							"data_type": "string",
+							"source_field_id": 175903
+						},
+						{
+							"is_ours": false,
+							"data_share_id": 4921,
+							"partner_population_id": 2461,
+							"name": "Contact Name",
+							"column": "Name",
+							"value": "test test",
+							"data_type": "string",
+							"source_field_id": 175884
+						}
+					],
+					"is_ours": false,
+					"data_share_ids": [
+						4921
+					]
+				},
+				{
+					"fields": [
+						{
+							"is_ours": false,
+							"data_share_id": 4921,
+							"partner_population_id": 2461,
+							"name": "Contact Title",
+							"column": "Title",
+							"value": null,
+							"data_type": "string",
+							"source_field_id": 175911
+						},
+						{
+							"mdm_property": "person_email",
+							"is_ours": false,
+							"name": "Contact Email",
+							"data_share_id": 4921,
+							"value": "test@sample.net",
+							"column": "Email",
+							"partner_population_id": 2461,
+							"data_type": "string",
+							"source_field_id": 175910
+						},
+						{
+							"mdm_property": "person_created_at",
+							"is_ours": false,
+							"name": "Contact Created At",
+							"data_share_id": 4921,
+							"value": "2022-07-02T12:19:00.000+00:00",
+							"column": "CreatedDate",
+							"partner_population_id": 2461,
+							"data_type": "datetime",
+							"source_field_id": 175918
+						},
+						{
+							"is_ours": false,
+							"data_share_id": 4921,
+							"partner_population_id": 2461,
+							"name": "Contact Phone",
+							"column": "Phone",
+							"value": null,
+							"data_type": "string",
+							"source_field_id": 175903
+						},
+						{
+							"is_ours": false,
+							"data_share_id": 4921,
+							"partner_population_id": 2461,
+							"name": "Contact Name",
+							"column": "Name",
+							"value": "test test",
+							"data_type": "string",
+							"source_field_id": 175884
+						}
+					],
+					"is_ours": false,
+					"data_share_ids": [
+						4921
+					]
+				},
+				{
+					"fields": [
+						{
+							"is_ours": false,
+							"data_share_id": 4922,
+							"partner_population_id": 2462,
+							"name": "Contact Title",
+							"column": "Title",
+							"value": null,
+							"data_type": "string",
+							"source_field_id": 175911
+						},
+						{
+							"mdm_property": "person_email",
+							"is_ours": false,
+							"name": "Contact Email",
+							"data_share_id": 4922,
+							"value": "test@sample.net",
+							"column": "Email",
+							"partner_population_id": 2462,
+							"data_type": "string",
+							"source_field_id": 175910
+						},
+						{
+							"mdm_property": "person_created_at",
+							"is_ours": false,
+							"name": "Contact Created At",
+							"data_share_id": 4922,
+							"value": "2022-07-02T12:19:00.000+00:00",
+							"column": "CreatedDate",
+							"partner_population_id": 2462,
+							"data_type": "datetime",
+							"source_field_id": 175918
+						},
+						{
+							"is_ours": false,
+							"data_share_id": 4922,
+							"partner_population_id": 2462,
+							"name": "Contact Phone",
+							"column": "Phone",
+							"value": null,
+							"data_type": "string",
+							"source_field_id": 175903
+						},
+						{
+							"is_ours": false,
+							"data_share_id": 4922,
+							"partner_population_id": 2462,
+							"name": "Contact Name",
+							"column": "Name",
+							"value": "test test",
+							"data_type": "string",
+							"source_field_id": 175884
+						}
+					],
+					"is_ours": false,
+					"data_share_ids": [
+						4922
+					]
+				},
+				{
+					"fields": [
+						{
+							"is_ours": false,
+							"data_share_id": 4921,
+							"partner_population_id": 2461,
+							"name": "Contact Title",
+							"column": "Title",
+							"value": null,
+							"data_type": "string",
+							"source_field_id": 175911
+						},
+						{
+							"mdm_property": "person_email",
+							"is_ours": false,
+							"name": "Contact Email",
+							"data_share_id": 4921,
+							"value": "test@sample.net",
+							"column": "Email",
+							"partner_population_id": 2461,
+							"data_type": "string",
+							"source_field_id": 175910
+						},
+						{
+							"mdm_property": "person_created_at",
+							"is_ours": false,
+							"name": "Contact Created At",
+							"data_share_id": 4921,
+							"value": "2022-07-02T12:19:00.000+00:00",
+							"column": "CreatedDate",
+							"partner_population_id": 2461,
+							"data_type": "datetime",
+							"source_field_id": 175918
+						},
+						{
+							"is_ours": false,
+							"data_share_id": 4921,
+							"partner_population_id": 2461,
+							"name": "Contact Phone",
+							"column": "Phone",
+							"value": null,
+							"data_type": "string",
+							"source_field_id": 175903
+						},
+						{
+							"is_ours": false,
+							"data_share_id": 4921,
+							"partner_population_id": 2461,
+							"name": "Contact Name",
+							"column": "Name",
+							"value": "test test",
+							"data_type": "string",
+							"source_field_id": 175884
+						}
+					],
+					"is_ours": false,
+					"data_share_ids": [
+						4921
+					]
+				},
+				{
+					"fields": [
+						{
+							"is_ours": false,
+							"data_share_id": 4921,
+							"partner_population_id": 2461,
+							"name": "Contact Title",
+							"column": "Title",
+							"value": null,
+							"data_type": "string",
+							"source_field_id": 175911
+						},
+						{
+							"mdm_property": "person_email",
+							"is_ours": false,
+							"name": "Contact Email",
+							"data_share_id": 4921,
+							"value": "test@sample.net",
+							"column": "Email",
+							"partner_population_id": 2461,
+							"data_type": "string",
+							"source_field_id": 175910
+						},
+						{
+							"mdm_property": "person_created_at",
+							"is_ours": false,
+							"name": "Contact Created At",
+							"data_share_id": 4921,
+							"value": "2022-07-02T12:19:00.000+00:00",
+							"column": "CreatedDate",
+							"partner_population_id": 2461,
+							"data_type": "datetime",
+							"source_field_id": 175918
+						},
+						{
+							"is_ours": false,
+							"data_share_id": 4921,
+							"partner_population_id": 2461,
+							"name": "Contact Phone",
+							"column": "Phone",
+							"value": null,
+							"data_type": "string",
+							"source_field_id": 175903
+						},
+						{
+							"is_ours": false,
+							"data_share_id": 4921,
+							"partner_population_id": 2461,
+							"name": "Contact Name",
+							"column": "Name",
+							"value": "test test",
+							"data_type": "string",
+							"source_field_id": 175884
+						}
+					],
+					"is_ours": false,
+					"data_share_ids": [
+						4921
+					]
+				},
+				{
+					"fields": [
+						{
+							"is_ours": false,
+							"data_share_id": 4922,
+							"partner_population_id": 2462,
+							"name": "Contact Title",
+							"column": "Title",
+							"value": null,
+							"data_type": "string",
+							"source_field_id": 175911
+						},
+						{
+							"mdm_property": "person_email",
+							"is_ours": false,
+							"name": "Contact Email",
+							"data_share_id": 4922,
+							"value": "test@sample.net",
+							"column": "Email",
+							"partner_population_id": 2462,
+							"data_type": "string",
+							"source_field_id": 175910
+						},
+						{
+							"mdm_property": "person_created_at",
+							"is_ours": false,
+							"name": "Contact Created At",
+							"data_share_id": 4922,
+							"value": "2022-07-02T12:19:00.000+00:00",
+							"column": "CreatedDate",
+							"partner_population_id": 2462,
+							"data_type": "datetime",
+							"source_field_id": 175918
+						},
+						{
+							"is_ours": false,
+							"data_share_id": 4922,
+							"partner_population_id": 2462,
+							"name": "Contact Phone",
+							"column": "Phone",
+							"value": null,
+							"data_type": "string",
+							"source_field_id": 175903
+						},
+						{
+							"is_ours": false,
+							"data_share_id": 4922,
+							"partner_population_id": 2462,
+							"name": "Contact Name",
+							"column": "Name",
+							"value": "test test",
+							"data_type": "string",
+							"source_field_id": 175884
+						}
+					],
+					"is_ours": false,
+					"data_share_ids": [
+						4922
+					]
+				}
+			],
+			"sharing": {
+				"incoming": [
+					4921,
+					4922,
+					4921,
+					4922,
+					4922,
+					4921,
+					4921,
+					4922
+				],
+				"outgoing": [
+					11584,
+					11585,
+					11634,
+					11585,
+					11634,
+					11584,
+					11633,
+					11633
+				]
+			}
+		},
+		"opportunities": {
+			"items": [
+				{
+					"fields": [
+						{
+							"is_ours": true,
+							"name": "Name",
+							"column": "Name",
+							"value": "sample Emergency Generators",
+							"data_type": "string",
+							"source_field_id": 341516
+						},
+						{
+							"is_ours": true,
+							"name": "Sales Stage",
+							"column": "StageName",
+							"value": "Prospecting",
+							"data_type": "string",
+							"mdm_property": "deal_stage",
+							"source_field_id": 341518
+						},
+						{
+							"is_ours": true,
+							"name": "Amount",
+							"column": "Amount",
+							"value": 100000.0,
+							"data_type": "number",
+							"mdm_property": "deal_amount",
+							"source_field_id": 341519
+						},
+						{
+							"is_ours": true,
+							"name": "Close Date",
+							"column": "CloseDate",
+							"value": "2021-01-19T00:00:00.000+00:00",
+							"data_type": "datetime",
+							"mdm_property": "deal_close_date",
+							"source_field_id": 341523
+						},
+						{
+							"is_ours": true,
+							"name": "Closed",
+							"column": "IsClosed",
+							"value": false,
+							"data_type": "boolean",
+							"source_field_id": 341527
+						},
+						{
+							"is_ours": true,
+							"name": "Won",
+							"column": "IsWon",
+							"value": false,
+							"data_type": "boolean",
+							"source_field_id": 341528
+						},
+						{
+							"is_ours": true,
+							"name": "Open Date",
+							"column": "CreatedDate",
+							"value": "2023-06-16T20:01:13.000+00:00",
+							"data_type": "datetime",
+							"mdm_property": "deal_open_date",
+							"source_field_id": 341535
+						}
+					],
+					"is_ours": true,
+					"data_share_ids": [
+
+					]
+				},
+				{
+					"fields": [
+						{
+							"mdm_property": "deal_stage",
+							"is_ours": false,
+							"name": "Sales Stage",
+							"data_share_id": 4922,
+							"value": "Prospecting",
+							"column": "StageName",
+							"partner_population_id": 2462,
+							"data_type": "string",
+							"source_field_id": 175679
+						},
+						{
+							"mdm_property": "deal_open_date",
+							"is_ours": false,
+							"name": "Open Date",
+							"data_share_id": 4922,
+							"value": "2022-07-02T12:19:01.000+00:00",
+							"column": "CreatedDate",
+							"partner_population_id": 2462,
+							"data_type": "datetime",
+							"source_field_id": 175696
+						},
+						{
+							"mdm_property": "deal_amount",
+							"is_ours": false,
+							"name": "Amount",
+							"data_share_id": 4922,
+							"value": 100000.0,
+							"column": "Amount",
+							"partner_population_id": 2462,
+							"data_type": "number",
+							"source_field_id": 175680
+						},
+						{
+							"mdm_property": "deal_close_date",
+							"is_ours": false,
+							"name": "Close Date",
+							"data_share_id": 4922,
+							"value": "2021-01-19T00:00:00.000+00:00",
+							"column": "CloseDate",
+							"partner_population_id": 2462,
+							"data_type": "datetime",
+							"source_field_id": 175684
+						}
+					],
+					"is_ours": false,
+					"data_share_ids": [
+						4922
+					]
+				},
+				{
+					"fields": [
+						{
+							"mdm_property": "deal_stage",
+							"is_ours": false,
+							"name": "Sales Stage",
+							"data_share_id": 4922,
+							"value": "Prospecting",
+							"column": "StageName",
+							"partner_population_id": 2462,
+							"data_type": "string",
+							"source_field_id": 175679
+						},
+						{
+							"mdm_property": "deal_open_date",
+							"is_ours": false,
+							"name": "Open Date",
+							"data_share_id": 4922,
+							"value": "2022-07-02T12:19:01.000+00:00",
+							"column": "CreatedDate",
+							"partner_population_id": 2462,
+							"data_type": "datetime",
+							"source_field_id": 175696
+						},
+						{
+							"mdm_property": "deal_amount",
+							"is_ours": false,
+							"name": "Amount",
+							"data_share_id": 4922,
+							"value": 100000.0,
+							"column": "Amount",
+							"partner_population_id": 2462,
+							"data_type": "number",
+							"source_field_id": 175680
+						},
+						{
+							"mdm_property": "deal_close_date",
+							"is_ours": false,
+							"name": "Close Date",
+							"data_share_id": 4922,
+							"value": "2021-01-19T00:00:00.000+00:00",
+							"column": "CloseDate",
+							"partner_population_id": 2462,
+							"data_type": "datetime",
+							"source_field_id": 175684
+						}
+					],
+					"is_ours": false,
+					"data_share_ids": [
+						4922
+					]
+				},
+				{
+					"fields": [
+						{
+							"mdm_property": "deal_stage",
+							"is_ours": false,
+							"name": "Sales Stage",
+							"data_share_id": 4921,
+							"value": "Prospecting",
+							"column": "StageName",
+							"partner_population_id": 2461,
+							"data_type": "string",
+							"source_field_id": 175679
+						},
+						{
+							"mdm_property": "deal_open_date",
+							"is_ours": false,
+							"name": "Open Date",
+							"data_share_id": 4921,
+							"value": "2022-07-02T12:19:01.000+00:00",
+							"column": "CreatedDate",
+							"partner_population_id": 2461,
+							"data_type": "datetime",
+							"source_field_id": 175696
+						},
+						{
+							"mdm_property": "deal_amount",
+							"is_ours": false,
+							"name": "Amount",
+							"data_share_id": 4921,
+							"value": 100000.0,
+							"column": "Amount",
+							"partner_population_id": 2461,
+							"data_type": "number",
+							"source_field_id": 175680
+						},
+						{
+							"mdm_property": "deal_close_date",
+							"is_ours": false,
+							"name": "Close Date",
+							"data_share_id": 4921,
+							"value": "2021-01-19T00:00:00.000+00:00",
+							"column": "CloseDate",
+							"partner_population_id": 2461,
+							"data_type": "datetime",
+							"source_field_id": 175684
+						}
+					],
+					"is_ours": false,
+					"data_share_ids": [
+						4921
+					]
+				},
+				{
+					"fields": [
+						{
+							"mdm_property": "deal_stage",
+							"is_ours": false,
+							"name": "Sales Stage",
+							"data_share_id": 4921,
+							"value": "Prospecting",
+							"column": "StageName",
+							"partner_population_id": 2461,
+							"data_type": "string",
+							"source_field_id": 175679
+						},
+						{
+							"mdm_property": "deal_open_date",
+							"is_ours": false,
+							"name": "Open Date",
+							"data_share_id": 4921,
+							"value": "2022-07-02T12:19:01.000+00:00",
+							"column": "CreatedDate",
+							"partner_population_id": 2461,
+							"data_type": "datetime",
+							"source_field_id": 175696
+						},
+						{
+							"mdm_property": "deal_amount",
+							"is_ours": false,
+							"name": "Amount",
+							"data_share_id": 4921,
+							"value": 100000.0,
+							"column": "Amount",
+							"partner_population_id": 2461,
+							"data_type": "number",
+							"source_field_id": 175680
+						},
+						{
+							"mdm_property": "deal_close_date",
+							"is_ours": false,
+							"name": "Close Date",
+							"data_share_id": 4921,
+							"value": "2021-01-19T00:00:00.000+00:00",
+							"column": "CloseDate",
+							"partner_population_id": 2461,
+							"data_type": "datetime",
+							"source_field_id": 175684
+						}
+					],
+					"is_ours": false,
+					"data_share_ids": [
+						4921
+					]
+				},
+				{
+					"fields": [
+						{
+							"mdm_property": "deal_stage",
+							"is_ours": false,
+							"name": "Sales Stage",
+							"data_share_id": 4922,
+							"value": "Prospecting",
+							"column": "StageName",
+							"partner_population_id": 2462,
+							"data_type": "string",
+							"source_field_id": 175679
+						},
+						{
+							"mdm_property": "deal_open_date",
+							"is_ours": false,
+							"name": "Open Date",
+							"data_share_id": 4922,
+							"value": "2022-07-02T12:19:01.000+00:00",
+							"column": "CreatedDate",
+							"partner_population_id": 2462,
+							"data_type": "datetime",
+							"source_field_id": 175696
+						},
+						{
+							"mdm_property": "deal_amount",
+							"is_ours": false,
+							"name": "Amount",
+							"data_share_id": 4922,
+							"value": 100000.0,
+							"column": "Amount",
+							"partner_population_id": 2462,
+							"data_type": "number",
+							"source_field_id": 175680
+						},
+						{
+							"mdm_property": "deal_close_date",
+							"is_ours": false,
+							"name": "Close Date",
+							"data_share_id": 4922,
+							"value": "2021-01-19T00:00:00.000+00:00",
+							"column": "CloseDate",
+							"partner_population_id": 2462,
+							"data_type": "datetime",
+							"source_field_id": 175684
+						}
+					],
+					"is_ours": false,
+					"data_share_ids": [
+						4922
+					]
+				},
+				{
+					"fields": [
+						{
+							"mdm_property": "deal_stage",
+							"is_ours": false,
+							"name": "Sales Stage",
+							"data_share_id": 4921,
+							"value": "Prospecting",
+							"column": "StageName",
+							"partner_population_id": 2461,
+							"data_type": "string",
+							"source_field_id": 175679
+						},
+						{
+							"mdm_property": "deal_open_date",
+							"is_ours": false,
+							"name": "Open Date",
+							"data_share_id": 4921,
+							"value": "2022-07-02T12:19:01.000+00:00",
+							"column": "CreatedDate",
+							"partner_population_id": 2461,
+							"data_type": "datetime",
+							"source_field_id": 175696
+						},
+						{
+							"mdm_property": "deal_amount",
+							"is_ours": false,
+							"name": "Amount",
+							"data_share_id": 4921,
+							"value": 100000.0,
+							"column": "Amount",
+							"partner_population_id": 2461,
+							"data_type": "number",
+							"source_field_id": 175680
+						},
+						{
+							"mdm_property": "deal_close_date",
+							"is_ours": false,
+							"name": "Close Date",
+							"data_share_id": 4921,
+							"value": "2021-01-19T00:00:00.000+00:00",
+							"column": "CloseDate",
+							"partner_population_id": 2461,
+							"data_type": "datetime",
+							"source_field_id": 175684
+						}
+					],
+					"is_ours": false,
+					"data_share_ids": [
+						4921
+					]
+				},
+				{
+					"fields": [
+						{
+							"mdm_property": "deal_stage",
+							"is_ours": false,
+							"name": "Sales Stage",
+							"data_share_id": 4921,
+							"value": "Prospecting",
+							"column": "StageName",
+							"partner_population_id": 2461,
+							"data_type": "string",
+							"source_field_id": 175679
+						},
+						{
+							"mdm_property": "deal_open_date",
+							"is_ours": false,
+							"name": "Open Date",
+							"data_share_id": 4921,
+							"value": "2022-07-02T12:19:01.000+00:00",
+							"column": "CreatedDate",
+							"partner_population_id": 2461,
+							"data_type": "datetime",
+							"source_field_id": 175696
+						},
+						{
+							"mdm_property": "deal_amount",
+							"is_ours": false,
+							"name": "Amount",
+							"data_share_id": 4921,
+							"value": 100000.0,
+							"column": "Amount",
+							"partner_population_id": 2461,
+							"data_type": "number",
+							"source_field_id": 175680
+						},
+						{
+							"mdm_property": "deal_close_date",
+							"is_ours": false,
+							"name": "Close Date",
+							"data_share_id": 4921,
+							"value": "2021-01-19T00:00:00.000+00:00",
+							"column": "CloseDate",
+							"partner_population_id": 2461,
+							"data_type": "datetime",
+							"source_field_id": 175684
+						}
+					],
+					"is_ours": false,
+					"data_share_ids": [
+						4921
+					]
+				},
+				{
+					"fields": [
+						{
+							"mdm_property": "deal_stage",
+							"is_ours": false,
+							"name": "Sales Stage",
+							"data_share_id": 4922,
+							"value": "Prospecting",
+							"column": "StageName",
+							"partner_population_id": 2462,
+							"data_type": "string",
+							"source_field_id": 175679
+						},
+						{
+							"mdm_property": "deal_open_date",
+							"is_ours": false,
+							"name": "Open Date",
+							"data_share_id": 4922,
+							"value": "2022-07-02T12:19:01.000+00:00",
+							"column": "CreatedDate",
+							"partner_population_id": 2462,
+							"data_type": "datetime",
+							"source_field_id": 175696
+						},
+						{
+							"mdm_property": "deal_amount",
+							"is_ours": false,
+							"name": "Amount",
+							"data_share_id": 4922,
+							"value": 100000.0,
+							"column": "Amount",
+							"partner_population_id": 2462,
+							"data_type": "number",
+							"source_field_id": 175680
+						},
+						{
+							"mdm_property": "deal_close_date",
+							"is_ours": false,
+							"name": "Close Date",
+							"data_share_id": 4922,
+							"value": "2021-01-19T00:00:00.000+00:00",
+							"column": "CloseDate",
+							"partner_population_id": 2462,
+							"data_type": "datetime",
+							"source_field_id": 175684
+						}
+					],
+					"is_ours": false,
+					"data_share_ids": [
+						4922
+					]
+				}
+			],
+			"sharing": {
+				"incoming": [
+					4921,
+					4922,
+					4921,
+					4922,
+					4922,
+					4921,
+					4921,
+					4922
+				],
+				"outgoing": [
+					11584,
+					11585,
+					11634,
+					11585,
+					11634,
+					11584,
+					11633,
+					11633
+				]
+			}
+		}
+	}
+}

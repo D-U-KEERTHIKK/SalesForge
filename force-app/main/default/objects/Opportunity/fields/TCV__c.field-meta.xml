@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TCV__c</fullName>
+    <description>True total contract value as stated on the face of the signed contract.</description>
+    <inlineHelpText>True total contract value as stated on the face of the signed contract.</inlineHelpText>
+    <label>TCV</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Currency</type>
+</CustomField>

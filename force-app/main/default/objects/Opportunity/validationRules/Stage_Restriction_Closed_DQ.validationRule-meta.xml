@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Stage_Restriction_Closed_DQ</fullName>
+    <active>false</active>
+    <errorConditionFormula>AND(
+ISPICKVAL(StageName, &quot;09 Closed DQ&quot;),
+ISCHANGED(StageName),
+CASE(TEXT(PRIORVALUE(StageName)),
+&quot;02 Solution Alignment&quot;, 1,
+&quot;03 Solution Validation&quot;, 2,
+&quot;04 Proposal&quot;, 3,
+&quot;05 Negotiation&quot;, 4,
+&quot;06 Signed Contract Received&quot;, 5
+,0) &gt;= 2
+)</errorConditionFormula>
+    <errorMessage>An opportunity cannot be moved to Closed-DQ after it has reached Solution Alignment. Please update closed status to Closed-Lost</errorMessage>
+</ValidationRule>

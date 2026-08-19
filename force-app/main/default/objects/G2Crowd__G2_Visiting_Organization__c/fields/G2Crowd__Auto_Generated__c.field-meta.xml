@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>G2Crowd__Auto_Generated__c</fullName>
+    <deprecated>false</deprecated>
+    <formula>CONTAINS(Name, &apos;(Auto Generated)&apos;)</formula>
+    <label>Auto Generated</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

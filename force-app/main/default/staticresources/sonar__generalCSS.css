@@ -1,0 +1,169 @@
+.row-warning_fields-count{
+    color: orange;
+}
+
+.row-warning_fields-count .slds-icon-utility-warning svg{
+    fill: orange;
+}
+
+.link-styled, .AnalyzeItemTable [data-label="Field Label"]{
+    color: var(--lwc-brandTextLink,rgb(1, 118, 211));
+    text-decoration: none;
+    transition: color .1s linear;
+}
+
+.picked-background{
+    background-color: #e9f0fb;
+}
+
+.link-styled:hover, .AnalyzeItemTable [data-label="Field Label"]:hover{
+    text-decoration: underline;
+    color: var(--lwc-brandTextLinkActive,rgb(1, 68, 134));
+}
+
+.nav-item button{
+    width: 32px;
+    color:black;
+}
+
+.nav-item_selected-item button{
+    color: var(--sds-c-button-text-color, var(--lwc-brandAccessible,rgb(1, 118, 211)));
+    border-color: cornflowerblue;
+}
+
+.nav-item_selected-item button:hover, .nav-item_selected-item button:focus{
+    border-color: cornflowerblue;
+}
+
+.inline-filters-wrapper .input-number label{
+    white-space: nowrap;
+}
+
+.table-body-pointer tbody:hover{
+    cursor: pointer;
+}
+
+.analysis-table .Completed:hover{
+    cursor: pointer;
+}
+
+.slds-cell-wrap[data-label="Object API Name"], .slds-cell-wrap[data-label="Last Analyzed Date"], .slds-cell-wrap[data-label="Field API Name"],
+.slds-cell-wrap[data-label="Object Name"], .slds-cell-wrap[data-label="Field Label"], .slds-cell-wrap[data-label="Populated Records"], .slds-cell-wrap[data-label="Record Count"]
+{
+    word-break: break-all;
+}
+
+.analysis-table .Completed[data-label="Object Name"]{
+    color: var(--lwc-brandTextLink,rgb(1, 118, 211));
+    text-decoration: none;
+    transition: color .1s linear;
+}
+.analysis-table .Completed[data-label="Object Name"]:hover{
+    text-decoration: underline;
+    color: var(--lwc-brandTextLinkActive,rgb(1, 68, 134));
+}
+.analysis-table .Completed:hover{
+    cursor: pointer;
+}
+
+.customHelptextBlock button{
+    margin-top: -8px;
+}
+
+.graytext{
+    color:grey;
+}
+
+.inline{
+    display: inline;
+}
+
+.align-items__center{
+    align-items: center;
+}
+
+.slds-table .slds-has-focus{
+    box-shadow: none;
+}
+.slds-table[role=gridcell]:focus{
+    box-shadow: none;
+}
+.slds-table [role=gridcell].slds-has-focus{
+    box-shadow: none;
+}
+.slds-table th.slds-has-focus{
+    box-shadow: none;
+}
+.to-analyze-help-text button{
+    margin-top: -5px;
+}
+.insights-help-text button{
+    margin-top: -5px;
+}
+
+.insights-help-text-big-font button{
+    margin-top: -9px;
+}
+
+.backIcon svg{
+    margin-top: -5px;
+}
+
+.backIcon svg:hover{
+    cursor: pointer;
+}
+
+c-pagination-main .nav-item .slds-button:focus{
+    --slds-c-button-color-background-hover: none;
+    --slds-c-button-color-border-hover: none;
+    color: unset;
+    --slds-c-button-color-border: var(--slds-c-button-neutral-color-border, var(--sds-c-button-neutral-color-border, var(--lwc-buttonColorBorderPrimary,rgb(201, 201, 201))));;
+    --slds-c-button-color-background: unset;
+    box-shadow: none;
+}
+
+c-pagination-main .nav-item .slds-button_outline-brand{
+    --slds-c-button-color-border: var(--slds-c-button-outline-brand-color-border, var(--sds-c-button-outline-brand-color-border, var(--lwc-brandAccessible,rgb(1, 118, 211)))) !important;
+}
+
+c-pagination-main .slds-dropdown_fluid{
+    min-width: unset;
+}
+
+c-pagination-main .slds-media__figure.slds-listbox__option-icon{
+    display: none;
+}
+
+c-pagination-main .slds-listbox{
+    max-height: 150px;
+}
+
+.sobjectsDatatable .slds-th__action.slds-th__action_form{
+    visibility: hidden;
+}
+
+c-objects-and-analysis .slds-table_header-fixed_container{
+    border-top: var(--lwc-borderWidthThin,1px) solid var(--lwc-colorBorder,rgb(229, 229, 229));
+}
+
+c-objects-and-analysis .datatable-horizontal-border-wrapper{
+    border-left: var(--lwc-borderWidthThin,1px) solid var(--lwc-colorBorder,rgb(229, 229, 229));
+    border-right: var(--lwc-borderWidthThin,1px) solid var(--lwc-colorBorder,rgb(229, 229, 229));
+}
+
+c-objects-and-analysis .slds-icon-utility-light-bulb svg{
+    fill:orange;
+}
+
+c-field-insights .slds-card__header .slds-card__header-title span{
+    font-size: 22px;
+}
+
+.slds-media__body.analyses-item-name{
+    min-width: 90px;
+}
+
+.fs-big-helptext svg.slds-button__icon {
+    width: 18px;
+    height: 18px;
+}

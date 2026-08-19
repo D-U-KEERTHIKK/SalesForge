@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>X1 Sales Ready</fullName>
+        <default>false</default>
+        <label>X1 Sales Ready</label>
+    </customValue>
+    <customValue>
+        <fullName>X2 Hot Lead</fullName>
+        <default>false</default>
+        <label>X2 Hot Lead</label>
+    </customValue>
+    <customValue>
+        <fullName>X3 Mid-Quality</fullName>
+        <default>false</default>
+        <label>X3 Mid-Quality</label>
+    </customValue>
+    <customValue>
+        <fullName>X4 Basic Lead</fullName>
+        <default>false</default>
+        <label>X4 Basic Lead</label>
+    </customValue>
+    <description>Lead Quality Tagging end-to-end</description>
+    <masterLabel>X-Factor</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

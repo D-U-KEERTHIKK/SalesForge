@@ -1,0 +1,13 @@
+<div class="nts-selected-field">
+    <span class="root nts-selected-node nts-parent-node"><%-root%></span>
+    <span class="separator">&raquo;</span>
+
+    <% _.each(selection, function(field) { %>
+        <% if (hasChildren(field)) { %>
+            <span <%-"title='"+field.name+"'"%> class="nts-selected-node nts-parent-node"><%-field.label.replace(' ID', '')%></span>
+            <span class="separator">&raquo;</span>
+        <% } else { %>
+            <span <%-"title='"+field.name+"'"%> class="nts-selected-node nts-leaf-node"><%-field.label%></span>
+        <% } %>
+    <% }); %>
+</div>

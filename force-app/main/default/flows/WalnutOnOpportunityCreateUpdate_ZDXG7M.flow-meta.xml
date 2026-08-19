@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <name>WalnutOnOpportunityCreateUpdate_ZDXG7M</name>
+        <label>WalnutOnOpportunityCreateUpdate_ZDXG7M</label>
+        <locationX>100</locationX>
+        <locationY>400</locationY>
+        <actionName>Opportunity.WalnutOnOpportunityCreateUpdate_ZDXG7M</actionName>
+        <actionType>outboundMessage</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <nameSegment>Opportunity.WalnutOnOpportunityCreateUpdate_ZDXG7M</nameSegment>
+    </actionCalls>
+    <apiVersion>49.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <label>WalnutOnOpportunityCreateUpdate_ZDXG7M</label>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>50</locationX>
+        <locationY>50</locationY>
+        <connector>
+            <targetReference>WalnutOnOpportunityCreateUpdate_ZDXG7M</targetReference>
+        </connector>
+        <filterFormula>{!$Record.CreatedDate} &gt; DATETIMEVALUE(&quot;2022-07-31 22:00:00&quot;)</filterFormula>
+        <object>Opportunity</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

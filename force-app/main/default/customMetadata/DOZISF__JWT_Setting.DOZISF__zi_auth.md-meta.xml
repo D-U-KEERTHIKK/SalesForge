@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>zi-auth</label>
+    <protected>false</protected>
+    <values>
+        <field>DOZISF__Audience__c</field>
+        <value xsi:type="xsd:string">enrich@zoominfo.com</value>
+    </values>
+    <values>
+        <field>DOZISF__Issuer__c</field>
+        <value xsi:type="xsd:string">https://www.zoominfo.com</value>
+    </values>
+    <values>
+        <field>DOZISF__Private_Key__c</field>
+        <value xsi:type="xsd:string">-----BEGIN RSA PRIVATE KEY-----
+MIIEpAIBAAKCAQEAyaSsL3Yyn/PTSeuEViKpLTTD1f3yh0YgBG2epb/Wdam6xJYo
+YXiYHJv/SRLuPwEXS0X2vAaYc5mQDvMlemLC8mmTmBhSntw9fdKPQM1UWBxGaRkP
+AS4gSuSgOOGRxHspmB9jfzAx+Vn9jgySF5wZM8nGsbFMoquoJaH834NgbkVbAjzW
+HBxO0gwuAZApv71jKW4Zc8UCmk0ao7BMLhdTpt3+gAOBDeLyMqothKAsh5bZG/mn
+oEQYHrWRLlx9yKZlfduVZGKhZBynRKA7st0ow00+RxyQo6T8/aVrimv9/035yOUl
++de5zapJOv/ZMGLyo7kyGLdG4qzUUbgSj89OFwIDAQABAoIBABGI21xJN//G0THV
+ZC2lV/bRZtI+AhAXXgNkkO4y73BN8SrVL+/B7+BVBG8TUVpzOtZV4C3bmPg8e1WB
+eVnaKr+vxKDuRIkB9+rwG3r0IAiFdO4AuthMbYx1syUfIHDokOZknF9cDoxzceQf
+Xbjl3x8sxbWACH0A1l9nZbj+EK2l/JPKyHuaR7nPIv8vkBhAiAnt7OFU3qXh0hYb
+9TQKJud9RsZIB9/UlyLByPxpwBjQ2xexRK52HivH4GQs+fcyeqBh1dgmYPJOexA9
+QGBl9pT3kTpTa7VOk+V7mwB8SAml5D0ipVl5lD11wtRS9l1AQov7xzpUeZK8ABKN
+YsxXgRECgYEA/TMl1fZ2dOMT2Axk651TtfdK3wf5kOcJUDj/JnJcrAa1q663UXUf
+ZnJF7sLgAQJQa8vqt0Ja7+HJ0TcMqskWVbFpFUZFq9kO6J7R7qZQNP0o94cBdEek
+y6Asfmuslgrf23NsLzrXHNFxYOm3LgDnnKnN8YNPuW9WABK0A1Qg3CkCgYEAy9+P
+Mc+56nXIGakMjLVGCrLs4iQ0BOouXX0P9ba6Hkafnp4kbLHDdSQeLmWhmfQvYxda
+V9SCTng2n8GGntaTWUtTc1DoZfKTUhaWFAQioIpBpTjpePO6bDUzjDkl4/AH+aIF
+iswqzlnKexFfMAy6/y33gYiGmMLSdUKWwMUUID8CgYEA9hBg8sCkeg+8VzgkU73/
+flWnU3xikumUaXwaqnh1i1Cx+PjAes9CBsODJvgHzbM8CKaRoitASOO6yDGhg9AM
+fpb9MomqZ8l37aV7C1xhkj19NKDlTuXZR3KQCwQFI4PJ7XEMcBHUv9LjRnWbaX/D
+lsKGu/EK54FFqKiEfL+jd5ECgYBHwdEpzB546qnadkjHgco8W8vKsMlqbW6SU0F5
+z63kmCD4eFsDsvHD2kmRNQ5THMJNE1wmC9MtgVxgkIIsiAPm6v9dWD3kHCREQVTj
+iK0TanY+jDCI9OhJy9Pv5/FxL/vunltrBf+PD8WX2X5ycBilVm2GNyKAxBnFUgGz
+qeoyiwKBgQCBBBOs8FvTPDQ0M3I7u1uWlnBngXDkmDFoUGtwmYrIQKUauhg/PN2b
+1jCybWV+mhKhsEyX3zM0XZe5U+WT4vputP3ImVTmpnswAuvYLqXKuhjFAl4IXtV1
+Br2dGIUnMeBP5BlaNPBD0hwJD7P3u2ns+6uKsLiGidVTNTGIg7kj+A==
+-----END RSA PRIVATE KEY-----</value>
+    </values>
+    <values>
+        <field>DOZISF__Subject__c</field>
+        <value xsi:type="xsd:string">enrich@zoominfo.com</value>
+    </values>
+    <values>
+        <field>DOZISF__User_Name__c</field>
+        <value xsi:type="xsd:string">marketing@opsera.io</value>
+    </values>
+    <values>
+        <field>DOZISF__Valid_Time__c</field>
+        <value xsi:type="xsd:double">60.0</value>
+    </values>
+</CustomMetadata>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Outcomes__c</fullName>
+    <externalId>false</externalId>
+    <formula>if(find(&quot;Left Voicemail&quot;,Subject) &gt; 0, &quot;LEFT VOICEMAIL&quot;,
+if(find(&quot; - Meeting Set&quot;,Subject) &gt; 0, &quot;MEETING SET&quot;,
+if(find(&quot; - Meeting Set&quot;,Subject) &gt; 0, &quot;MEETING SET&quot;,
+if(find(&quot;No Answer&quot;,Subject) &gt; 0, &quot;NO ANSWER&quot;,
+if(find(&quot;- No Longer with Company&quot;,Subject) &gt; 0, &quot;NO LONGER AT COMPANY&quot;,
+if(find(&quot;- Not Interested&quot;,Subject) &gt; 0, &quot;NOT INTERESTED&quot;,
+if(find(&quot;- Not Interested&quot;,Subject) &gt; 0, &quot;NOT INTERESTED&quot;,
+if(find(&quot;- Referral&quot;,Subject) &gt; 0, &quot;REFERRED TO PERSON&quot;,
+if(and(find(&quot;Email&quot;,Subject) = 13,find(&quot;In&quot;,Subject) = 21), &quot;EMAIL INBOUND&quot;,
+if(and(find(&quot;Email&quot;,Subject) = 13,find(&quot;Out&quot;,Right(Subject,len(Subject)-20)) = 1), &quot;EMAIL OUTBOUND&quot;,
+&quot;Z_OTHER&quot; ))))))))))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Outcomes</label>
+    <required>false</required>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

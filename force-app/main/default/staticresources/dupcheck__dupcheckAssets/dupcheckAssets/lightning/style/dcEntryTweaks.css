@@ -1,0 +1,18 @@
+/* tweak for proper modal width in sf communities */
+.slds-modal__container .slds-modal__container[dupcheck-dc3Entry_dc3Entry] {
+  width: 100% !important;
+  min-width: 100% !important;
+  max-width: 100% !important;
+}
+
+.slds-modal__container .slds-modal__container[dupcheck-dc3Entry_dc3Entry] .slds-form-element__label {
+  min-width: 100% !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  display: block !important;
+  float: none !important;
+}
+
+.slds-modal__container .slds-modal__container[dupcheck-dc3Entry_dc3Entry] .slds-form-element__control {
+  padding-left: 0 !important;
+}

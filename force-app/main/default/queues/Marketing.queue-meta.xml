@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesIncludeBosses>true</doesIncludeBosses>
+    <doesSendEmailToMembers>true</doesSendEmailToMembers>
+    <name>Marketing</name>
+    <queueMembers>
+        <users>
+            <user>dan.opsera@earlyops.com</user>
+            <user>karthick@opsera.io</user>
+            <user>marketing@opsera.io</user>
+            <user>phuong@opsera.io</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Lead</sobjectType>
+    </queueSobject>
+</Queue>

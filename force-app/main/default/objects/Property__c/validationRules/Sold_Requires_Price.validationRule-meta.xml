@@ -2,7 +2,10 @@
 <ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Sold_Requires_Price</fullName>
     <active>true</active>
-    <errorConditionFormula>AND(ISPICKVAL(Property_Status__c, "Sold"), ISBLANK(Price__c))</errorConditionFormula>
+    <description>Sold properties require a price.</description>
+    <errorConditionFormula>AND(
+    ISPICKVAL(Property_Status__c, &quot;Sold&quot;),
+    ISBLANK(Price__c)
+)</errorConditionFormula>
     <errorMessage>A sold property must have a price.</errorMessage>
-    <errorDisplayField>Price__c</errorDisplayField>
 </ValidationRule>

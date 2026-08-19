@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>G2Crowd__Visiting_Organization__c</fullName>
+    <deprecated>false</deprecated>
+    <label>Visiting Organization</label>
+    <referenceTo>G2Crowd__G2_Visiting_Organization__c</referenceTo>
+    <relationshipLabel>G2 Secondary Accounts</relationshipLabel>
+    <relationshipName>G2_Secondary_Accounts</relationshipName>
+    <relationshipOrder>0</relationshipOrder>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

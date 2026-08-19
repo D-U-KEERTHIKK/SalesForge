@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>dupcheck__Type__c</fullName>
+    <deprecated>false</deprecated>
+    <label>Type</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>SINGLE_INSERT</fullName>
+                <default>false</default>
+                <label>SINGLE_INSERT</label>
+            </value>
+            <value>
+                <fullName>SINGLE_UPDATE</fullName>
+                <default>false</default>
+                <label>SINGLE_UPDATE</label>
+            </value>
+            <value>
+                <fullName>BULK_INSERT</fullName>
+                <default>false</default>
+                <label>BULK_INSERT</label>
+            </value>
+            <value>
+                <fullName>BULK_UPDATE</fullName>
+                <default>false</default>
+                <label>BULK_UPDATE</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

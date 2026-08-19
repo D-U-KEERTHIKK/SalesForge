@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Microsoft_CRM_Identifier__c</fullName>
+    <description>Identifier for Microsoft&apos;s CRM opportunity in co-sell deal</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Microsoft&apos;s CRM Identifier for this co-sell deal</inlineHelpText>
+    <label>Microsoft CRM Identifier</label>
+    <length>100</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AnimationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <animationFrequency>always</animationFrequency>
+    <developerName>Sales_Opportunity_Path</developerName>
+    <isActive>true</isActive>
+    <masterLabel>Sales Opportunity Path</masterLabel>
+    <recordTypeContext>Custom</recordTypeContext>
+    <recordTypeName>Sales</recordTypeName>
+    <sobjectType>Opportunity</sobjectType>
+    <targetField>StageName</targetField>
+    <targetFieldChangeToValues>07 Closed Won,06 Signed Contract Received</targetFieldChangeToValues>
+</AnimationRule>

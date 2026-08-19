@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Primary_Partnership_Type__c</fullName>
+    <label>Primary Partnership Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Strategic</fullName>
+                <default>false</default>
+                <label>Strategic</label>
+            </value>
+            <value>
+                <fullName>System Integrator (SI)</fullName>
+                <default>false</default>
+                <label>System Integrator (SI)</label>
+            </value>
+            <value>
+                <fullName>Managed Service Provider (MSP)</fullName>
+                <default>false</default>
+                <label>Managed Service Provider (MSP)</label>
+            </value>
+            <value>
+                <fullName>Independent Software Vendor (ISV)</fullName>
+                <default>false</default>
+                <label>Independent Software Vendor (ISV)</label>
+            </value>
+            <value>
+                <fullName>Original Equipment Manufacturer (OEM)</fullName>
+                <default>false</default>
+                <label>Original Equipment Manufacturer (OEM)</label>
+            </value>
+            <value>
+                <fullName>Value-Added Reseller (VAR)</fullName>
+                <default>false</default>
+                <label>Value-Added Reseller (VAR)</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

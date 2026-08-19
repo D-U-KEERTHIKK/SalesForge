@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Copado</fullName>
+        <default>false</default>
+        <label>Copado</label>
+    </customValue>
+    <customValue>
+        <fullName>Flotsam</fullName>
+        <default>false</default>
+        <label>Flotsam</label>
+    </customValue>
+    <customValue>
+        <fullName>GearSet</fullName>
+        <default>false</default>
+        <label>GearSet</label>
+    </customValue>
+    <customValue>
+        <fullName>BitBucket</fullName>
+        <default>false</default>
+        <label>BitBucket</label>
+    </customValue>
+    <customValue>
+        <fullName>GitLab</fullName>
+        <default>false</default>
+        <label>GitLab</label>
+    </customValue>
+    <customValue>
+        <fullName>GitHub</fullName>
+        <default>false</default>
+        <label>GitHub</label>
+    </customValue>
+    <customValue>
+        <fullName>Harness</fullName>
+        <default>false</default>
+        <label>Harness</label>
+    </customValue>
+    <customValue>
+        <fullName>Jellyfish</fullName>
+        <default>false</default>
+        <label>Jellyfish</label>
+    </customValue>
+    <masterLabel>Installed Technology</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

@@ -1,0 +1,113 @@
+{
+	"2007": {
+		"objectNameToObjectSettings": {
+			"owners": {
+				"fieldNameToSettings": {
+					"lastname": {
+						"partner_org_id": 2007,
+						"objectName": "owners",
+						"isSuppressed": true,
+						"fieldName": "lastName",
+						"fieldDisplayName": "Account Executive Last Name"
+					}
+				}
+			},
+			"companies": {
+				"fieldNameToSettings": {
+					"type__value": {
+						"partner_org_id": 2007,
+						"objectName": "companies",
+						"isSuppressed": true,
+						"fieldName": "type__value",
+						"fieldDisplayName": "Type"
+					}
+				}
+			},
+			"deals": {
+				"fieldNameToSettings": {
+					"pipeline_label": {
+						"partner_org_id": 2007,
+						"objectName": "deals",
+						"isSuppressed": true,
+						"fieldName": "pipeline_label",
+						"fieldDisplayName": "Pipeline"
+					}
+				}
+			},
+			"user": {
+				"fieldNameToSettings": {
+					"account executive name": {
+						"partner_org_id": 2007,
+						"objectName": "User",
+						"isSuppressed": true,
+						"fieldName": "Account Executive Name",
+						"fieldDisplayName": "Account Executive Name"
+					}
+				}
+			}
+		}
+	},
+	"532": {
+		"objectNameToObjectSettings": {
+			"opportunity": {
+				"fieldNameToSettings": {
+					"stagename": {
+						"partner_org_id": 532,
+						"objectName": "Opportunity",
+						"isSuppressed": true,
+						"fieldName": "StageName",
+						"fieldDisplayName": "Sales Stage"
+					}
+				}
+			}
+		}
+	},
+	"61": {
+		"objectNameToObjectSettings": {
+			"account": {
+				"fieldNameToSettings": {
+					"type": {
+						"partner_org_id": 61,
+						"objectName": "Account",
+						"isSuppressed": true,
+						"fieldName": "Type",
+						"fieldDisplayName": "Account Type"
+					},
+					"name": {
+						"partner_org_id": 61,
+						"objectName": "Account",
+						"isSuppressed": true,
+						"fieldName": "Name",
+						"fieldDisplayName": "Account Name"
+					}
+				}
+			},
+			"user": {
+				"fieldNameToSettings": {
+					"mobilephone": {
+						"partner_org_id": 61,
+						"objectName": "User",
+						"isSuppressed": true,
+						"fieldName": "MobilePhone",
+						"fieldDisplayName": "Account Executive Phone"
+					}
+				}
+			}
+		}
+	},
+	"1395": {
+		"objectNameToObjectSettings": {
+			"report1617988347521prepped": {
+				"fieldNameToSettings": {
+					"status": {
+						"partner_org_id": 1395,
+						"objectName": "report1617988347521prepped",
+						"isSuppressed": true,
+						"fieldName": "status",
+						"fieldDisplayName": "status"
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Best_X_Factor__c</fullName>
+    <description>Inherit the Best X-Factor value from the lead or contact.</description>
+    <externalId>false</externalId>
+    <formula>if(isblank(ContactId ),
+text(Lead.Best_X_Factor__c) ,
+text(Contact.Best_X_Factor__c)
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Best X-Factor</label>
+    <required>false</required>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,1 @@
+{"data":{"type":"subscribed-organizations","id":"510894","attributes":{"organization":"Synology","id":510894,"remote-organization-id":330491},"links":{"self":"/api/salesforce/v1/subscribed-organizations/510894"}}}

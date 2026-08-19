@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Level_of_Intent__c</fullName>
+    <description>This is a quick way to determine if the MQL is High Intent or Low Intent based on their Intent Score. Can be used for prioritization of follow-ups and reporting. Managed by a HubSpot Workflow.</description>
+    <label>Level of Intent</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>High Intent</fullName>
+                <default>false</default>
+                <label>High Intent</label>
+            </value>
+            <value>
+                <fullName>Low Intent</fullName>
+                <default>false</default>
+                <label>Low Intent</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

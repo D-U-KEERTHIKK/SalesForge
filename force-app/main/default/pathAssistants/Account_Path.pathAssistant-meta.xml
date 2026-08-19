@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <entityName>Account</entityName>
+    <fieldName>Account_Journey__c</fieldName>
+    <masterLabel>Account Path</masterLabel>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;&lt;span style=&quot;font-family: Raleway, sans-serif; font-size: 14pt;&quot;&gt;Target accounts that interact with the company in some way, from visiting the website, replying to emails, or attending events.&lt;/span&gt;&lt;/p&gt;</info>
+        <picklistValueName>Aware</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;&lt;span style=&quot;font-family: Raleway, sans-serif; font-size: 14pt;&quot;&gt;Target accounts with closed, won opportunities.&lt;/span&gt;&lt;/p&gt;</info>
+        <picklistValueName>Customer</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;&lt;span style=&quot;font-family: Raleway, sans-serif; font-size: 14pt;&quot;&gt;Target accounts that reach a level of engagement justifying Sales outreach&lt;/span&gt;&lt;/p&gt;</info>
+        <picklistValueName>Marketing Qualified</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;&lt;span style=&quot;font-family: Raleway, sans-serif; font-size: 14pt;&quot;&gt;Target accounts with active, open sales opportunities.&lt;/span&gt;&lt;/p&gt;</info>
+        <picklistValueName>Opportunity</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;&lt;span style=&quot;font-family: Raleway, sans-serif; font-size: 14pt;&quot;&gt;A target account that has not interacted with you in any way&lt;/span&gt;&lt;/p&gt;</info>
+        <picklistValueName>Target</picklistValueName>
+    </pathAssistantSteps>
+    <recordTypeName>__MASTER__</recordTypeName>
+</PathAssistant>

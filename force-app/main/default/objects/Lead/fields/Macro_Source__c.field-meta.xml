@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Macro_Source__c</fullName>
+    <externalId>false</externalId>
+    <formula>CASE(LeadSource,
+  &quot;Direct&quot;,                  &quot;Mktg Demand Gen&quot;,
+  &quot;Events&quot;,                  &quot;Mktg Demand Gen&quot;,
+  &quot;Organic Search&quot;,          &quot;Mktg Demand Gen&quot;,
+  &quot;Organic Social&quot;,          &quot;Mktg Demand Gen&quot;,
+  &quot;Paid Social&quot;,             &quot;Mktg Demand Gen&quot;,
+  &quot;Paid Ads&quot;,                &quot;Mktg Demand Gen&quot;,
+  &quot;Content&quot;,                 &quot;Mktg Demand Gen&quot;,
+  &quot;LinkedIn&quot;,                &quot;Mktg Demand Gen&quot;,
+  &quot;Contact Us / Demo Request&quot;,&quot;Mktg Demand Gen&quot;,
+  &quot;Purchased List&quot;,          &quot;AEs and SDRs&quot;,   /* or AEs and SDRs if SDRs work these */
+  &quot;Referrals&quot;,               &quot;Partner Programs&quot;,   /* or Partner Programs if channel-sourced */
+  &quot;Partners&quot;,                &quot;Partner Programs&quot;,
+  &quot;Third Party Vendors&quot;,     &quot;Partner Programs&quot;,
+  &quot;AE Outreach&quot;,             &quot;AEs and SDRs&quot;,
+  &quot;SDR-Outreach&quot;,            &quot;AEs and SDRs&quot;,
+  &quot;Lantern&quot;,                 &quot;Mktg Demand Gen&quot;,      /* PLG/PLS signal, SDR-worked */
+  &quot;Existing Customer&quot;,       &quot;Expansion &amp; Upsell&quot;,
+  &quot;Unknown&quot;                  /* default */
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Macro Source</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Partner_Direction__c</fullName>
+    <description>A referral Opportunity inbound is &quot;From Partner&quot;
+An Opportunity transferred to a Partner for closing/selling is &quot;To Partner&quot;</description>
+    <inlineHelpText>A referral Opportunity inbound is &quot;From Partner&quot;
+An Opportunity transferred to a Partner for closing/selling is &quot;To Partner&quot;</inlineHelpText>
+    <label>Partner Direction</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>From Partner</fullName>
+                <default>false</default>
+                <label>From Partner</label>
+            </value>
+            <value>
+                <fullName>To Partner</fullName>
+                <default>false</default>
+                <label>To Partner</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

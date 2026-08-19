@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ACV__c</fullName>
+    <defaultValue>0</defaultValue>
+    <description>ACV (annual contract value) is a metric that shows you how much an ongoing customer contract is worth by averaging and normalizing its value over one year.
+ACV = Total contract value ÷ Number of years</description>
+    <inlineHelpText>ARR ÷ years of total term.</inlineHelpText>
+    <label>ACV</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Currency</type>
+</CustomField>
