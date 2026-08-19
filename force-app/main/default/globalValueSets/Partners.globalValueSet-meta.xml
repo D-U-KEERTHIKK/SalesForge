@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Amazon-AWS</fullName>
+        <default>false</default>
+        <label>Amazon-AWS</label>
+    </customValue>
+    <customValue>
+        <fullName>DataBricks</fullName>
+        <default>false</default>
+        <label>DataBricks</label>
+    </customValue>
+    <customValue>
+        <fullName>GitHub</fullName>
+        <default>false</default>
+        <label>GitHub</label>
+    </customValue>
+    <customValue>
+        <fullName>Microsoft-Azure</fullName>
+        <default>false</default>
+        <label>Microsoft-Azure</label>
+    </customValue>
+    <customValue>
+        <fullName>Koantek</fullName>
+        <default>false</default>
+        <label>Koantek</label>
+    </customValue>
+    <customValue>
+        <fullName>Lineaje</fullName>
+        <default>false</default>
+        <label>Lineaje</label>
+    </customValue>
+    <customValue>
+        <fullName>LTM</fullName>
+        <default>false</default>
+        <label>LTM</label>
+    </customValue>
+    <customValue>
+        <fullName>Synclaire</fullName>
+        <default>false</default>
+        <label>Synclaire</label>
+    </customValue>
+    <customValue>
+        <fullName>Salesforce</fullName>
+        <default>false</default>
+        <label>Salesforce</label>
+    </customValue>
+    <customValue>
+        <fullName>Infinite Solutions</fullName>
+        <default>false</default>
+        <label>Infinite Solutions</label>
+    </customValue>
+    <masterLabel>Partners</masterLabel>
+    <sorted>true</sorted>
+</GlobalValueSet>

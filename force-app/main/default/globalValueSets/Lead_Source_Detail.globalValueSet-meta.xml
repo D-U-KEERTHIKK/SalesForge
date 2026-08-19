@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Demo Requests</fullName>
+        <default>false</default>
+        <label>Demo Requests</label>
+    </customValue>
+    <customValue>
+        <fullName>Contact Us</fullName>
+        <default>false</default>
+        <label>Contact Us</label>
+    </customValue>
+    <customValue>
+        <fullName>Google</fullName>
+        <default>false</default>
+        <label>Google</label>
+    </customValue>
+    <customValue>
+        <fullName>Others</fullName>
+        <default>false</default>
+        <label>Others</label>
+    </customValue>
+    <customValue>
+        <fullName>Linkedin</fullName>
+        <default>false</default>
+        <label>Linkedin</label>
+    </customValue>
+    <customValue>
+        <fullName>Twitter</fullName>
+        <default>false</default>
+        <label>Twitter</label>
+    </customValue>
+    <customValue>
+        <fullName>YouTube</fullName>
+        <default>false</default>
+        <label>YouTube</label>
+    </customValue>
+    <customValue>
+        <fullName>Adroll</fullName>
+        <default>false</default>
+        <label>Adroll</label>
+    </customValue>
+    <customValue>
+        <fullName>Linkedin Display</fullName>
+        <default>false</default>
+        <label>Linkedin Display</label>
+    </customValue>
+    <customValue>
+        <fullName>Facebook</fullName>
+        <default>false</default>
+        <label>Facebook</label>
+    </customValue>
+    <customValue>
+        <fullName>Instagram</fullName>
+        <default>false</default>
+        <label>Instagram</label>
+    </customValue>
+    <customValue>
+        <fullName>WhatsApp</fullName>
+        <default>false</default>
+        <label>WhatsApp</label>
+    </customValue>
+    <customValue>
+        <fullName>Technology Partners</fullName>
+        <default>false</default>
+        <label>Technology Partners</label>
+    </customValue>
+    <customValue>
+        <fullName>Channel Partners</fullName>
+        <default>false</default>
+        <label>Channel Partners</label>
+    </customValue>
+    <customValue>
+        <fullName>Demand Gen Agency</fullName>
+        <default>false</default>
+        <label>Demand Gen Agency</label>
+    </customValue>
+    <customValue>
+        <fullName>Advisors</fullName>
+        <default>false</default>
+        <label>Advisors</label>
+    </customValue>
+    <customValue>
+        <fullName>Employee</fullName>
+        <default>false</default>
+        <label>Employee</label>
+    </customValue>
+    <customValue>
+        <fullName>Customer</fullName>
+        <default>false</default>
+        <label>Customer</label>
+    </customValue>
+    <customValue>
+        <fullName>Influencers</fullName>
+        <default>false</default>
+        <label>Influencers</label>
+    </customValue>
+    <customValue>
+        <fullName>External Events</fullName>
+        <default>false</default>
+        <label>External Events</label>
+    </customValue>
+    <customValue>
+        <fullName>Opsera Events</fullName>
+        <default>false</default>
+        <label>Opsera Events</label>
+    </customValue>
+    <customValue>
+        <fullName>Email</fullName>
+        <default>false</default>
+        <label>Email</label>
+    </customValue>
+    <customValue>
+        <fullName>Events</fullName>
+        <default>false</default>
+        <label>Events</label>
+    </customValue>
+    <customValue>
+        <fullName>Content Syndication</fullName>
+        <default>false</default>
+        <label>Content Syndication</label>
+    </customValue>
+    <customValue>
+        <fullName>Display</fullName>
+        <default>false</default>
+        <label>Display</label>
+    </customValue>
+    <customValue>
+        <fullName>Apollo</fullName>
+        <default>false</default>
+        <label>Apollo</label>
+    </customValue>
+    <customValue>
+        <fullName>Seamless.ai</fullName>
+        <default>false</default>
+        <label>Seamless.ai</label>
+    </customValue>
+    <customValue>
+        <fullName>LinkedIn Sales Navigator</fullName>
+        <default>false</default>
+        <label>LinkedIn Sales Navigator</label>
+    </customValue>
+    <customValue>
+        <fullName>Spigital</fullName>
+        <default>false</default>
+        <label>Spigital</label>
+    </customValue>
+    <customValue>
+        <fullName>Intent Flow</fullName>
+        <default>false</default>
+        <label>Intent Flow</label>
+    </customValue>
+    <customValue>
+        <fullName>Vendisys</fullName>
+        <default>false</default>
+        <label>Vendisys</label>
+    </customValue>
+    <customValue>
+        <fullName>G2</fullName>
+        <default>false</default>
+        <label>G2</label>
+    </customValue>
+    <customValue>
+        <fullName>Google Adwords</fullName>
+        <default>false</default>
+        <label>Google Adwords</label>
+    </customValue>
+    <customValue>
+        <fullName>Google Display</fullName>
+        <default>false</default>
+        <label>Google Display</label>
+    </customValue>
+    <customValue>
+        <fullName>Content Downloads</fullName>
+        <default>false</default>
+        <label>Content Downloads</label>
+    </customValue>
+    <customValue>
+        <fullName>Bing</fullName>
+        <default>false</default>
+        <label>Bing</label>
+    </customValue>
+    <customValue>
+        <fullName>Nurture</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Nurture</label>
+    </customValue>
+    <customValue>
+        <fullName>Newsletter</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Newsletter</label>
+    </customValue>
+    <customValue>
+        <fullName>Tradeshow</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Tradeshow</label>
+    </customValue>
+    <customValue>
+        <fullName>Linkedin Accounts</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Linkedin Accounts</label>
+    </customValue>
+    <customValue>
+        <fullName>Linkedin Audience</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Linkedin Audience</label>
+    </customValue>
+    <customValue>
+        <fullName>Adroll Retargeting</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Adroll Retargeting</label>
+    </customValue>
+    <customValue>
+        <fullName>Google Retargeting</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Google Retargeting</label>
+    </customValue>
+    <customValue>
+        <fullName>DuckDuckGo</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>DuckDuckGo</label>
+    </customValue>
+    <customValue>
+        <fullName>Watch Videos</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Watch Videos</label>
+    </customValue>
+    <customValue>
+        <fullName>Memory Blue</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Memory Blue</label>
+    </customValue>
+    <customValue>
+        <fullName>Otobound</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Otobound</label>
+    </customValue>
+    <customValue>
+        <fullName>Alore</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Alore</label>
+    </customValue>
+    <customValue>
+        <fullName>Promotions</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Promotions</label>
+    </customValue>
+    <masterLabel>Lead Source Detail</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>
