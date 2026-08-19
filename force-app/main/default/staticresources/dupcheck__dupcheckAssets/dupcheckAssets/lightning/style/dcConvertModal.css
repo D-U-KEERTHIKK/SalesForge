@@ -1,0 +1,21 @@
+.slds-modal__container {
+  min-width: 70vw !important;
+  padding: 0px !important;
+}
+
+.slds-modal__container .slds-modal__content.slds-p-around--medium {
+  padding: 0 !important;
+  height: auto !important;
+  max-height: none !important;
+}
+
+.slds-modal__container .modal-body {
+  margin-top: 0 !important;
+  height: auto !important;
+  max-height: none !important;
+  padding: 0 !important;
+}
+
+.slds-modal__container .modal-body .cuf-content {
+  padding: 0 !important;
+}

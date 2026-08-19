@@ -1,0 +1,3652 @@
+@charset "UTF-8";
+/********************************** @imports **********************************/
+/*
+  All custom components in the "components" folder will have their styles
+  defined in this file
+*/
+/* line 6, _components.scss */
+.all-child-elements-disabled {
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+/***************************** @DataCards ******************************/
+/* line 21, _components.scss */
+.ld-data-card-wrapper .ld-data-card {
+  border-radius: 3px;
+  height: 55px;
+  padding: 10px 10px 12px 10px;
+  display: inline-block;
+  margin-right: 5px;
+  color: white;
+}
+/* line 30, _components.scss */
+.ld-data-card-wrapper .ld-data-card.grey1 {
+  background-color: var(--dk-grey-2);
+}
+/* line 34, _components.scss */
+.ld-data-card-wrapper .ld-data-card.grey2 {
+  background-color: var(--med-grey-2);
+}
+/* line 38, _components.scss */
+.ld-data-card-wrapper .ld-data-card.grey3 {
+  background-color: var(--med-grey-1);
+}
+/* line 42, _components.scss */
+.ld-data-card-wrapper .ld-data-card .data-title {
+  font-size: 12px;
+  font-weight: var(--light);
+  max-width: 58px;
+  float: left;
+  margin-right: 10px;
+}
+/* line 50, _components.scss */
+.ld-data-card-wrapper .ld-data-card .data-value {
+  font-size: 35px;
+  font-weight: var(--semi-bold);
+  vertical-align: bottom;
+}
+
+/* line 58, _components.scss */
+.ld-line-graph-legend .line-graph-legend {
+  display: inline;
+  float: right;
+  margin-right: 30px;
+  margin-top: 8px;
+}
+/* line 65, _components.scss */
+.ld-line-graph-legend .line-graph-legend text {
+  stroke: var(--med-grey-2);
+  font-size: 9px;
+  font-weight: var(--light);
+  stroke-width: 0.3;
+  text-anchor: end;
+  alignment-baseline: middle;
+}
+/* line 74, _components.scss */
+.ld-line-graph-legend .line-graph-legend .primary-line .line {
+  stroke: var(--teal);
+  stroke-width: 2;
+  fill: none;
+}
+/* line 80, _components.scss */
+.ld-line-graph-legend .line-graph-legend .primary-line .point {
+  stroke-width: 0;
+  fill: var(--teal);
+}
+/* line 85, _components.scss */
+.ld-line-graph-legend .line-graph-legend .secondary-line .line {
+  stroke: var(--lt-grey-2);
+  stroke-width: 2;
+  fill: none;
+}
+/* line 91, _components.scss */
+.ld-line-graph-legend .line-graph-legend .tertiary-line .line {
+  stroke: var(--ld-blue);
+  stroke-width: 1;
+  fill: none;
+}
+
+/******************************* @dropdown menu *******************************/
+/* line 100, _components.scss */
+.all-child-elements-disabled .ld-dropdown-large,
+.all-child-elements-disabled .ld-dropdown-small,
+.all-child-elements-disabled .ld-dropdown-xtra-small, .edit-disabled.ld-dropdown-large, .edit-disabled.ld-dropdown-small, .edit-disabled.ld-dropdown-xtra-small, .disabled.ld-dropdown-large, .disabled.ld-dropdown-small, .disabled.ld-dropdown-xtra-small {
+  background-color: var(--lt-grey-2);
+  border: 1px solid var(--lt-grey-2);
+  cursor: not-allowed;
+  pointer-events: none;
+}
+/* line 105, _components.scss */
+.all-child-elements-disabled .ld-dropdown-large .ld-dropdown-value span,
+.all-child-elements-disabled .ld-dropdown-small .ld-dropdown-value span,
+.all-child-elements-disabled .ld-dropdown-xtra-small .ld-dropdown-value span, .edit-disabled.ld-dropdown-large .ld-dropdown-value span, .edit-disabled.ld-dropdown-small .ld-dropdown-value span, .edit-disabled.ld-dropdown-xtra-small .ld-dropdown-value span, .disabled.ld-dropdown-large .ld-dropdown-value span, .disabled.ld-dropdown-small .ld-dropdown-value span, .disabled.ld-dropdown-xtra-small .ld-dropdown-value span {
+  color: var(--med-grey-2) !important;
+}
+
+/* line 109, _components.scss */
+.all-child-elements-disabled .ld-dropdown-large,
+.all-child-elements-disabled .ld-dropdown-small,
+.all-child-elements-disabled .ld-dropdown-xtra-small, .edit-disabled.ld-dropdown-large, .edit-disabled.ld-dropdown-small, .edit-disabled.ld-dropdown-xtra-small {
+  background: var(--white);
+  border: 1px solid var(--lt-grey-1_5) !important;
+  color: var(--med-grey-1) !important;
+}
+/* line 114, _components.scss */
+.all-child-elements-disabled .ld-dropdown-large .ld-dropdown-value span,
+.all-child-elements-disabled .ld-dropdown-small .ld-dropdown-value span,
+.all-child-elements-disabled .ld-dropdown-xtra-small .ld-dropdown-value span, .edit-disabled.ld-dropdown-large .ld-dropdown-value span, .edit-disabled.ld-dropdown-small .ld-dropdown-value span, .edit-disabled.ld-dropdown-xtra-small .ld-dropdown-value span {
+  color: var(--med-grey-1) !important;
+}
+
+/* line 118, _components.scss */
+.ld-dropdown-large, .ld-dropdown-small, .ld-dropdown-xtra-small {
+  background-color: var(--white);
+  background-image: url("../images/Down_Arrow_Icon.png");
+  background-repeat: no-repeat;
+  background-size: 10px 5px;
+  border: 1px solid var(--lt-grey-2);
+  font-weight: var(--regular) !important;
+  line-height: 1;
+  margin: 0px;
+  position: relative;
+  text-align: left;
+  width: 100%;
+  -webkit-appearance: none !important;
+}
+/* line 131, _components.scss */
+.ld-dropdown-large:hover, .ld-dropdown-small:hover, .ld-dropdown-xtra-small:hover {
+  border: 1px solid var(--ld-lt-green-1);
+  cursor: pointer;
+}
+/* line 141, _components.scss */
+.open.ld-dropdown-large, .open.ld-dropdown-small, .open.ld-dropdown-xtra-small {
+  border: 1px solid var(--ld-lt-green-1);
+  border-bottom-left-radius: 0px !important;
+  border-bottom-right-radius: 0px !important;
+}
+/* line 145, _components.scss */
+.open.ld-dropdown-large > .dropdown-menu, .open.ld-dropdown-small > .dropdown-menu, .open.ld-dropdown-xtra-small > .dropdown-menu {
+  display: block;
+}
+/* line 149, _components.scss */
+.ld-dropdown-large .ld-dropdown-toggle, .ld-dropdown-small .ld-dropdown-toggle, .ld-dropdown-xtra-small .ld-dropdown-toggle {
+  height: 100%;
+}
+/* line 152, _components.scss */
+.ld-dropdown-large .ld-dropdown-toggle .ld-dropdown-value, .ld-dropdown-small .ld-dropdown-toggle .ld-dropdown-value, .ld-dropdown-xtra-small .ld-dropdown-toggle .ld-dropdown-value {
+  color: var(--med-grey-2);
+  display: inline-block;
+}
+/* line 157, _components.scss */
+.ld-dropdown-large .ld-dropdown-toggle .ld-dropdown-value span, .ld-dropdown-small .ld-dropdown-toggle .ld-dropdown-value span, .ld-dropdown-xtra-small .ld-dropdown-toggle .ld-dropdown-value span {
+  color: var(--dk-grey-2);
+}
+/* line 161, _components.scss */
+.ld-dropdown-large .dropdown-menu, .ld-dropdown-small .dropdown-menu, .ld-dropdown-xtra-small .dropdown-menu {
+  background-color: var(--white);
+  border: 1px solid var(--ld-lt-green-1);
+  border-radius: 0px 0px 2px 2px !important;
+  box-shadow: none;
+  left: -1px;
+  list-style: none;
+  margin: 0px;
+  max-height: 200px;
+  overflow: auto;
+  padding: 5px 0px !important;
+  position: absolute;
+  width: calc(100% + 2px) !important;
+  z-index: 63;
+}
+/* line 175, _components.scss */
+.ld-dropdown-large .dropdown-menu .ld-dropdown-search-filter-container, .ld-dropdown-small .dropdown-menu .ld-dropdown-search-filter-container, .ld-dropdown-xtra-small .dropdown-menu .ld-dropdown-search-filter-container {
+  padding: 0px 10px 5px 10px;
+}
+/* line 177, _components.scss */
+.ld-dropdown-large .dropdown-menu .ld-dropdown-search-filter-container .ld-dropdown-search-filter-input, .ld-dropdown-small .dropdown-menu .ld-dropdown-search-filter-container .ld-dropdown-search-filter-input, .ld-dropdown-xtra-small .dropdown-menu .ld-dropdown-search-filter-container .ld-dropdown-search-filter-input {
+  height: 24px;
+  outline: none;
+  width: 100%;
+}
+/* line 183, _components.scss */
+.ld-dropdown-large .dropdown-menu .ld-dropdown-option-list-item, .ld-dropdown-small .dropdown-menu .ld-dropdown-option-list-item, .ld-dropdown-xtra-small .dropdown-menu .ld-dropdown-option-list-item {
+  display: list-item;
+  line-height: 20px;
+  padding: 5px 10px;
+}
+/* line 187, _components.scss */
+.ld-dropdown-large .dropdown-menu .ld-dropdown-option-list-item:hover, .ld-dropdown-small .dropdown-menu .ld-dropdown-option-list-item:hover, .ld-dropdown-xtra-small .dropdown-menu .ld-dropdown-option-list-item:hover {
+  background-color: var(--ld-lt-green-1);
+}
+/* line 190, _components.scss */
+.ld-dropdown-large .dropdown-menu .ld-dropdown-option-list-item.selected, .ld-dropdown-small .dropdown-menu .ld-dropdown-option-list-item.selected, .ld-dropdown-xtra-small .dropdown-menu .ld-dropdown-option-list-item.selected, .ld-dropdown-large .dropdown-menu .ld-dropdown-option-list-item.selected span, .ld-dropdown-small .dropdown-menu .ld-dropdown-option-list-item.selected span, .ld-dropdown-xtra-small .dropdown-menu .ld-dropdown-option-list-item.selected span {
+  background-color: var(--ld-green);
+  color: var(--white);
+}
+
+/* line 197, _components.scss */
+.ld-dropdown-large {
+  background-position: right 10px center;
+  border-radius: 3px !important;
+  font-size: 14px !important;
+  height: 35px;
+}
+/* line 203, _components.scss */
+.ld-dropdown-large .ld-dropdown-toggle .ld-dropdown-value {
+  line-height: 35px !important;
+  padding: 0px 30px 0px 10px;
+}
+/* line 207, _components.scss */
+.ld-dropdown-large .dropdown-menu {
+  font-size: 14px !important;
+}
+
+/* line 211, _components.scss */
+.ld-dropdown-small {
+  background-position: right 10px center;
+  border-radius: 2px !important;
+  font-size: 12px !important;
+  height: 30px;
+}
+/* line 217, _components.scss */
+.ld-dropdown-small .ld-dropdown-toggle .ld-dropdown-value {
+  line-height: 30px !important;
+  padding: 0px 30px 0px 10px;
+}
+/* line 221, _components.scss */
+.ld-dropdown-small .dropdown-menu {
+  font-size: 12px !important;
+}
+
+/* line 225, _components.scss */
+.disabledDiv .ld-dropdown-small {
+  background-image: url("../images/disabled-arrow.png");
+}
+
+/* line 228, _components.scss */
+.ld-dropdown-xtra-small {
+  background-position: right 5px center;
+  border-radius: 2px !important;
+  font-size: 12px !important;
+  height: 25px;
+}
+/* line 234, _components.scss */
+.ld-dropdown-xtra-small .ld-dropdown-toggle .ld-dropdown-value {
+  line-height: 25px !important;
+  padding: 0px 20px 0px 5px;
+}
+/* line 238, _components.scss */
+.ld-dropdown-xtra-small .dropdown-menu {
+  font-size: 12px !important;
+}
+
+/* merge-field-selector modal content */
+/* line 244, _components.scss */
+.merge-field-selector {
+  width: 100%;
+  height: 55px;
+  justify-content: center;
+}
+/* line 248, _components.scss */
+.merge-field-selector .field-selector {
+  width: 300px;
+}
+
+/* Override LD Dropdown stylings if it's part of variable-insert-button */
+/* line 254, _components.scss */
+.variable-insert-button {
+  width: fit-content;
+}
+/* line 257, _components.scss */
+.variable-insert-button.open-dropdown-left .dropdown-menu {
+  left: -43px !important;
+}
+/* line 261, _components.scss */
+.variable-insert-button .ld-dropdown-xtra-small, .variable-insert-button .ld-dropdown-small, .variable-insert-button .ld-dropdown-large {
+  background-color: var(--lt-grey-2);
+  background-image: url("../images/Down_Arrow_Icon_dk-grey2.png");
+  padding: 1px;
+}
+/* line 266, _components.scss */
+.variable-insert-button .ld-dropdown-xtra-small .dropdown-menu, .variable-insert-button .ld-dropdown-small .dropdown-menu, .variable-insert-button .ld-dropdown-large .dropdown-menu {
+  min-width: 115px;
+}
+/* line 270, _components.scss */
+.variable-insert-button .ld-dropdown-xtra-small .ld-dropdown-value, .variable-insert-button .ld-dropdown-small .ld-dropdown-value, .variable-insert-button .ld-dropdown-large .ld-dropdown-value {
+  color: var(--dk-grey-2);
+  font-size: 12px;
+  padding: 0 25px 0 10px;
+}
+/* line 276, _components.scss */
+.variable-insert-button .ld-dropdown-xtra-small .ld-dropdown-option-list-item, .variable-insert-button .ld-dropdown-small .ld-dropdown-option-list-item, .variable-insert-button .ld-dropdown-large .ld-dropdown-option-list-item {
+  color: var(--dk-grey-2);
+}
+/* line 278, _components.scss */
+.variable-insert-button .ld-dropdown-xtra-small .ld-dropdown-option-list-item:hover, .variable-insert-button .ld-dropdown-small .ld-dropdown-option-list-item:hover, .variable-insert-button .ld-dropdown-large .ld-dropdown-option-list-item:hover {
+  background-color: var(--ld-green);
+  color: var(--white);
+}
+/* line 285, _components.scss */
+.variable-insert-button .ld-dropdown-xtra-small:hover, .variable-insert-button .ld-dropdown-small:hover, .variable-insert-button .ld-dropdown-large:hover {
+  background-image: url("../images/Down_Arrow_Icon_White.png");
+  background-color: var(--med-grey-1);
+  border: 1px solid var(--med-grey-1);
+}
+/* line 290, _components.scss */
+.variable-insert-button .ld-dropdown-xtra-small:hover .ld-dropdown-value, .variable-insert-button .ld-dropdown-small:hover .ld-dropdown-value, .variable-insert-button .ld-dropdown-large:hover .ld-dropdown-value {
+  color: var(--white);
+}
+
+/* line 297, _components.scss */
+.relative-date-modal label, .relative-date-modal input {
+  font-size: 12px !important;
+  font-weight: var(--light) !important;
+}
+/* line 302, _components.scss */
+.relative-date-modal input {
+  float: left;
+  width: 45px;
+  margin-top: -2px;
+}
+/* line 308, _components.scss */
+.relative-date-modal .duration-label {
+  font-size: 12px;
+  font-weight: var(--light);
+  float: left;
+  margin-left: 6px;
+  margin-top: 3px;
+}
+/* line 316, _components.scss */
+.relative-date-modal .duration-label-before {
+  font-size: 12px;
+  font-weight: var(--light);
+  float: left;
+  margin-left: 6px;
+  margin-top: 3px;
+}
+/* line 324, _components.scss */
+.relative-date-modal .duration-today-label {
+  font-size: 12px;
+  font-weight: var(--light);
+  margin-left: 1px;
+  margin-top: 3px;
+}
+/* line 331, _components.scss */
+.relative-date-modal .relative-date-modal-text {
+  font-size: 13px;
+  font-weight: var(--light);
+  margin-bottom: 5px;
+}
+/* line 337, _components.scss */
+.relative-date-modal .relative-date-flex-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+/* ld-input-group */
+/* line 345, _components.scss */
+.ld-input-group {
+  position: relative;
+  display: table;
+  border-collapse: separate;
+  height: 30px;
+}
+/* line 351, _components.scss */
+.ld-input-group .ld-input-group-control {
+  display: table-cell;
+  vertical-align: middle;
+  float: left;
+  height: 100%;
+  width: 98%;
+}
+/* line 358, _components.scss */
+.ld-input-group .ld-input-group-control input[type="text"] {
+  position: relative;
+  width: 98%;
+  height: 100%;
+}
+/* line 365, _components.scss */
+.ld-input-group .ld-input-group-addon {
+  width: 1%;
+  white-space: nowrap;
+  vertical-align: middle;
+  display: table-cell;
+  height: inherit;
+}
+
+/******************************* @button dropdown *******************************/
+/* line 375, _components.scss */
+.button-dropdown {
+  position: relative;
+}
+/* line 377, _components.scss */
+.button-dropdown > div {
+  margin: 5px 0;
+  display: flex;
+}
+/* line 381, _components.scss */
+.button-dropdown .dropdown-button {
+  padding: 7px 12px;
+  width: auto;
+  height: auto;
+  background-color: var(--lt-grey-2);
+  border-style: none;
+  line-height: unset !important;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 12px !important;
+  font-weight: 400 !important;
+  display: inline-block;
+  text-align: center;
+  -webkit-user-select: none !important;
+  color: var(--dk-grey-2);
+}
+/* line 397, _components.scss */
+.button-dropdown .dropdown-button:hover {
+  color: var(--white);
+  background-color: var(--med-grey-1);
+}
+/* line 401, _components.scss */
+.button-dropdown .dropdown-button.primary-action {
+  -webkit-border-radius: 3px 0 0 3px !important;
+  -moz-border-radius: 3px 0 0 3px !important;
+  border-radius: 3px 0 0 3px !important;
+}
+/* line 407, _components.scss */
+.button-dropdown .dropdown-button.expand-menu {
+  -webkit-border-radius: 0 3px 3px 0 !important;
+  -moz-border-radius: 0 3px 3px 0 !important;
+  border-radius: 0 3px 3px 0 !important;
+  display: flex;
+  align-items: center;
+  margin-left: 2px;
+}
+/* line 418, _components.scss */
+.button-dropdown .dropdown-button.expand-menu:hover .ld-caret-dark {
+  filter: brightness(100);
+}
+/* line 421, _components.scss */
+.button-dropdown .dropdown-button.expand-menu .ld-caret-dark {
+  height: 4px;
+  width: 8px;
+}
+/* line 427, _components.scss */
+.button-dropdown .expand-menu {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+/* line 431, _components.scss */
+.button-dropdown .actions-menu {
+  background-color: var(--white);
+  border: 1px solid var(--ld-lt-green-1);
+  border-radius: 0px 0px 2px 2px;
+  box-shadow: none;
+  list-style: none;
+  margin: -5px 0px 0px;
+  max-height: 200px;
+  overflow: auto;
+  position: absolute;
+  z-index: 63;
+  padding-inline-start: 0;
+}
+/* line 444, _components.scss */
+.button-dropdown .actions-menu .actions-menu-option {
+  display: list-item;
+  line-height: 20px;
+  padding: 5px 10px;
+  width: max-content;
+  cursor: pointer;
+}
+/* line 450, _components.scss */
+.button-dropdown .actions-menu .actions-menu-option:hover {
+  background-color: var(--ld-lt-green-1);
+}
+/* line 456, _components.scss */
+.button-dropdown:not(.open) > .actions-menu {
+  display: none;
+}
+/* line 461, _components.scss */
+.button-dropdown.open > .actions-menu {
+  display: block;
+}
+/* line 464, _components.scss */
+.button-dropdown.open .expand-menu {
+  background: var(--med-grey-1);
+}
+/* line 467, _components.scss */
+.button-dropdown.open .ld-caret {
+  background-image: url("../images/Down_Arrow_Icon_White.png") !important;
+}
+
+/* line 473, _components.scss */
+.email-recipient-selector-wrapper .email-recipients-header-row, .chatter-recipient-selector-wrapper .chatter-recipients-header-row {
+  align-items: flex-end;
+  border-bottom: 1px solid var(--lt-grey-1);
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 5px;
+}
+
+/* line 481, _components.scss */
+.email-recipient-selector-wrapper .email-recipients-wrapper, .chatter-recipient-selector-wrapper .chatter-recipients-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+/* line 485, _components.scss */
+.email-recipient-selector-wrapper .email-recipients-wrapper .recipient-card, .chatter-recipient-selector-wrapper .chatter-recipients-wrapper .recipient-card {
+  background-color: var(--lt-grey-1);
+  color: var(--med-grey-2);
+  display: inline-flex;
+  margin: 0px 5px 5px 0px;
+  padding: 8px 10px;
+  width: fit-content;
+  word-break: break-word;
+}
+/* line 494, _components.scss */
+.email-recipient-selector-wrapper .email-recipients-wrapper .empty-recipients-message, .chatter-recipient-selector-wrapper .chatter-recipients-wrapper .empty-recipients-message {
+  color: var(--med-grey-1);
+}
+
+/* line 499, _components.scss */
+.email-recipient-selector-wrapper .email-recipients-editor, .chatter-recipient-selector-wrapper .chatter-recipients-editor {
+  background-color: var(--lt-grey-1_5);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 15px;
+}
+/* line 505, _components.scss */
+.email-recipient-selector-wrapper .email-recipients-editor .recipient-editor-row, .chatter-recipient-selector-wrapper .chatter-recipients-editor .recipient-editor-row {
+  margin-bottom: 10px;
+  flex: 1 100%;
+}
+/* line 509, _components.scss */
+.email-recipient-selector-wrapper .email-recipients-editor .next-owner-row, .chatter-recipient-selector-wrapper .chatter-recipients-editor .next-owner-row, .email-recipient-selector-wrapper .email-recipients-editor .previous-owner-row, .chatter-recipient-selector-wrapper .chatter-recipients-editor .previous-owner-row, .email-recipient-selector-wrapper .email-recipients-editor .new-object-owner-row, .chatter-recipient-selector-wrapper .chatter-recipients-editor .new-object-owner-row, .email-recipient-selector-wrapper .email-recipients-editor .matched-object-row, .chatter-recipient-selector-wrapper .chatter-recipients-editor .matched-object-row {
+  display: block;
+}
+/* line 512, _components.scss */
+.email-recipient-selector-wrapper .email-recipients-editor .matched-object-recipient-tooltip, .chatter-recipient-selector-wrapper .chatter-recipients-editor .matched-object-recipient-tooltip {
+  margin-left: 10px;
+}
+/* line 515, _components.scss */
+.email-recipient-selector-wrapper .email-recipients-editor .recipient-editor-subcontent, .chatter-recipient-selector-wrapper .chatter-recipients-editor .recipient-editor-subcontent {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 5px 0px 0px 25px;
+}
+/* line 519, _components.scss */
+.email-recipient-selector-wrapper .email-recipients-editor .recipient-editor-subcontent .matched-object-row, .chatter-recipient-selector-wrapper .chatter-recipients-editor .recipient-editor-subcontent .matched-object-row {
+  display: flex;
+  flex: 1 100%;
+  margin-bottom: 10px !important;
+}
+/* line 523, _components.scss */
+.email-recipient-selector-wrapper .email-recipients-editor .recipient-editor-subcontent .matched-object-row label, .chatter-recipient-selector-wrapper .chatter-recipients-editor .recipient-editor-subcontent .matched-object-row label {
+  align-self: center;
+  flex-basis: 85px;
+}
+/* line 527, _components.scss */
+.email-recipient-selector-wrapper .email-recipients-editor .recipient-editor-subcontent .matched-object-row .matched-object-dropdown, .chatter-recipient-selector-wrapper .chatter-recipients-editor .recipient-editor-subcontent .matched-object-row .matched-object-dropdown {
+  width: 200px;
+}
+/* line 531, _components.scss */
+.email-recipient-selector-wrapper .email-recipients-editor .recipient-editor-subcontent .additional-recipients-wrapper, .chatter-recipient-selector-wrapper .chatter-recipients-editor .recipient-editor-subcontent .additional-recipients-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+/* line 535, _components.scss */
+.email-recipient-selector-wrapper .email-recipients-editor .recipient-editor-subcontent .additional-recipients-wrapper .add-additional-recipient-row, .chatter-recipient-selector-wrapper .chatter-recipients-editor .recipient-editor-subcontent .additional-recipients-wrapper .add-additional-recipient-row, .email-recipient-selector-wrapper .email-recipients-editor .recipient-editor-subcontent .additional-recipients-wrapper .additional-recipient-row, .chatter-recipient-selector-wrapper .chatter-recipients-editor .recipient-editor-subcontent .additional-recipients-wrapper .additional-recipient-row {
+  align-items: center;
+  display: flex;
+  flex: 1 100%;
+  padding: 10px;
+}
+/* line 540, _components.scss */
+.email-recipient-selector-wrapper .email-recipients-editor .recipient-editor-subcontent .additional-recipients-wrapper .add-additional-recipient-row > div, .chatter-recipient-selector-wrapper .chatter-recipients-editor .recipient-editor-subcontent .additional-recipients-wrapper .add-additional-recipient-row > div, .email-recipient-selector-wrapper .email-recipients-editor .recipient-editor-subcontent .additional-recipients-wrapper .additional-recipient-row > div, .chatter-recipient-selector-wrapper .chatter-recipients-editor .recipient-editor-subcontent .additional-recipients-wrapper .additional-recipient-row > div {
+  display: inline-flex;
+}
+/* line 544, _components.scss */
+.email-recipient-selector-wrapper .email-recipients-editor .recipient-editor-subcontent .additional-recipients-wrapper .additional-recip-col1, .chatter-recipient-selector-wrapper .chatter-recipients-editor .recipient-editor-subcontent .additional-recipients-wrapper .additional-recip-col1 {
+  flex-basis: 500px;
+  margin-right: 15px;
+}
+/* line 548, _components.scss */
+.email-recipient-selector-wrapper .email-recipients-editor .recipient-editor-subcontent .additional-recipients-wrapper .additional-recip-col, .chatter-recipient-selector-wrapper .chatter-recipients-editor .recipient-editor-subcontent .additional-recipients-wrapper .additional-recip-col {
+  flex-basis: 500px;
+}
+/* line 551, _components.scss */
+.email-recipient-selector-wrapper .email-recipients-editor .recipient-editor-subcontent .additional-recipients-wrapper .additional-recip-col2, .chatter-recipient-selector-wrapper .chatter-recipients-editor .recipient-editor-subcontent .additional-recipients-wrapper .additional-recip-col2 {
+  flex-basis: 100px;
+}
+/* line 554, _components.scss */
+.email-recipient-selector-wrapper .email-recipients-editor .recipient-editor-subcontent .additional-recipients-wrapper .add-additional-recipient-button, .chatter-recipient-selector-wrapper .chatter-recipients-editor .recipient-editor-subcontent .additional-recipients-wrapper .add-additional-recipient-button {
+  background-color: var(--white);
+  line-height: 30px !important;
+}
+/* line 558, _components.scss */
+.email-recipient-selector-wrapper .email-recipients-editor .recipient-editor-subcontent .additional-recipients-wrapper .add-additional-recipient-row, .chatter-recipient-selector-wrapper .chatter-recipients-editor .recipient-editor-subcontent .additional-recipients-wrapper .add-additional-recipient-row {
+  background-color: var(--lt-grey-2);
+}
+/* line 561, _components.scss */
+.email-recipient-selector-wrapper .email-recipients-editor .recipient-editor-subcontent .additional-recipients-wrapper .additional-recipient-row, .chatter-recipient-selector-wrapper .chatter-recipients-editor .recipient-editor-subcontent .additional-recipients-wrapper .additional-recipient-row {
+  background-color: var(--lt-grey-1);
+  margin-top: 3px;
+}
+/* line 564, _components.scss */
+.email-recipient-selector-wrapper .email-recipients-editor .recipient-editor-subcontent .additional-recipients-wrapper .additional-recipient-row > div, .chatter-recipient-selector-wrapper .chatter-recipients-editor .recipient-editor-subcontent .additional-recipients-wrapper .additional-recipient-row > div {
+  font-size: 12px !important;
+  padding-left: 10px;
+}
+
+/************************** @EmailRecipientSelector **************************/
+/* line 583, _components.scss */
+.email-recipient-selector-wrapper .email-recipients-editor .emails-text-area {
+  resize: vertical;
+}
+/* line 591, _components.scss */
+.email-recipient-selector-wrapper .email-recipients-editor .recipient-editor-row.next-owner-row .cb-container-small input[disabled] ~ .notif-owner-checkbox,
+.email-recipient-selector-wrapper .email-recipients-editor .recipient-editor-row.previous-owner-row .cb-container-small input[disabled] ~ .notif-owner-checkbox {
+  background-color: var(--white);
+  border: var(--lt-grey-1_5);
+}
+/* line 596, _components.scss */
+.email-recipient-selector-wrapper .email-recipients-editor .recipient-editor-row.next-owner-row .cb-container-small .owner-label.no-owner-field,
+.email-recipient-selector-wrapper .email-recipients-editor .recipient-editor-row.previous-owner-row .cb-container-small .owner-label.no-owner-field {
+  color: var(--med-grey-1);
+}
+
+/************************** @ChatterRecipientSelector **************************/
+/* line 619, _components.scss */
+.chatter-recipient-selector-wrapper .chatter-recipients-editor .recipient-editor-row.next-owner-row .cb-container-small input[disabled] ~ .notif-owner-checkbox,
+.chatter-recipient-selector-wrapper .chatter-recipients-editor .recipient-editor-row.previous-owner-row .cb-container-small input[disabled] ~ .notif-owner-checkbox {
+  background-color: var(--white);
+  border: var(--lt-grey-1_5);
+}
+/* line 624, _components.scss */
+.chatter-recipient-selector-wrapper .chatter-recipients-editor .recipient-editor-row.next-owner-row .cb-container-small .owner-label.no-owner-field,
+.chatter-recipient-selector-wrapper .chatter-recipients-editor .recipient-editor-row.previous-owner-row .cb-container-small .owner-label.no-owner-field {
+  color: var(--med-grey-1);
+}
+
+/************************** @MessageCreator**************************/
+/* line 634, _components.scss */
+.custom-message-creator-wrapper .custom-message-header {
+  align-items: center;
+  border-bottom: 1px solid var(--lt-grey-1);
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 5px;
+}
+/* line 642, _components.scss */
+.custom-message-creator-wrapper .custom-message-wrapper {
+  border: 1px solid var(--lt-grey-2);
+  border-radius: 5px;
+}
+/* line 646, _components.scss */
+.custom-message-creator-wrapper .custom-message-wrapper .custom-message-dropdowns {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5px;
+}
+/* line 650, _components.scss */
+.custom-message-creator-wrapper .custom-message-wrapper .custom-message-dropdowns .tag-typeahead, .custom-message-creator-wrapper .custom-message-wrapper .custom-message-dropdowns .field-typeahead {
+  margin-right: 10px;
+}
+/* line 652, _components.scss */
+.custom-message-creator-wrapper .custom-message-wrapper .custom-message-dropdowns .tag-typeahead .tt-dataset, .custom-message-creator-wrapper .custom-message-wrapper .custom-message-dropdowns .field-typeahead .tt-dataset {
+  max-height: 190px;
+}
+/* line 656, _components.scss */
+.custom-message-creator-wrapper .custom-message-wrapper .custom-message-dropdowns .relative-date-btn {
+  line-height: 30px !important;
+  font-size: 10px !important;
+  color: var(--med-grey-2);
+}
+/* line 662, _components.scss */
+.custom-message-creator-wrapper .custom-message-wrapper .custom-message-subject,
+.custom-message-creator-wrapper .custom-message-wrapper .custom-message-text-area {
+  padding: 0px 5px;
+}
+/* line 665, _components.scss */
+.custom-message-creator-wrapper .custom-message-wrapper .custom-message-subject textarea,
+.custom-message-creator-wrapper .custom-message-wrapper .custom-message-text-area textarea {
+  resize: vertical;
+}
+
+/*************************** @EmailTemplateSelector ***************************/
+/* line 674, _components.scss */
+.email-template-selector-wrapper .email-template-header {
+  margin-bottom: 10px;
+}
+/* line 677, _components.scss */
+.email-template-selector-wrapper .email-template-row {
+  margin-left: 10px;
+}
+/* line 680, _components.scss */
+.email-template-selector-wrapper .email-template-selector {
+  width: 300px;
+  display: inline-block;
+}
+/* line 684, _components.scss */
+.email-template-selector-wrapper .view-email-template-link {
+  margin-left: 10px;
+}
+/* line 687, _components.scss */
+.email-template-selector-wrapper .email-template-error-message {
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+/******************************** @ErrorBanner ********************************/
+/* line 694, _components.scss */
+#warning-banner-wrapper,
+#error-banner-wrapper,
+.error-banner-wrapper {
+  align-items: center;
+  color: var(--white);
+  display: none;
+  font-size: 14px;
+  margin: -30px -30px 15px -40px;
+  padding: 10px 10px 10px 40px;
+  position: sticky;
+  width: 1115px;
+}
+
+/* line 705, _components.scss */
+#warning-banner-wrapper {
+  background-color: #ffc708;
+}
+
+/* line 709, _components.scss */
+#error-banner-wrapper,
+.error-banner-wrapper {
+  background-color: var(--ld-red);
+}
+
+/* line 722, _components.scss */
+#warning-banner-text,
+#error-banner-text,
+.error-banner-text {
+  width: 1040px;
+}
+/* line 726, _components.scss */
+#warning-banner-primary-text,
+#error-banner-primary-text,
+.error-banner-primary-text {
+  font-weight: var(--regular);
+  margin-right: 5px;
+}
+/* line 731, _components.scss */
+#warning-banner-secondary-text,
+#error-banner-secondary-text,
+.error-banner-secondary-text {
+  font-weight: var(--light);
+}
+/* line 735, _components.scss */
+#warning-banner-close-btn,
+#error-banner-close-btn,
+.error-banner-close-btn {
+  background: url(../images/Close_Icon.png) no-repeat;
+  background-size: 12px;
+  height: 12px;
+  margin-left: 10px;
+  width: 12px;
+}
+/* line 741, _components.scss */
+#warning-banner-close-btn:hover,
+#error-banner-close-btn:hover,
+.error-banner-close-btn:hover {
+  cursor: pointer;
+}
+
+/* line 749, _components.scss */
+.export-banner-wrapper {
+  background-color: #00AED8;
+}
+/* line 751, _components.scss */
+.export-banner-wrapper .error-banner-text {
+  font-size: 16px;
+  font-weight: 100;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+/* line 757, _components.scss */
+.export-banner-wrapper .error-banner-text .error-banner-primary-text, .export-banner-wrapper .error-banner-text .error-banner-secondary-text {
+  margin-left: 15px;
+}
+
+/******************************* @LDMultiSelect *******************************/
+/* line 765, _components.scss */
+.multiselect-dropdown-large, .multiselect-dropdown-small {
+  background-color: var(--white);
+  background-image: url("../images/Down_Arrow_Icon.png");
+  background-repeat: no-repeat;
+  background-size: 12px 6px;
+  border: 1px solid var(--lt-grey-2);
+  color: var(--dk-grey-2);
+  cursor: pointer;
+  margin: 0px !important;
+  padding-right: 30px;
+  text-align: left;
+  width: fit-content;
+}
+/* line 777, _components.scss */
+.multiselect-dropdown-large:hover, .multiselect-dropdown-small:hover {
+  border: 1px solid var(--ld-lt-green-1);
+  cursor: pointer;
+}
+/* line 781, _components.scss */
+.open.multiselect-dropdown-large, .open.multiselect-dropdown-small {
+  border: 1px solid var(--ld-lt-green-1);
+  border-bottom-left-radius: 0px !important;
+  border-bottom-right-radius: 0px !important;
+}
+/* line 785, _components.scss */
+.open.multiselect-dropdown-large > .multiselect-dropdown-menu, .open.multiselect-dropdown-small > .multiselect-dropdown-menu {
+  display: block;
+}
+/* line 789, _components.scss */
+.multiselect-dropdown-large .multiselect-dropdown-toggle, .multiselect-dropdown-small .multiselect-dropdown-toggle {
+  text-decoration: none;
+}
+/* line 792, _components.scss */
+.multiselect-dropdown-large .multiselect-dropdown-toggle .placeholder-text, .multiselect-dropdown-small .multiselect-dropdown-toggle .placeholder-text {
+  color: var(--med-grey-2);
+  padding-left: 10px;
+  font-weight: 400;
+}
+/* line 798, _components.scss */
+.multiselect-dropdown-large .multiselect-dropdown-menu, .multiselect-dropdown-small .multiselect-dropdown-menu {
+  background-color: var(--white);
+  border: 1px solid var(--ld-lt-green-1);
+  border-radius: 0px 0px 2px 2px !important;
+  display: none;
+  list-style: none;
+  margin-top: 0px;
+  margin-left: -1px;
+  min-width: 175px;
+  max-height: 335px;
+  overflow: auto;
+  padding: 5px 0px;
+  position: absolute;
+  width: fit-content;
+  z-index: 63;
+}
+/* line 813, _components.scss */
+.multiselect-dropdown-large .multiselect-dropdown-menu .multiselect-toggle-all-list-item, .multiselect-dropdown-small .multiselect-dropdown-menu .multiselect-toggle-all-list-item {
+  border-bottom: 1px solid var(--lt-grey-2);
+}
+/* line 816, _components.scss */
+.multiselect-dropdown-large .multiselect-dropdown-menu .multiselect-toggle-all-list-item, .multiselect-dropdown-small .multiselect-dropdown-menu .multiselect-toggle-all-list-item,
+.multiselect-dropdown-large .multiselect-dropdown-menu .multiselect-dropdown-option-list-item,
+.multiselect-dropdown-small .multiselect-dropdown-menu .multiselect-dropdown-option-list-item {
+  line-height: 20px;
+  margin: 0px;
+  padding: 5px 15px;
+}
+/* line 822, _components.scss */
+.multiselect-dropdown-large .multiselect-dropdown-menu .multiselect-toggle-all-list-item:hover, .multiselect-dropdown-small .multiselect-dropdown-menu .multiselect-toggle-all-list-item:hover,
+.multiselect-dropdown-large .multiselect-dropdown-menu .multiselect-dropdown-option-list-item:hover,
+.multiselect-dropdown-small .multiselect-dropdown-menu .multiselect-dropdown-option-list-item:hover {
+  background-color: var(--ld-lt-green-1) !important;
+}
+/* line 826, _components.scss */
+.multiselect-dropdown-large .multiselect-dropdown-menu .multiselect-dropdown-option, .multiselect-dropdown-small .multiselect-dropdown-menu .multiselect-dropdown-option,
+.multiselect-dropdown-large .multiselect-dropdown-menu .multiselect-dropdown-option:hover,
+.multiselect-dropdown-small .multiselect-dropdown-menu .multiselect-dropdown-option:hover {
+  color: unset !important;
+  text-decoration: none !important;
+}
+/* line 832, _components.scss */
+.multiselect-dropdown-large .multiselect-dropdown-menu input[disabled]:checked ~ .checkmark, .multiselect-dropdown-small .multiselect-dropdown-menu input[disabled]:checked ~ .checkmark {
+  background-color: var(--ld-lt-green-2);
+}
+/* line 835, _components.scss */
+.multiselect-dropdown-large .multiselect-dropdown-menu input[disabled] ~ .checkmark, .multiselect-dropdown-small .multiselect-dropdown-menu input[disabled] ~ .checkmark {
+  background-color: var(--white);
+}
+
+/* line 841, _components.scss */
+.multiselect-dropdown-large {
+  background-position: right 10px center;
+  border-radius: 3px !important;
+  font-size: 14px;
+  height: 35px;
+  line-height: 33px;
+}
+
+/* line 849, _components.scss */
+.multiselect-dropdown-small {
+  background-position: right 10px center;
+  border-radius: 2px !important;
+  font-size: 12px;
+  height: 30px;
+  line-height: 28px;
+}
+
+/************************* @NestedTypeaheadSelector **************************/
+/* line 859, _components.scss */
+.all-child-elements-disabled .nested-typeahead-selector, .nested-typeahead-selector.edit-disabled, .task-subject-container.edit-disabled, .nested-typeahead-selector.disabled, .task-subject-container.disabled {
+  pointer-events: none;
+}
+/* line 861, _components.scss */
+.all-child-elements-disabled .nested-typeahead-selector .typeahead-input, .nested-typeahead-selector.edit-disabled .typeahead-input, .task-subject-container.edit-disabled .typeahead-input, .nested-typeahead-selector.disabled .typeahead-input, .task-subject-container.disabled .typeahead-input {
+  background-color: var(--lt-grey-2) !important;
+}
+
+/* line 867, _components.scss */
+.all-child-elements-disabled .nested-typeahead-selector .typeahead-input, .nested-typeahead-selector.edit-disabled .typeahead-input, .task-subject-container.edit-disabled .typeahead-input {
+  background: var(--white) !important;
+  border: 1px solid var(--lt-grey-1_5) !important;
+  color: var(--med-grey-1) !important;
+}
+
+/* line 873, _components.scss */
+.nested-typeahead-selector, .task-subject-container {
+  box-sizing: content-box;
+  display: inline-block;
+  font-size: 11px;
+  outline: none;
+  position: relative;
+  width: 100%;
+}
+/* line 887, _components.scss */
+.nested-typeahead-selector .ld-caret, .task-subject-container .ld-caret {
+  height: 100%;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  width: 20px;
+  background-position: right 10px center !important;
+  pointer-events: none;
+}
+/* line 896, _components.scss */
+.nested-typeahead-selector .twitter-typeahead, .task-subject-container .twitter-typeahead {
+  width: 100%;
+}
+/* line 898, _components.scss */
+.nested-typeahead-selector .twitter-typeahead .tt-hint, .nested-typeahead-selector .twitter-typeahead .tt-input, .task-subject-container .twitter-typeahead .tt-hint, .task-subject-container .twitter-typeahead .tt-input {
+  border: 1px solid var(--lt-grey-2);
+  outline: none;
+  padding-right: 20px;
+  width: 100%;
+  font-weight: var(--regular);
+}
+/* line 906, _components.scss */
+.nested-typeahead-selector .twitter-typeahead .tt-hint::placeholder, .nested-typeahead-selector .twitter-typeahead .tt-input::placeholder, .task-subject-container .twitter-typeahead .tt-hint::placeholder, .task-subject-container .twitter-typeahead .tt-input::placeholder {
+  color: var(--med-grey-1);
+}
+/* line 910, _components.scss */
+.nested-typeahead-selector .twitter-typeahead .tt-hint, .task-subject-container .twitter-typeahead .tt-hint {
+  color: var(--med-grey-1) !important;
+}
+/* line 913, _components.scss */
+.nested-typeahead-selector .twitter-typeahead pre, .task-subject-container .twitter-typeahead pre {
+  box-sizing: content-box;
+  overflow: auto;
+}
+/* line 917, _components.scss */
+.nested-typeahead-selector .twitter-typeahead .tt-menu, .task-subject-container .twitter-typeahead .tt-menu {
+  background-color: var(--white);
+  border: 1px solid var(--ld-lt-green-1);
+  border-radius: 0 0 3px 3px;
+  width: 100%;
+}
+/* line 922, _components.scss */
+.nested-typeahead-selector .twitter-typeahead .tt-menu .nts-selected-field, .task-subject-container .twitter-typeahead .tt-menu .nts-selected-field {
+  border-bottom: 1px solid var(--ld-lt-green-1);
+  padding: 5px;
+}
+/* line 925, _components.scss */
+.nested-typeahead-selector .twitter-typeahead .tt-menu .nts-selected-field .nts-selected-node, .task-subject-container .twitter-typeahead .tt-menu .nts-selected-field .nts-selected-node {
+  cursor: pointer;
+}
+/* line 927, _components.scss */
+.nested-typeahead-selector .twitter-typeahead .tt-menu .nts-selected-field .nts-selected-node:hover, .task-subject-container .twitter-typeahead .tt-menu .nts-selected-field .nts-selected-node:hover {
+  text-decoration: underline;
+}
+/* line 931, _components.scss */
+.nested-typeahead-selector .twitter-typeahead .tt-menu .nts-selected-field .nts-parent-node, .task-subject-container .twitter-typeahead .tt-menu .nts-selected-field .nts-parent-node {
+  font-style: italic;
+}
+/* line 934, _components.scss */
+.nested-typeahead-selector .twitter-typeahead .tt-menu .nts-selected-field .nts-leaf-node, .task-subject-container .twitter-typeahead .tt-menu .nts-selected-field .nts-leaf-node {
+  font-weight: var(--semi-bold);
+}
+/* line 937, _components.scss */
+.nested-typeahead-selector .twitter-typeahead .tt-menu .nts-selected-field span, .task-subject-container .twitter-typeahead .tt-menu .nts-selected-field span {
+  display: inline-block;
+  padding: 2px;
+}
+/* line 942, _components.scss */
+.nested-typeahead-selector .twitter-typeahead .tt-menu .mnts-selected-list, .task-subject-container .twitter-typeahead .tt-menu .mnts-selected-list {
+  border-bottom: 1px solid var(--ld-lt-green-1);
+  padding: 5px;
+}
+/* line 948, _components.scss */
+.nested-typeahead-selector .twitter-typeahead .tt-menu .tt-dataset, .task-subject-container .twitter-typeahead .tt-menu .tt-dataset {
+  max-height: 200px;
+  overflow: auto;
+}
+/* line 951, _components.scss */
+.nested-typeahead-selector .twitter-typeahead .tt-menu .tt-dataset .alert-danger, .task-subject-container .twitter-typeahead .tt-menu .tt-dataset .alert-danger {
+  background-color: #f2dede;
+  border-color: #ebccd1;
+  color: #a94442;
+}
+/* line 956, _components.scss */
+.nested-typeahead-selector .twitter-typeahead .tt-menu .tt-dataset .alert, .task-subject-container .twitter-typeahead .tt-menu .tt-dataset .alert {
+  border: 1px solid transparent;
+  border-radius: 0;
+}
+/* line 960, _components.scss */
+.nested-typeahead-selector .twitter-typeahead .tt-menu .tt-dataset .nts-category-label, .task-subject-container .twitter-typeahead .tt-menu .tt-dataset .nts-category-label {
+  text-align: left;
+  padding: 0;
+  margin: 0;
+  color: var(--med-grey-1) !important;
+  font-size: 11px !important;
+}
+/* line 966, _components.scss */
+.nested-typeahead-selector .twitter-typeahead .tt-menu .tt-dataset .nts-category-label .tt-highlight, .task-subject-container .twitter-typeahead .tt-menu .tt-dataset .nts-category-label .tt-highlight {
+  font-weight: unset !important;
+}
+/* line 970, _components.scss */
+.nested-typeahead-selector .twitter-typeahead .tt-menu .tt-dataset .nts-category-label:hover, .task-subject-container .twitter-typeahead .tt-menu .tt-dataset .nts-category-label:hover {
+  background-color: unset !important;
+}
+/* line 973, _components.scss */
+.nested-typeahead-selector .twitter-typeahead .tt-menu .tt-dataset .tt-suggestion, .task-subject-container .twitter-typeahead .tt-menu .tt-dataset .tt-suggestion {
+  cursor: pointer;
+  font-size: 12px;
+  line-height: 1.1;
+  margin: 0;
+  padding: 7px 10px;
+  overflow-wrap: break-word;
+  white-space: pre-line;
+}
+/* line 985, _components.scss */
+.nested-typeahead-selector .twitter-typeahead .tt-menu .tt-dataset .tt-suggestion.flex-col-suggestion, .task-subject-container .twitter-typeahead .tt-menu .tt-dataset .tt-suggestion.flex-col-suggestion {
+  display: flex;
+  flex-direction: column;
+}
+/* line 990, _components.scss */
+.nested-typeahead-selector .twitter-typeahead .tt-menu .tt-dataset .tt-suggestion span, .task-subject-container .twitter-typeahead .tt-menu .tt-dataset .tt-suggestion span {
+  font-size: 10px;
+  color: var(--med-grey-2);
+}
+/* line 994, _components.scss */
+.nested-typeahead-selector .twitter-typeahead .tt-menu .tt-dataset .tt-suggestion:hover, .task-subject-container .twitter-typeahead .tt-menu .tt-dataset .tt-suggestion:hover {
+  background-color: var(--ld-lt-green-1);
+}
+/* line 997, _components.scss */
+.nested-typeahead-selector .twitter-typeahead .tt-menu .tt-dataset .tt-suggestion.disabled, .task-subject-container .twitter-typeahead .tt-menu .tt-dataset .tt-suggestion.disabled {
+  cursor: not-allowed !important;
+  font-style: italic;
+}
+/* line 1001, _components.scss */
+.nested-typeahead-selector .twitter-typeahead .tt-menu .tt-dataset .tt-suggestion.selected-option, .task-subject-container .twitter-typeahead .tt-menu .tt-dataset .tt-suggestion.selected-option {
+  background-color: var(--ld-green);
+  color: var(--white);
+}
+/* line 1005, _components.scss */
+.nested-typeahead-selector .twitter-typeahead .tt-menu .tt-dataset .tt-suggestion p, .task-subject-container .twitter-typeahead .tt-menu .tt-dataset .tt-suggestion p {
+  margin: 0;
+}
+/* line 1009, _components.scss */
+.nested-typeahead-selector .twitter-typeahead .tt-menu .tt-dataset p, .task-subject-container .twitter-typeahead .tt-menu .tt-dataset p {
+  font-weight: var(--regular);
+}
+/* line 1011, _components.scss */
+.nested-typeahead-selector .twitter-typeahead .tt-menu .tt-dataset p strong, .task-subject-container .twitter-typeahead .tt-menu .tt-dataset p strong {
+  font-weight: var(--regular);
+}
+/* line 1020, _components.scss */
+.nested-typeahead-selector.typeahead-large .typeahead-input-container, .task-subject-container.typeahead-large .typeahead-input-container {
+  line-height: 35px;
+}
+/* line 1023, _components.scss */
+.nested-typeahead-selector.typeahead-large .tt-hint, .nested-typeahead-selector.typeahead-large .tt-input, .task-subject-container.typeahead-large .tt-hint, .task-subject-container.typeahead-large .tt-input {
+  border-radius: 3px 3px 0 0;
+  height: 35px !important;
+  line-height: 33px !important;
+  padding-left: 10px !important;
+  font-size: 14px !important;
+}
+/* line 1033, _components.scss */
+.nested-typeahead-selector.typeahead-small .typeahead-input-container, .task-subject-container.typeahead-small .typeahead-input-container {
+  line-height: 30px;
+}
+/* line 1036, _components.scss */
+.nested-typeahead-selector.typeahead-small .tt-hint, .nested-typeahead-selector.typeahead-small .tt-input, .task-subject-container.typeahead-small .tt-hint, .task-subject-container.typeahead-small .tt-input {
+  border-radius: 3px 3px 0 0;
+  height: 30px !important;
+  line-height: 28px !important;
+  padding-left: 10px !important;
+  font-size: 11px !important;
+}
+/* line 1044, _components.scss */
+.nested-typeahead-selector.typeahead-small .tt-menu .tt-dataset, .task-subject-container.typeahead-small .tt-menu .tt-dataset {
+  max-height: 214px;
+}
+/* line 1051, _components.scss */
+.nested-typeahead-selector.typeahead-xtra-small .typeahead-input-container, .task-subject-container.typeahead-xtra-small .typeahead-input-container {
+  line-height: 25px;
+}
+/* line 1054, _components.scss */
+.nested-typeahead-selector.typeahead-xtra-small .tt-hint, .nested-typeahead-selector.typeahead-xtra-small .tt-input, .task-subject-container.typeahead-xtra-small .tt-hint, .task-subject-container.typeahead-xtra-small .tt-input {
+  border-radius: 2px !important;
+  height: 25px !important;
+  line-height: 23px !important;
+  padding-left: 5px !important;
+  font-size: 11px !important;
+}
+
+/* line 1064, _components.scss */
+.table-search-typeahead .nested-typeahead-selector .twitter-typeahead input {
+  background: url("../images/Search_Icon_2.png") no-repeat;
+  background-position: 5px;
+  background-size: 20px 20px;
+  padding: 0 30px !important;
+}
+
+/***************************** @LineGraph ******************************/
+/* line 1071, _components.scss */
+.line-graph {
+  margin-top: 15px;
+}
+/* line 1075, _components.scss */
+.line-graph .y-axis path,
+.line-graph .y-axis line,
+.line-graph .y-gridline {
+  stroke: var(--lt-grey-1);
+  stroke-width: 1px;
+}
+/* line 1082, _components.scss */
+.line-graph .y-axis text {
+  fill: var(--med-grey-2);
+}
+/* line 1086, _components.scss */
+.line-graph .x-axis path,
+.line-graph .x-axis line {
+  stroke: var(--lt-grey-2);
+  stroke-width: 1px;
+}
+/* line 1092, _components.scss */
+.line-graph .x-axis text {
+  fill: var(--med-grey-2);
+}
+/* line 1096, _components.scss */
+.line-graph .primary-line .line {
+  stroke: var(--teal);
+  stroke-width: 2;
+  fill: none;
+}
+/* line 1102, _components.scss */
+.line-graph .primary-line .point {
+  stroke-width: 0;
+  fill: var(--teal);
+}
+/* line 1107, _components.scss */
+.line-graph .primary-line .hover circle {
+  stroke: var(--teal);
+  stroke-width: 2;
+  fill: white;
+}
+/* line 1113, _components.scss */
+.line-graph .primary-line .hover text {
+  stroke: var(--dk-grey-2);
+  font-size: 9px;
+  font-weight: var(--light);
+}
+/* line 1119, _components.scss */
+.line-graph .secondary-line .line {
+  stroke: var(--lt-grey-2);
+  stroke-width: 2;
+  fill: none;
+}
+/* line 1125, _components.scss */
+.line-graph .tertiary-line .line {
+  stroke: var(--ld-blue);
+  stroke-width: 1;
+  fill: none;
+}
+/* line 1131, _components.scss */
+.line-graph .point-selection {
+  display: none;
+}
+/* line 1135, _components.scss */
+.line-graph .point-selection .point line {
+  stroke: var(--teal);
+  stroke-width: 3;
+  fill: none;
+}
+/* line 1141, _components.scss */
+.line-graph .point-selection .point .outer-circle {
+  stroke: var(--teal);
+  stroke-width: 2;
+  fill: white;
+}
+/* line 1147, _components.scss */
+.line-graph .point-selection .point .inner-circle {
+  stroke: white;
+  stroke-width: 0.5;
+  fill: var(--teal);
+}
+/* line 1153, _components.scss */
+.line-graph .point-selection .point text {
+  stroke: white;
+  font-size: 9px;
+  font-weight: var(--light);
+}
+/* line 1159, _components.scss */
+.line-graph .line-graph-legend {
+  display: inline;
+  float: right;
+  margin-right: 30px;
+  margin-top: 8px;
+}
+/* line 1166, _components.scss */
+.line-graph .line-graph-legend text {
+  stroke: var(--med-grey-2);
+  font-size: 9px;
+  font-weight: var(--light);
+  stroke-width: 0.3;
+  text-anchor: end;
+  alignment-baseline: middle;
+}
+/* line 1175, _components.scss */
+.line-graph .line-graph-legend .primary-line .line {
+  stroke: var(--teal);
+  stroke-width: 2;
+  fill: none;
+}
+/* line 1181, _components.scss */
+.line-graph .line-graph-legend .primary-line .point {
+  stroke-width: 0;
+  fill: var(--teal);
+}
+/* line 1186, _components.scss */
+.line-graph .line-graph-legend .secondary-line .line {
+  stroke: var(--lt-grey-2);
+  stroke-width: 2;
+  fill: none;
+}
+/* line 1192, _components.scss */
+.line-graph .line-graph-legend .tertiary-line .line {
+  stroke: var(--ld-blue);
+  stroke-width: 1;
+  fill: none;
+}
+
+/********************************** @LDTable **********************************/
+/* line 1200, _components.scss */
+table.ld-table {
+  border-collapse: collapse !important;
+  border-left: solid 1px var(--lt-grey-1);
+  border-right: solid 1px var(--lt-grey-1);
+  border-bottom: solid 1px var(--lt-grey-1) !important;
+  padding-left: 10px;
+  table-layout: fixed;
+  width: 1280px;
+}
+
+/* line 1214, _components.scss */
+.ld-table th {
+  background-color: var(--white);
+  color: var(--med-grey-2);
+  height: 25px;
+  font-size: 10px !important;
+  font-weight: var(--regular);
+  padding-left: 10px;
+  padding-right: 0px !important;
+}
+/* line 1222, _components.scss */
+.ld-table th:first-child {
+  padding-left: 20px;
+}
+/* line 1226, _components.scss */
+.ld-table td {
+  border-bottom: solid thin;
+  border-color: var(--lt-grey-1);
+  color: var(--dk-grey-2);
+  font-weight: var(--regular);
+  padding: 10px 0px 10px 10px !important;
+  vertical-align: top;
+}
+/* line 1231, _components.scss */
+.ld-table td:not(.dataTables_empty):not(.empty-table-text) {
+  font-size: 12px !important;
+}
+/* line 1238, _components.scss */
+.ld-table td::first-child {
+  padding: 10px 0px 10px 20px;
+}
+/* line 1242, _components.scss */
+.ld-table .parent-row:hover {
+  background-color: var(--ld-lt-green-1) !important;
+}
+/* line 1245, _components.scss */
+.ld-table .child-row {
+  background: var(--lt-grey-1);
+  border-bottom: 2px solid white !important;
+  display: none;
+}
+/* line 1250, _components.scss */
+.ld-table .segment-action {
+  position: relative;
+  visibility: hidden;
+  background: url(../images/Down_Arrow_Icon.png) no-repeat 90% center #fff;
+  background-position: right 6px center;
+  background-size: 9.5px 5.5px;
+  font-size: 12px;
+  font-weight: var(--light);
+  color: var(--dk-grey-1);
+  -webkit-appearance: none;
+  line-height: 14px;
+  border-radius: 3px;
+  border: 1px solid #f2f2f2;
+  background-color: white;
+  padding: 5px 0 5px 7px;
+  width: 70px;
+}
+/* line 1266, _components.scss */
+.ld-table .segment-action.active, .ld-table .segment-action:hover {
+  border: 1px solid var(--ld-green);
+}
+/* line 1271, _components.scss */
+.ld-table tbody tr:nth-child(odd) {
+  background-color: var(--lt-grey-1);
+}
+/* line 1275, _components.scss */
+.ld-table tbody tr:only-child {
+  background-color: var(--white);
+}
+/* line 1279, _components.scss */
+.ld-table td {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+/* line 1284, _components.scss */
+.ld-table .ld-th {
+  padding-left: 10px !important;
+  padding-right: 0 !important;
+  height: 25px;
+  color: var(--med-grey-2) !important;
+  font-size: 12px !important;
+  font-weight: var(--regular) !important;
+  background-color: var(--lt-grey-1_5) !important;
+  border-bottom: 1px solid var(--lt-grey-2);
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+/* line 1298, _components.scss */
+.ld-table-standard-styling {
+  clear: both;
+}
+/* line 1300, _components.scss */
+.ld-table-standard-styling .dataTables_filter {
+  margin-bottom: 0;
+}
+/* line 1303, _components.scss */
+.ld-table-standard-styling .header-row th.sorting {
+  background: none;
+  /* hide sorting arrows on non-sorted cols */
+}
+/* line 1306, _components.scss */
+.ld-table-standard-styling .dataTables_scrollBody {
+  border-bottom: 0 !important;
+}
+/* line 1309, _components.scss */
+.ld-table-standard-styling .dataTables_scroll {
+  padding: 0 !important;
+}
+
+/***************************** @PageHeader ******************************/
+/* line 1316, _components.scss */
+.page-header-wrapper .org-id {
+  display: inline-block;
+  margin: 0px 10px;
+  padding-left: 10px;
+  border-left: 1px solid var(--med-grey-1);
+}
+/* line 1323, _components.scss */
+.page-header-wrapper #control-container {
+  width: 1232px;
+}
+/* line 1327, _components.scss */
+.page-header-wrapper .query-options-container {
+  float: right;
+  display: inline-block;
+}
+/* line 1332, _components.scss */
+.page-header-wrapper .hide-inactive-users-container {
+  display: inline-block;
+  margin-right: 10px;
+}
+/* line 1337, _components.scss */
+.page-header-wrapper .ld-dates-container {
+  margin-top: 10px;
+}
+/* line 1340, _components.scss */
+.page-header-wrapper .ld-dates-container > div {
+  vertical-align: top;
+}
+/* line 1343, _components.scss */
+.page-header-wrapper .start-date-container, .page-header-wrapper .end-date-container {
+  display: inline-block;
+  width: 135px;
+}
+
+/***************************** @TupleConditions ******************************/
+/* line 1354, _components.scss */
+.tuple-conditions-wrapper {
+  flex: 1 100%;
+}
+/* line 1356, _components.scss */
+.tuple-conditions-wrapper .tuple-conditions-header-row > div, .tuple-conditions-wrapper .tuple-condition > div {
+  margin-right: 10px;
+}
+/* line 1357, _components.scss */
+.tuple-conditions-wrapper .condition-field-column, .tuple-conditions-wrapper .tuple-condition-field {
+  flex-basis: 300px;
+}
+/* line 1358, _components.scss */
+.tuple-conditions-wrapper .condition-operator-column, .tuple-conditions-wrapper .tuple-condition-operator {
+  flex-basis: 140px;
+}
+/* line 1359, _components.scss */
+.tuple-conditions-wrapper .condition-operand-column, .tuple-conditions-wrapper .tuple-condition-operand {
+  flex: 1;
+}
+/* line 1360, _components.scss */
+.tuple-conditions-wrapper .condition-radio-column, .tuple-conditions-wrapper .tuple-condition-radio {
+  flex-basis: 65px;
+}
+/* line 1361, _components.scss */
+.tuple-conditions-wrapper .condition-delete-column, .tuple-conditions-wrapper .tuple-condition-delete {
+  flex-basis: 12px;
+}
+/* line 1362, _components.scss */
+.tuple-conditions-wrapper .tuple-conditions-header-row {
+  align-items: center;
+  background-color: var(--lt-grey-1_5);
+  border: 1px solid var(--lt-grey-1_5);
+  color: var(--med-grey-1);
+  display: flex;
+  flex: 1 100%;
+  font-size: 12px;
+  line-height: 18px;
+}
+/* line 1371, _components.scss */
+.tuple-conditions-wrapper .tuple-conditions-header-row .condition-num-column {
+  flex-basis: 30px;
+}
+/* line 1375, _components.scss */
+.tuple-conditions-wrapper .tuple-conditions-body {
+  background-color: var(--white);
+  flex: 1 100%;
+  font-size: 16px;
+  padding: 0px 10px 10px 10px;
+}
+/* line 1380, _components.scss */
+.tuple-conditions-wrapper .tuple-conditions-body .error-message {
+  font-size: 11px;
+  margin-top: 5px;
+  margin-left: 30px;
+}
+/* line 1385, _components.scss */
+.tuple-conditions-wrapper .tuple-conditions-body .tuple-condition {
+  align-items: flex-start;
+  display: flex;
+  padding: 10px 0 0;
+}
+/* line 1389, _components.scss */
+.tuple-conditions-wrapper .tuple-conditions-body .tuple-condition .tuple-condition-num {
+  background-color: var(--lt-grey-2);
+  font-size: 12px;
+  height: 20px;
+  flex-basis: 20px;
+  line-height: 21px;
+  text-align: center;
+  width: 20px;
+  margin-top: 5px;
+}
+/* line 1399, _components.scss */
+.tuple-conditions-wrapper .tuple-conditions-body .tuple-condition .tuple-condition-delete {
+  background: url(../images/Close_Icon.png) no-repeat;
+  background-size: 12px;
+  height: 12px;
+  width: 12px;
+}
+/* line 1404, _components.scss */
+.tuple-conditions-wrapper .tuple-conditions-body .tuple-condition .tuple-condition-delete:hover {
+  cursor: pointer;
+}
+/* line 1409, _components.scss */
+.tuple-conditions-wrapper .tuple-conditions-body hr.tuple-rule-separator {
+  margin: 0 -10px 0 -10px !important;
+  border-top: 1px solid var(--lt-grey-1_5) !important;
+}
+/* line 1413, _components.scss */
+.tuple-conditions-wrapper .tuple-conditions-body .add-tuple-condition-btn {
+  margin-top: 10px;
+  margin-left: 40px;
+}
+/* line 1417, _components.scss */
+.tuple-conditions-wrapper .tuple-conditions-body .rule-logic-row {
+  align-items: center;
+  display: flex;
+  margin-top: 10px;
+}
+/* line 1421, _components.scss */
+.tuple-conditions-wrapper .tuple-conditions-body .rule-logic-row .ld-field-label-small {
+  margin-right: 10px;
+  width: 32px;
+}
+/* line 1425, _components.scss */
+.tuple-conditions-wrapper .tuple-conditions-body .rule-logic-row .tuple-rule-logic-input {
+  width: 150px;
+}
+/* line 1428, _components.scss */
+.tuple-conditions-wrapper .tuple-conditions-body .rule-logic-row .reset-tuple-rule-logic {
+  display: inline-flex;
+  font-size: 12px;
+  margin-left: 10px;
+  cursor: pointer;
+  text-decoration: underline;
+}
+/* line 1436, _components.scss */
+.tuple-conditions-wrapper .tuple-conditions-body .rule-logic-error-row {
+  color: var(--ld-red);
+  display: none;
+  font-size: 12px;
+  margin-left: 40px;
+  margin-top: 5px;
+}
+
+/* line 1446, _components.scss */
+.submit-log-disabled {
+  background-size: 15.5px 15px;
+  background-repeat: no-repeat;
+  background-position: 0px 0px;
+  font-size: 11px;
+  font-weight: 400;
+  padding-left: 22px;
+  background-image: url("../images/download-icon@2x.png");
+  color: var(--lt-grey-2);
+}
+
+/* line 1457, _components.scss */
+.modal.fade.confirmation-modal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  left: 0%;
+}
+/* line 1463, _components.scss */
+.modal.fade.confirmation-modal.inner-modal .modal-content {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+/* line 1469, _components.scss */
+.noty_insights_message {
+  font-size: 13px;
+  line-height: 16px;
+  text-align: center;
+  padding: 8px 10px 9px;
+  width: auto;
+  position: relative;
+  border: 1px solid var(--lt-grey-2);
+  color: var(--dk-grey-1);
+}
+
+/* line 1480, _components.scss */
+.bottom-handle {
+  height: 17px !important;
+  width: 50px !important;
+  bottom: 0px !important;
+  background-color: #E6E6E6;
+  left: unset !important;
+  display: inline-block !important;
+  background-repeat: no-repeat !important;
+  background-size: 50% !important;
+  background-position: center !important;
+}
+
+/* line 1492, _components.scss */
+.modal.fade.confirmation-modal.large-modal {
+  position: fixed;
+  align-items: unset;
+}
+/* line 1495, _components.scss */
+.modal.fade.confirmation-modal.large-modal .modal-dialog {
+  margin: 25px auto;
+}
+/* line 1498, _components.scss */
+.modal.fade.confirmation-modal.large-modal .modal-content {
+  width: 1100px;
+  padding: 0;
+}
+/* line 1501, _components.scss */
+.modal.fade.confirmation-modal.large-modal .modal-content .paginated-modal-header-wrapper {
+  display: flex;
+  align-items: center;
+  width: auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-left: auto;
+  border-bottom: 1px solid var(--lt-grey-2);
+  font-size: 19px;
+}
+/* line 1511, _components.scss */
+.modal.fade.confirmation-modal.large-modal .modal-content .dg_inner-wrapper-header, .modal.fade.confirmation-modal.large-modal .modal-content .paginated-modal-header-wrapper {
+  background-color: var(--ld-green);
+  border-radius: 4px 4px 0 0;
+  color: white;
+  justify-content: flex-start !important;
+  padding-left: 10px;
+}
+/* line 1518, _components.scss */
+.modal.fade.confirmation-modal.large-modal .modal-content .modal-content-section {
+  padding: 0 !important;
+}
+/* line 1521, _components.scss */
+.modal.fade.confirmation-modal.large-modal .modal-content .modal-button-section {
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* line 1530, _components.scss */
+.noty_message {
+  background-color: var(--ld-green);
+  color: white;
+}
+
+/* line 1535, _components.scss */
+.noty_text {
+  color: var(--dk-grey-1);
+}
+
+/* line 1539, _components.scss */
+#merge-status-dropdown-div.label-dropdown-container {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+/* 
+  This file should mainly be used to write page-specific styles.
+  If there is a lot of similar style-overrides happening, consider
+  making general classes for those styles.
+*/
+/*Dashboard Home*/
+/* line 8, _pages.scss */
+.sfdc-record-counts-label {
+  float: left;
+  margin-left: 192.5px;
+  line-height: 40px;
+}
+
+/* line 14, _pages.scss */
+.sfdc-record-counts-item {
+  float: left;
+  margin-left: 60px;
+  font-size: 17px;
+  font-weight: 200;
+  color: #555;
+  text-align: center;
+  line-height: 20px;
+}
+
+/* line 24, _pages.scss */
+.sfdc-record-counts-item-title {
+  font-size: 11px;
+  font-weight: 400;
+}
+
+/* line 28, _pages.scss */
+.dg_inner-wrapper-footer {
+  height: 90px;
+  line-height: 100px;
+  padding: 25px 0 50px 0;
+}
+
+/* line 34, _pages.scss */
+.dg_products-info-item {
+  width: 150px;
+}
+
+/* line 38, _pages.scss */
+.auth_panel .show_authorization {
+  cursor: pointer;
+  background: url("../images/Link_Icon.png") no-repeat;
+  background-size: 10px;
+  padding-left: 20px;
+  margin-top: 20px;
+  font-size: 12px;
+  background-position: 5px;
+}
+
+/* line 48, _pages.scss */
+.auth_panel .hide_authorization {
+  cursor: pointer;
+  background: url("../images/Hide_Icon.png") no-repeat;
+  background-size: 14px;
+  padding-left: 20px;
+}
+
+/* line 55, _pages.scss */
+.home-component {
+  margin-top: 20px;
+}
+
+/* line 59, _pages.scss */
+.home-component .icon-row {
+  margin: 25px auto;
+  overflow: hidden;
+  display: flex;
+}
+/* line 63, _pages.scss */
+.home-component .icon-row .col {
+  flex: 1 1 25%;
+}
+
+/* line 68, _pages.scss */
+.home-component .col {
+  padding: 0;
+}
+
+/* line 72, _pages.scss */
+.home-component .col:not(:last-child) .product-icon-button {
+  border-right: 1px solid var(--lt-grey-2) !important;
+}
+
+/* line 76, _pages.scss */
+.promo-top-banner {
+  line-height: 20px;
+  padding: 15px 30px;
+  width: 1115px;
+  position: relative;
+  right: 40px;
+  bottom: 10px;
+}
+
+/* line 85, _pages.scss */
+.promo-top-banner .next-tier-package, .promo-top-banner .next-tier-package:hover {
+  text-decoration: underline;
+  color: var(--white);
+}
+
+/* line 90, _pages.scss */
+.product-icon-button {
+  border: none !important;
+  cursor: pointer;
+  position: relative;
+}
+
+/* line 96, _pages.scss */
+.product-icon-button .dg_section-nav-image {
+  height: 75px;
+}
+
+/* line 100, _pages.scss */
+.icon .dg_section-nav-image {
+  background-position: center !important;
+  background-size: 75px !important;
+}
+
+/* line 105, _pages.scss */
+.product-icon-button .dg_section-nav-title {
+  font-size: 14px;
+}
+
+/* line 109, _pages.scss */
+.product-icon-button .promo-upgrade-ribbon {
+  width: 60px;
+  position: absolute;
+  top: 3px;
+  right: 70px;
+}
+
+/* line 116, _pages.scss */
+.product-icon-button:not(.disabled) .promo-upgrade-ribbon {
+  display: none;
+}
+
+/* line 120, _pages.scss */
+.installation-complete {
+  margin: 12.5px auto;
+  display: none;
+  width: 250px;
+  height: 45px;
+}
+
+/* line 127, _pages.scss */
+.home-component .graph-name {
+  display: none;
+}
+
+/* line 131, _pages.scss */
+.home-component .graph-date-range {
+  display: none;
+  margin-left: 10px;
+  position: relative;
+  top: -1px;
+}
+
+/* line 138, _pages.scss */
+.home-component .detailed-report-button {
+  display: none;
+  float: right;
+  position: relative;
+  bottom: 5px;
+}
+
+/* line 145, _pages.scss */
+.home-component .line-graph-div {
+  border-top: 1px solid var(--lt-grey-2);
+  height: unset !important;
+  padding-top: 20px;
+}
+
+/* line 151, _pages.scss */
+.authorize-button-token {
+  padding: 8px 40px 8px 40px;
+  margin-bottom: 20px;
+}
+
+/* line 156, _pages.scss */
+#first-row {
+  border-bottom: 1px solid var(--lt-grey-2);
+}
+
+/* line 161, _pages.scss */
+#node-properties-wrapper .decision-criteria-text {
+  word-break: break-word;
+}
+
+/* line 164, _pages.scss */
+#single-set-tiebreakers .decision-criteria-text {
+  word-break: break-word;
+}
+
+/* line 167, _pages.scss */
+#multi-tiebreaker-lead-segments .decision-criteria-text {
+  word-break: break-word;
+}
+
+/* line 170, _pages.scss */
+#tagging-tiebreaker-set-editor-panel .decision-criteria-text {
+  word-break: break-word;
+}
+
+/* line 174, _pages.scss */
+.node-inspector {
+  background-color: var(--white);
+  height: 100%;
+  overflow: auto;
+}
+
+/* line 180, _pages.scss */
+#action-node-atm-partial b {
+  font-weight: 600 !important;
+}
+/* line 184, _pages.scss */
+#action-node-atm-partial .main-div .horizontal-line-separator {
+  border-top: 1px solid var(--lt-grey-1) !important;
+}
+/* line 187, _pages.scss */
+#action-node-atm-partial .main-div #account-teams-setup-link {
+  color: var(--ld-red) !important;
+}
+/* line 189, _pages.scss */
+#action-node-atm-partial .main-div #account-teams-setup-link:hover {
+  color: var(--dk-grey-2) !important;
+}
+/* line 193, _pages.scss */
+#action-node-atm-partial .main-div .account-teams-not-enabled {
+  padding-top: 5px;
+  color: var(--ld-red);
+}
+/* line 197, _pages.scss */
+#action-node-atm-partial .main-div .atm-header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+  margin-top: 12px;
+}
+/* line 203, _pages.scss */
+#action-node-atm-partial .main-div .atm-header-container .left-header {
+  display: flex;
+}
+/* line 206, _pages.scss */
+#action-node-atm-partial .main-div .atm-header-container .right-header {
+  display: flex;
+  align-items: center;
+}
+/* line 210, _pages.scss */
+#action-node-atm-partial .main-div .atm-header-container .atm-tooltip {
+  margin-left: 5px;
+}
+/* line 214, _pages.scss */
+#action-node-atm-partial .main-div .empty-message {
+  margin: 5px 0px 14px 0px;
+  text-align: center;
+}
+/* line 219, _pages.scss */
+#action-node-atm-partial .main-div #add-team-members-wrapper #edit-atm-fields-wrapper {
+  margin-top: 2px;
+}
+/* line 222, _pages.scss */
+#action-node-atm-partial .main-div #add-team-members-wrapper .table-header-row {
+  padding: 3px 328px 3px 20px;
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--lt-grey-1);
+}
+/* line 223, _pages.scss */
+#action-node-atm-partial .main-div #add-team-members-wrapper .table-header-row div {
+  color: var(--med-grey-2) !important;
+  font-size: 10px !important;
+}
+/* line 232, _pages.scss */
+#action-node-atm-partial .main-div #add-team-members-wrapper .rule-div {
+  padding: 0px 10px 0px 10px;
+  display: flex;
+  align-items: center;
+}
+/* line 236, _pages.scss */
+#action-node-atm-partial .main-div #add-team-members-wrapper .rule-div .delete-column {
+  margin-top: 0px;
+}
+/* line 240, _pages.scss */
+#action-node-atm-partial .main-div #add-team-members-wrapper .error-message-section {
+  display: flex;
+}
+/* line 242, _pages.scss */
+#action-node-atm-partial .main-div #add-team-members-wrapper .error-message-section .invalid-user {
+  padding-left: 10px;
+  width: 300px;
+}
+/* line 246, _pages.scss */
+#action-node-atm-partial .main-div #add-team-members-wrapper .error-message-section .invalid-role {
+  padding-left: 15px;
+}
+/* line 251, _pages.scss */
+#action-node-atm-partial .main-div .ld-dropdown {
+  height: 20px;
+}
+/* line 254, _pages.scss */
+#action-node-atm-partial .main-div .ld-dropdown-toggle {
+  display: flex;
+  align-items: center;
+}
+/* line 258, _pages.scss */
+#action-node-atm-partial .main-div .dropdown-menu {
+  min-width: 180px !important;
+}
+
+/* line 266, _pages.scss */
+#node-properties-wrapper #conditions-edit-partial #edit-rules-div,
+#node-properties-wrapper #node-partial-wrapper {
+  font-size: 11px;
+  font-weight: 400;
+}
+/* line 271, _pages.scss */
+#node-properties-wrapper .control-group .control.control--radio,
+#node-properties-wrapper .ld-input-label .label-text,
+#node-properties-wrapper .collapsible-section,
+#node-properties-wrapper .rule-logic-input {
+  font-size: 12px;
+  font-weight: 400;
+}
+/* line 278, _pages.scss */
+#node-properties-wrapper .collapsible-section {
+  margin-bottom: 10px;
+}
+/* line 281, _pages.scss */
+#node-properties-wrapper .decision-criteria-text {
+  font-size: 11px;
+  line-height: 14px;
+  font-weight: 400;
+}
+
+/* line 294, _pages.scss */
+#create-task-form-container .ld-tooltip-hint,
+.primary-matched-select-radio .ld-tooltip-hint {
+  margin-left: 5px;
+}
+
+/* line 300, _pages.scss */
+.send-notification-header {
+  margin-bottom: 10px;
+}
+
+/* line 303, _pages.scss */
+.success-notification-wrapper .success-notification-toggle,
+.success-notification-wrapper .chatter-notification-toggle,
+.success-notification-wrapper .email-notification-toggle,
+.failure-notification-wrapper .failure-notification-toggle {
+  margin-bottom: 10px !important;
+}
+
+/* line 309, _pages.scss */
+.success-notification-wrapper {
+  margin: 10px 0px 5px 0px;
+}
+
+/* line 312, _pages.scss */
+.send-notification-subcontent {
+  margin-bottom: 20px;
+}
+
+/* line 315, _pages.scss */
+.show-failure-notification .send-notification-subcontent {
+  margin-left: 30px;
+}
+
+/* line 322, _pages.scss */
+#roundrobin-pools .pools-table-container .ld-table th {
+  font-size: 10px !important;
+}
+/* line 323, _pages.scss */
+#roundrobin-pools .pools-table-container .ld-table td:not(.dataTables_empty) {
+  font-size: 12px !important;
+}
+/* line 325, _pages.scss */
+#roundrobin-pools .pools-table-container .ld-table td:nth-last-child(2) {
+  overflow: visible !important;
+}
+/* line 327, _pages.scss */
+#roundrobin-pools .ld-tooltip-hint {
+  margin-left: 5px;
+  text-align: left;
+}
+/* line 331, _pages.scss */
+#roundrobin-pools #pools-info-tab table .ld-field-label-large {
+  margin-right: 10px;
+}
+/* line 334, _pages.scss */
+#roundrobin-pools #manager-dropdown {
+  width: 325px;
+  display: inline-block;
+}
+/* line 339, _pages.scss */
+#roundrobin-pools #pool-type-dropdown, #roundrobin-pools #object-type-dropdown {
+  width: 300px;
+  display: inline-block;
+}
+/* line 343, _pages.scss */
+#roundrobin-pools .delete-pool-button {
+  visibility: hidden;
+}
+/* line 346, _pages.scss */
+#roundrobin-pools .hover-row:hover .delete-pool-button {
+  visibility: visible;
+}
+/* line 350, _pages.scss */
+#roundrobin-pools .pool-metrics-link.disabled {
+  color: var(--lt-grey-2);
+  pointer-events: none;
+}
+
+/* line 355, _pages.scss */
+.inline-working-hours {
+  margin-bottom: 20px;
+}
+
+/* line 360, _pages.scss */
+#round-robin-members-list-wrapper {
+  margin-top: 20px;
+}
+/* line 362, _pages.scss */
+#round-robin-members-list-wrapper #members-list-table_wrapper td:nth-child(4) {
+  white-space: normal;
+}
+
+/* line 367, _pages.scss */
+#roundrobin-schedules {
+  margin-top: 20px;
+}
+
+/* line 370, _pages.scss */
+.pool-table-container .dataTables_scrollBody {
+  border-bottom: none !important;
+}
+
+/* line 376, _pages.scss */
+.pool-table-container th:nth-child(1), .pool-table-container td:nth-child(1),
+.round-robin-table.working-hours th:nth-child(1),
+.round-robin-table.working-hours td:nth-child(1),
+.round-robin-table.holidays th:nth-child(1),
+.round-robin-table.holidays td:nth-child(1) {
+  width: 400px;
+}
+/* line 377, _pages.scss */
+.pool-table-container th:nth-child(2), .pool-table-container td:nth-child(2),
+.round-robin-table.working-hours th:nth-child(2),
+.round-robin-table.working-hours td:nth-child(2),
+.round-robin-table.holidays th:nth-child(2),
+.round-robin-table.holidays td:nth-child(2) {
+  width: 70px;
+}
+/* line 378, _pages.scss */
+.pool-table-container th:nth-child(3), .pool-table-container td:nth-child(3),
+.round-robin-table.working-hours th:nth-child(3),
+.round-robin-table.working-hours td:nth-child(3),
+.round-robin-table.holidays th:nth-child(3),
+.round-robin-table.holidays td:nth-child(3) {
+  width: 130px;
+}
+/* line 379, _pages.scss */
+.pool-table-container th:nth-child(4), .pool-table-container td:nth-child(4),
+.round-robin-table.working-hours th:nth-child(4),
+.round-robin-table.working-hours td:nth-child(4),
+.round-robin-table.holidays th:nth-child(4),
+.round-robin-table.holidays td:nth-child(4) {
+  width: 130px;
+}
+
+/* line 382, _pages.scss */
+.round-robin-table.vacations th:nth-child(1), .round-robin-table.vacations td:nth-child(1) {
+  width: 250px;
+}
+/* line 383, _pages.scss */
+.round-robin-table.vacations th:nth-child(2), .round-robin-table.vacations td:nth-child(2) {
+  width: 250px;
+}
+/* line 384, _pages.scss */
+.round-robin-table.vacations th:nth-child(3), .round-robin-table.vacations td:nth-child(3) {
+  width: 210px;
+}
+/* line 385, _pages.scss */
+.round-robin-table.vacations th:nth-child(4), .round-robin-table.vacations td:nth-child(4) {
+  width: 160px;
+}
+/* line 386, _pages.scss */
+.round-robin-table.vacations th:nth-child(5), .round-robin-table.vacations td:nth-child(5) {
+  width: 120px;
+}
+/* line 387, _pages.scss */
+.round-robin-table.vacations th:nth-child(6), .round-robin-table.vacations td:nth-child(6) {
+  padding-right: 20px !important;
+  text-align: right;
+}
+
+/* line 392, _pages.scss */
+.vacation-creator-table td:nth-child(1) {
+  overflow: visible !important;
+}
+
+/* line 400, _pages.scss */
+.working-hours-creator-container.read-only.inline-mode {
+  display: flex;
+}
+/* line 402, _pages.scss */
+.working-hours-creator-container.read-only.inline-mode .working-hours-description-box {
+  display: block;
+}
+/* line 408, _pages.scss */
+.working-hours-creator-container.inline-mode .working-hours-creator {
+  background-color: var(--lt-grey-1);
+  padding: 20px;
+}
+/* line 412, _pages.scss */
+.working-hours-creator-container.inline-mode .working-hours-page-header-2 {
+  align-items: center;
+  display: flex;
+}
+/* line 416, _pages.scss */
+.working-hours-creator-container.inline-mode .working-hours-save-as-template {
+  display: inline-flex;
+  margin-left: 10px;
+}
+/* line 420, _pages.scss */
+.working-hours-creator-container.inline-mode .working-hours-dirty-bar,
+.working-hours-creator-container.inline-mode .working-hours-page-header-1,
+.working-hours-creator-container.inline-mode .working-hours-tabs-div,
+.working-hours-creator-container.inline-mode .working-hour-name-tooltip {
+  display: none;
+}
+/* line 429, _pages.scss */
+.working-hours-creator-container.read-only .working-hours-creator {
+  background-color: var(--white) !important;
+  flex: 1;
+  padding: 0px;
+}
+/* line 434, _pages.scss */
+.working-hours-creator-container.read-only .working-hours-editor {
+  pointer-events: none;
+}
+/* line 437, _pages.scss */
+.working-hours-creator-container.read-only .inline-hours-div {
+  display: inline-block;
+  margin-right: 40px;
+}
+/* line 441, _pages.scss */
+.working-hours-creator-container.read-only .no-hours-default-text {
+  display: block;
+}
+/* line 444, _pages.scss */
+.working-hours-creator-container.read-only .add-hours-btn,
+.working-hours-creator-container.read-only .ld-cross-icon-large,
+.working-hours-creator-container.read-only .working-hour-description-box,
+.working-hours-creator-container.read-only .working-hour-template-editor,
+.working-hours-creator-container.read-only .hour-range-container,
+.working-hours-creator-container.read-only .day-dropdown {
+  display: none;
+}
+/* line 452, _pages.scss */
+.working-hours-creator-container.read-only .working-hours-page-header-2 {
+  display: none !important;
+}
+/* line 457, _pages.scss */
+.working-hours-creator-container .working-hours-page-header-1 {
+  margin-top: 20px;
+}
+/* line 460, _pages.scss */
+.working-hours-creator-container .working-hours-page-header-2,
+.working-hours-creator-container .working-hours-save-as-template,
+.working-hours-creator-container .working-hours-description-box,
+.working-hours-creator-container .working-hours-pools-tab,
+.working-hours-creator-container .inline-hours-div,
+.working-hours-creator-container .no-hours-default-text {
+  display: none;
+}
+/* line 468, _pages.scss */
+.working-hours-creator-container .hour-range-container {
+  display: inline-block;
+  position: relative;
+}
+
+/* line 473, _pages.scss */
+.working-hours-description-box {
+  background-color: var(--lt-grey-1);
+  height: fit-content;
+  margin-left: 20px;
+  max-height: 250px;
+  overflow: scroll;
+  padding: 20px;
+  width: 400px;
+}
+/* line 481, _pages.scss */
+.working-hours-description-box .working-hour-description-header {
+  padding-bottom: 5px;
+}
+
+/* line 487, _pages.scss */
+#territorySegmentTable td.segment-action-cell {
+  overflow: visible !important;
+}
+
+/* line 491, _pages.scss */
+.territory-table-filter .multiselect-dropdown {
+  width: unset !important;
+  min-width: 145px;
+  max-width: 400px;
+}
+/* line 495, _pages.scss */
+.territory-table-filter .multiselect-dropdown .multiselect-dropdown-menu {
+  min-width: 170px;
+}
+
+/* line 502, _pages.scss */
+#territory-assignments .territory-table .assign-owner-dropdown {
+  color: var(--dk-grey-1);
+  background-color: white;
+  background-image: url("../images/Down_Arrow_Icon.png");
+  background-position: right 9px center;
+  background-repeat: no-repeat;
+  background-size: 9.5px 5.5px;
+  border-color: var(--lt-grey-2);
+  padding-left: 0px;
+  width: 155px;
+}
+/* line 512, _pages.scss */
+#territory-assignments .territory-table .assign-owner-dropdown:hover {
+  background-color: var(--white) !important;
+  border: 1px solid var(--ld-lt-green-1) !important;
+  color: unset !important;
+}
+
+/* line 519, _pages.scss */
+.pool-manager-column {
+  line-height: 1.2;
+  display: inline-block;
+  overflow: inherit;
+  text-overflow: inherit;
+  vertical-align: inherit;
+}
+
+/* line 528, _pages.scss */
+.view a {
+  color: var(--dk-grey-2);
+  text-decoration: underLine;
+}
+
+/* line 533, _pages.scss */
+.view a.action_link {
+  color: var(--ld-green) !important;
+}
+
+/* line 537, _pages.scss */
+.view a.customTarget:hover,
+.view a.sobjectLink:hover {
+  color: var(--ld-green);
+}
+
+/* line 545, _pages.scss */
+.routing-metrics-wrapper .line-graph-wrapper {
+  height: 460px;
+}
+/* line 550, _pages.scss */
+.routing-metrics-wrapper .line-graph-control-wrapper #control-container {
+  margin-bottom: 20px;
+  margin-top: 5px;
+}
+/* line 557, _pages.scss */
+.routing-metrics-wrapper .line-graph-control-wrapper .org-id {
+  display: inline-block;
+  margin: 0px 10px;
+  padding-left: 10px;
+  border-left: 1px solid var(--med-grey-1);
+}
+/* line 564, _pages.scss */
+.routing-metrics-wrapper .line-graph-control-wrapper #control-container {
+  width: 1050px;
+}
+/* line 568, _pages.scss */
+.routing-metrics-wrapper .line-graph-control-wrapper .query-options-container {
+  float: right;
+  display: inline-block;
+}
+/* line 573, _pages.scss */
+.routing-metrics-wrapper .line-graph-control-wrapper .hide-inactive-users-container {
+  display: inline-block;
+  margin-right: 10px;
+}
+/* line 578, _pages.scss */
+.routing-metrics-wrapper .line-graph-control-wrapper .ld-dates-container {
+  margin-top: 10px;
+}
+/* line 582, _pages.scss */
+.routing-metrics-wrapper .line-graph-control-wrapper .date-text {
+  font-size: 12px;
+  position: relative;
+  right: 4px;
+}
+/* line 593, _pages.scss */
+.routing-metrics-wrapper .line-graph-control-wrapper .ld-dates-container > div {
+  vertical-align: top;
+}
+/* line 596, _pages.scss */
+.routing-metrics-wrapper .line-graph-control-wrapper .start-date-container, .routing-metrics-wrapper .line-graph-control-wrapper .end-date-container {
+  display: inline-block;
+}
+/* line 603, _pages.scss */
+.routing-metrics-wrapper .routing-metrics-table-wrapper .table-div, .routing-metrics-wrapper .routing-metrics-table-wrapper #graph-table {
+  width: 1050px;
+}
+/* line 607, _pages.scss */
+.routing-metrics-wrapper .routing-metrics-table-wrapper .no-data-row {
+  text-align: center;
+}
+/* line 611, _pages.scss */
+.routing-metrics-wrapper .routing-metrics-table-wrapper .ld-table-filter-info {
+  position: absolute;
+}
+/* line 615, _pages.scss */
+.routing-metrics-wrapper .routing-metrics-table-wrapper .ld-table-filter-info .ld-table-info {
+  font-size: 14px;
+  margin-right: 10px;
+  position: relative;
+  top: 6px;
+}
+/* line 622, _pages.scss */
+.routing-metrics-wrapper .routing-metrics-table-wrapper .ld-table-filter-info .ld-date-filter {
+  font-size: 12px;
+  color: var(--white);
+  background-color: var(--med-grey-1);
+  position: relative;
+  top: 1px;
+  line-height: 25px;
+  display: inline-block;
+  cursor: pointer;
+  border: solid 0.5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 5px;
+  vertical-align: top;
+  margin-right: 5px;
+}
+/* line 639, _pages.scss */
+.routing-metrics-wrapper .routing-metrics-table-wrapper .ld-table-pagination {
+  width: fit-content;
+  display: inline-block;
+  position: relative;
+  left: 50%;
+  margin-bottom: 8px;
+}
+/* line 647, _pages.scss */
+.routing-metrics-wrapper .routing-metrics-table-wrapper .ld-table-pagination > * {
+  position: relative;
+  left: -50%;
+}
+/* line 652, _pages.scss */
+.routing-metrics-wrapper .routing-metrics-table-wrapper .ld-table-length {
+  width: fit-content;
+  display: inline-block;
+  float: right;
+  position: relative;
+  top: 5px;
+}
+/* line 660, _pages.scss */
+.routing-metrics-wrapper .routing-metrics-table-wrapper .dataTables_length label {
+  font-size: 12px;
+  color: var(--med-grey-2);
+}
+
+/*******************************
+
+ADMIN - MY ACCOUNT
+
+*******************************/
+/* line 674, _pages.scss */
+#help-page-wrapper a {
+  color: var(--dk-grey-2);
+  text-decoration: underline;
+}
+/* line 677, _pages.scss */
+#help-page-wrapper a:hover {
+  color: var(--ld-green);
+}
+
+/*******************************
+
+ATTRIBUTION RUN HISTORY
+
+*******************************/
+/* line 690, _pages.scss */
+.subheader {
+  font-size: 19px;
+}
+
+/* line 694, _pages.scss */
+#oneTimeRunDiv .cb-container {
+  display: block;
+}
+
+/* line 698, _pages.scss */
+.expandArrow {
+  background: url("../images/Right_Arrow_Icon.png");
+  background-repeat: no-repeat;
+  background-position: 12px 14px;
+  background-size: 7px 12px;
+}
+
+/* line 705, _pages.scss */
+.expandedArrow {
+  background: url("../images/Down_Arrow_Icon.png");
+  background-repeat: no-repeat;
+  background-position: 10px 18px;
+  background-size: 12px 7px;
+}
+
+/* line 713, _pages.scss */
+#runSummaryView .ld-table #attributionRunSummaryTable tbody tr {
+  background-color: var(--white);
+}
+/* line 716, _pages.scss */
+#runSummaryView .ld-table #attributionRunSummaryTable tbody tr.summarySubrow {
+  background-color: var(--lt-grey-1);
+}
+/* line 719, _pages.scss */
+#runSummaryView .ld-table #attributionRunSummaryTable tbody tr.summarySubrow .viewBatchErrorButton {
+  visibility: hidden;
+}
+/* line 724, _pages.scss */
+#runSummaryView .ld-table #attributionRunSummaryTable tbody tr:hover {
+  background-color: var(--ld-lt-green-1);
+}
+/* line 727, _pages.scss */
+#runSummaryView .ld-table #attributionRunSummaryTable tbody tr:hover .viewBatchErrorButton {
+  visibility: visible;
+}
+
+/* line 734, _pages.scss */
+.viewErrorButton {
+  visibility: hidden;
+}
+
+/* line 738, _pages.scss */
+#attributionRunSummaryTable tr.summaryRow:hover .viewErrorButton {
+  visibility: visible;
+}
+
+/* line 742, _pages.scss */
+.cancelRunButton {
+  visibility: hidden;
+}
+
+/* line 746, _pages.scss */
+#attributionRunSummaryTable {
+  border-bottom: none;
+}
+
+/* line 750, _pages.scss */
+#attributionRunSummaryTable th {
+  background-color: var(--lt-grey-2);
+  border-bottom: none;
+}
+
+/* line 756, _pages.scss */
+#attributionRunSummaryTable td {
+  white-space: initial;
+  line-height: 15px;
+  border-bottom: 1px solid var(--lt-grey-2);
+}
+/* line 762, _pages.scss */
+#attributionRunSummaryTable .summarySubrow td {
+  border-bottom: 2px solid var(--white);
+}
+
+/* line 767, _pages.scss */
+#attributionRunSummaryTable tr.summaryRow:hover .cancelRunButton {
+  visibility: visible;
+}
+
+/* line 771, _pages.scss */
+#attributionRunSummaryTable td:not(:last-child) {
+  padding: 15px;
+}
+
+/* line 775, _pages.scss */
+#emailInput {
+  width: 600px;
+}
+
+/* line 779, _pages.scss */
+#oneTimeRunDiv .ld-section-header {
+  margin-bottom: 10px;
+}
+
+/* line 783, _pages.scss */
+#oneTimeRunDiv .ld-body-large {
+  margin-bottom: 20px;
+}
+
+/* line 787, _pages.scss */
+#oneTimeRunDiv .ld-primary-large-button {
+  margin-bottom: 10px;
+}
+
+/* line 791, _pages.scss */
+#oneTimeRunDiv .cb-container {
+  margin-bottom: 10px;
+}
+
+/* line 795, _pages.scss */
+#batchTableHeader {
+  margin: 20px 0px 10px 0px;
+}
+
+/* line 799, _pages.scss */
+.flexHeader {
+  display: flex;
+  align-items: flex-end;
+}
+
+/* line 804, _pages.scss */
+.flexHeader > * {
+  flex: 1 100%;
+}
+
+/* line 808, _pages.scss */
+.flexDropdownRight {
+  align-self: flex-end;
+  flex-basis: 200px;
+}
+
+/* line 813, _pages.scss */
+.flexDropdownLeft {
+  align-self: flex-start;
+  flex-basis: 200px;
+}
+
+/* line 818, _pages.scss */
+#attributionRunSummaryTable.ld-table th {
+  padding-left: 15px;
+}
+
+/* line 822, _pages.scss */
+#attributionRunSummaryTable td.hasFailures {
+  color: var(--ld-red);
+}
+
+/* line 826, _pages.scss */
+#runInfoSectionDiv {
+  width: 320px;
+  margin-bottom: 20px;
+}
+
+/* line 831, _pages.scss */
+#runInfoSectionDiv table {
+  width: 100%;
+}
+
+/* line 835, _pages.scss */
+#runInfoSectionDiv table tr:not(:last-child) td {
+  padding-bottom: 5px;
+}
+
+/* line 839, _pages.scss */
+.breadCrumbContainer > * {
+  display: inline-block;
+}
+
+/* line 843, _pages.scss */
+.breadCrumbContainer {
+  margin-bottom: 20px;
+}
+
+/* line 847, _pages.scss */
+#batchErrorDropdown {
+  width: 250px;
+  margin-bottom: 10px;
+}
+
+/* line 852, _pages.scss */
+.crumbArrow {
+  font-size: 11px;
+  color: var(--med-grey-2);
+}
+
+/* line 857, _pages.scss */
+#errorViewTableHeader {
+  padding-left: 20px;
+  margin-bottom: 10px;
+}
+
+/* line 862, _pages.scss */
+#errorViewTable {
+  width: 100%;
+}
+
+/* line 866, _pages.scss */
+#errorViewTable th {
+  background-color: var(--lt-grey-2);
+  border-bottom: none;
+}
+
+/* line 871, _pages.scss */
+#oneTimeRunDiv .cbDiv {
+  display: block;
+  margin-bottom: 10px;
+}
+
+/* line 876, _pages.scss */
+#attributionRunSummaryTable tr {
+  cursor: pointer;
+}
+
+/* line 880, _pages.scss */
+#errorViewTable td {
+  word-break: break-word;
+  white-space: initial;
+  user-select: text;
+}
+
+/* line 886, _pages.scss */
+.modal-oppFreeze {
+  width: 532px !important;
+  height: unset;
+}
+/* line 889, _pages.scss */
+.modal-oppFreeze .confirmaton-modal-close {
+  height: 16px;
+  width: 16px;
+  background-image: url("../images/Close_Icon.png") !important;
+  background-size: contain !important;
+}
+/* line 895, _pages.scss */
+.modal-oppFreeze .modal-body {
+  padding: 15px 15px 30px;
+}
+/* line 899, _pages.scss */
+.modal-oppFreeze .modal-body b {
+  font-size: 14px;
+  color: var(--dk-grey-2);
+}
+/* line 904, _pages.scss */
+.modal-oppFreeze .modal-body p {
+  text-align: left !important;
+  font-size: 14px !important;
+  font-weight: 400;
+  color: var(--dk-grey-2) !important;
+}
+/* line 911, _pages.scss */
+.modal-oppFreeze .modal-header-oppFreeze {
+  height: unset !important;
+  display: block !important;
+  justify-content: left !important;
+  padding: 15px 20px 15px;
+  border-bottom: none;
+}
+/* line 919, _pages.scss */
+.modal-oppFreeze .modal-header-oppFreeze b {
+  font-size: 19px;
+  color: var(--dk-grey-2);
+}
+/* line 924, _pages.scss */
+.modal-oppFreeze .close img {
+  height: 16px;
+}
+/* line 928, _pages.scss */
+.modal-oppFreeze .modal-note {
+  background-color: #fff9e6;
+  padding: 15px !important;
+  text-align: left !important;
+  line-height: 10px;
+}
+/* line 934, _pages.scss */
+.modal-oppFreeze .m0 {
+  margin: 0 !important;
+}
+/* line 938, _pages.scss */
+.modal-oppFreeze .mt15 {
+  margin-top: 15px !important;
+}
+/* line 942, _pages.scss */
+.modal-oppFreeze .mt20 {
+  margin-top: 20px !important;
+}
+/* line 946, _pages.scss */
+.modal-oppFreeze .ml0, .modal-oppFreeze .mr0 {
+  margin-bottom: 0 !important;
+}
+/* line 950, _pages.scss */
+.modal-oppFreeze .mlr10 {
+  margin: 0 10px !important;
+}
+/* line 954, _pages.scss */
+.modal-oppFreeze .mb0 {
+  margin-bottom: 0 !important;
+}
+/* line 958, _pages.scss */
+.modal-oppFreeze .mb15 {
+  margin-bottom: 15px !important;
+}
+/* line 962, _pages.scss */
+.modal-oppFreeze .mb50 {
+  margin-bottom: 50px !important;
+}
+
+/*******************************
+
+ATTRIBUTION SETTINGS HISTORY
+
+*******************************/
+/* line 973, _pages.scss */
+.settingsListDiv {
+  display: inline-block;
+}
+
+/* line 977, _pages.scss */
+div.viewLog {
+  visibility: hidden;
+  text-align: center;
+}
+
+/* line 982, _pages.scss */
+#settingsSummaryTable td {
+  line-height: 15px;
+}
+
+/* line 986, _pages.scss */
+#settingsSummaryTable {
+  border-bottom: unset !important;
+}
+
+/* line 990, _pages.scss */
+#settingsSummaryTable th {
+  border-bottom: none;
+}
+
+/* line 994, _pages.scss */
+#settingsSummaryTable th {
+  background-color: var(--lt-grey-2);
+}
+
+/* line 998, _pages.scss */
+#settingsSummaryTable tr.summaryRow:hover div.viewLog {
+  visibility: visible;
+}
+
+/* line 1002, _pages.scss */
+#settingsPageDropdown {
+  width: 200px;
+  display: inline-block;
+}
+
+/* line 1007, _pages.scss */
+#settingsSummaryDropdownContainer {
+  text-align: right;
+}
+
+/* line 1011, _pages.scss */
+#logDetailView .settingsCategory td {
+  border-top: solid 1px var(--lt-grey-1_5);
+  border-bottom: solid 1px var(--lt-grey-1_5);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 8px;
+}
+
+/* line 1019, _pages.scss */
+#logDetailView .settingsCategory td:not(:first-child) {
+  width: 380px;
+}
+
+/* line 1023, _pages.scss */
+#logDetailView .comparedSetting div:not(:last-child) {
+  margin-bottom: 1px;
+}
+
+/* line 1027, _pages.scss */
+#logDetailView #comparisonTable {
+  width: 100%;
+}
+
+/* line 1031, _pages.scss */
+#logDetailView #comparisonTable td {
+  font-family: "Open Sans", sans-serif;
+}
+
+/* line 1035, _pages.scss */
+#logDetailView .removedSettingHeader {
+  background-color: var(--lt-red-2);
+  padding: 4px 0px 4px 20px;
+}
+
+/* line 1040, _pages.scss */
+#logDetailView .removedSetting {
+  background-color: var(--lt-red-1);
+  padding: 8px 20px 8px 20px;
+  width: inherit;
+  overflow-wrap: break-word;
+}
+
+/* line 1047, _pages.scss */
+#logDetailView .addedSettingHeader {
+  background-color: var(--ld-lt-green-2);
+  padding: 4px 0px 4px 20px;
+}
+
+/* line 1052, _pages.scss */
+#logDetailView .addedSetting {
+  background-color: var(--ld-lt-green-1);
+  padding: 8px 20px 8px 20px;
+  width: inherit;
+  overflow-wrap: break-word;
+}
+
+/* line 1059, _pages.scss */
+#logDetailView .categoryLabelDiv div {
+  margin-bottom: 5px;
+}
+
+/* line 1063, _pages.scss */
+#logDetailView td.comparedSetting {
+  vertical-align: top;
+}
+
+/* line 1067, _pages.scss */
+#logDetailView .ld-th {
+  padding: 0px 0px 0px 20px;
+  line-height: 25px;
+  color: var(--med-grey-2);
+  font-size: 10px;
+  font-weight: var(--regular);
+  background-color: var(--lt-grey-2);
+}
+
+/* line 1076, _pages.scss */
+#logDetailView .settingsListDiv {
+  vertical-align: top;
+  width: 500px;
+}
+
+/* line 1081, _pages.scss */
+#logDetailView .settingsListDiv:not(:first-child) {
+  margin-left: 10px;
+}
+
+/* line 1085, _pages.scss */
+#logDetailView .settingsListDiv div.addedSetting {
+  margin-top: 1px;
+}
+
+/* line 1089, _pages.scss */
+#logDetailView .settingsListDiv div.removedSetting {
+  margin-top: 1px;
+}
+
+/* line 1093, _pages.scss */
+#logDetailView .settingsListDiv div.overlapSetting {
+  border-right: solid 1px var(--lt-grey-1_5);
+  border-left: solid 1px var(--lt-grey-1_5);
+  border-top: solid 1px var(--lt-grey-1_5);
+  padding: 8px 0px 8px 20px;
+}
+
+/* line 1100, _pages.scss */
+#logDetailView .settingsListDiv div.overlapSetting:last-child {
+  border-bottom: solid 1px var(--lt-grey-1_5);
+}
+
+/* line 1104, _pages.scss */
+.breadCrumbContainer {
+  margin-bottom: 20px;
+}
+
+/* line 1108, _pages.scss */
+.breadCrumbContainer > * {
+  display: inline-block;
+}
+
+/*******************************
+
+INTEGRATIONS PAGE (backbone / legacy)
+New styles should be defined in angular Page/partner_apps/partner-apps.style.scss file
+
+*******************************/
+/* line 1118, _pages.scss */
+.messaging-section {
+  background: #FFF9E6;
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  margin-bottom: 20px;
+}
+
+/* line 1126, _pages.scss */
+.partner-card-list {
+  margin-top: 10px;
+}
+
+/* line 1130, _pages.scss */
+.partner-card-wrapper {
+  width: 510px;
+  height: 230px;
+  background: var(--lt-grey-1);
+  margin-top: 20px;
+  margin-right: 10px;
+  padding: 20px;
+  display: inline-flex;
+  position: relative;
+}
+
+/* line 1141, _pages.scss */
+.partner-name {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/* line 1146, _pages.scss */
+.partner-app-logo {
+  width: 75px;
+  height: 75px;
+  background: black;
+  display: inline-block;
+}
+
+/* line 1153, _pages.scss */
+.partner-content {
+  vertical-align: top;
+  display: inline-block;
+  margin-left: 15px;
+  flex: 1;
+}
+
+/* line 1160, _pages.scss */
+.action-button {
+  position: absolute;
+  bottom: 20px;
+  left: 191px;
+}
+
+/* line 1167, _pages.scss */
+.partner-content-config {
+  width: 950px;
+  vertical-align: top;
+}
+
+/* line 1172, _pages.scss */
+.partner-app-header-config-wrapper {
+  margin-top: 30px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--lt-grey-2);
+}
+
+/* line 1178, _pages.scss */
+.partner-app-header-config {
+  display: inline-block;
+  margin-left: 20px;
+  vertical-align: top;
+}
+
+/* line 1184, _pages.scss */
+.partner-config-panel {
+  display: inline-block;
+  margin-top: 10px;
+  height: 630px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
+  vertical-align: top;
+}
+
+/* line 1194, _pages.scss */
+.partner-instructions-panel {
+  display: inline-block;
+  margin-top: 20px;
+  padding-right: 10px;
+  vertical-align: top;
+  overflow-wrap: break-word;
+}
+
+/* line 1202, _pages.scss */
+.config-settings-wrapper {
+  width: 595px;
+  background: var(--lt-grey-1);
+}
+
+/* line 1207, _pages.scss */
+.authorization-section,
+.field-mapping-section {
+  padding-bottom: 20px;
+  margin-top: 20px;
+  border-bottom: 1px solid var(--lt-grey-2);
+}
+
+/* line 1214, _pages.scss */
+.authorization-section,
+.sharing-section,
+.field-mapping-section {
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+/* line 1221, _pages.scss */
+.confirmation-section {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+/* line 1226, _pages.scss */
+.authorization-section #access-token-input,
+.authorization-section #app-id-input,
+.authorization-section #client-secret-input {
+  width: 280px;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+/* line 1235, _pages.scss */
+.authorization-section .integrations-setting-field-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+/* line 1238, _pages.scss */
+.authorization-section .integrations-setting-field-wrapper .integrations-setting-field {
+  width: 100% !important;
+  font-size: 12px !important;
+  margin-bottom: 10px;
+  margin-left: unset !important;
+}
+
+/* line 1247, _pages.scss */
+.authorization-section .ld-body-large-bold {
+  min-width: 100px;
+}
+
+/* line 1251, _pages.scss */
+.auth-input-label,
+#retry-time-unit-dropdown {
+  display: inline-block;
+  width: 100px;
+}
+
+/* line 1257, _pages.scss */
+.auth-column-label {
+  background: var(--lt-grey-2);
+  text-align: center;
+  padding: 5px;
+  font-weight: var(--regular) !important;
+  color: var(--med-grey-2);
+  font-size: 14px !important;
+  line-height: 18px !important;
+}
+
+/* line 1267, _pages.scss */
+.partner-apps-partner-field-column {
+  flex: 1;
+  text-align: center;
+  font-weight: 600;
+  font-size: 14px !important;
+  line-height: 18px !important;
+}
+
+/* line 1275, _pages.scss */
+.partner-apps-field-mapping-row {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 600;
+  margin: 10px 0px;
+}
+
+/**
+ * Use the `→` character along with this class to recreate the arrow.
+ */
+/* line 1286, _pages.scss */
+.mapping-arrow {
+  font-size: 30px;
+  color: #b3b3b3;
+  font-weight: 100;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+/* line 1294, _pages.scss */
+.partner-apps-salesforce-field-column {
+  display: flex;
+  align-items: center;
+  width: 300px;
+}
+
+/* line 1300, _pages.scss */
+.field-mapping-dropdown {
+  width: 200px;
+  display: inline-block;
+}
+
+/* line 1305, _pages.scss */
+#salesforce-column-label {
+  width: 250px;
+  float: left;
+}
+
+/* line 1310, _pages.scss */
+.field-mapping-label {
+  flex: 1;
+  display: inline-block;
+  text-align: right;
+  margin-right: 10px;
+}
+
+/* line 1317, _pages.scss */
+.config-instructions-wrapper {
+  width: 445px;
+  height: auto;
+}
+/* line 1321, _pages.scss */
+.config-instructions-wrapper .ld-body-large, .config-instructions-wrapper .ld-body-large-bold {
+  line-height: 2.5em;
+}
+/* line 1325, _pages.scss */
+.config-instructions-wrapper div,
+.config-instructions-wrapper li {
+  margin-bottom: 1em;
+}
+
+/* line 1331, _pages.scss */
+.center-button-wrapper {
+  text-align: center;
+}
+
+/* line 1335, _pages.scss */
+#retry-time-input {
+  width: 60px;
+  vertical-align: top;
+}
+
+/*******************************
+
+ATTRIBUTION RUN NOTIFICATIONS
+
+*******************************/
+/* line 1347, _pages.scss */
+#runNotificationsView div#previewText {
+  margin-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--lt-grey-2);
+}
+/* line 1352, _pages.scss */
+#runNotificationsView div#previewText .ld-section-header-small {
+  line-height: 1.75;
+}
+/* line 1356, _pages.scss */
+#runNotificationsView div#previewText div.bulletedPoint {
+  line-height: 1.75;
+  font-size: 14px;
+  padding-left: 10px;
+}
+/* line 1364, _pages.scss */
+#runNotificationsView div.saveBar div.close {
+  display: none;
+}
+/* line 1369, _pages.scss */
+#runNotificationsView div.description {
+  font-size: 14px;
+}
+/* line 1373, _pages.scss */
+#runNotificationsView div.error-bar {
+  background-color: var(--ld-red);
+  height: 45px;
+  padding: 13px 20px;
+  width: inherit;
+  color: var(--white);
+}
+/* line 1381, _pages.scss */
+#runNotificationsView div.ld-subheader {
+  padding-bottom: 10px;
+}
+/* line 1385, _pages.scss */
+#runNotificationsView div.fieldCategory {
+  display: inline-block;
+  width: 255px;
+  vertical-align: top;
+}
+/* line 1391, _pages.scss */
+#runNotificationsView div.section {
+  margin-top: 20px;
+}
+/* line 1395, _pages.scss */
+#runNotificationsView div.fieldCategory div.checkbox-container {
+  margin-top: 10px;
+}
+/* line 1399, _pages.scss */
+#runNotificationsView div#fieldCategories {
+  padding: 10px 0px;
+  margin-bottom: 20px;
+}
+/* line 1404, _pages.scss */
+#runNotificationsView div#marketingTouchFields {
+  border-bottom: 1px solid var(--lt-grey-2);
+  padding-bottom: 20px;
+}
+/* line 1409, _pages.scss */
+#runNotificationsView div#emailRecipientForm {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: var(--ld-lt-green-1);
+}
+/* line 1415, _pages.scss */
+#runNotificationsView div#emailRecipientForm input {
+  display: inline-block;
+}
+/* line 1418, _pages.scss */
+#runNotificationsView div#emailRecipientForm input.nameInput {
+  width: 150px;
+  margin-right: 10px;
+}
+/* line 1422, _pages.scss */
+#runNotificationsView div#emailRecipientForm input#emailAddress {
+  width: 300px;
+}
+/* line 1425, _pages.scss */
+#runNotificationsView div#emailRecipientForm .cancelButton {
+  background-color: var(--lt-grey-1);
+}
+/* line 1431, _pages.scss */
+#runNotificationsView div#CAMFields .checkbox-container {
+  display: inline-block;
+  width: 255px;
+  margin-top: 10px;
+}
+/* line 1438, _pages.scss */
+#runNotificationsView div#emailRecipientList {
+  border-top: solid 1px var(--lt-grey-2);
+}
+/* line 1441, _pages.scss */
+#runNotificationsView div#emailRecipientList div.recipientRow {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  height: 35px;
+  border-bottom: solid 1px var(--lt-grey-1_5);
+}
+/* line 1447, _pages.scss */
+#runNotificationsView div#emailRecipientList div.recipientRow:hover {
+  background-color: var(--ld-lt-green-1);
+}
+/* line 1451, _pages.scss */
+#runNotificationsView div#emailRecipientList div.recipientRow div.recipientName {
+  width: 325px;
+  display: inline-block;
+}
+/* line 1455, _pages.scss */
+#runNotificationsView div#emailRecipientList div.recipientRow div.recipientEmail {
+  width: 550px;
+  display: inline-block;
+}
+/* line 1461, _pages.scss */
+#runNotificationsView div#emailRecipientList div.emptyTableRow {
+  padding: 10px 20px;
+  height: 35px;
+  border-bottom: solid 1px var(--lt-grey-1_5);
+}
+/* line 1469, _pages.scss */
+#runNotificationsView div#toggleRecipientFormButton {
+  margin-top: 15px;
+  margin-bottom: 10px;
+  display: inline-block;
+  vertical-align: middle;
+}
+/* line 1476, _pages.scss */
+#runNotificationsView div#notificationSendOnErrorContainer {
+  vertical-align: middle;
+  display: inline-block;
+  padding-top: 4px;
+  margin-left: 20px;
+}
+/* line 1483, _pages.scss */
+#runNotificationsView div.footerButtons {
+  margin-top: 50px;
+  text-align: center;
+}
+
+/* line 1493, _pages.scss */
+.zoominfo-enrichment-container.node-partial #selected-fields-table_wrapper .dataTables_scrollBody {
+  overflow: auto !important;
+  border-bottom: none;
+  padding-right: 5px;
+}
+/* line 1497, _pages.scss */
+.zoominfo-enrichment-container.node-partial #selected-fields-table_wrapper .dataTables_scrollBody::-webkit-scrollbar {
+  width: 5px;
+}
+/* line 1500, _pages.scss */
+.zoominfo-enrichment-container.node-partial #selected-fields-table_wrapper .dataTables_scrollBody::-webkit-scrollbar-track {
+  background: linear-gradient(90deg, white 2px, var(--lt-grey-2) 3px, var(--lt-grey-2) 3px, white 3px);
+}
+/* line 1507, _pages.scss */
+.zoominfo-enrichment-container.node-partial #selected-fields-table_wrapper .dataTables_scrollBody::-webkit-scrollbar-thumb {
+  background: var(--lt-grey-2);
+  width: 1px;
+}
+/* line 1511, _pages.scss */
+.zoominfo-enrichment-container.node-partial #selected-fields-table_wrapper .dataTables_scrollBody::-webkit-scrollbar-thumb:hover {
+  background: var(--med-grey-1);
+}
+/* line 1517, _pages.scss */
+.zoominfo-enrichment-container table.dataTable {
+  border-bottom: none;
+}
+/* line 1520, _pages.scss */
+.zoominfo-enrichment-container table.dataTable img.delete-row-icon {
+  width: 12px;
+  display: inline;
+  margin-right: 20px;
+}
+/* line 1525, _pages.scss */
+.zoominfo-enrichment-container table.dataTable td {
+  font-family: "Open Sans", sans-serif;
+}
+/* line 1528, _pages.scss */
+.zoominfo-enrichment-container table.dataTable td.dataTables_empty {
+  vertical-align: middle;
+  text-align: left;
+  height: 20px;
+}
+/* line 1533, _pages.scss */
+.zoominfo-enrichment-container table.dataTable tr.field-row:hover {
+  background: var(--ld-lt-green-1);
+}
+/* line 1535, _pages.scss */
+.zoominfo-enrichment-container table.dataTable tr.field-row:hover img.delete-row-icon {
+  cursor: pointer;
+  visibility: visible;
+}
+/* line 1541, _pages.scss */
+.zoominfo-enrichment-container table.dataTable tr.field-row:not(:hover) img.delete-row-icon {
+  visibility: hidden;
+}
+/* line 1547, _pages.scss */
+.zoominfo-enrichment-container .typeahead-row td {
+  overflow: initial;
+}
+
+/* line 1553, _pages.scss */
+#api-tabs-div {
+  font-weight: 400;
+  margin-top: 0px !important;
+  border-bottom: 1px solid var(--lt-grey-1_5);
+  width: 100%;
+  z-index: 1;
+  margin-bottom: 10px !important;
+}
+
+/* line 1562, _pages.scss */
+#api-rrr-wrapper .api-subheader {
+  padding-bottom: 10px !important;
+}
+/* line 1566, _pages.scss */
+#api-rrr-wrapper .api-header {
+  padding-bottom: 5px !important;
+}
+/* line 1570, _pages.scss */
+#api-rrr-wrapper .edit-create-button {
+  background-color: white !important;
+}
+/* line 1572, _pages.scss */
+#api-rrr-wrapper .edit-create-button:hover {
+  color: white !important;
+  background-color: var(--ld-green) !important;
+  border: 1px solid var(--ld-green) !important;
+}
+/* line 1579, _pages.scss */
+#api-rrr-wrapper #api-pools-searchbar {
+  float: right;
+  margin-top: -78px;
+  z-index: 2;
+  position: relative;
+}
+/* line 1586, _pages.scss */
+#api-rrr-wrapper .clear-search-filter-btn {
+  margin-right: 0px !important;
+}
+/* line 1590, _pages.scss */
+#api-rrr-wrapper #api-pools-flex-holder {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 18.5px 0px 13px;
+  justify-content: space-between;
+}
+/* line 1598, _pages.scss */
+#api-rrr-wrapper .api-pools-table-container .ld-table tr:hover .segment-action {
+  visibility: visible;
+}
+/* line 1602, _pages.scss */
+#api-rrr-wrapper .api-pools-table-container .actionButtonColumn {
+  overflow: visible !important;
+}
+/* line 1607, _pages.scss */
+#api-rrr-wrapper .api-pools-table-container .delete-pool-button {
+  visibility: hidden;
+}
+/* line 1610, _pages.scss */
+#api-rrr-wrapper .api-pools-table-container .hover-row:hover .delete-pool-button {
+  visibility: visible;
+}
+/* line 1615, _pages.scss */
+#api-rrr-wrapper #object-type-filter, #api-rrr-wrapper .api-header-flex-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+/* line 1621, _pages.scss */
+#api-rrr-wrapper .api-rrr-info {
+  margin-left: 5px;
+  margin-bottom: 8px;
+}
+/* line 1626, _pages.scss */
+#api-rrr-wrapper .rules-table-row {
+  cursor: pointer;
+}
+
+/**************************** Cross Browser Props ****************************/
+/* line 6, magellan.scss */
+.ld-dropdown-large .ld-dropdown-toggle .ld-dropdown-value, .ld-dropdown-small .ld-dropdown-toggle .ld-dropdown-value, .ld-dropdown-xtra-small .ld-dropdown-toggle .ld-dropdown-value, .nested-typeahead-selector .twitter-typeahead .tt-hint, .nested-typeahead-selector .twitter-typeahead .tt-input, .task-subject-container .twitter-typeahead .tt-hint, .task-subject-container .twitter-typeahead .tt-input, .nested-typeahead-selector .twitter-typeahead .tt-menu .mnts-selected-list, .task-subject-container .twitter-typeahead .tt-menu .mnts-selected-list, .ld-table tbody td input, .ld-table td input {
+  width: 100%;
+  width: -webkit-fill-available !important;
+  width: -moz-available !important;
+}
+
+/* line 11, magellan.scss */
+.ld-dropdown-large .ld-dropdown-toggle .ld-dropdown-value, .ld-dropdown-small .ld-dropdown-toggle .ld-dropdown-value, .ld-dropdown-xtra-small .ld-dropdown-toggle .ld-dropdown-value, .multiselect-dropdown-large .multiselect-dropdown-toggle, .multiselect-dropdown-small .multiselect-dropdown-toggle, .nested-typeahead-selector .twitter-typeahead .tt-hint, .nested-typeahead-selector .twitter-typeahead .tt-input, .task-subject-container .twitter-typeahead .tt-hint, .task-subject-container .twitter-typeahead .tt-input, .nested-typeahead-selector .twitter-typeahead .tt-menu .mnts-selected-list, .task-subject-container .twitter-typeahead .tt-menu .mnts-selected-list, .ld-table td {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/********************************** @colors **********************************/
+/* line 19, magellan.scss */
+:root {
+  --lt-grey-1: #F8F8F8;
+  --lt-grey-1_5: #F2F2F2;
+  --lt-grey-2: #E6E6E6;
+  --med-grey-1: #B3B3B3;
+  --med-grey-2: #808080;
+  --dk-grey-1: #666666;
+  --dk-grey-2: #4D4D4D;
+  --ld-green: #2DB670;
+  --ld-lt-green-0: #EAF7F0;
+  --ld-lt-green-1: #D5F0E2;
+  --ld-lt-green-2: #81D3A9;
+  --ld-blue: #1B527F;
+  --ld-red: #C1272D;
+  --lt-red-1: #F9E9EA;
+  --lt-red-2: #ECBEC0;
+  --ld-yellow: #FFC708;
+  --lt-yellow-1: #FFF9E6;
+  --lt-yellow-2: #FFF1C1;
+  --white: #FFFFFF;
+  --teal: #1ABC9C;
+  --red: #FF0000;
+}
+
+/* line 49, magellan.scss */
+.lt-grey-1 {
+  color: var(--lt-grey-1) !important;
+}
+
+/* line 50, magellan.scss */
+.lt-grey-1_5 {
+  color: var(--lt-grey-1_5) !important;
+}
+
+/* line 51, magellan.scss */
+.lt-grey-2 {
+  color: var(--lt-grey-2) !important;
+}
+
+/* line 52, magellan.scss */
+.med-grey-1 {
+  color: var(--med-grey-1) !important;
+}
+
+/* line 53, magellan.scss */
+.med-grey-2 {
+  color: var(--med-grey-2) !important;
+}
+
+/* line 54, magellan.scss */
+.dk-grey-1 {
+  color: var(--dk-grey-1) !important;
+}
+
+/* line 55, magellan.scss */
+.dk-grey-2 {
+  color: var(--dk-grey-2) !important;
+}
+
+/* line 56, magellan.scss */
+.ld-green {
+  color: var(--ld-green) !important;
+}
+
+/* line 57, magellan.scss */
+.ld-lt-green-0 {
+  color: var(--ld-lt-green-0) !important;
+}
+
+/* line 58, magellan.scss */
+.ld-lt-green-1 {
+  color: var(--ld-lt-green-1) !important;
+}
+
+/* line 59, magellan.scss */
+.ld-lt-green-2 {
+  color: var(--ld-lt-green-2) !important;
+}
+
+/* line 60, magellan.scss */
+.ld-blue {
+  color: var(--ld-blue) !important;
+}
+
+/* line 61, magellan.scss */
+.ld-red {
+  color: var(--ld-red) !important;
+}
+
+/* line 62, magellan.scss */
+.ld-red-1 {
+  color: var(--ld-red-1) !important;
+}
+
+/* line 63, magellan.scss */
+.ld-red-2 {
+  color: var(--ld-red-2) !important;
+}
+
+/* line 64, magellan.scss */
+.white {
+  color: var(--white) !important;
+}
+
+/* line 65, magellan.scss */
+.teal {
+  color: var(--teal) !important;
+}
+
+/* line 66, magellan.scss */
+.red {
+  color: var(--red) !important;
+}
+
+/* line 68, magellan.scss */
+.bg-white {
+  background-color: var(--white) !important;
+}
+
+/*********************************** @font ***********************************/
+/* line 71, magellan.scss */
+:root {
+  --light: 300;
+  --regular: 400;
+  --semi-bold: 600;
+  --bold: 700;
+  font-family: "Open Sans", sans-serif !important;
+}
+
+/* line 79, magellan.scss */
+.bold {
+  font-weight: var(--bold);
+}
+
+/* line 80, magellan.scss */
+.semi-bold {
+  font-weight: var(--semi-bold);
+}
+
+/********************************** @general **********************************/
+/* line 83, magellan.scss */
+input[type='checkbox'] {
+  width: auto;
+  opacity: 0.00000001;
+}
+
+/*# sourceMappingURL=magellan.css.map */

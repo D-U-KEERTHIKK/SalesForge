@@ -1,0 +1,240 @@
+<div>
+  <table
+    class="slds-table slds-table--bordered slds-no-row-hover slds-m-top--medium slds-max-medium-table--stacked-horizontal"
+  >
+    <thead>
+      <tr class="slds-text-heading--label">
+        <th scope="col" ng-bind="translate('FILTER', 'Filter')"></th>
+        <th scope="col" ng-bind="translate('FIELD', 'Field')"></th>
+        <th scope="col" ng-bind="translate('EXPRESSION', 'Expression')"></th>
+        <th scope="col" ng-bind="translate('VALUE', 'Value')"></th>
+        <th scope="col" class="slds-cell-shrink"></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr ng-show="meta.filterLoading">
+        <td colspan="5">
+          <div
+            ng-show="true"
+            role="status"
+            class="slds-spinner dc-spinner-fixed slds-spinner_brand slds-spinner_small slds-align_absolute-center"
+            style="margin-bottom: 1rem; margin-top: 1rem"
+          >
+            <span class="slds-assistive-text" ng-bind="translate('LOADING', 'Loading')"></span>
+            <div class="slds-spinner__dot-a"></div>
+            <div class="slds-spinner__dot-b"></div>
+          </div>
+        </td>
+      </tr>
+
+      <tr ng-repeat="filter in filterList" ng-hide="meta.filterLoading">
+        <td>
+          <span ng-bind-html="filter.position" id="position-{{$index}}" />
+        </td>
+        <td>
+          <div class="slds-select_container">
+            <select
+              class="slds-select"
+              ng-change="fieldSelect($index)"
+              ng-model="filter.fieldName"
+              selectpicker-option="meta.fieldList"
+              ng-options="field.Name as field.Label for field in meta.fieldList | orderBy:'Label'"
+            ></select>
+          </div>
+        </td>
+
+        <td ng-if="filter.fieldName != 'custom'">
+          <div class="slds-select_container">
+            <select
+              class="slds-select"
+              ng-model="filter.expression"
+              selectpicker-option="meta.fieldExpressions"
+              ng-options="expr.value as expr.label for expr in meta.fieldExpressions | orderByFieldType:filter.fieldType:filter.fieldName:objectPrefix"
+            ></select>
+          </div>
+        </td>
+
+        <td
+          ng-if="filter.fieldName != 'custom' && filter.expression != 'dateliteral' && filter.expression != 'campaign'"
+          ng-switch="filter.fieldType"
+        >
+          <div ng-switch-when="PICKLIST" class="slds-select_container">
+            <select
+              class="slds-select"
+              ng-model="filter.fieldValue"
+              selectpicker-option="filter.fieldName"
+              ng-options="pick.value as pick.label for pick in filter.selectList | orderBy:'label'"
+            ></select>
+          </div>
+
+          <plauti-multi-select
+            ng-switch-when="MULTIPICKLIST"
+            default-text="Nothing Selected"
+            svg-path="{{ (meta.sldsUrl + '/assets/icons/utility-sprite/svg/symbols.svg') | trustAsResourceUrl}}"
+            ng-model="filter.fieldValue"
+            options="filter.selectList"
+            name-attr="label"
+            value-attr="value"
+            position="slds-dropdown--bottom"
+          >
+          </plauti-multi-select>
+
+          <plauti-typeahead
+            ng-switch-when="REFERENCE"
+            typeahead-min-length="2"
+            typeahead-wait-ms="0"
+            options="meta.referenceOptions"
+            class="dc-reverse-dropdown"
+            typeahead-options-method="getLookupFn(objectItem, searchText, fields)"
+            ng-model="filter.fieldValue"
+            ng-model-display="filter.fieldValueLabel"
+            name-attr="name"
+            value-attr="id"
+            typeahead-select-on-blur="true"
+            position="slds-dropdown--bottom"
+            svg-path="{{ meta.sldsUrl | trustAsResourceUrl}}"
+            object-label="filter.fieldName"
+            object-list-meta="filter.referenceTo"
+            no-modal="true"
+          >
+          </plauti-typeahead>
+
+          <div ng-switch-when="BOOLEAN" class="slds-select_container">
+            <select class="slds-select" ng-model="filter.fieldValue">
+              <option value="true" ng-bind="translate('TRUE', 'True')"></option>
+              <option value="false" ng-bind="translate('FALSE', 'False')"></option>
+            </select>
+          </div>
+
+          <input ng-switch-when="EMAIL" ng-model="filter.fieldValue" class="slds-input" />
+          <input ng-switch-when="URL" ng-model="filter.fieldValue" class="slds-input" />
+          <input ng-switch-when="PHONE" ng-model="filter.fieldValue" class="slds-input" />
+          <input ng-switch-when="CURRENCY" ng-model="filter.fieldValue" step="any" class="slds-input" />
+          <input ng-switch-when="DOUBLE" ng-model="filter.fieldValue" step="any" class="slds-input" />
+          <input ng-switch-when="INTEGER" ng-model="filter.fieldValue" step="any" class="slds-input" />
+          <input ng-switch-when="percent" ng-model="filter.fieldValue" step="any" class="slds-input" />
+
+          <plauti-datepicker
+            class="slds-dropdown--bottom"
+            position="slds-dropdown--bottom"
+            ng-switch-when="DATE"
+            date-format="dd MMMM yyyy"
+            ng-model="filter.fieldValue"
+            start-year="1900"
+            end-year="2099"
+            svg-path="{{meta.sldsUrl}}/assets/icons/utility-sprite/svg/symbols.svg"
+          ></plauti-datepicker>
+
+          <plauti-datetimepicker
+            class="slds-dropdown--bottom"
+            position="slds-dropdown--bottom"
+            ng-switch-when="DATETIME"
+            date-format="dd MMMM yyyy"
+            ng-model="filter.fieldValue"
+            start-year="1900"
+            end-year="2099"
+            svg-path="{{meta.sldsUrl}}/assets/icons/utility-sprite/svg/symbols.svg"
+            is-meridian-format="true"
+            min-step="1"
+          ></plauti-datetimepicker>
+
+          <input
+            class="slds-input"
+            ng-switch-default="ng-switch-default"
+            ng-model="filter.fieldValue"
+            type="text"
+            ng-maxlength="filter.fieldLength"
+          />
+        </td>
+        <td ng-if="filter.expression == 'campaign'">
+          <plauti-typeahead
+            typeahead-min-length="2"
+            typeahead-wait-ms="0"
+            options="meta.referenceOptions"
+            class="dc-reverse-dropdown"
+            typeahead-options-method="getLookupFn(objectItem, searchText, fields)"
+            ng-model="filter.fieldValue"
+            ng-model-display="fieldValueLabel"
+            name-attr="name"
+            value-attr="id"
+            typeahead-select-on-blur="true"
+            position="slds-dropdown--bottom"
+            svg-path="{{ meta.sldsUrl | trustAsResourceUrl}}"
+            object-label="'Campaign'"
+            object-list-meta="meta.campaignMeta"
+            no-modal="true"
+          >
+          </plauti-typeahead>
+        </td>
+        <td ng-if="filter.expression == 'dateliteral'">
+          <div class="slds-grid">
+            <div class="slds-col slds-size--1-of-2 slds-m-right--small">
+              <div class="slds-select_container">
+                <select
+                  class="slds-select"
+                  ng-model="filter.expressionDateLiteral"
+                  selectpicker-option="meta.fieldExpressions"
+                  ng-options="expr.value as expr.label for expr in meta.fieldExpressions | orderByFieldType:'dateliteral'"
+                />
+              </div>
+            </div>
+
+            <div class="slds-col slds-size--1-of-2">
+              <input class="slds-input" ng-model="filter.expressionDateLiteralInput" type="text" />
+            </div>
+          </div>
+        </td>
+
+        <td style="padding-right: 0px">
+          <button class="slds-button" ng-click="deleteFilter($index)">
+            <svg class="slds-icon slds-icon-text-default slds-icon_x-small">
+              <use
+                xlink:href="{{ (meta.sldsUrl + '/assets/icons/utility-sprite/svg/symbols.svg#delete') | trustAsResourceUrl}}"
+              ></use>
+            </svg>
+          </button>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="4">&nbsp;</td>
+        <td>
+          <button class="slds-button" ng-click="addFilter()">
+            <svg class="slds-icon slds-icon-text-default slds-icon_x-small">
+              <use
+                xlink:href="{{ (meta.sldsUrl + '/assets/icons/utility-sprite/svg/symbols.svg#add') | trustAsResourceUrl}}"
+              ></use>
+            </svg>
+          </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div
+    class="slds-form-element slds-form-element_horizontal slds-is-editing slds-m-top_small"
+    ng-class="{'slds-has-error' : !filterValid}"
+  >
+    <label class="slds-form-element__label">
+      <span ng-bind="translate('FILTER_LOGIC', 'Filter logic')" />
+      <plauti-icon
+        svg-path="'{{ (meta.sldsUrl + '/assets/icons/utility-sprite/svg/symbols.svg') | trustAsResourceUrl}}'"
+        pop-message="meta.filterLogicHelp"
+        svg-icon="info"
+        pop-click="false"
+        input-icon="true"
+      ></plauti-icon>
+    </label>
+    <div class="slds-form-element__control">
+      <input
+        class="slds-input"
+        ng-change="checkLogic()"
+        ng-model-options="{ debounce: 500 }"
+        ng-model="meta.filterLogicDisplay"
+        placeholder="Example: (1 OR 2) AND 3"
+        onfocus="this.placeholder = ''"
+        onblur="this.placeholder ='Example: (1 OR 2) AND 3'"
+      />
+    </div>
+    <div class="slds-form-element__help" ng-if="!filterValid">Your filter logic does not match your actual filters</div>
+  </div>
+</div>
