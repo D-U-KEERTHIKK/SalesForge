@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>affectlayer__Type__c</fullName>
+    <deprecated>false</deprecated>
+    <label>Type</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Caller Id</fullName>
+                <default>false</default>
+                <label>Caller Id</label>
+            </value>
+            <value>
+                <fullName>Callback Number</fullName>
+                <default>false</default>
+                <label>Callback Number</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>
