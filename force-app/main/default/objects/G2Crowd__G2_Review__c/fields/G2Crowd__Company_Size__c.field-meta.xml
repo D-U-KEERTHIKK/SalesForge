@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>G2Crowd__Company_Size__c</fullName>
+    <deprecated>false</deprecated>
+    <label>Company Size</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Self-employed</fullName>
+                <default>false</default>
+                <label>Self-employed</label>
+            </value>
+            <value>
+                <fullName>1-10 employees</fullName>
+                <default>false</default>
+                <label>1-10 employees</label>
+            </value>
+            <value>
+                <fullName>51-200 employees</fullName>
+                <default>false</default>
+                <label>51-200 employees</label>
+            </value>
+            <value>
+                <fullName>201-500 employees</fullName>
+                <default>false</default>
+                <label>201-500 employees</label>
+            </value>
+            <value>
+                <fullName>501-1000 employees</fullName>
+                <default>false</default>
+                <label>501-1000 employees</label>
+            </value>
+            <value>
+                <fullName>1001-5000 employees</fullName>
+                <default>false</default>
+                <label>1001-5000 employees</label>
+            </value>
+            <value>
+                <fullName>5001-10000 employees</fullName>
+                <default>false</default>
+                <label>5001-10000 employees</label>
+            </value>
+            <value>
+                <fullName>10001+ employees</fullName>
+                <default>false</default>
+                <label>10001+ employees</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

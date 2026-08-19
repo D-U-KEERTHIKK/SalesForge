@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>G2Crowd__Company_Segment__c</fullName>
+    <deprecated>false</deprecated>
+    <label>Company Segment</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>small-business</fullName>
+                <default>false</default>
+                <label>small-business</label>
+            </value>
+            <value>
+                <fullName>mid-market</fullName>
+                <default>false</default>
+                <label>mid-market</label>
+            </value>
+            <value>
+                <fullName>enterprise</fullName>
+                <default>false</default>
+                <label>enterprise</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>G2Crowd__Account_Generated__c</fullName>
+    <deprecated>false</deprecated>
+    <formula>((G2Crowd__Account__r.CreatedDate - CreatedDate)*24*60) &lt;= 5</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Account Generated</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

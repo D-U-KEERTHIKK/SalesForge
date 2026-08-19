@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>G2Crowd__G2_Unique_Related_Organization_ID__c</fullName>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <formula>G2Crowd__G2_Visiting_Organization__c &amp; &apos;::&apos; &amp; G2Crowd__Lead__c</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>G2 Unique Related Organization ID</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

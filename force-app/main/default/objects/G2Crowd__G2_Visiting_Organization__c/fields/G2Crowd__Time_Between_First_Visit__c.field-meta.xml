@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>G2Crowd__Time_Between_First_Visit__c</fullName>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <formula>IF ((G2Crowd__Account__r.CreatedDate - G2Crowd__First_Event_Time__c) &gt; 0, /*check to see if D2subD1 is greater than zero*/
+
+TEXT(FLOOR( (G2Crowd__Account__r.CreatedDate - G2Crowd__First_Event_Time__c))) &amp; &quot; days &quot; &amp; /*returns the number of days in D2subD1*/
+
+TEXT(FLOOR( 24 * ((G2Crowd__Account__r.CreatedDate - G2Crowd__First_Event_Time__c) - FLOOR((G2Crowd__Account__r.CreatedDate - G2Crowd__First_Event_Time__c)) ))) &amp; &quot; hours &quot; &amp; /*returns the remaining number of hours in D2subD1*/
+
+TEXT(ROUND(60 * (ROUND( 24 * ( (G2Crowd__Account__r.CreatedDate - G2Crowd__First_Event_Time__c) - FLOOR((G2Crowd__Account__r.CreatedDate - G2Crowd__First_Event_Time__c)) ),8) - FLOOR(ROUND(24 * ((G2Crowd__Account__r.CreatedDate - G2Crowd__First_Event_Time__c) - FLOOR((G2Crowd__Account__r.CreatedDate - G2Crowd__First_Event_Time__c)) ),8)) ),0)) &amp; &quot; mins&quot; /*returns the remaining number of minutes in D2subD1*/
+
+, &quot;&quot;)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Time Between First Visit</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>
