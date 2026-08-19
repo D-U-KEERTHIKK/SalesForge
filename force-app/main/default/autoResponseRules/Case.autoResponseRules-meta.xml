@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AutoResponseRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <autoResponseRule>
+        <fullName>CH_Portal_customer case creation</fullName>
+        <active>false</active>
+    </autoResponseRule>
+    <autoResponseRule>
+        <fullName>CH_Portal_customer case creation123</fullName>
+        <active>false</active>
+    </autoResponseRule>
+</AutoResponseRules>
