@@ -1,0 +1,29 @@
+<div style="display:flex;">
+  <div class="relative-date-modal-text"></div>
+  <% if (isComparison) { %>
+    <div class="ld-tooltip-hint comparison-tooltip" style="margin-left:5px;margin-bottom:-5px;"></div>
+  <% } %>
+</div>
+<div class="relative-date-flex-container">
+  <div class="relative-date-radio-container">
+    <div>
+      <input type="radio" id="duration-today" name="duration" value="today" checked>
+      <label for="duration-today">
+        <div class="duration-today-label">Today <%- isDatetime == true ? '(Now)' : '' %></div>
+      </label>
+    </div>
+    <div>
+      <div style="float:left; margin-top:5px;height:50px;">
+        <input type="radio"  id="duration-num" name="duration" value="beforeAfter">
+        <label for="duration-num">
+            <input type="number" id="duration-value" name="duration-value" style="margin-top:-5px;height:30px;" value="1" step="1" min="1">
+            <div class="duration-label" style="display:flex;align-items: center;margin-top:-5px;">
+              Day(s) 
+              <div class="ld-dropdown-small" id="beforeAfterDropdown" style="margin: 0px 5px; width: 80px;"></div>
+              Today <%- isDatetime == true ? '(Now)' : '' %>
+            </div>
+        </label>
+      </div>
+    </div>
+  </div>
+</div>

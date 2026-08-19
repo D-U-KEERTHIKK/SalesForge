@@ -1,0 +1,18 @@
+<div class="ld-selectable-list header <% _.isEmpty(header) ? 'hidden' : ''%>">
+    <%-header%>
+</div>
+
+<ul class="ld-selectable-list" style="height: 250px; overflow: auto;">
+    <%_.each(model.get('data'), function(item, idx) {%>
+    <li class="ld-selectable-list-item">
+        <%=itemContentTemplate(item)%>
+    </li> 
+    <%});%>
+</ul>
+
+<div class="ld-selectable-list footer">
+    <span class="label-selected">Selected:&nbsp;&nbsp;</span> 
+    <span class="selected"></span>
+    
+    <div class="error-message ld-text-danger"></div>
+</div>

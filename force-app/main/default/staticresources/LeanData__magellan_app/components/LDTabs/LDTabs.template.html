@@ -1,0 +1,5 @@
+<div id="ld-tabs-container" class="ld-tabs-div"> 
+  <% _.each(model.tabNames, function(tabName) { %>
+    <span class="ld-tab _<%- tabName.toLowerCase().replace(' ', '-') + '-tab' %> <%- model.selectedTab === tabName ? 'selected ' : '' %>" data-tab-name="<%-tabName%>"><%- tabName %></span>
+  <% }) %>
+</div>

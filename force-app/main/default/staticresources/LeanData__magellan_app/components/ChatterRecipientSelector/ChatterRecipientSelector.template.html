@@ -1,0 +1,109 @@
+<div class="ld-body-medium">
+  <div class="chatter-recipients-header-row">
+    <div style="display:flex;">
+    <div class="header-font" style="line-height: 12px;">Recipient(s)
+      <span class="ld-tooltip-hint chatter-recipient-tooltip" style="margin-bottom: -5px;"></span>
+    </div>       
+    </div>
+    <div class="ld-secondary-small-button <%- classes['edit-recipients-button'] %>"><%- recipientCards.length > 0 ? 'Edit' : 'Add' %> Recipients</div>
+  </div>
+  <div class="<%- classes['chatter-recipients-wrapper'] %>">
+    <% _.each(recipientCards, function(card) { %>
+      <div class="<%- card.valid ? 'recipient-card' : 'error-message recipient-card' %>"><%- card.name %></div> 
+    <% }) %>
+    <div class="<%- classes['empty-recipients-message'] %>" style="margin-bottom: 10px;">No Recipients</div>
+  </div>
+  <div class="<%- classes['chatter-recipients-editor'] %>">
+    <div class="recipient-editor-row <%- classes['next-owner-row'] %>">
+      <!-- Next Owner -->
+      <label class="cb-container-small">
+        <div class="owner-label <%- !hasOwnerField ? 'no-owner-field' : '' %>">New Owner</div>
+        <input <%- !hasOwnerField ? 'disabled' : '' %> type="checkbox" 
+          name="next-owner-checkbox" 
+          class="notif-owner-checkbox" 
+          data-owner-type="notifyPostOwner" 
+          <%- recipientData.notifyPostOwner ? 'checked' : '' %> 
+        />
+        <span class="checkmark notif-owner-checkbox"></span>
+      </label>
+    </div>
+    <!-- Previous Owner -->
+    <div class="recipient-editor-row <%- classes['previous-owner-row'] %>">
+      <label class="cb-container-small">
+        <div class="owner-label <%- !hasOwnerField ? 'no-owner-field' : '' %> ">Previous Owner</div>
+        <input <%- !hasOwnerField ? 'disabled' : '' %> type="checkbox" 
+          name="previous-owner-checkbox" 
+          class="notif-owner-checkbox" 
+          data-owner-type="notifyPreOwner" 
+          <%- recipientData.notifyPreOwner ? 'checked' : '' %> 
+         />
+        <span class="checkmark notif-owner-checkbox"></span>
+      </label>
+    </div>
+
+    <!-- Additional Recipients -->
+    <div class="recipient-editor-row <%- classes['additional-recipients-row'] %>">
+        <label class="cb-container-small" style="height: fit-content;display:inline-block;">
+        <div style="display: flex;align-items: center;">
+          <%- _LeanData.AppState.PrimarySObjectType === "Meeting" ? "Recipients " : "Additional Recipients" %>
+          <span class="ld-tooltip-hint additional-object-recipient-tooltip" style="margin-left:5px;"></span>
+        </div>
+        <input type="checkbox" 
+          name="additional-recipients-toggle" 
+          class="subcontent-toggle additional-recipients-toggle" 
+          <%- hasAdditionalObjectData ? 'checked' : '' %> 
+        />
+        <span class="checkmark"></span>
+      </label>
+      
+      <div class="recipient-editor-subcontent additional-recipients-content <%- hasAdditionalObjectData ? '' : 'hidden' %>" ></div>
+    </div>
+    <!-- Additional Options -->
+    <% _.each(additionalOptions, function(checked, name) {%>
+      <div class="recipient-editor-row <%- classes['additional-recipients-row'] %>">
+        <label class="cb-container-small" style="height: fit-content;display:inline-block;">
+          <div style="display: flex;align-items: center;">
+            <%- name %>
+          </div>
+          <input type="checkbox" 
+            name="<%- name %>" 
+            class="additional-options-checkbox"
+            data-owner-type="<%- name %>"  
+            <%= recipientData.additionalOptions[name] ? 'checked' : '' %>
+          />
+          <span class="checkmark"></span>
+        </label>
+      </div>
+    <% })%>
+      <!-- Chatter Users -->
+      <div class="recipient-editor-row <%- classes['user-row'] %>">
+        <label class="cb-container-small" style="height: fit-content;display:inline-block;">
+          <div style="display: flex;align-items: center;">Chatter User(s)</div>
+          <input type="checkbox" 
+            name="user-toggle" 
+            class="subcontent-toggle user-toggle" 
+            <%- hasChatterUsers ? 'checked' : '' %> 
+          />
+          <span class="checkmark"></span>
+        </label>
+        <div class="recipient-editor-subcontent chatter-user-recipients-content <%- hasChatterUsers ? '' : 'hidden' %> "></div>
+      </div>
+
+    <!-- Chatter groups -->
+    <div class="recipient-editor-row <%- classes['group-row'] %>">
+      <label class="cb-container-small" style="height: fit-content;display:inline-block;">
+        <div style="display: flex;align-items: center;">Chatter Group(s)</div>
+        <input type="checkbox" 
+          name="group-toggle" 
+          class="subcontent-toggle group-toggle" 
+          <%- hasChatterGroups ? 'checked' : '' %> 
+        />
+        <span class="checkmark"></span>
+      </label>
+      <div class="recipient-editor-subcontent chatter-group-recipients-content <%- hasChatterGroups ? '' : 'hidden' %> "></div>
+    </div>
+    <!-- Button -->
+    <div class="ld-secondary-small-button save-receipients-button">Done</div>
+  </div>
+  <div class="error-message chatter-recipients-error-messages" style="font-size: 10px; font-style: italic;"></div>
+</div>

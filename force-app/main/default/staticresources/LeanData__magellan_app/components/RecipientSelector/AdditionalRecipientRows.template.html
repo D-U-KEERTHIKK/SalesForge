@@ -1,0 +1,11 @@
+<div class="add-additional-recipient-row">
+  <div class="additional-recipient-typeahead" style="flex: 1"></div>
+</div>
+<% _.each(additionalObjectsLabels, function(label, idx) { %>
+<div class="additional-recipient-row">
+  <div class="additional-recip-col1"><%- label %></div>
+  <div class="additional-recip-col2" style="justify-content: flex-end">
+    <div class="remove-additional-recipient-row ld-cross-icon-grey-large" data-index="<%- idx %>"></div>
+  </div>
+</div>
+<% }) %>

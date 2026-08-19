@@ -1,0 +1,27 @@
+  <div class="tuple-condition" data-rule-index="<%- idx %>">
+    <div class="tuple-condition-num"><%- idx + 1 %></div>
+    <div class="tuple-condition-field"></div>
+    <div class="tuple-condition-operator"></div>
+    <div class="tuple-condition-operand">
+      <input
+        class="tuple-condition-operand-input ld-input-small <%- _.isEmpty(this.condition.operand) ? 'input-invalid' : '' %>"
+        placeholder="<%- customPlaceholderText %>"/>
+      <div class="tuple-condition-operand-dropdown"></div>
+    </div>
+    <% if (!hideToggleColumn) { %>
+    <div class="tuple-condition-radio">
+      <% var groupId = 'tuple-condition-radio-group-' + idx %>
+      <% var fieldOptionId = groupId + '-field' %>
+      <% var valueOptionId = groupId + '-value' %>
+      <fieldset id="<%- groupId %>" class="tuple-fieldset-radiogroup">
+        <input type="radio" value="field" id="<%- fieldOptionId %>" name="<%- groupId %>">
+        <label for="<%- fieldOptionId %>">Field</label>
+        <input type="radio" value="value" id="<%- valueOptionId %>" name="<%- groupId %>">
+        <label for="<%- valueOptionId %>">Value</label>
+      </fieldset>
+    </div>
+    <% } %>
+    <div class="tuple-condition-delete" style="margin-top: 9px;"></div>
+  </div>
+  <div class="error-message"></div>
+  <%= showSeparatorPerRow ? "<hr class=\"tuple-rule-separator\">" : "" %>

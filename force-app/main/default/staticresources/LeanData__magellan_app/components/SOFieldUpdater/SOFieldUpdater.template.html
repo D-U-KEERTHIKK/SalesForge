@@ -1,0 +1,26 @@
+
+<div class="header-font"><%- editable ? 'Update ' + (objectLabelData.label || model.get('object') ) + ' Fields' : 'Additional Parameters' %></div>
+<div class="sofu-note-container">
+    <div class="note-text"><%- editable ? 'Specify ' + (objectLabelData.label || model.get('object') ) + ' fields and values to update.': 'Specify your additional parameter(s)' %></div>
+    <% if(editable === true) { %>
+      <div class="short-tooltip ld-tooltip-hint sofu-note-tooltip"></div> 
+    <% } %>
+</div>
+
+<div class="update-header row" style="margin-top:10px">
+    <div class="update-field-column header-font col col-xs-3" style=<%- editable ? "width:24%" : "width:21.5%" %> ><%- editable ? 'Field' : 'Parameter' %></div>
+    <div class="update-value-column header-font col col-xs-6"><%- editable ? 'Value' : 'Parameter Value' %></div>
+</div>
+<div style='display:inline-grid;' class="sofu-field-updates-list">
+
+</div>
+
+<% if(editable == true) { %>
+<div class="add-rule-container row" style="margin-top: 10px; clear: both">
+    <div class="add-rule-row-item col-xs-12">
+        <div class="add-rule-div"></div>
+        <div class="header-font">Add field</div>
+        <div class="empty-row-space"></div>
+    </div>
+</div>
+<% } %>

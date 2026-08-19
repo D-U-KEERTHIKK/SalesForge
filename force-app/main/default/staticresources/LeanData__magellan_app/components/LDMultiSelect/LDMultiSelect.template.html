@@ -1,0 +1,12 @@
+<div class="multiselect-dropdown-toggle"><span class="placeholder-text"><%- selectAll ? allSelectedPlaceholder : placeholder %></span></div>
+<ul class="multiselect-dropdown-menu" style="width:200px">
+  <li class="multiselect-toggle-all-list-item">
+    <div class="multiselect-dropdown-option">
+      <label class="<%- checkboxClass %>">
+        <span class="toggleText"><%- selectAll ? 'Deselect All' : 'Select All' %></span>
+        <input type="checkbox" disabled />
+        <span class="checkmark"></span>
+      </label>
+    </div>
+  </li>
+</ul>

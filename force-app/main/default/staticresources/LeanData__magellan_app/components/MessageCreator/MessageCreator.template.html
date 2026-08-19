@@ -1,0 +1,39 @@
+<div class="ld-body-medium">
+  <div class="custom-message-wrapper">
+    <% if (messageType === 'email' || messageType === 'outreachCreateTask') { %>
+      <% if (messageType !== 'outreachCreateTask') { %>
+        <div class="ld-body-medium-bold" style="padding: 10px 5px 0px; font-size: 11px !important;">Subject</div>
+        <div class="custom-message-subject">
+          <input placeholder="Enter Subject" class="ld-input-small subject-input" style="margin: 0px; width: 96%;" value="<%- subject %>" /></input>
+        </div>
+      <% } %>
+      <div class="ld-body-medium-bold" style="padding: 10px 5px 0px; font-size: 11px !important;">Message</div>
+    <% } %>
+    <div class="custom-message-dropdowns">
+      <div class="field-typeahead" style="width: 160px">
+        <ld-typeahead-angular
+          class="angular-component-in-magellan"
+          id="field-typeahead">
+        </ld-typeahead-angular>
+      </div>
+      <% if (messageType === 'chatter') { %>
+        <div class="user-dropdown"></div>
+      <% } else { %>
+        <div class="ld-tertiary-small-button relative-date-btn">Insert Relative Date</div>
+      <% } %>
+      <% if (messageType === 'outreachCreateTask') { %>
+        <div class="restore-default-wrapper">
+          <a class="ld-link restore-default <%= disabled?'disabled':''%>"> Restore Default </a>
+        </div>
+      <% } %>
+    </div>
+    <div class="custom-message-text-area">
+      <% if (messageType === 'chatter') { %>
+        <textarea placeholder="Add a message, insert fields, and post on User Chatter Feeds by adding them as a Recipient." rows="4" class="ld-textarea-large message-text-area" style="margin: 0px; width: 96%;"><%- message %></textarea>
+      <% } else { %>
+        <textarea placeholder="Add a Message and Insert Variables" rows="4" class="ld-textarea-large message-text-area" style="margin: 0px; width: 96%;"><%- message %></textarea>
+      <% } %>
+    </div>
+  </div>
+  <div class="error-message custom-error-message"></div>
+</div> 

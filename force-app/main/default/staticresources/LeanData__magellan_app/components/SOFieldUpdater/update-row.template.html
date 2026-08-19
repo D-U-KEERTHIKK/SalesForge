@@ -1,0 +1,24 @@
+<div class="update-row-container">
+    <div class="update-row row">
+        <div title="<%- update.get('field') %>" class="update-field-column sofu-field-selector col col-xs-4">
+            <!-- append NestedFieldSelector with object's fields here -->
+        </div>
+        <div class="update-value-column col col-xs-6">
+            <div class="ld-input-group" style="width: 100%; height: 32px; display: flex; align-items: flex-start; height: fit-content;">
+                <div class="ld-input-group-control" style="width: 220px; margin-top: 1px; margin-right: 2px;">
+                    <input type="text" style="width: 212px; padding-left: 8px; height: 32px" class="sofu-update-value sofu-date width-fill" placeholder="Enter Value" value="<%- update.get('value') %>" />
+                    <textarea class="sofu-update-value sofu-input ld-textarea-small vertical-resize-only" placeholder="Enter Value" style="width: 190px; height: 17px; line-height: 1.5"><%- _LeanData.Util.truncateText(update.get('value'), 30) %></textarea>
+                    <div class="sofu-ld-dropdown hidden"></div>
+                    <div class="sofu-ld-typeahead hidden"></div>
+                </div>
+                <div class="ld-input-group-addon merge-field-insert-button-container"></div>
+            </div>
+        </div>
+        <% if (!hideDeleteButton) { %>
+        <div class="col col-xs-2">
+            <div class="sofu-delete-column"></div>
+        </div>
+        <% } %>
+    </div>
+    <div class="sofu-error-feedback error-message"></div>
+</div>
