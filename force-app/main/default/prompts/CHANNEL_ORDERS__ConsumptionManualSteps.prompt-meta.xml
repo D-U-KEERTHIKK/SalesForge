@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Prompt xmlns="http://soap.sforce.com/2006/04/metadata">
+    <masterLabel>ConsumptionManualSteps</masterLabel>
+    <promptVersions>
+        <actionButtonLabel>Update Page Layout</actionButtonLabel>
+        <actionButtonLink>/lightning/n/CHANNEL_ORDERS__In_App_Guidance_Setup</actionButtonLink>
+        <body>&lt;p&gt;Navigate to the “In-App Guidance Resources” tab by clicking this notification for step-by-step instructions to add important &lt;strong&gt;Consumption Based Product&lt;/strong&gt; information to your PPC page layout in the Partner Business Org by adding the &quot;Partner Bundle Product&quot; as a related list.&lt;/p&gt;</body>
+        <customApplication>CHANNEL_ORDERS__Partner_Order</customApplication>
+        <delayDays>1</delayDays>
+        <dismissButtonLabel>Dismiss</dismissButtonLabel>
+        <displayPosition>TopCenter</displayPosition>
+        <displayType>FloatingPanel</displayType>
+        <experience>Lightning</experience>
+        <isPublished>true</isPublished>
+        <masterLabel>ConsumptionManualSteps</masterLabel>
+        <publishedDate>2025-10-21</publishedDate>
+        <shouldDisplayActionButton>true</shouldDisplayActionButton>
+        <shouldIgnoreGlobalDelay>true</shouldIgnoreGlobalDelay>
+        <startDate>2025-09-16</startDate>
+        <targetPageKey1>CHANNEL_ORDERS__Partner_Product_Catalog__c</targetPageKey1>
+        <targetPageKey2>view</targetPageKey2>
+        <targetPageType>standard__recordPage</targetPageType>
+        <themeColor>Theme1</themeColor>
+        <themeSaturation>Dark</themeSaturation>
+        <timesToDisplay>1</timesToDisplay>
+        <title>Action required for CBP Setup</title>
+        <userAccess>Everyone</userAccess>
+        <userProfileAccess>Everyone</userProfileAccess>
+        <versionNumber>1</versionNumber>
+    </promptVersions>
+</Prompt>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Prompt xmlns="http://soap.sforce.com/2006/04/metadata">
+    <masterLabel>Partner App Guidance</masterLabel>
+    <promptVersions>
+        <body>&lt;p&gt;&lt;a href=&quot;https://salesforce.vidyard.com/watch/6STC6vEmSxDo64bMERnn3f&quot; rel=&quot;noopener noreferrer&quot; target=&quot;_blank&quot;&gt;Click here for video&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;color: rgb(29, 28, 29);&quot;&gt;This user-friendly video tutorial will explore the recent enhancements incorporated into the platform. These upgrades aim to streamline your workflow and optimize time management.&lt;/span&gt;&lt;/p&gt;</body>
+        <customApplication>CHANNEL_ORDERS__Partner_Order</customApplication>
+        <delayDays>1</delayDays>
+        <displayType>DockedComposer</displayType>
+        <endDate>2032-12-30</endDate>
+        <header>Feature Walkthrough</header>
+        <imageAltText>Channel Order App New Features</imageAltText>
+        <imageLocation>Top</imageLocation>
+        <isPublished>true</isPublished>
+        <masterLabel>Partner App Guidance Step 1</masterLabel>
+        <publishedDate>2025-03-17</publishedDate>
+        <shouldDisplayActionButton>false</shouldDisplayActionButton>
+        <shouldIgnoreGlobalDelay>true</shouldIgnoreGlobalDelay>
+        <startDate>2023-08-30</startDate>
+        <stepNumber>1</stepNumber>
+        <targetPageKey1>home</targetPageKey1>
+        <targetPageType>standard__namedPage</targetPageType>
+        <timesToDisplay>1</timesToDisplay>
+        <title>Channel Order App Overview Video</title>
+        <userAccess>Everyone</userAccess>
+        <userProfileAccess>Everyone</userProfileAccess>
+        <versionNumber>1</versionNumber>
+    </promptVersions>
+</Prompt>
