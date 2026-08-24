@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+    <types>
+        <name>CustomObject</name>
+        <members>Session_Feedback__c</members>
+    </types>
+    <types>
+        <name>CustomField</name>
+        <members>Session_Feedback__c.Session_Name__c</members>
+        <members>Session_Feedback__c.Rating__c</members>
+        <members>Session_Feedback__c.Comments__c</members>
+    </types>
+    <types>
+        <name>ValidationRule</name>
+        <members>Session_Feedback__c.Rating_Between_1_And_5</members>
+    </types>
+    <types>
+        <name>Layout</name>
+        <members>Session_Feedback__c-Session Feedback Layout</members>
+    </types>
+</Package>
