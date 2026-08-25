@@ -8,7 +8,7 @@
 private class SessionTriggerHandlerTest {
 
     /**
-     * @description Creates a test Speaker__c record for reuse across test methods.
+     * @description Creates a reusable test Speaker__c record.
      * @return Inserted Speaker__c record
      */
     private static Speaker__c createTestSpeaker() {
@@ -23,8 +23,6 @@ private class SessionTriggerHandlerTest {
 
     /**
      * @description Test 1: Successful insert when no overlap exists.
-     *              A speaker with no existing sessions on a given day
-     *              should be inserted without error.
      */
     @IsTest
     static void testValidNonOverlappingBooking() {
@@ -44,13 +42,14 @@ private class SessionTriggerHandlerTest {
         }
         Test.stopTest();
 
-        List<Session__c> inserted = [SELECT Id FROM Session__c WHERE Id = :session.Id];
+        List<Session__c> inserted = [
+            SELECT Id FROM Session__c WHERE Id = :session.Id
+        ];
         System.assertEquals(1, inserted.size(), 'Session should be inserted successfully.');
     }
 
     /**
-     * @description Test 2: Blocked insert when speaker already has a session on the same day.
-     *              The trigger should call addError and prevent the duplicate insert.
+     * @description Test 2: Blocked insert when speaker is already booked on same day.
      */
     @IsTest
     static void testBlockedOverlappingBooking() {
@@ -81,7 +80,7 @@ private class SessionTriggerHandlerTest {
             } catch (DmlException e) {
                 System.assert(
                     e.getMessage().contains('already booked'),
-                    'Expected double-booking error message. Got: ' + e.getMessage()
+                    'Expected double-booking error. Got: ' + e.getMessage()
                 );
             }
         }
@@ -90,8 +89,6 @@ private class SessionTriggerHandlerTest {
 
     /**
      * @description Test 3: Blocked update that would create an overlap.
-     *              Updating a session to a day where the speaker is already booked
-     *              should be rejected by the trigger.
      */
     @IsTest
     static void testBlockedUpdateCreatingOverlap() {
@@ -133,9 +130,7 @@ private class SessionTriggerHandlerTest {
     }
 
     /**
-     * @description Test 4: Allowed update that keeps the same day without conflicting.
-     *              Updating a non-date field on an existing session should not trigger
-     *              a double-booking error.
+     * @description Test 4: Allowed update on same day without creating a conflict.
      */
     @IsTest
     static void testAllowedUpdateSameDayNoConflict() {
@@ -158,7 +153,9 @@ private class SessionTriggerHandlerTest {
         }
         Test.stopTest();
 
-        Session__c updated = [SELECT Room__c FROM Session__c WHERE Id = :session.Id];
+        Session__c updated = [
+            SELECT Room__c FROM Session__c WHERE Id = :session.Id
+        ];
         System.assertEquals('Hall D', updated.Room__c, 'Room should be updated successfully.');
     }
 }
