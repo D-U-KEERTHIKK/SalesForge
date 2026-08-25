@@ -44,5 +44,4 @@
     </layoutSections>
     <showEmailCheckbox>false</showEmailCheckbox>
     <showRunAssignmentRulesCheckbox>false</showRunAssignmentRulesCheckbox>
-    <showSubmitButton>false</showSubmitButton>
 </Layout>
