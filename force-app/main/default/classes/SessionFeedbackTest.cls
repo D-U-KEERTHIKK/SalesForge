@@ -8,9 +8,9 @@ private class SessionFeedbackTest {
             Rating__c = 3,
             Comments__c = 'Good session'
         );
-        Test.startTest();
+        
         insert feedback;
-        Test.stopTest();
+        
 
         Session_Feedback__c result = [SELECT Id, Rating__c FROM Session_Feedback__c WHERE Id = :feedback.Id];
         System.assertNotEquals(null, result.Id, 'Record should have been saved successfully');
@@ -24,7 +24,7 @@ private class SessionFeedbackTest {
             Rating__c = 0,
             Comments__c = 'Too low'
         );
-        Test.startTest();
+        
         try {
             insert feedback;
             System.assert(false, 'Expected DmlException for Rating__c = 0');
@@ -34,7 +34,7 @@ private class SessionFeedbackTest {
                 'Expected validation rule exception for rating < 1'
             );
         }
-        Test.stopTest();
+        
     }
 
     @isTest
@@ -44,7 +44,7 @@ private class SessionFeedbackTest {
             Rating__c = 6,
             Comments__c = 'Too high'
         );
-        Test.startTest();
+        
         try {
             insert feedback;
             System.assert(false, 'Expected DmlException for Rating__c = 6');
@@ -54,7 +54,7 @@ private class SessionFeedbackTest {
                 'Expected validation rule exception for rating > 5'
             );
         }
-        Test.stopTest();
+        
     }
 
     @isTest
@@ -64,9 +64,8 @@ private class SessionFeedbackTest {
             Rating__c = 5,
             Comments__c = null
         );
-        Test.startTest();
+
         insert feedback;
-        Test.stopTest();
 
         Session_Feedback__c result = [SELECT Id FROM Session_Feedback__c WHERE Id = :feedback.Id];
         System.assertNotEquals(null, result.Id, 'Record with blank comments should be saved successfully');
