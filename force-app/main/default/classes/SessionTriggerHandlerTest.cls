@@ -36,11 +36,9 @@ private class SessionTriggerHandlerTest {
             Capacity__c = 100
         );
 
-        Test.startTest();
         System.runAs(new User(Id = UserInfo.getUserId())) {
             insert session;
         }
-        Test.stopTest();
 
         List<Session__c> inserted = [
             SELECT Id FROM Session__c WHERE Id = :session.Id
@@ -72,7 +70,6 @@ private class SessionTriggerHandlerTest {
             Capacity__c = 50
         );
 
-        Test.startTest();
         System.runAs(new User(Id = UserInfo.getUserId())) {
             try {
                 insert duplicate;
@@ -84,7 +81,6 @@ private class SessionTriggerHandlerTest {
                 );
             }
         }
-        Test.stopTest();
     }
 
     /**
@@ -114,7 +110,6 @@ private class SessionTriggerHandlerTest {
 
         session2.Start_Time__c = Datetime.newInstance(2026, 9, 1, 14, 0, 0);
 
-        Test.startTest();
         System.runAs(new User(Id = UserInfo.getUserId())) {
             try {
                 update session2;
@@ -126,7 +121,6 @@ private class SessionTriggerHandlerTest {
                 );
             }
         }
-        Test.stopTest();
     }
 
     /**
@@ -147,11 +141,10 @@ private class SessionTriggerHandlerTest {
 
         session.Room__c = 'Hall D';
 
-        Test.startTest();
+
         System.runAs(new User(Id = UserInfo.getUserId())) {
             update session;
         }
-        Test.stopTest();
 
         Session__c updated = [
             SELECT Room__c FROM Session__c WHERE Id = :session.Id
