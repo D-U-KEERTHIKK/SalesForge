@@ -162,7 +162,6 @@
     </nameField>
     <pluralLabel>Speakers</pluralLabel>
     <searchLayouts>
-        <excludedFields>FIELDS(All)</excludedFields>
     </searchLayouts>
     <sharingModel>ReadWrite</sharingModel>
 </CustomObject>
