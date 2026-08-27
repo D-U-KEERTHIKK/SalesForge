@@ -38,27 +38,29 @@ private class SessionFeedbackTriggerHandlerTest {
     //         different times, no double-booking conflict expected.
     // -----------------------------------------------------------------------
     @IsTest
-    static void testNonOverlappingBooking_NoConflict() {
-        List<Session__c> sessions = [
-            SELECT Id, Name, Speaker__c, Start_Time__c
-            FROM Session__c
-            ORDER BY Name
-        ];
-        System.assertEquals(2, sessions.size(), 'Two sessions should exist');
+    static void testNonOverlappingBookingNoConflict() {
+        System.runAs(new User(Id = UserInfo.getUserId())) {
+            List<Session__c> sessions = [
+                SELECT Id, Name, Speaker__c, Start_Time__c
+                FROM Session__c
+                ORDER BY Name
+            ];
+            System.assertEquals(2, sessions.size(), 'Two sessions should exist');
 
-        // Verify speakers are different — no overlap possible
-        System.assertNotEquals(
-            sessions[0].Speaker__c,
-            sessions[1].Speaker__c,
-            'Sessions should have different speakers for non-overlap test'
-        );
+            // Verify speakers are different — no overlap possible
+            System.assertNotEquals(
+                sessions[0].Speaker__c,
+                sessions[1].Speaker__c,
+                'Sessions should have different speakers for non-overlap test'
+            );
 
-        // Verify times are different
-        System.assertNotEquals(
-            sessions[0].Start_Time__c,
-            sessions[1].Start_Time__c,
-            'Sessions should have different start times'
-        );
+            // Verify times are different
+            System.assertNotEquals(
+                sessions[0].Start_Time__c,
+                sessions[1].Start_Time__c,
+                'Sessions should have different start times'
+            );
+        }
     }
 
     // -----------------------------------------------------------------------
@@ -66,36 +68,38 @@ private class SessionFeedbackTriggerHandlerTest {
     //         Expects a DmlException from a validation rule or trigger.
     // -----------------------------------------------------------------------
     @IsTest
-    static void testOverlappingBooking_SameSpeakerSameTime_IsBlocked() {
-        List<Speaker__c> speakers = [SELECT Id FROM Speaker__c LIMIT 1];
-        System.assert(!speakers.isEmpty(), 'At least one speaker must exist');
+    static void testOverlappingBookingSameSpeakerSameTimeIsBlocked() {
+        System.runAs(new User(Id = UserInfo.getUserId())) {
+            List<Speaker__c> speakers = [SELECT Id FROM Speaker__c LIMIT 1];
+            System.assert(!speakers.isEmpty(), 'At least one speaker must exist');
 
-        DateTime conflictTime = DateTime.newInstance(2025, 9, 1, 10, 0, 0);
+            DateTime conflictTime = DateTime.newInstance(2025, 9, 1, 10, 0, 0);
 
-        // First session already exists from @TestSetup at conflictTime.
-        // Attempt to insert a second session for the same speaker at same time.
-        Session__c conflictSession = new Session__c(
-            Name          = 'Session Conflict',
-            Title__c      = 'Conflict Talk',
-            Capacity__c   = 2,
-            Room__c       = 'Room 103',
-            Speaker__c    = speakers[0].Id,
-            Start_Time__c = conflictTime
-        );
+            // First session already exists from @TestSetup at conflictTime.
+            // Attempt to insert a second session for the same speaker at same time.
+            Session__c conflictSession = new Session__c(
+                Name          = 'Session Conflict',
+                Title__c      = 'Conflict Talk',
+                Capacity__c   = 2,
+                Room__c       = 'Room 103',
+                Speaker__c    = speakers[0].Id,
+                Start_Time__c = conflictTime
+            );
 
-        Test.startTest();
-        Boolean exceptionThrown = false;
-        try {
-            insert conflictSession;
-        } catch (DmlException e) {
-            exceptionThrown = true;
+            Test.startTest();
+            Boolean exceptionThrown = false;
+            try {
+                insert conflictSession;
+            } catch (DmlException e) {
+                exceptionThrown = true;
+            }
+            Test.stopTest();
+
+            System.assert(
+                exceptionThrown,
+                'A DmlException should be thrown when a speaker is double-booked at the same time'
+            );
         }
-        Test.stopTest();
-
-        System.assert(
-            exceptionThrown,
-            'A DmlException should be thrown when a speaker is double-booked at the same time'
-        );
     }
 
     // -----------------------------------------------------------------------
@@ -103,45 +107,47 @@ private class SessionFeedbackTriggerHandlerTest {
     //         Session Alpha has Capacity__c = 3; insert 4 feedback records.
     // -----------------------------------------------------------------------
     @IsTest
-    static void testOverbookedFlag_SetTrue_WhenFeedbackExceedsCapacity() {
-        Session__c session = [
-            SELECT Id, Name, Capacity__c
-            FROM Session__c
-            WHERE Name = 'Session Alpha'
-            LIMIT 1
-        ];
-        System.assertEquals(3, session.Capacity__c, 'Capacity should be 3 for Session Alpha');
-
-        // Insert 4 feedback records — exceeds capacity of 3
-        List<Session_Feedback__c> feedbacks = new List<Session_Feedback__c>();
-        for (Integer i = 0; i < 4; i++) {
-            feedbacks.add(new Session_Feedback__c(
-                Session_Name__c = session.Name,
-                Rating__c       = 4,
-                Comments__c     = 'Feedback ' + i
-            ));
-        }
-
-        Test.startTest();
-        insert feedbacks;
-        Test.stopTest();
-
-        // Re-query Session__c to check Overbooked__c if field exists
-        Map<String, Schema.SObjectField> fieldMap =
-            Schema.SObjectType.Session__c.fields.getMap();
-
-        if (fieldMap.containsKey('overbooked__c')) {
-            Session__c updated = [
-                SELECT Id, Overbooked__c
+    static void testOverbookedFlagSetTrueWhenFeedbackExceedsCapacity() {
+        System.runAs(new User(Id = UserInfo.getUserId())) {
+            Session__c session = [
+                SELECT Id, Name, Capacity__c
                 FROM Session__c
-                WHERE Id = :session.Id
+                WHERE Name = 'Session Alpha'
                 LIMIT 1
             ];
-            System.assertEquals(
-                true,
-                updated.Overbooked__c,
-                'Overbooked__c should be true when feedback count (4) exceeds capacity (3)'
-            );
+            System.assertEquals(3, session.Capacity__c, 'Capacity should be 3 for Session Alpha');
+
+            // Insert 4 feedback records — exceeds capacity of 3
+            List<Session_Feedback__c> feedbacks = new List<Session_Feedback__c>();
+            for (Integer i = 0; i < 4; i++) {
+                feedbacks.add(new Session_Feedback__c(
+                    Session_Name__c = session.Name,
+                    Rating__c       = 4,
+                    Comments__c     = 'Feedback ' + i
+                ));
+            }
+
+            Test.startTest();
+            insert feedbacks;
+            Test.stopTest();
+
+            // Re-query Session__c to check Overbooked__c if field exists
+            Map<String, Schema.SObjectField> fieldMap =
+                Schema.SObjectType.Session__c.fields.getMap();
+
+            if (fieldMap.containsKey('overbooked__c')) {
+                Session__c updated = [
+                    SELECT Id, Overbooked__c
+                    FROM Session__c
+                    WHERE Id = :session.Id
+                    LIMIT 1
+                ];
+                System.assertEquals(
+                    true,
+                    updated.Overbooked__c,
+                    'Overbooked__c should be true when feedback count (4) exceeds capacity (3)'
+                );
+            }
         }
     }
 
@@ -150,49 +156,51 @@ private class SessionFeedbackTriggerHandlerTest {
     //         Session Beta has Capacity__c = 5; insert 2 feedback records.
     // -----------------------------------------------------------------------
     @IsTest
-    static void testOverbookedFlag_StaysFalse_WhenFeedbackUnderCapacity() {
-        Session__c session = [
-            SELECT Id, Name, Capacity__c
-            FROM Session__c
-            WHERE Name = 'Session Beta'
-            LIMIT 1
-        ];
-        System.assertEquals(5, session.Capacity__c, 'Capacity should be 5 for Session Beta');
-
-        // Insert 2 feedback records — under capacity of 5
-        List<Session_Feedback__c> feedbacks = new List<Session_Feedback__c>{
-            new Session_Feedback__c(
-                Session_Name__c = session.Name,
-                Rating__c       = 3,
-                Comments__c     = 'Good session'
-            ),
-            new Session_Feedback__c(
-                Session_Name__c = session.Name,
-                Rating__c       = 5,
-                Comments__c     = 'Excellent session'
-            )
-        };
-
-        Test.startTest();
-        insert feedbacks;
-        Test.stopTest();
-
-        // Re-query and verify Overbooked__c is false if field exists
-        Map<String, Schema.SObjectField> fieldMap =
-            Schema.SObjectType.Session__c.fields.getMap();
-
-        if (fieldMap.containsKey('overbooked__c')) {
-            Session__c updated = [
-                SELECT Id, Overbooked__c
+    static void testOverbookedFlagStaysFalseWhenFeedbackUnderCapacity() {
+        System.runAs(new User(Id = UserInfo.getUserId())) {
+            Session__c session = [
+                SELECT Id, Name, Capacity__c
                 FROM Session__c
-                WHERE Id = :session.Id
+                WHERE Name = 'Session Beta'
                 LIMIT 1
             ];
-            System.assertEquals(
-                false,
-                updated.Overbooked__c,
-                'Overbooked__c should be false when feedback count (2) is under capacity (5)'
-            );
+            System.assertEquals(5, session.Capacity__c, 'Capacity should be 5 for Session Beta');
+
+            // Insert 2 feedback records — under capacity of 5
+            List<Session_Feedback__c> feedbacks = new List<Session_Feedback__c>{
+                new Session_Feedback__c(
+                    Session_Name__c = session.Name,
+                    Rating__c       = 3,
+                    Comments__c     = 'Good session'
+                ),
+                new Session_Feedback__c(
+                    Session_Name__c = session.Name,
+                    Rating__c       = 5,
+                    Comments__c     = 'Excellent session'
+                )
+            };
+
+            Test.startTest();
+            insert feedbacks;
+            Test.stopTest();
+
+            // Re-query and verify Overbooked__c is false if field exists
+            Map<String, Schema.SObjectField> fieldMap =
+                Schema.SObjectType.Session__c.fields.getMap();
+
+            if (fieldMap.containsKey('overbooked__c')) {
+                Session__c updated = [
+                    SELECT Id, Overbooked__c
+                    FROM Session__c
+                    WHERE Id = :session.Id
+                    LIMIT 1
+                ];
+                System.assertEquals(
+                    false,
+                    updated.Overbooked__c,
+                    'Overbooked__c should be false when feedback count (2) is under capacity (5)'
+                );
+            }
         }
     }
 }
