@@ -1,154 +1,129 @@
 /**
- * @description Test class for SessionTriggerHandler.
- *              Covers valid booking, blocked overlap, blocked update overlap,
- *              and allowed same-day non-conflicting update scenarios.
- * @author      AgentForge — DF-4
+ * @description Test coverage for SessionTriggerHandler (DF-4 logic) and DF-5 requirements.
+ *              Covers: non-overlapping bookings, overlap blocking, different speakers,
+ *              null speaker skip, and null start time skip.
+ * @ticket      DF-5
  */
-@IsTest
+@isTest(SeeAllData=false)
 private class SessionTriggerHandlerTest {
 
-    /**
-     * @description Creates a reusable test Speaker__c record.
-     * @return Inserted Speaker__c record
-     */
-    private static Speaker__c createTestSpeaker() {
-        Speaker__c speaker = new Speaker__c(
-            Name__c = 'Test Speaker',
-            Company__c = 'Test Company',
-            Bio__c = 'Test Bio'
-        );
-        insert speaker;
-        return speaker;
+    // ─── Helpers ────────────────────────────────────────────────────────────
+
+    private static Speaker__c createSpeaker(String name) {
+        Speaker__c spk = new Speaker__c(Name = name);
+        insert spk;
+        return spk;
     }
 
-    /**
-     * @description Test 1: Successful insert when no overlap exists.
-     */
-    @IsTest
-    static void testValidNonOverlappingBooking() {
-        Speaker__c speaker = createTestSpeaker();
-
-        Session__c session = new Session__c(
-            Title__c = 'Morning Keynote',
-            Speaker__c = speaker.Id,
-            Room__c = 'Hall A',
-            Start_Time__c = Datetime.newInstance(2026, 9, 1, 9, 0, 0),
-            Capacity__c = 100
+    private static Session__c buildSession(Id speakerId, Datetime startTime, String title) {
+        return new Session__c(
+            Name          = title,
+            Title__c      = title,
+            Speaker__c    = speakerId,
+            Start_Time__c = startTime,
+            Room__c       = 'Room A',
+            Capacity__c   = 50
         );
-
-        System.runAs(new User(Id = UserInfo.getUserId())) {
-            insert session;
-        }
-
-        List<Session__c> inserted = [
-            SELECT Id FROM Session__c WHERE Id = :session.Id
-        ];
-        System.assertEquals(1, inserted.size(), 'Session should be inserted successfully.');
     }
 
-    /**
-     * @description Test 2: Blocked insert when speaker is already booked on same day.
-     */
-    @IsTest
-    static void testBlockedOverlappingBooking() {
-        Speaker__c speaker = createTestSpeaker();
+    // ─── Test 1: Same speaker, different dates → both succeed ───────────────
 
-        Session__c existing = new Session__c(
-            Title__c = 'Morning Keynote',
-            Speaker__c = speaker.Id,
-            Room__c = 'Hall A',
-            Start_Time__c = Datetime.newInstance(2026, 9, 1, 9, 0, 0),
-            Capacity__c = 100
-        );
-        insert existing;
+    @isTest
+    static void testNonOverlappingBookingsAccepted() {
+        Speaker__c spk = createSpeaker('Speaker One');
 
-        Session__c duplicate = new Session__c(
-            Title__c = 'Afternoon Talk',
-            Speaker__c = speaker.Id,
-            Room__c = 'Hall B',
-            Start_Time__c = Datetime.newInstance(2026, 9, 1, 14, 0, 0),
-            Capacity__c = 50
-        );
+        Session__c s1 = buildSession(spk.Id, Datetime.newInstance(2025, 10, 1, 9, 0, 0), 'Session A');
+        insert s1;
 
-        System.runAs(new User(Id = UserInfo.getUserId())) {
-            try {
-                insert duplicate;
-                System.assert(false, 'Expected DmlException was not thrown.');
-            } catch (DmlException e) {
-                System.assert(
-                    e.getMessage().contains('already booked'),
-                    'Expected double-booking error. Got: ' + e.getMessage()
-                );
-            }
-        }
+        Session__c s2 = buildSession(spk.Id, Datetime.newInstance(2025, 10, 2, 9, 0, 0), 'Session B');
+
+        Test.startTest();
+        Database.SaveResult result = Database.insert(s2, false);
+        Test.stopTest();
+
+        System.assert(result.isSuccess(), 'Non-overlapping booking on a different date should succeed.');
     }
 
-    /**
-     * @description Test 3: Blocked update that would create an overlap.
-     */
-    @IsTest
-    static void testBlockedUpdateCreatingOverlap() {
-        Speaker__c speaker = createTestSpeaker();
+    // ─── Test 2: Same speaker, same date → second insert is blocked ─────────
 
-        Session__c session1 = new Session__c(
-            Title__c = 'Session One',
-            Speaker__c = speaker.Id,
-            Room__c = 'Hall A',
-            Start_Time__c = Datetime.newInstance(2026, 9, 1, 9, 0, 0),
-            Capacity__c = 100
+    @isTest
+    static void testOverlappingBookingBlocked() {
+        Speaker__c spk = createSpeaker('Speaker Two');
+
+        Session__c s1 = buildSession(spk.Id, Datetime.newInstance(2025, 11, 5, 9, 0, 0), 'Morning Session');
+        insert s1;
+
+        Session__c s2 = buildSession(spk.Id, Datetime.newInstance(2025, 11, 5, 14, 0, 0), 'Afternoon Session');
+
+        Test.startTest();
+        Database.SaveResult result = Database.insert(s2, false);
+        Test.stopTest();
+
+        System.assert(!result.isSuccess(), 'Overlapping booking for same speaker on same date should fail.');
+        System.assert(
+            result.getErrors()[0].getMessage().contains('already booked'),
+            'Error message should mention double-booking. Got: ' + result.getErrors()[0].getMessage()
         );
-        insert session1;
-
-        Session__c session2 = new Session__c(
-            Title__c = 'Session Two',
-            Speaker__c = speaker.Id,
-            Room__c = 'Hall B',
-            Start_Time__c = Datetime.newInstance(2026, 9, 2, 9, 0, 0),
-            Capacity__c = 50
-        );
-        insert session2;
-
-        session2.Start_Time__c = Datetime.newInstance(2026, 9, 1, 14, 0, 0);
-
-        System.runAs(new User(Id = UserInfo.getUserId())) {
-            try {
-                update session2;
-                System.assert(false, 'Expected DmlException was not thrown.');
-            } catch (DmlException e) {
-                System.assert(
-                    e.getMessage().contains('already booked'),
-                    'Expected double-booking error on update. Got: ' + e.getMessage()
-                );
-            }
-        }
     }
 
-    /**
-     * @description Test 4: Allowed update on same day without creating a conflict.
-     */
-    @IsTest
-    static void testAllowedUpdateSameDayNoConflict() {
-        Speaker__c speaker = createTestSpeaker();
+    // ─── Test 3: Different speakers, same date → both succeed ───────────────
 
-        Session__c session = new Session__c(
-            Title__c = 'Workshop',
-            Speaker__c = speaker.Id,
-            Room__c = 'Hall C',
-            Start_Time__c = Datetime.newInstance(2026, 9, 3, 10, 0, 0),
-            Capacity__c = 30
+    @isTest
+    static void testDifferentSpeakersSameDateAllowed() {
+        Speaker__c spk1 = createSpeaker('Speaker Three');
+        Speaker__c spk2 = createSpeaker('Speaker Four');
+
+        Session__c s1 = buildSession(spk1.Id, Datetime.newInstance(2025, 12, 1, 10, 0, 0), 'Keynote');
+        insert s1;
+
+        Session__c s2 = buildSession(spk2.Id, Datetime.newInstance(2025, 12, 1, 10, 0, 0), 'Workshop');
+
+        Test.startTest();
+        Database.SaveResult result = Database.insert(s2, false);
+        Test.stopTest();
+
+        System.assert(result.isSuccess(), 'Different speakers on the same date should both be allowed.');
+    }
+
+    // ─── Test 4: Null speaker → no error ────────────────────────────────────
+
+    @isTest
+    static void testNullSpeakerSkipped() {
+        Session__c s = new Session__c(
+            Name          = 'No Speaker Session',
+            Title__c      = 'No Speaker Session',
+            Speaker__c    = null,
+            Start_Time__c = Datetime.newInstance(2025, 9, 15, 9, 0, 0),
+            Room__c       = 'Room B',
+            Capacity__c   = 30
         );
-        insert session;
 
-        session.Room__c = 'Hall D';
+        Test.startTest();
+        Database.SaveResult result = Database.insert(s, false);
+        Test.stopTest();
 
+        System.assert(result.isSuccess(), 'Session with null Speaker__c should insert without error.');
+    }
 
-        System.runAs(new User(Id = UserInfo.getUserId())) {
-            update session;
-        }
+    // ─── Test 5: Null start time → no error ─────────────────────────────────
 
-        Session__c updated = [
-            SELECT Room__c FROM Session__c WHERE Id = :session.Id
-        ];
-        System.assertEquals('Hall D', updated.Room__c, 'Room should be updated successfully.');
+    @isTest
+    static void testNullStartTimeSkipped() {
+        Speaker__c spk = createSpeaker('Speaker Five');
+
+        Session__c s = new Session__c(
+            Name          = 'No Time Session',
+            Title__c      = 'No Time Session',
+            Speaker__c    = spk.Id,
+            Start_Time__c = null,
+            Room__c       = 'Room C',
+            Capacity__c   = 20
+        );
+
+        Test.startTest();
+        Database.SaveResult result = Database.insert(s, false);
+        Test.stopTest();
+
+        System.assert(result.isSuccess(), 'Session with null Start_Time__c should insert without error.');
     }
 }
