@@ -38,9 +38,7 @@ private class SessionTriggerHandlerTest {
 
             Session__c s2 = buildSession(spk.Id, Datetime.newInstance(2025, 10, 2, 9, 0, 0), 'Session B');
 
-
             Database.SaveResult result = Database.insert(s2, false);
-
 
             System.assert(result.isSuccess(), 'Non-overlapping booking on a different date should succeed.');
         }
@@ -58,9 +56,7 @@ private class SessionTriggerHandlerTest {
 
             Session__c s2 = buildSession(spk.Id, Datetime.newInstance(2025, 11, 5, 14, 0, 0), 'Afternoon Session');
 
-
             Database.SaveResult result = Database.insert(s2, false);
-
 
             System.assert(!result.isSuccess(), 'Overlapping booking for same speaker on same date should fail.');
             System.assert(
@@ -83,9 +79,7 @@ private class SessionTriggerHandlerTest {
 
             Session__c s2 = buildSession(spk2.Id, Datetime.newInstance(2025, 12, 1, 10, 0, 0), 'Workshop');
 
-
             Database.SaveResult result = Database.insert(s2, false);
-
 
             System.assert(result.isSuccess(), 'Different speakers on the same date should both be allowed.');
         }
@@ -105,9 +99,7 @@ private class SessionTriggerHandlerTest {
                 Capacity__c   = 30
             );
 
-
             Database.SaveResult result = Database.insert(s, false);
-
 
             System.assert(result.isSuccess(), 'Session with null Speaker__c should insert without error.');
         }
@@ -129,9 +121,7 @@ private class SessionTriggerHandlerTest {
                 Capacity__c   = 20
             );
 
-
             Database.SaveResult result = Database.insert(s, false);
-
 
             System.assert(result.isSuccess(), 'Session with null Start_Time__c should insert without error.');
         }
