@@ -130,7 +130,6 @@
     <description>Speaker object to manage speaker records for events and presentations.</description>
     <enableActivities>true</enableActivities>
     <enableBulkApi>true</enableBulkApi>
-    <enableChangeDataCapture>false</enableChangeDataCapture>
     <enableFeeds>false</enableFeeds>
     <enableHistory>false</enableHistory>
     <enableLicensing>false</enableLicensing>
@@ -162,7 +161,6 @@
     </nameField>
     <pluralLabel>Speakers</pluralLabel>
     <searchLayouts>
-        <excludedFields>FIELDS(All)</excludedFields>
     </searchLayouts>
     <sharingModel>ReadWrite</sharingModel>
 </CustomObject>
