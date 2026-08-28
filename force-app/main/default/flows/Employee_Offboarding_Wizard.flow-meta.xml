@@ -351,22 +351,6 @@
         <showFooter>true</showFooter>
         <showHeader>true</showHeader>
     </screens>
-    <screens>
-        <name>Screen_Success</name>
-        <label>Success – Offboarding Complete</label>
-        <locationX>176</locationX>
-        <locationY>1340</locationY>
-        <allowBack>false</allowBack>
-        <allowFinish>true</allowFinish>
-        <allowPause>false</allowPause>
-        <fields>
-            <name>DisplayText_SuccessMessage</name>
-            <fieldText>&lt;p&gt;&lt;strong&gt;Offboarding Process Complete&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;The employee offboarding has been successfully initiated.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Employee: {!varEmployeeName}&lt;/li&gt;&lt;li&gt;Offboarding Type: {!varOffboardingType}&lt;/li&gt;&lt;li&gt;IT Task created for license revocation.&lt;/li&gt;&lt;li&gt;HR Task created for exit interview scheduling.&lt;/li&gt;&lt;li&gt;User account has been deactivated.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;The offboarding process is now complete.&lt;/p&gt;</fieldText>
-            <fieldType>DisplayText</fieldType>
-        </fields>
-        <showFooter>true</showFooter>
-        <showHeader>true</showHeader>
-    </screens>
     <recordCreates>
         <name>Create_ITTask</name>
         <label>Create IT Task</label>
@@ -435,4 +419,20 @@
             <value><booleanValue>false</booleanValue></value>
         </recordUpdates>
     </recordUpdates>
+    <screens>
+        <name>Screen_Success</name>
+        <label>Success – Offboarding Complete</label>
+        <locationX>176</locationX>
+        <locationY>1340</locationY>
+        <allowBack>false</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>false</allowPause>
+        <fields>
+            <name>DisplayText_SuccessMessage</name>
+            <fieldText>&lt;p&gt;&lt;strong&gt;Offboarding Process Complete&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;The employee offboarding has been successfully initiated.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Employee: {!varEmployeeName}&lt;/li&gt;&lt;li&gt;Offboarding Type: {!varOffboardingType}&lt;/li&gt;&lt;li&gt;IT Task created for license revocation.&lt;/li&gt;&lt;li&gt;HR Task created for exit interview scheduling.&lt;/li&gt;&lt;li&gt;User account has been deactivated.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;The offboarding process is now complete.&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
 </Flow>
