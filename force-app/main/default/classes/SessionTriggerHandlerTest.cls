@@ -10,7 +10,10 @@ private class SessionTriggerHandlerTest {
     // ─── Helpers ────────────────────────────────────────────────────────────
 
     private static Speaker__c createSpeaker(String name) {
-        Speaker__c spk = new Speaker__c(Name = name);
+        Speaker__c spk = new Speaker__c(
+            Name = name,
+            Name__c = name
+        );
         insert spk;
         return spk;
     }
@@ -26,51 +29,65 @@ private class SessionTriggerHandlerTest {
         );
     }
 
-    // ─── Test 1: Same speaker, different dates → both succeed ───────────────
-
     @IsTest
     static void testNonOverlappingBookingsAccepted() {
         System.runAs(new User(Id = UserInfo.getUserId())) {
             Speaker__c spk = createSpeaker('Speaker One');
 
-            Session__c s1 = buildSession(spk.Id, Datetime.newInstance(2025, 10, 1, 9, 0, 0), 'Session A');
+            Session__c s1 = buildSession(
+                spk.Id,
+                Datetime.newInstance(2025, 10, 1, 9, 0, 0),
+                'Session A'
+            );
             insert s1;
 
-            Session__c s2 = buildSession(spk.Id, Datetime.newInstance(2025, 10, 2, 9, 0, 0), 'Session B');
-
+            Session__c s2 = buildSession(
+                spk.Id,
+                Datetime.newInstance(2025, 10, 2, 9, 0, 0),
+                'Session B'
+            );
 
             Database.SaveResult result = Database.insert(s2, false);
 
-
-            System.assert(result.isSuccess(), 'Non-overlapping booking on a different date should succeed.');
+            System.assert(
+                result.isSuccess(),
+                'Non-overlapping booking on a different date should succeed.'
+            );
         }
     }
-
-    // ─── Test 2: Same speaker, same date → second insert is blocked ─────────
 
     @IsTest
     static void testOverlappingBookingBlocked() {
         System.runAs(new User(Id = UserInfo.getUserId())) {
             Speaker__c spk = createSpeaker('Speaker Two');
 
-            Session__c s1 = buildSession(spk.Id, Datetime.newInstance(2025, 11, 5, 9, 0, 0), 'Morning Session');
+            Session__c s1 = buildSession(
+                spk.Id,
+                Datetime.newInstance(2025, 11, 5, 9, 0, 0),
+                'Morning Session'
+            );
             insert s1;
 
-            Session__c s2 = buildSession(spk.Id, Datetime.newInstance(2025, 11, 5, 14, 0, 0), 'Afternoon Session');
-
+            Session__c s2 = buildSession(
+                spk.Id,
+                Datetime.newInstance(2025, 11, 5, 14, 0, 0),
+                'Afternoon Session'
+            );
 
             Database.SaveResult result = Database.insert(s2, false);
 
+            System.assert(
+                !result.isSuccess(),
+                'Overlapping booking for same speaker on same date should fail.'
+            );
 
-            System.assert(!result.isSuccess(), 'Overlapping booking for same speaker on same date should fail.');
             System.assert(
                 result.getErrors()[0].getMessage().contains('already booked'),
-                'Error message should mention double-booking. Got: ' + result.getErrors()[0].getMessage()
+                'Error message should mention double-booking. Got: ' +
+                result.getErrors()[0].getMessage()
             );
         }
     }
-
-    // ─── Test 3: Different speakers, same date → both succeed ───────────────
 
     @IsTest
     static void testDifferentSpeakersSameDateAllowed() {
@@ -78,20 +95,27 @@ private class SessionTriggerHandlerTest {
             Speaker__c spk1 = createSpeaker('Speaker Three');
             Speaker__c spk2 = createSpeaker('Speaker Four');
 
-            Session__c s1 = buildSession(spk1.Id, Datetime.newInstance(2025, 12, 1, 10, 0, 0), 'Keynote');
+            Session__c s1 = buildSession(
+                spk1.Id,
+                Datetime.newInstance(2025, 12, 1, 10, 0, 0),
+                'Keynote'
+            );
             insert s1;
 
-            Session__c s2 = buildSession(spk2.Id, Datetime.newInstance(2025, 12, 1, 10, 0, 0), 'Workshop');
-
+            Session__c s2 = buildSession(
+                spk2.Id,
+                Datetime.newInstance(2025, 12, 1, 10, 0, 0),
+                'Workshop'
+            );
 
             Database.SaveResult result = Database.insert(s2, false);
 
-
-            System.assert(result.isSuccess(), 'Different speakers on the same date should both be allowed.');
+            System.assert(
+                result.isSuccess(),
+                'Different speakers on the same date should both be allowed.'
+            );
         }
     }
-
-    // ─── Test 4: Null speaker → no error ────────────────────────────────────
 
     @IsTest
     static void testNullSpeakerSkipped() {
@@ -105,15 +129,14 @@ private class SessionTriggerHandlerTest {
                 Capacity__c   = 30
             );
 
-
             Database.SaveResult result = Database.insert(s, false);
 
-
-            System.assert(result.isSuccess(), 'Session with null Speaker__c should insert without error.');
+            System.assert(
+                result.isSuccess(),
+                'Session with null Speaker__c should insert without error.'
+            );
         }
     }
-
-    // ─── Test 5: Null start time → no error ─────────────────────────────────
 
     @IsTest
     static void testNullStartTimeSkipped() {
@@ -129,11 +152,12 @@ private class SessionTriggerHandlerTest {
                 Capacity__c   = 20
             );
 
-
             Database.SaveResult result = Database.insert(s, false);
 
-
-            System.assert(result.isSuccess(), 'Session with null Start_Time__c should insert without error.');
+            System.assert(
+                result.isSuccess(),
+                'Session with null Start_Time__c should insert without error.'
+            );
         }
     }
 }
