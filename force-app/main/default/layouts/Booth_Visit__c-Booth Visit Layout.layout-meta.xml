@@ -70,6 +70,6 @@
         <masterLabel>00h1t00000IZ3eAAG</masterLabel>
         <sizeX>4</sizeX>
         <sizeY>1</sizeY>
-        <summaryLayoutStyle>Default</summaryLayoutStyle>
+        <style>Default</style>
     </summaryLayout>
 </Layout>
