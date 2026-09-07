@@ -81,7 +81,6 @@
     <showHighlightsPanel>true</showHighlightsPanel>
     <showInteractionLogPanel>true</showInteractionLogPanel>
     <showRunAssignmentRulesCheckbox>false</showRunAssignmentRulesCheckbox>
-    <showSubmitButton>true</showSubmitButton>
     <summaryLayout>
         <masterLabel>00h1p00000IZ3eAAG</masterLabel>
         <sizeX>4</sizeX>
