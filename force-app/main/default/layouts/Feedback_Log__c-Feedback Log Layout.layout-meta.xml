@@ -71,18 +71,6 @@
         </layoutColumns>
         <style>TwoColumnsTopToBottom</style>
     </layoutSections>
-    <platformActionListItems>
-        <actionName>FeedItem.ContentNote</actionName>
-        <actionType>QuickAction</actionType>
-    </platformActionListItems>
-    <platformActionListItems>
-        <actionName>FeedItem.RichTextNote</actionName>
-        <actionType>QuickAction</actionType>
-    </platformActionListItems>
-    <platformActionListItems>
-        <actionName>FeedItem.Link</actionName>
-        <actionType>QuickAction</actionType>
-    </platformActionListItems>
     <relatedLists>
         <relatedList>ActivityList</relatedList>
     </relatedLists>
