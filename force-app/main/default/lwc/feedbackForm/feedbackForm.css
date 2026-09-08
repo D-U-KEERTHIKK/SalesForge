@@ -1,0 +1,25 @@
+:host {
+  display: block;
+}
+
+.feedback-card {
+  max-width: 600px;
+  margin: auto;
+  padding: 1.5rem;
+}
+
+.form-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.submit-btn {
+  margin-top: 1.5rem;
+}
+
+.success-section {
+  text-align: center;
+  padding: 2rem;
+  color: #2e844a;
+}
