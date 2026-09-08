@@ -1,0 +1,88 @@
+<template>
+  <div class="slds-card">
+    <div class="slds-card__header slds-grid">
+      <header class="slds-media slds-media_center slds-has-flexi-truncate">
+        <div class="slds-media__body">
+          <h2 class="slds-card__title slds-truncate" title="Feedback Form">
+            Feedback Form
+          </h2>
+        </div>
+      </header>
+    </div>
+
+    <div class="slds-card__body slds-card__body_inner">
+      <lwc:if lwc:when={isSubmitted}>
+        <div
+          class="slds-box slds-theme_success slds-theme_alert-texture slds-m-bottom_medium"
+          role="alert"
+        >
+          <p class="slds-text_body_regular">
+            <lightning-icon
+              icon-name="utility:success"
+              alternative-text="Success"
+              class="slds-m-right_small"
+            ></lightning-icon>
+            Thank you for your feedback! We appreciate your input.
+          </p>
+        </div>
+      </lwc:if>
+
+      <form class="slds-form slds-form_stacked">
+        <div class="slds-form-element slds-m-bottom_medium">
+          <lightning-input
+            type="text"
+            name="name"
+            label="Name"
+            placeholder="Enter your name"
+            value={formData.name}
+            onchange={handleNameChange}
+            required
+          ></lightning-input>
+        </div>
+
+        <div class="slds-form-element slds-m-bottom_medium">
+          <lightning-input
+            type="email"
+            name="email"
+            label="Email"
+            placeholder="Enter your email"
+            value={formData.email}
+            onchange={handleEmailChange}
+            required
+          ></lightning-input>
+        </div>
+
+        <div class="slds-form-element slds-m-bottom_medium">
+          <lightning-combobox
+            name="rating"
+            label="Rating"
+            value={formData.rating}
+            options={ratingOptions}
+            onchange={handleRatingChange}
+            required
+          ></lightning-combobox>
+        </div>
+
+        <div class="slds-form-element slds-m-bottom_medium">
+          <lightning-textarea
+            name="comments"
+            label="Comments"
+            placeholder="Share any additional feedback (optional)"
+            value={formData.comments}
+            onchange={handleCommentsChange}
+            rows="4"
+          ></lightning-textarea>
+        </div>
+
+        <div class="slds-grid slds-grid_align-center">
+          <lightning-button
+            type="submit"
+            label="Submit"
+            variant="brand"
+            onclick={handleSubmit}
+          ></lightning-button>
+        </div>
+      </form>
+    </div>
+  </div>
+</template>
