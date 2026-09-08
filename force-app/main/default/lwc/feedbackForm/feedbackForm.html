@@ -1,0 +1,42 @@
+<template>
+  <lightning-card title="Feedback Form" icon-name="utility:feedback">
+    <div class="slds-p-around_medium">
+      <lightning-input
+        label="Subject"
+        type="text"
+        placeholder="Enter feedback subject"
+        value={subject}
+        onchange={handleSubjectChange}
+        required
+      ></lightning-input>
+
+      <div class="slds-m-top_medium">
+        <lightning-combobox
+          label="Rating"
+          value={rating}
+          options={ratingOptions}
+          onchange={handleRatingChange}
+          required
+        ></lightning-combobox>
+      </div>
+
+      <div class="slds-m-top_medium">
+        <lightning-textarea
+          label="Comments"
+          placeholder="Enter your comments"
+          value={comments}
+          onchange={handleCommentsChange}
+          required
+        ></lightning-textarea>
+      </div>
+
+      <div class="slds-m-top_medium slds-text-align_center">
+        <lightning-button
+          variant="brand"
+          label="Submit"
+          onclick={handleSubmit}
+        ></lightning-button>
+      </div>
+    </div>
+  </lightning-card>
+</template>
