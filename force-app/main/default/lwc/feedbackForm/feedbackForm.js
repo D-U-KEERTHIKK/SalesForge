@@ -1,25 +1,24 @@
-import { LightningElement } from 'lwc';
+import { LightningElement, track } from 'lwc';
 import { ShowToastEvent } from 'lightning/platformShowToastEvent';
 
 export default class FeedbackForm extends LightningElement {
-  public name: string = '';
-  public email: string = '';
-  public rating: string = '';
-  public comments: string = '';
-  public isSubmitted: boolean = false;
+  name = '';
+  email = '';
+  rating = '';
+  comments = '';
+  isSubmitted = false;
 
-  public ratingOptions: Array<{ label: string; value: string }> = [
-    { label: '1 - Poor', value: '1' },
-    { label: '2 - Fair', value: '2' },
-    { label: '3 - Good', value: '3' },
-    { label: '4 - Very Good', value: '4' },
-    { label: '5 - Excellent', value: '5' }
+  ratingOptions = [
+    { label: '1', value: '1' },
+    { label: '2', value: '2' },
+    { label: '3', value: '3' },
+    { label: '4', value: '4' },
+    { label: '5', value: '5' }
   ];
 
-  public handleChange(event: Event): void {
-    const target = event.target as HTMLInputElement & HTMLTextAreaElement;
-    const fieldName = target.name;
-    const fieldValue = target.value;
+  handleChange(event): void {
+    const fieldName = event.target.name;
+    const fieldValue = event.target.value;
 
     if (fieldName === 'name') {
       this.name = fieldValue;
@@ -32,19 +31,18 @@ export default class FeedbackForm extends LightningElement {
     }
   }
 
-  public handleSubmit(): void {
-    const allInputs = this.template.querySelectorAll('input, textarea');
-    let isFormValid = true;
+  handleSubmit(event): void {
+    event.preventDefault();
 
-    allInputs.forEach((input: Element) => {
-      const inputElement = input as HTMLInputElement & HTMLTextAreaElement;
-      if (!inputElement.checkValidity()) {
-        isFormValid = false;
-        inputElement.reportValidity();
-      }
-    });
+    const allValid = [
+      ...this.template.querySelectorAll('lightning-input'),
+      ...this.template.querySelectorAll('lightning-textarea'),
+      ...this.template.querySelectorAll('lightning-combobox')
+    ].reduce((validSoFar: boolean, field: HTMLElement) => {
+      return (field as any).reportValidity() && validSoFar;
+    }, true);
 
-    if (isFormValid) {
+    if (allValid) {
       this.isSubmitted = true;
       this.dispatchEvent(
         new ShowToastEvent({
@@ -54,19 +52,5 @@ export default class FeedbackForm extends LightningElement {
         })
       );
     }
-  }
-
-  public handleReset(): void {
-    this.name = '';
-    this.email = '';
-    this.rating = '';
-    this.comments = '';
-    this.isSubmitted = false;
-
-    const allInputs = this.template.querySelectorAll('input, textarea');
-    allInputs.forEach((input: Element) => {
-      const inputElement = input as HTMLInputElement & HTMLTextAreaElement;
-      inputElement.value = '';
-    });
   }
 }
