@@ -1,72 +1,80 @@
-import { LightningElement } from 'lwc';
+import { LightningElement, track } from 'lwc';
 import { ShowToastEvent } from 'lightning/platformShowToastEvent';
 
 export default class FeedbackForm extends LightningElement {
-  public name: string = '';
-  public email: string = '';
-  public rating: string = '';
-  public comments: string = '';
-  public isSubmitted: boolean = false;
+  formData = {
+    name: '',
+    email: '',
+    rating: '',
+    comments: ''
+  };
 
-  public ratingOptions: Array<{ label: string; value: string }> = [
-    { label: '1 - Poor', value: '1' },
-    { label: '2 - Fair', value: '2' },
-    { label: '3 - Good', value: '3' },
-    { label: '4 - Very Good', value: '4' },
-    { label: '5 - Excellent', value: '5' }
-  ];
+  isFormVisible = true;
 
-  public handleChange(event: Event): void {
-    const target = event.target as HTMLInputElement & HTMLTextAreaElement;
-    const fieldName = target.name;
-    const fieldValue = target.value;
+  isSuccessVisible = false;
 
-    if (fieldName === 'name') {
-      this.name = fieldValue;
-    } else if (fieldName === 'email') {
-      this.email = fieldValue;
-    } else if (fieldName === 'rating') {
-      this.rating = fieldValue;
-    } else if (fieldName === 'comments') {
-      this.comments = fieldValue;
-    }
+  get ratingOptions() {
+    return [
+      { label: '1 - Poor', value: '1' },
+      { label: '2 - Fair', value: '2' },
+      { label: '3 - Good', value: '3' },
+      { label: '4 - Very Good', value: '4' },
+      { label: '5 - Excellent', value: '5' }
+    ];
   }
 
-  public handleSubmit(): void {
-    const allInputs = this.template.querySelectorAll('input, textarea');
-    let isFormValid = true;
+  handleInputChange(event) {
+    const fieldId = event.target.dataset.id;
+    this.formData = {
+      ...this.formData,
+      [fieldId]: event.target.value
+    };
+  }
 
-    allInputs.forEach((input: Element) => {
-      const inputElement = input as HTMLInputElement & HTMLTextAreaElement;
-      if (!inputElement.checkValidity()) {
-        isFormValid = false;
-        inputElement.reportValidity();
+  handleSubmit(event) {
+    event.preventDefault();
+
+    const inputs = this.template.querySelectorAll('lightning-input, lightning-combobox, lightning-textarea');
+    let isValid = true;
+
+    inputs.forEach((input) => {
+      if (!input.reportValidity()) {
+        isValid = false;
       }
     });
 
-    if (isFormValid) {
-      this.isSubmitted = true;
-      this.dispatchEvent(
-        new ShowToastEvent({
-          title: 'Thank you!',
-          message: 'Your feedback has been submitted.',
-          variant: 'success'
-        })
-      );
+    if (isValid) {
+      this.isFormVisible = false;
+      this.isSuccessVisible = true;
+
+      const toast = new ShowToastEvent({
+        title: 'Thank you!',
+        message: 'Your feedback has been submitted.',
+        variant: 'success'
+      });
+      this.dispatchEvent(toast);
     }
   }
 
-  public handleReset(): void {
-    this.name = '';
-    this.email = '';
-    this.rating = '';
-    this.comments = '';
-    this.isSubmitted = false;
+  handleReset(event) {
+    event.preventDefault();
+    this.formData = {
+      name: '',
+      email: '',
+      rating: '',
+      comments: ''
+    };
+  }
 
-    const allInputs = this.template.querySelectorAll('input, textarea');
-    allInputs.forEach((input: Element) => {
-      const inputElement = input as HTMLInputElement & HTMLTextAreaElement;
-      inputElement.value = '';
-    });
+  handleSubmitAnother(event) {
+    event.preventDefault();
+    this.isFormVisible = true;
+    this.isSuccessVisible = false;
+    this.formData = {
+      name: '',
+      email: '',
+      rating: '',
+      comments: ''
+    };
   }
 }
