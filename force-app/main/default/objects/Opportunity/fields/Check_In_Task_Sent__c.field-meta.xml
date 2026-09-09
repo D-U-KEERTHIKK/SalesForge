@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Check_In_Task_Sent__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Checkbox field used by the Scheduled Flow to track whether a 30-day check-in task has been created for this Closed Won opportunity. Prevents duplicate task creation.</description>
+    <externalId>false</externalId>
+    <label>Check In Task Sent</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Checkbox</type>
+</CustomField>
