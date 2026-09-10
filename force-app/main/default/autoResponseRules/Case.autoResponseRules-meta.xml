@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AutoResponseRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <autoResponseRule>
+        <active>false</active>
+        <description>Auto-response rule for standard case inquiries</description>
+        <name>Standard_Case_Response</name>
+        <ruleEntry>
+            <criteriaItems>
+                <field>Case.Origin</field>
+                <operation>equals</operation>
+                <value>Email</value>
+            </criteriaItems>
+            <responseAction>
+                <name>Standard_Case_Auto_Response</name>
+                <type>AutoResponse</type>
+            </responseAction>
+            <sortOrder>1</sortOrder>
+        </ruleEntry>
+    </autoResponseRule>
+    <autoResponseRule>
+        <active>false</active>
+        <description>Auto-response rule for high-priority cases</description>
+        <name>High_Priority_Case_Response</name>
+        <ruleEntry>
+            <criteriaItems>
+                <field>Case.Priority</field>
+                <operation>equals</operation>
+                <value>High</value>
+            </criteriaItems>
+            <responseAction>
+                <name>High_Priority_Case_Auto_Response</name>
+                <type>AutoResponse</type>
+            </responseAction>
+            <sortOrder>1</sortOrder>
+        </ruleEntry>
+    </autoResponseRule>
+</AutoResponseRules>
