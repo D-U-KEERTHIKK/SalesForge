@@ -1,0 +1,23 @@
+Component:
+  Name: slackv2__caseMessageViewer
+  Type: ApexPage
+  Namespace: slackv2
+  ManagedPackage: true
+  
+Automation_Dependencies:
+  DML_Operations: none
+  Flow_Invocations: none
+  Process_Builder_Actions: none
+  Assignment_Rules_Interaction: none
+  Auto_Response_Rules_Interaction: none
+  Trigger_Dependencies: none
+
+Escalation_Readiness:
+  Conflicts_with_RTF_ScheduledPath: false
+  Requires_Deactivation: false
+  Migration_Blocking_Risk: none
+  
+Documentation:
+  Purpose: Embed Slack message viewer in Case UI (read-only)
+  Last_Verified: "As of TS-9 inventory baseline"
+  Notes: "Managed package component; no direct Case automation logic"

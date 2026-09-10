@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ContactId</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>Lookup to Contact. Used for escalation notification routing and assignment rule targeting in Case escalation automation.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>The contact associated with this case. Affects escalation notification routing and assignment rule evaluation.</inlineHelpText>
+    <label>Contact</label>
+    <referenceTo>Contact</referenceTo>
+    <relationshipLabel>Cases</relationshipLabel>
+    <relationshipName>Cases</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>
