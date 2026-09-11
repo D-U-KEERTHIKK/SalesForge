@@ -1,23 +1,261 @@
-Component:
-  Name: slackv2__caseMessageViewer
-  Type: ApexPage
-  Namespace: slackv2
-  ManagedPackage: true
-  
-Automation_Dependencies:
-  DML_Operations: none
-  Flow_Invocations: none
-  Process_Builder_Actions: none
-  Assignment_Rules_Interaction: none
-  Auto_Response_Rules_Interaction: none
-  Trigger_Dependencies: none
+# Case Automation Inventory & Migration Assessment
+## TS-9 Batch 0 Analysis
 
-Escalation_Readiness:
-  Conflicts_with_RTF_ScheduledPath: false
-  Requires_Deactivation: false
-  Migration_Blocking_Risk: none
-  
-Documentation:
-  Purpose: Embed Slack message viewer in Case UI (read-only)
-  Last_Verified: "As of TS-9 inventory baseline"
-  Notes: "Managed package component; no direct Case automation logic"
+**Generated:** 2025  
+**Scope:** Full Case object automation audit for Record-Triggered Flow migration  
+**Status:** Pre-migration dependency & conflict assessment
+
+---
+
+## Executive Summary
+
+This document inventories all Case-related automation, custom fields, and managed-package integrations to assess readiness for migrating escalation logic to a Salesforce Record-Triggered Flow (scheduled path). The analysis identifies:
+
+- **Active Automation:** CaseTriggerHandler (inline trigger logic), Case assignment rules (org-pending verification)
+- **Managed-Package Integrations:** slackv2 namespace (Visualforce page + trigger), LeanData namespace (continuous clean trigger)
+- **Custom Fields:** 11 custom/standard Case fields with escalation relevance
+- **Risk Level:** LOW → MEDIUM (pending org confirmation of active assignment/auto-response rules and managed-package trigger behavior)
+
+---
+
+## Section 1: Custom Fields Inventory
+
+### Standard Case Fields with Escalation Relevance
+
+| Field Name | API Name | Type | Tracking | Escalation Impact | Migration Note |
+|---|---|---|---|---|---|
+| Account | AccountId | Lookup | None | Routing context | Used in assignment rules; verify in org |
+| Asset | AssetId | Lookup | History enabled | Audit context | Document for escalation audit trail |
+| Business Hours | BusinessHoursId | Lookup | None | **HIGH** | Direct relevance to scheduled path timing |
+| Contact | ContactId | Lookup | None | Notification routing | Email/SMS escalation notifications |
+| Contact Email | ContactEmail | Email | None | Escalation notification | Use in email alert actions |
+| Contact Phone | ContactPhone | Phone | None | Low relevance | Standard field; no escalation dependency |
+| Contact Mobile | ContactMobile | Phone | None | SMS potential | Assess if legacy SMS alerts use this field |
+| Contact Fax | ContactFax | Phone | None | Low relevance | Standard field; no escalation dependency |
+| Comments | Comments | LongTextArea | None | Low relevance | Audit only; no automation dependency |
+| Closed Date | ClosedDate | DateTime | None | **MEDIUM** | Exit condition for scheduled path (do not escalate closed cases) |
+| Priority | Priority | Picklist | None | **CRITICAL** | Mapped to Status by CaseTriggerHandler; verify picklist values |
+| Status | Status | Picklist | None | **CRITICAL** | Updated by CaseTriggerHandler; define target scheduled path logic |
+
+### Custom Field: Case_Id__c
+
+| Attribute | Value | Note |
+|---|---|---|
+| API Name | Case_Id__c | ⚠️ **MISSING IN TARGET ORG** — Not yet created |
+| Type | Formula | CASESAFEID() |
+| Escalation Impact | None | Utility field for external integrations |
+| Migration Implication | Non-blocking | No automation dependency |
+
+**Action Item:** Confirm whether Case_Id__c should be migrated or if it is managed-package-dependent. If missing, create via CustomField metadata before Batch 1 trigger migration.
+
+---
+
+## Section 2: Apex Automation
+
+### CaseTriggerHandler (ApexClass)
+
+| Attribute | Details |
+|---|---|
+| **Class Name** | `CaseTriggerHandler` |
+| **Methods** | `insertCaseNames(List<Case> newCases)`, `updateCaseStatus(List<Case> updatedCases, Map<Id, Case> oldCaseMap)` |
+| **Trigger Entry Point** | Invoked by inline trigger logic (not yet retrieved) |
+| **Escalation Logic** | Priority → Status mapping in `updateCaseStatus()` |
+
+#### Escalation Logic Detail
+
+**Method:** `updateCaseStatus(List<Case> updatedCases, Map<Id, Case> oldCaseMap)`
+
+- **Trigger:** Case Priority field change
+- **Action:** Auto-updates Case Status based on Priority picklist value
+- **Picklist Mapping:** Not yet documented — **RETRIEVE FROM ORG**
+- **Migration Path:** This logic will be **migrated to Record-Triggered Flow scheduled path**
+  - Flow entry criteria: `Priority` field changed AND not already in terminal status (e.g., Closed)
+  - Flow action: Update Status field based on new Priority value
+  - Scheduled path: Optional (time-based escalation logic not yet identified)
+
+#### Integration Points
+
+- **Asset field tracking:** AssetId field has history tracking enabled — CaseTriggerHandler does not modify AssetId, but audit trail will capture any Status changes for compliance
+- **Notification dependencies:** None identified in handler; escalation notifications likely managed by separate workflow rules or flow (not in Batch 0)
+
+#### Recommendations
+
+1. **Document Priority → Status mapping:** Extract exact picklist values from org metadata
+2. **Inline comments:** Add comments to handler identifying the lines that map to escalation logic
+3. **Parallel execution risk:** Verify that CaseTriggerHandler and future Record-Triggered Flow do not both update Status on the same transaction
+   - **Mitigation:** After RTF deployment, retire or disable the `updateCaseStatus()` logic from CaseTriggerHandler
+
+---
+
+## Section 3: Assignment & Auto-Response Rules
+
+### Case_AssignmentRules (AssignmentRules)
+
+| Attribute | Details |
+|---|---|
+| **Current Metadata** | Empty ruleset (per Batch 0 context) |
+| **Org Status** | **PENDING VERIFICATION** |
+| **Escalation Relevance** | **HIGH** — Assignment rules route cases to queues/users |
+| **Conflict Risk** | MEDIUM — If active rules route on Priority, they could duplicate logic with scheduled path |
+
+#### Migration Implications
+
+- If active assignment rules exist in org, **document their trigger conditions and target queues**
+- If Priority-based, assess whether logic should be:
+  - **Migrated to Record-Triggered Flow** (replaces assignment rule)
+  - **Retained in parallel** (assignment rule assigns user, Flow updates Status)
+  - **Deprecated** (Route all assignments through Flow)
+
+#### Action Items
+
+1. Retrieve live org metadata for `Case_AssignmentRules`
+2. Document each active rule's entry criteria and assignment target
+3. Map to escalation workflow: does Priority change trigger assignment?
+4. Confirm no conflicts with future RTF scheduled path
+
+---
+
+### Case_AutoResponseRules (AutoResponseRules)
+
+| Attribute | Details |
+|---|---|
+| **Current Metadata** | 2 rules present (both inactive) |
+| **Org Status** | **PENDING VERIFICATION** — Confirm inactive in live org |
+| **Escalation Relevance** | LOW | Auto-responses do not modify escalation status |
+| **Conflict Risk** | LOW | Inactive rules pose minimal risk |
+
+#### Migration Implications
+
+- **No action required** if confirmed inactive
+- If either rule is active in org, **document entry criteria and email template**
+- Future RTF may trigger escalation notifications; ensure auto-response rules do not duplicate notifications
+
+#### Action Items
+
+1. Confirm both rules remain inactive in org
+2. If any rule is active, document template and entry criteria
+3. Coordinate with escalation notification design (Batch 2+)
+
+---
+
+## Section 4: Managed-Package Integrations
+
+### slackv2__caseMessageViewer (ApexPage)
+
+| Attribute | Details |
+|---|---|
+| **Namespace** | `slackv2` (managed package) |
+| **Type** | Visualforce Page |
+| **Purpose** | Display Case messages within Slack integration UI |
+| **Escalation Interaction** | None — read-only display logic |
+| **DML Operations** | **PENDING VERIFICATION** — Retrieve page markup to confirm no hidden DML |
+| **Flow Invocations** | **PENDING VERIFICATION** — Retrieve page to confirm no Flow trigger logic |
+
+#### Migration Risk Assessment
+
+- **Risk Level:** LOW
+- **Rationale:** Visualforce page is display-only; escalation automation does not require modification of this component
+- **Conflict Potential:** Minimal — RTF scheduled path only updates Case fields, does not interact with Slack UI
+
+#### Action Items
+
+1. Retrieve full ApexPage markup from org
+2. Scan for:
+   - `<apex:actionFunction>` or `<apex:commandButton>` with DML sideEffects
+   - `<flow:interview>` tags that could invoke Flows
+   - JavaScript that modifies Case Status/Priority
+3. Document findings in migration risk register
+
+#### Estimated Impact
+
+- **No changes required** if page is read-only
+- **Code review** if DML/Flow logic detected
+- **Coordination** with Slack integration team if escalation notifications will be sent via Slack (Batch 2+)
+
+---
+
+### LeanData__ContinuousCleanCaseTrigger (ApexTrigger)
+
+| Attribute | Details |
+|---|---|
+| **Namespace** | `LeanData` (managed package) |
+| **Type** | Apex Trigger on Case object |
+| **Purpose** | **PENDING VERIFICATION** — Retrieve from org to determine scope |
+| **Escalation Interaction** | **PENDING VERIFICATION** |
+| **Continuous Operation** | Trigger fires on all Case DML; may interact with scheduled path |
+
+#### Migration Risk Assessment
+
+- **Risk Level:** MEDIUM → HIGH (pending code review)
+- **Critical Concern:** LeanData continuous clean operations may:
+  - Monitor or modify Status/Priority fields independently
+  - Create race conditions with RTF scheduled path (both update Case simultaneously)
+  - Bypass or re-trigger escalation logic unintentionally
+
+#### Action Items
+
+1. **Retrieve full trigger code** from org via `Metadata API`
+2. Scan for:
+   - Field updates to Status, Priority, or custom escalation fields
+   - Recursive DML patterns (trigger calls batch/scheduled action)
+   - Dependencies on BusinessHoursId or CreatedDate
+3. **Test interaction:** Before RTF deployment, run integration test:
+   - Trigger Case Priority change
+   - Verify CaseTriggerHandler and LeanData trigger both execute
+   - Confirm no duplicate Status updates or infinite loops
+4. **Coordination:** Contact LeanData admin to document trigger behavior
+5. **Mitigation options:**
+   - Disable LeanData trigger during RTF deployment (if non-critical)
+   - Add guard logic to LeanData trigger to skip if RTF is active
+   - Migrate LeanData logic into RTF (if acceptable to LeanData team)
+
+---
+
+### slackv2__caseTrigger (ApexTrigger)
+
+| Attribute | Details |
+|---|---|
+| **Namespace** | `slackv2` (managed package) |
+| **Type** | Apex Trigger on Case object |
+| **Purpose** | **PENDING VERIFICATION** — Retrieve from org to determine scope |
+| **Escalation Interaction** | **PENDING VERIFICATION** |
+| **Parallel Execution** | Will fire alongside RTF on same Case record changes |
+
+#### Migration Risk Assessment
+
+- **Risk Level:** MEDIUM (pending code review)
+- **Critical Concern:** Slack trigger may:
+  - Post messages to Slack on Status/Priority change (expected behavior)
+  - Create race conditions if it attempts to update Case fields
+  - Double-fire escalation notifications (if integrated with email alerts)
+
+#### Action Items
+
+1. **Retrieve full trigger code** from org
+2. Scan for:
+   - Case field updates (DML to Case)
+   - Async callouts to Slack API (OK if fire-and-forget)
+   - Conditional logic that depends on Priority or Status values
+3. **Test interaction:** Before RTF deployment, run integration test:
+   - Trigger Case Priority change
+   - Verify RTF and slackv2__caseTrigger both execute
+   - Confirm Slack messages post without interfering with Status update
+4. **Expected behavior:** Slack trigger should post escalation notification to Slack channel (non-blocking)
+5. **Mitigation:** If slackv2__caseTrigger performs Case DML:
+   - Add guard condition to prevent recursion
+   - Coordinate message delivery with RTF Flow actions
+
+---
+
+## Section 5: Business Hours & Scheduled Path Design
+
+### BusinessHoursId Field Relevance
+
+| Aspect | Details |
+|---|---|
+| **Field Purpose** | Links Case to Business Hours ruleset for SLA/escalation timing |
+| **Escalation Impact** | **CRITICAL** — Scheduled path must respect business hours |
+| **RTF Integration** | Use BusinessHoursId in scheduled path entry criteria |
+| **Typical Logic** | Escalate cases that are not resolved within X business hours |
+
+#### Recommended Scheduled Path Design

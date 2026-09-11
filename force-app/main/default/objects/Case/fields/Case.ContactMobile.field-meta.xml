@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>ContactMobile</fullName>
-    <deprecated>false</deprecated>
-    <description>Mobile phone number of the contact associated with the case. Used for escalation notifications and SMS communication channels. Populated from Contact.MobilePhone or manually entered.</description>
+    <description>Mobile phone number of the contact associated with this case. Used for escalation notifications via SMS or mobile channels. Managed as part of Case object field inventory for TS-9 escalation automation migration.</description>
     <externalId>false</externalId>
     <label>Contact Mobile</label>
-    <length>20</length>
+    <length>40</length>
     <required>false</required>
     <trackFeedHistory>false</trackFeedHistory>
     <trackHistory>false</trackHistory>
     <trackTrending>false</trackTrending>
-    <type>Phone</type>
+    <type>Text</type>
+    <unique>false</unique>
 </CustomField>

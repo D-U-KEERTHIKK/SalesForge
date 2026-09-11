@@ -1,4 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <AssignmentRules xmlns="http://soap.sforce.com/2006/04/metadata">
-    <description>Assignment rules for Case object escalation and routing automation inventory</description>
+    <description>Case Assignment Rules - Retrieved for escalation automation impact assessment. Current org configuration shows no active assignment rules. These rules do not conflict with planned Record-Triggered Flow escalation routing logic.</description>
 </AssignmentRules>

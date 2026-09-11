@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>ContactPhone</fullName>
-    <type>Text</type>
+    <type>Phone</type>
     <trackTrending>false</trackTrending>
-    <description>Phone number of the contact associated with the case. Retrieved as part of Case object field inventory for escalation automation impact assessment. Low likelihood of direct escalation automation dependency.</description>
 </CustomField>
