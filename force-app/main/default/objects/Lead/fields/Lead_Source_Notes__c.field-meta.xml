@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Lead_Source_Notes__c</fullName>
+    <description>Captures notes about the lead source for tracking and analysis purposes</description>
+    <externalId>false</externalId>
+    <label>Lead Source Notes</label>
+    <length>32000</length>
+    <type>LongTextArea</type>
+    <visibleLines>10</visibleLines>
+</CustomField>
